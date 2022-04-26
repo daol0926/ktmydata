@@ -228,7 +228,7 @@
     margin-top:1.5rem;
 }
 .btn-area .btn-txt{
-    border-bottom: 0;
+    border-bottom: 1px solid #777;
     color:#777;
 }
 
