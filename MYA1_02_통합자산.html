@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header">
+		<h1><span class="logo">MOA</span></h1>
+		<!-- [D] 새로운 공지 시 dot 클래스 추가 -->
+		<button type="button" class="btn-notification dot"><span class="ico ico-bell">Notification</span></button>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<header class="container-header">
+			<nav class="lnb">
+				<ul>
+					<li><a href="#">전체</a></li>
+					<li><a href="#">생활비서</a></li>
+					<li><a href="#">코인백</a></li>
+					<li class="current"><a href="#">통합자산</a></li>
+					<li><a href="#">이벤트</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<header>
+				<h2><strong>홍길동님의 KT 통신비</strong><em>(1건)</em></h2>
+			</header>
+
+			<div class="card bill-info">
+				<div class="card-header">
+					<h3 class="header-title">요금명세서</h3>
+					<span class="date">22.03.01~22.03.31</span>
+				</div>
+				<div class="card-body">
+					<div class="card-body-header">
+						<dl class="total">
+							<dt>4월 청구 금액</dt><dd><span class="won">104,000</span><button type="button"><span class="ico ico-arr"></span></button></dd>
+						</dl>
+						<dl>
+							<dt>이용금액</dt><dd><span class="won">104,000</span></dd>
+							<dt class="st">할인금액</dt><dd><span class="won">104,000</span></dd>
+						</dl>
+					</div>
+
+					<div class="list bill-list">
+						<h4 class="list-title">회선별 청구 요금</h4>
+						<ul>
+							<li class="dataON">
+								<dl>
+									<dt><strong>데이터ON 비디오</strong><em>010-12**-*123</em></dt><dd><span class="won">64,000</span></dd>
+								</dl>
+							</li>
+							<li class="internet">
+								<dl>
+									<dt><strong>인터넷 슬림</strong><em>z!12345678***</em></dt><dd><span class="won">21,760</span></dd>
+								</dl>
+							</li>
+							<li class="tv">
+								<dl>
+									<dt><strong>TV 라이트</strong><em>z!12345678***</em></dt><dd><span class="won">31,542</span></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="card contract-info">
+				<div class="card-header">
+					<h3>약정정보</h3>
+				</div>
+				<div class="card-body">
+
+					<div class="list contract-list">
+						<ul>
+							<li class="data-5g">
+								<dl>
+									<dt><strong>모바일(5G 스폰서)</strong><i class="badge">D-30</i></dt>
+									<dd>
+										<ul>
+											<li>
+												<span>만료 예정일</span><strong>2022.04.30</strong>
+											</li>
+											<li>
+												<span>중도 해지 예상 위약금</span><strong class="won">132,433</strong>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li class="internet-tv">
+								<dl>
+									<dt><strong>인터넷/TV</strong><i class="badge">D-30</i></dt>
+									<dd>
+										<ul>
+											<li>
+												<span>만료 예정일</span><strong>2022.04.30</strong>
+											</li>
+											<li>
+												<span>중도 해지 예상 위약금</span><strong class="won">132,433</strong>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+
+					<div class="recomm">
+						<h4>홍길동님, 이건 어떠세요?</h4>
+						<div class="banner-area">
+
+							<div class="swiper-container gallery-container gallery-thumbs tag-btn">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><button type="button">#알뜰한 폰</button></div>
+									<div class="swiper-slide"><button type="button">#요금제 변경</button></div>
+									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
+									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
+									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
+								</div>
+							</div>
+							<div class="swiper-container gallery-container gallery-banner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
+									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
+									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
+									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
+									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>지금 가장 인기있는 요금제를 <br>알려드려요!</h2>
+			</header>
+
+			<div class="card plan-info">
+				<div class="card-header">
+					<h3 class="header-title">슈퍼플랜 베이직 초이스</h3>
+				</div>
+				<div class="card-body">
+					<div class="plan-desc">
+						<p class="summery">데이터 완전 무제한은 기본, <br>VIP 혜택도 챙기는</p>
+						<ul>
+							<li>데이터<br>완전 무제한</li>
+							<li>로밍 데이터 무제한<br>(속도제어)</li>
+							<li>멤버십 <br>VIP 혜택</li>
+						</ul>
+	
+						<button type="button" class="btn btn-light2 btn-sm">가입하기</button>
+					</div>
+
+					<div class="benefit-info">
+						<h3 class="title">제공혜택</h3>
+						<div class="banner-area">
+							<div class="swiper-container gallery-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./assets/images/home/ico_benefit01.png" alt="#요금제 변경">
+										<span><strong>영상</strong><em>(시즌 플레인)</em></span>
+									</div>
+									<div class="swiper-slide">
+										<img src="./assets/images/home/ico_benefit02.png" alt="#요금제 변경">
+										<span><strong>영상</strong><em>(시즌 플레인)</em></span>
+									</div>
+									<div class="swiper-slide">
+										<img src="./assets/images/home/ico_benefit03.png" alt="#요금제 변경">
+										<span><strong>영상</strong><em>(시즌 플레인)</em></span>
+									</div>
+									<div class="swiper-slide">
+										<img src="./assets/images/home/ico_benefit04.png" alt="#요금제 변경">
+										<span><strong>영상</strong><em>(시즌 플레인)</em></span>
+									</div>
+									<div class="swiper-slide">
+										<img src="./assets/images/home/ico_benefit01.png" alt="#요금제 변경">
+										<span><strong>영상</strong><em>(시즌 플레인)</em></span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-container gallery-container gallery-banner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./assets/images/home/bn_benefit01.png" alt="밀리의 서재"></div>
+									<div class="swiper-slide"><img src="./assets/images/@banner01.png" alt="#요금제 변경"></div>
+									<div class="swiper-slide"><img src="./assets/images/home/bn_benefit01.png" alt="밀리의 서재"></div>
+									<div class="swiper-slide">4</div>
+									<div class="swiper-slide">5</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		<section class="my-status">
+			<header>
+				<h2><strong>홍길동님의 자산</strong></h2>
+				<button type="button" class="btn-more">연결 자산관리</button>
+			</header>
+
+			<div class="card my-assets">
+				<div class="card-header">
+					<div class="tit-area">
+						<h3 class="header-title">총 자산 금액</h3>
+						<strong class="assets-total won">1,123,000</strong>
+						<span class="hidden-txt">금액 숨기기</span>
+					</div>
+
+					<label class="btn-switch">
+						<input type="checkbox" class="checkbox" checked>
+						<span class="slider"></span>
+					</label>
+				</div>
+				<div class="card-body">
+
+					<div class="assets-list">
+						<div class="scroll-wrap">
+							<div class="scroll-inner">
+								<ul>
+									<li><span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><strong>3</strong></span></li>
+									<li><span class="assets-name"><i class="bank"></i><span class="label">은행</span><strong>4</strong></span></li>
+									<li><span class="assets-name"><i class="capital"></i><span class="label">대출</span><strong>1</strong></span></li>
+									<li><span class="assets-name"><i class="securities"></i><span class="label">증권</span><strong>2</strong></span></li>
+									<li><span class="assets-name"><i class="insurance"></i><span class="label">보험</span><strong>1</strong></span></li>
+									<li><span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><strong>1</strong></span></li>
+									<li><span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><strong>1</strong></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+					<button type="button" class="btn btn-light2 btn-sm btn-full">자산 추가</button>
+				</div>
+			</div>
+
+			<div class="card my-assets-list">
+				<div class="card-body">
+					<div class="my-assetsDtl">
+						<ul class="accordion">
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><em>(2건)</em></span>
+									<strong class="won">108,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="bank"></i><span class="label">은행</span><em>(7건)</em></span>
+									<strong class="won">12,000,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="securities"></i><span class="label">증권</span><em>(1건)</em></span>
+									<strong class="won">40,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><em>(3건)</em></span>
+									<strong class="won">150,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="insurance"></i><span class="label">보험</span><em>(1건)</em></span>
+									<strong class="monthly won">64,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="capital"></i><span class="label">캐피탈</span><em>(1건)</em></span>
+									<strong class="won">2,000,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="tit">
+									<span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><em>(1건)</em></span>
+									<strong class="won">3,000,000</strong>
+									<button type="button"><em class="ico ico-fold"></em></button>
+								</div>
+								<div class="dtl">
+									<ul>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+										<li>
+											<span class="img"><img src="./assets/images/bank/img_card01.png" alt="카카오 프렌즈 카드"></span>
+											<span class="info">
+												<span class="name">카카오 프렌즈 카드</span>
+												<strong class="won">108,000</strong>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//약정정보 배너 Swiper
+	thumbSwiper('.recomm','auto',4,10)
+	//특별혜택 배너 Swiper
+	bannerSwiper('.special-banner', 1.1, 15);
+	//제공혜택 배너 Swiper
+	thumbSwiper('.benefit-info','auto',0,10)
+	//자산 accordion
+	accordion();
+</script>
+</body>
+</html>

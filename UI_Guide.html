@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover"/>
+	<title>KT 마이데이터 UI_Guide</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<script type="text/javascript" src="assets/js/ui.js"></script>
+
+    <style>
+        * {user-select: auto;}
+        .page-content {padding:1rem;background-color: #ebebeb;}
+        .card {background-color: #fff;box-shadow: 0.5px 0.866px 3px 0 rgb(51 51 51 / 20%);}
+        .card + .card {margin-top:1rem;}
+        .flex .card {flex:1;margin:1rem 0;}
+        .flex .card + .card {margin-left:1rem;}
+        .card-header {padding:1rem;}
+        .card-body {padding:1rem;}
+        .card-body.flex {flex-wrap: wrap;}
+        .text-muted {width:100%;margin-bottom:1rem;letter-spacing: 0;}
+        .btn-showcase button {margin-right:1rem}
+        .card-body h3 {margin-bottom:.625rem;}
+
+        .checkbox-showcase {margin-bottom:1.5rem;}
+        .checkbox-showcase > div {margin-bottom:.625rem;}
+        .radio-showcase {margin-bottom:1.5rem;}
+        .radio-showcase > div {margin-bottom:.625rem;}
+        .radio-showcase .form-radio {display:block;}
+    </style>
+</head>
+<body>
+<!-- wrap -->
+<div id="wrapper">
+    <div class="page-content">
+        
+        <!-- <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Typography Headings</h2>
+            </div>
+            <div class="card-body flex">
+                <p class="text-muted">--</p>
+                <div class="live-preview">
+                    <div class="flex-wrap">
+                        
+                        <h1>h1 heading</h1>
+                        <h2>h2 heading</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Default Buttons</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-muted"><code>btn </code> 클래스별 사용</p>
+                <div class="live-preview">
+                    <h3>Default Buttons</h3>
+                    <div class="flex btn-showcase mg-b15">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+
+                    <h3>Small Buttons</h3>
+                    <p class="text-muted"><code>btn btn-sm </code>클래스별 사용</p>
+                    <div class="flex btn-showcase mg-b15">
+                        <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                        <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+                        <button type="button" class="btn btn-light btn-sm">Light</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-top">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Checkbox</h2>
+                </div>
+    
+                <div class="card-body">
+                    <div class="live-preview">
+                        <div>   
+                            <h3>Default Checkbox</h3>
+                            <p class="text-muted">
+                                <code>type="checkbox"</code> 체크박스를 설정하는 속성, <code>checked</code> / <code>disabled</code>
+                            </p>
+    
+                            <div class="checkbox-showcase">
+                                <div class="form-check">
+                                    <input type="checkbox" id="formCheck1">
+                                    <label for="formCheck1">Default</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="formCheck2" checked>
+                                    <label for="formCheck2">Checked</label>
+                                </div>
+                            </div>
+    
+                            <h3>Disabled Checkbox</h3>
+                            <div class="checkbox-showcase">
+                                <div class="form-check">
+                                    <input type="checkbox" id="formCheck3" disabled>
+                                    <label for="formCheck3">Disabled</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" id="formCheck4" checked disabled>
+                                    <label for="formCheck4">Disabled Checked</label>
+                                </div>
+                            </div>
+    
+                            <h3>Checkbox Right</h3>
+                            <div class="checkbox-showcase">
+                                <div class="form-check form-right">
+                                    <input type="checkbox" id="formCheck3" disabled>
+                                    <label for="formCheck3">Default Right</label>
+                                </div>
+                                <div class="form-check form-right">
+                                    <input type="checkbox" id="formCheck4" checked disabled>
+                                    <label for="formCheck4">Checked Right</label>
+                                </div>
+                            </div>
+    
+                            <h3>Checkbox Label Hide</h3>
+                            <div class="checkbox-showcase">
+                                <div class="form-check label-hide">
+                                    <input type="checkbox" id="formCheck5">
+                                    <label for="formCheck5">Default Right</label>
+                                </div>
+                                <div class="form-check label-hide">
+                                    <input type="checkbox" id="formCheck6" checked>
+                                    <label for="formCheck6">Checked Right</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Radio Buttons</h2>
+                </div>
+    
+                <div class="card-body">
+                    <div class="live-preview">
+                        <div>   
+                            <h3>Default Radio Buttons</h3>
+                            <p class="text-muted">
+                                <code>type="radio"</code> 라디오버튼 설정하는 속성, <code>checked</code> / <code>disabled</code>
+                            </p>
+    
+                            <div class="radio-showcase">
+                                <div class="form-radio">
+                                    <input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">Option 1</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="radio01" id="formRadio2" checked><label for="formRadio2">Option 2</label>
+                                </div>
+                            </div>
+    
+                            <h3>Disabled Radio Buttons</h3>
+                            <div class="radio-showcase">
+                                <div class="form-radio">
+                                    <input type="radio" name="radio02" id="formRadio3" disabled><label for="formRadio3">Disabled Option 1</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="radio02" id="formRadio4" checked disabled><label for="formRadio4">Disabled Checked Option 2</label>
+                                </div>
+                            </div>
+    
+                            <h3>Radio Buttons Right</h3>
+                            <div class="radio-showcase">
+                                <div class="form-radio form-right">
+                                    <input type="radio" name="radio03" id="formRadio5"><label for="formRadio5">Option Right1</label>
+                                </div>
+                                <div class="form-radio form-right">
+                                    <input type="radio" name="radio03" id="formRadio6" checked><label for="formRadio6">Option Right2</label>
+                                </div>
+                            </div>
+
+                            <h3>Radio Buttons Label Hide</h3>
+                            <div class="radio-showcase">
+                                <div class="form-radio label-hide">
+                                    <input type="radio" name="radio04" id="formRadio7"><label for="formRadio7"></label>
+                                </div>
+                                <div class="form-radio label-hide">
+                                    <input type="radio" name="radio04" id="formRadio8" checked><label for="formRadio8"></label>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

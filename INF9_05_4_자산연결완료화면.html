@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 자산연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>자산연결</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<section class="assets-confirm request-complete">
+			<header>
+				<strong>홍길동님의 자산 연결이 완료되었습니다.</strong>
+				<p>이제부터 KT 마이데이터와 함께<br>촘촘하게 자산을 관리해보아요!</p>
+			</header>
+			<!-- 연결 실패 기관이 있는 경우 -->
+			<div class="assets fail" id="assetsFail">
+				<h2>연결 실패 <em class="fail">(1건)</em></h2>
+				<article class="box">
+					<span class="bank-name"><img src="./assets/images/bank/ico_bank10.png" alt="신한은행">신한은행</span>
+					<span class="fail-msg">해당기관 자산 미보유</span>
+				</article>
+			</div>
+		</section>
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-primary">KT 마이데이터 홈으로</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+
+
+</body>
+</html>
