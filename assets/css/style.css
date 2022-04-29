@@ -716,8 +716,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-check {width:1.4375rem;height:1.4375rem;background-position:-1.875rem -1.25rem;}
 .ico-check2 {width:0.5625rem;height:0.375rem;background-position:-3.4375rem 0;}
 .ico-add {width:1.8125rem;height:1.8125rem;background-position:0 -1.25rem;}
-.ico-refresh {width:1.1875rem;height:1.0625rem;background-position:-3.1875rem -1.25rem;}
-.ico-fold {width:0.5625rem;height:0.375rem;background-position:-3.4375rem -.625rem;}
+.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);}
+.ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
 .ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
 .ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
@@ -726,6 +726,21 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-card-w {width:2.375rem;height:2.375rem;background-position:-10.125rem -17.1875rem;}
 .ico-prev:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent #111 transparent transparent;}
 .ico-next:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent transparent transparent #111;}
+
+.ico-car{background-image:url(../images/common/ico-car.png);}
+.ico-card{background-image:url(../images/common/ico-card.png);}
+.ico-card-clip{background-image:url(../images/common/ico-card-clip.png);}
+.ico-cash{background-image:url(../images/common/ico-cash.png);}
+.ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
+.ico-coin{background-image:url(../images/common/ico-coin.png);}
+.ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;}
+.ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
+.ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
+.ico-kt{background-image:url(../images/common/ico-kt.png);}
+.ico-lego{background-image:url(../images/common/ico-lego.png);}
+.ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
+.ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
+.ico-nike{background-image:url(../images/common/ico-nike.png);}
 
 .won:after {content:" 원";}
 .monthly:before {content:"월 ";}
@@ -746,10 +761,18 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .btn-light:disabled {background-color:#ebebeb;color:#111;cursor: default;}
 .btn-light2 {color:#111;background-color:#f0f0f0;}
 .btn-more {font-size:.75rem;color:#888;text-decoration: none;}
+.btn-dark{background-color: #444;color:#fff;}
+.btn-gray{background-color: #dadada;color:#fff;}
+.btn-light-secondary{background-color: #5ccddf;}
 
 .btn-txt {font-size:.75rem;color:#111;border-bottom:1px solid #111;line-height:1;}
+.btn-txt.c-gray{border-color:#666;}
+.btn-txt.undline-none{border-bottom:0;font-weight: 400;}
+.btn-txt.undline-none .ico{margin-left:.5rem;}
 .btn-border {border:1px solid #bfbfbf;border-radius:30px;}
 .btn-refresh {padding:0.25rem 0.1875rem;}
+
+.btn-round{border-radius: 2rem;}
 
 .btn-switch {overflow: hidden;position: relative;width: 3rem;height: 1.625rem;border-radius: 1rem;}
 .btn-switch input { opacity: 0;width: 0;height: 0;}
