@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 정보수집동의</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>자산연결</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<header class="container-header">
+			<div class="summary-txt">자산연결을 위한 인증 방법을 선택해주세요. <span class="pagination"><strong>2</strong><em>5</em></span></div>
+		</header>
+
+		<section class="terms-wrap">
+			<header>
+				<h2 class="title">한번에 연결하기</h2>
+				<p class="description">통합인증으로 한번에 모든 자산을 연결할 수 있어요.</p> 
+			</header>
+<!-- 
+			<div class="form-row">
+				<dl>
+					<dt>정기적 전송 요구 여부 및 요구 시 주기</dt>
+					<dd>
+						<div class="form-radio-wrap">
+							<div class="form-radio-btn">
+								<input type="radio" name="regular" id="regularYes" checked><label for="regularYes">예 (주 1회)</label>
+							</div>
+							<div class="form-radio-btn">
+								<input type="radio" name="regular" id="regularNo"><label for="regularNo">아니오</label>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>전송요구 종료 시점</dt>
+					<dd>
+						<div class="form-radio-wrap">
+							<div class="form-radio-btn">
+								<input type="radio" name="period" id="oneYear" checked><label for="oneYear">1년</label>
+							</div>
+							<div class="form-radio-btn">
+								<input type="radio" name="period" id="sixMonth"><label for="sixMonth">6개월</label>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				<dl>
+					<dt>개인신용정보 수집·이용</dt>
+					<dd>
+						<div class="form-row-in">
+							<strong>상품 카테고리<em>소비 분석에 사용됩니다</em></strong>
+							<p class="description">구매한 상품의 카테고리 정보가 포함되어 있습니다.</p>
+							<div class="form-check">
+								<input type="checkbox" id="agreeCate" checked><label for="agreeCate">상품 카테고리 전송·수집·이용 동의</label>
+							</div>
+						</div>
+						<div class="form-row-in">
+							<strong>적요/거래메모<em>계좌 상세 내역을 확인하는데 사용됩니다</em></strong>
+							<p class="description">송금인/수취인명과 같은 정보가 포함되어 있습니다.</p>
+							<div class="form-check">
+								<input type="checkbox" id="agreeMemo"><label for="agreeMemo">적요, 거래메모 전송·수집·이용 동의</label>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div> -->
+		</section>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-primary" onclick="modal('.agree-list')">정보수집 동의</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<!-- modal bottom-sheet -->
+<div class="modal bottom-sheet agree-list">
+	<header class="modal-header">
+		<h2 class="title">정보수집 동의</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		
+		<div class="agree-area info-agreement">
+			<div class="form-check check-all">
+				<input type="checkbox" id="agreeAll"><label for="agreeAll">전체동의</label>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] 가입상품 목록 전송요구서</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree02"><label for="agree02">[필수] 개인(신용)정보 수집·이용 동의서 <br>(가입상품 목록 조회)</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree03"><label for="agree03">[필수] 개인(신용)정보 제공 동의서</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree04"><label for="agree04">[필수] 인증서 본인확인 서비스 이용약관</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree05"><label for="agree05">[필수] 개인정보 처리 동의</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree06"><label for="agree06">[필수] 고유식별정보 수집·이용 및 위탁 동의</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary" id="btnNext" disabled>다음</button>
+		</div>
+
+	</section>
+</div>
+
+<!-- bottom-sheet full size -->
+<div class="modal bottom-sheet full">
+	<header class="modal-header">
+		<h2 class="title">정보수집 동의</h2>
+		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		<header class="modal-container-header">
+			<div class="summary-txt {">정보수집에 동의하시면 인증이 진행됩니다. <span class="pagination"><strong>3</strong><em>5</em></span></div>
+			<h2 class="title">상세 정보 전송 요구서 이용동의 </h2>
+		</header>
+		
+		<div class="terms-cont">
+			<div class="inner">
+				약관 1<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				약관 내용2<br><br>
+				약관 내용<br><br>
+				약관 내용3<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				약관 내용4<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				약관 내용5<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				약관 내용6<br><br>
+				약관<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				약관 내용7<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				End 마지막 줄 약관 내용<br><br>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-primary" onclick="scrollDown(this)">아래로 내려보기</button>
+			<!-- <button type="button" class="btn btn-primary" disabled>다음</button> -->
+		</div>
+
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+<!--// modal bottom-sheet -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//이용동의 팝업 테스트
+	modal('.agree-list');
+	
+	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
+	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+</script>
+
+</body>
+</html>

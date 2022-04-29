@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="bg-white">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>페이머니/포인트 상세정보</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white">
+		<!-- mya-detail-info type default -->
+		<section class="mya-detail-info">
+			<dl>
+				<dt class="detail-title">
+					<div class="detail-ico">
+						<i class="bill-ico-img"><img src="./assets/images/bank/ico_bank08.png" alt=""></i>
+					</div>
+					<div class="detail-txt">
+						<span class="txt-tit">네이버페이 포인트</span>
+						<span class="txt-tit-num">네이버파이낸셜</span>
+					</div>
+				</dt>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">서비스명</span>
+					<span class="detail-li-desc">네이버페이 포인트</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">정보 생성일</span>
+					<span class="detail-li-desc">2021.09.11</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">권면 한도</span>
+					<span class="detail-li-desc">200만원</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">자동충전 등록여부</span>
+					<span class="detail-li-desc">미등록</span>
+				</dd>
+			</dl>
+		</section>	
+		<!--//mya-detail-info -->
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//약정정보 배너 Swiper
+	thumbSwiper('.recomm','auto',4,10)
+	//특별혜택 배너 Swiper
+	bannerSwiper('.special-banner', 1.1, 15);
+	//제공혜택 배너 Swiper
+	thumbSwiper('.benefit-info','auto',0,10)
+	//자산 accordion
+	accordion();
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 자산연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>카드 사용내역</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="card-dtl">
+		<div class="container-header">
+
+			<div class="card dtl-info">
+				<div class="card-header">
+					<a href="#" class="btn-more">카드 정보</a>
+				</div>
+				<div class="card-body">
+					<dl class="total">
+						<dt class="flex">
+							<span class="bank-name"><img src="./assets/images/bank/ico_bank11.png" alt=""></span>
+							<span class="info">
+								<strong>KB국민 와이즈 올림 카드</strong>
+								<em>123456******1234</em>
+							</span>
+						</dt>
+						<dd>
+							<span class="won">104,000</span>
+						</dd>
+					</dl>
+					<dl class="total-dtl">
+						<dt>일시불 (20건)</dt><dd><span class="won">1,023,000</span></dd>
+						<dt class="st">할부 (1건)</dt><dd><span class="won">100,000</span></dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="dtl-history">
+			<div class="list-cate">
+				<div class="inner">
+					<!-- [D] 버튼 활성화 시 current 클래스 추가 -->
+					<ul>
+						<li><button type="button" class="current"><em>전체</em></button></li>
+						<li><button type="button"><em>일시불</em></button></li>
+						<li><button type="button"><em>할부</em></button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="history">
+				<ul>
+					<li>
+						<span class="date">3/30(수)</span>
+						<ul class="dtl">
+							<li>
+								<span class="align-l">
+									<strong>미니스톱 방이본점</strong>
+									<em class="time">13:23</em>
+								</span>
+								<span class="align-r">
+									<span class="won">2,200</span>
+									<em class="plan">일시불</em>
+								</span>
+							</li>
+							<li>
+								<span class="align-l">
+									<strong>미니스톱 방이본점</strong>
+									<em class="time">13:23</em>
+								</span>
+								<span class="align-r">
+									<span class="won">2,200</span>
+									<em class="plan">일시불</em>
+								</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span class="date">3/27(일)</span>
+						<!-- [D] 취소 시 li에 cancel 클래스 추가 -->
+						<ul class="dtl">
+							<li class="cancel">
+								<span class="align-l">
+									<strong>미니스톱 방이본점</strong>
+									<em class="time">13:23</em>
+								</span>
+								<span class="align-r">
+									<span class="won">2,200</span>
+									<em class="plan">일시불 취소</em>
+								</span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span class="date">3/26(토)</span>
+						<ul class="dtl">
+							<li>
+								<span class="align-l">
+									<strong>쿠팡(쿠페이)</strong>
+									<em class="time">08:56</em>
+								</span>
+								<span class="align-r">
+									<span class="won">120,200</span>
+									<em class="plan">할부(2/5)</em>
+								</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+
+
+</body>
+</html>
