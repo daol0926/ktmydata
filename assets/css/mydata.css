@@ -268,10 +268,12 @@ margin-top: .7rem;}
     color:#777;
     font-size: .85rem;
     margin-top: .3rem;
+    border-bottom:0;
 }
 .mya-detail-info .detail-txt .txt-tit-num.copy-num{
     border-bottom: 1px solid #777;
-width: fit-content;}
+    width: fit-content;
+}
 .mya-detail-info .detail-li-loop{
     display: flex;
     align-items: center;
