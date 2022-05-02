@@ -20,7 +20,7 @@
 	<!-- //header -->
 	
 	<!-- container -->
-	<main id="container" class="consider-wrap bg-gray">
+	<main id="container" class="consider-wrap bg-gray pb0">
 		<!-- cate-wrap -->
 		<!--
 		<header class="cate-wrap scroll-x">
@@ -48,121 +48,68 @@
 				</div>
 				<button type="button" class="btn-txt c-gray"><i class="ico ico-refresh"></i>구글캘린더 연동중</button>
 			</div>
-			<div class="select-day scroll-x">
-				<ul>
-					<li class="today focused">
+			<!-- Swiper -->
+			<div class="swiper dateSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide focused">
 						<span>Mon</span>
-						<span class="num">04</span>
-					</li>
-					<li>
+						<span class="num">01</span>
+					</div>
+					<div class="swiper-slide">
 						<span>Tue</span>
-						<span class="num">05</span>
-					</li>
-					<li>
+						<span class="num">02</span>
+					</div>
+					<div class="swiper-slide">
 						<span>Wed</span>
-						<span class="num">06</span>
-					</li>
-					<li>
+						<span class="num">03</span>
+					</div>
+					<div class="swiper-slide">
 						<span>Thu</span>
+						<span class="num">04</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
+						<span class="num">05</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
+						<span class="num">06</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">07</span>
-					</li>
-					<li>
-						<span>Fri</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">08</span>
-					</li>
-					<li>
-						<span>Sat</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">09</span>
-					</li>
-					<li class="selec-day">
-						<span class="holiday">Sun</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">10</span>
-					</li>
-					<li>
+					</div>
+					<div class="swiper-slide">
 						<span>Mon</span>
 						<span class="num">11</span>
-					</li>
-					<li>
-						<span>Tue</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">12</span>
-					</li>
-					<li>
-						<span>Wed</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">13</span>
-					</li>
-					<li>
-						<span>Thu</span>
+					</div>
+					<div class="swiper-slide">
+						<span>Mon</span>
 						<span class="num">14</span>
-					</li>
-					<li>
-						<span>Fri</span>
-						<span class="num">15</span>
-					</li>
-					<li>
-						<span>Sat</span>
-						<span class="num">16</span>
-					</li>
-					<li>
-						<span class="holiday">Sun</span>
-						<span class="num">17</span>
-					</li>
-					<li>
-						<span>Mon</span>
-						<span class="num">18</span>
-					</li>
-					<li>
-						<span>Tue</span>
-						<span class="num">19</span>
-					</li>
-					<li>
-						<span>Wed</span>
-						<span class="num">20</span>
-					</li>
-					<li>
-						<span>Thu</span>
-						<span class="num">21</span>
-					</li>
-					<li>
-						<span>Fri</span>
-						<span class="num">22</span>
-					</li>
-					<li>
-						<span>Sat</span>
-						<span class="num">23</span>
-					</li>
-					<li>
-						<span class="holiday">Sun</span>
-						<span class="num">24</span>
-					</li>
-					<li>
-						<span>Mon</span>
-						<span class="num">25</span>
-					</li>
-					<li>
-						<span>Tue</span>
-						<span class="num">26</span>
-					</li>
-					<li>
-						<span>Wed</span>
-						<span class="num">27</span>
-					</li>
-					<li>
-						<span>Thu</span>
-						<span class="num">28</span>
-					</li>
-					<li>
-						<span>Fri</span>
-						<span class="num">29</span>
-					</li>
-					<li>
-						<span>Sat</span>
-						<span class="num">30</span>
-					</li>
-					<li>
-						<span class="holiday">Sun</span>
-						<span class="num">31</span>
-					</li>
-				</ul>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+      			<div class="swiper-button-prev"></div>
 			</div>
 			<div class="btn-area col-12">
 				<button type="button" class="btn btn-primary white"><i class="ico ico-google"></i>구글 캘린더 연동</button>
@@ -513,13 +460,19 @@
 					</li>
 				</ul>
 			</div>
+			<!--//history -->
+		</div>
 
+		<div class="btn-area">
+			<img src="assets/images/banner/bn1.png" />
 		</div>
 
 		<!-- btn-area fixed-bottom -->
+		<!--
 		<div class="btn-area fixed-bottom bn-img">
 			<img src="assets/images/banner/bn1.png" />
 		</div>
+		-->
 		<!--// btn-area fixed-bottom -->
 	</main>
 	<!-- //container -->
@@ -532,6 +485,9 @@
 <script type="text/javascript">
 	//자산 accordion
 	accordion();
+
+	//날짜선택
+	datePic();
 </script>
 </body>
 </html>

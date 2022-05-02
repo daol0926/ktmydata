@@ -741,6 +741,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
 .ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
 .ico-nike{background-image:url(../images/common/ico-nike.png);}
+.ico-save-arrow{background-image:url(../images/common/ico-btn-arrow.png);background-color: #949494;border-radius: 50%;width: 20px;height:20px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
 
 .won:after {content:" 원";}
 .monthly:before {content:"월 ";}

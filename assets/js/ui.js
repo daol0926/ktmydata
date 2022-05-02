@@ -420,3 +420,28 @@ function tabMenu() {
 			$('.tab-wrp .inner-tab li:eq(' + num + ')').addClass("focused"); 
 			$('.tab-wrp .inner-tab-cont:eq(' + num + ')').addClass("focused"); });
 }
+
+function datePic(){
+	var swiper = new Swiper(".dateSwiper", {
+		slidesPerView: 7,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		spaceBetween: 10,
+		breakpoints: {
+		  640: {
+			slidesPerView: 7,
+			spaceBetween: 20,
+		  },
+		  768: {
+			slidesPerView: 7,
+			spaceBetween: 40,
+		  },
+		  1024: {
+			slidesPerView: 7,
+			spaceBetween: 50,
+		  },
+		},
+	  });
+}
