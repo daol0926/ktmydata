@@ -442,3 +442,54 @@ margin-top: .7rem;}
     border-bottom: 0;
     padding-bottom: 0;
 }
+
+
+/* 약관 */
+.agree-c-blue .title{
+    line-height: 1.35;
+}
+.agree-c-blue .terms-cont{
+    height: calc(100vh - 15rem);
+}
+.agree-c-blue .terms-cont .inner{
+    padding-bottom:5rem;
+}
+.agree-c-blue .terms-cont .inner-title{
+    margin:1rem 0 .5rem;
+}
+.agree-c-blue .terms-cont .inner-txt{
+    line-height: 1.35;
+    text-align: justify;
+}
+.agree-c-blue .terms-cont .inner-txt ol,
+.agree-c-blue .terms-cont .inner-txt dl{
+    margin-bottom:.5rem;
+}
+.agree-c-blue .terms-cont .inner-txt dt {
+    color:#111;
+    font-weight: 500;
+}
+.agree-c-blue .terms-cont .inner-txt li,
+.agree-c-blue .terms-cont .inner-txt dd{
+    margin-top:.5rem;
+    color:#444;
+    margin-left:.5rem;
+}
+.agree-c-blue .highlights{
+    background-color: #5ccbdf;
+    color:#fff;
+    font-weight: 400;
+    padding:0 .5rem;
+}
+.agree-c-blue table{
+    margin-bottom: .5rem;
+}
+.agree-c-blue table th,
+.agree-c-blue table td{
+    border:1px solid #ccc;
+    padding:.5rem;
+}
+.agree-c-blue table th{
+    background-color: #ddd;
+    color:#333;
+}
