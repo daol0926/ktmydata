@@ -470,3 +470,9 @@ function monthPic(){
 		},
 	  });
 }
+
+function goTrash() {
+	$('.trash-area').click(function(){
+		$(this).parents().find('.trash-list').hide('2000');
+	});
+}
