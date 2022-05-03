@@ -432,14 +432,39 @@ function datePic(){
 		breakpoints: {
 		  640: {
 			slidesPerView: 7,
-			spaceBetween: 20,
+			spaceBetween: 10,
 		  },
 		  768: {
 			slidesPerView: 7,
-			spaceBetween: 40,
+			spaceBetween: 20,
 		  },
 		  1024: {
 			slidesPerView: 7,
+			spaceBetween: 30,
+		  },
+		},
+	  });
+}
+
+function monthPic(){
+	var swiper = new Swiper(".monthSwiper", {
+		slidesPerView: 1,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		spaceBetween: 10,
+		breakpoints: {
+		  640: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		  },
+		  768: {
+			slidesPerView: 1,
+			spaceBetween: 40,
+		  },
+		  1024: {
+			slidesPerView: 1,
 			spaceBetween: 50,
 		  },
 		},

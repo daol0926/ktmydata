@@ -41,10 +41,49 @@
 		<!-- date-select -->
 		<section class="date-select pb1_5">
 			<div class="row justify-content-between">
-				<div class="row">
-					<i class="ico-month-prev"></i>
-					<h3 class="select-month">2022. 04</h3>
-					<i class="ico-month-next"></i>
+				<div class="row align-items-center month-wrp">
+					<div class="swiper monthSwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 01</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 02</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 03</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 04</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 05</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 06</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 07</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 08</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 09</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 10</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 11</h3>
+							</div>
+							<div class="swiper-slide">
+								<h3 class="select-month">2022. 12</h3>
+							</div>
+						</div>
+						<div class="swiper-button-next ico-month-prev"></div>
+      					<div class="swiper-button-prev ico-month-next"></div>
+					</div>
 				</div>
 				<button type="button" class="btn-txt c-gray"><i class="ico ico-refresh"></i>구글캘린더 연동중</button>
 			</div>
@@ -275,16 +314,18 @@
 											</div>
 										</li>
 										<li>
-											<div class="row justify-content-between align-items-center coin-list">
-												<a class="list-box">
-													<i class="ico ico-musinsa"></i>
-												</a>
-												<a class="list-box">
-													<i class="ico ico-hyundai"></i>
-												</a>
-												<a class="list-box">
-													<i class="ico ico-cj-onstyle"></i>
-												</a>
+											<div class="coin-list">
+												<div class="row justify-content-between align-items-center">
+													<a class="list-box">
+														<i class="ico ico-musinsa"></i>
+													</a>
+													<a class="list-box">
+														<i class="ico ico-hyundai"></i>
+													</a>
+													<a class="list-box">
+														<i class="ico ico-cj-onstyle"></i>
+													</a>
+												</div>
 												<button type="button" class="btn btn-dark btn-xs btn-round">코인적립<i class="ico-save-arrow"></i></button>
 											</div>
 										</li>
@@ -439,16 +480,18 @@
 											</div>
 										</li>
 										<li>
-											<div class="row justify-content-between align-items-center coin-list">
-												<a class="list-box">
-													<i class="ico ico-musinsa"></i>
-												</a>
-												<a class="list-box">
-													<i class="ico ico-hyundai"></i>
-												</a>
-												<a class="list-box">
-													<i class="ico ico-cj-onstyle"></i>
-												</a>
+											<div class="coin-list">
+												<div class="row justify-content-between align-items-center">
+													<a class="list-box">
+														<i class="ico ico-musinsa"></i>
+													</a>
+													<a class="list-box">
+														<i class="ico ico-hyundai"></i>
+													</a>
+													<a class="list-box">
+														<i class="ico ico-cj-onstyle"></i>
+													</a>
+												</div>
 												<button type="button" class="btn btn-dark btn-xs btn-round">코인적립<i class="ico-save-arrow"></i></button>
 											</div>
 										</li>
@@ -485,9 +528,10 @@
 <script type="text/javascript">
 	//자산 accordion
 	accordion();
-
 	//날짜선택
 	datePic();
+	//월선택
+	monthPic();
 </script>
 </body>
 </html>

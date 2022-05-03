@@ -70,9 +70,11 @@ main .ico{background-repeat: no-repeat;background-position: center;background-si
 }
 .dateSwiper{
     margin:1.5rem 0;
-    width: 100%;
+    width: calc(100% + 3rem);
     height: 100%;
     position: relative;
+    overflow: hidden;
+    padding:0 1.5rem;
 }
 .dateSwiper .swiper-slide{
     display: -webkit-box;
@@ -106,7 +108,7 @@ main .ico{background-repeat: no-repeat;background-position: center;background-si
     background-color: #5ccbdf;
     color:#fff;
     border-radius: 1.5rem;
-}
+padding: 1rem 1.34rem;}
 .dateSwiper .swiper-slide.focused .num{
     color:#fff;
 }
@@ -118,11 +120,11 @@ main .ico{background-repeat: no-repeat;background-position: center;background-si
     background-size: contain;
     width: 6px;
     height: 10px;
-left: -10px;top: 75%;}
+/* left: -10px; */top: 75%;}
 .dateSwiper .swiper-button-next,
 .dateSwiper .swiper-container-rtl .swiper-button-next{
     transform: rotate(180deg);
-right: -10px;left: unset;}
+/* right: -10px; */left: unset;}
 
 
 .date-select .btn.btn-primary.white{
@@ -317,14 +319,35 @@ line-height: 1.35;}
     height: fit-content;
 }
 
+/* coin list */
+.coin-list{
+    position:relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+    padding-right: 6rem;
+    
+}
+.coin-list>div{
+    flex-flow: row;
+    overflow-x: auto;
+}
 .coin-list .list-box{
     border:1px solid #ccc;
     border-radius: 5px;
     width: 4rem;
-    height: 4rem;
+    height: 3.2rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-right: .5rem;
+}
+.coin-list .btn{
+    position:absolute;
+    right:0;
 }
 
 /* weekly-report */
@@ -367,4 +390,34 @@ line-height: 1.35;}
     margin-top:3px;
     margin-left: 5px;
     margin-bottom: -5px;
+}
+
+
+/* month Swiper */
+.month-wrp{
+    width: 7.35rem;
+    overflow: hidden;
+    position: relative;
+    padding-left: 1rem;
+}
+.month-wrp .swiper-container-rtl .swiper-button-prev,
+.month-wrp .swiper-button-prev, 
+.month-wrp .swiper-button-next, 
+.month-wrp .swiper-container-rtl .swiper-button-next{
+    background-image:url(../images/common/ico-btn-arrow2.png);
+    background-size: contain;
+    width: .5rem;
+    height: .5rem;
+    background-position: center;
+    top: 1.9rem;
+}
+.month-wrp .swiper-container-rtl .swiper-button-prev,
+.month-wrp .swiper-button-prev{
+    left: 0;
+    transform: rotate(0);
+}
+.month-wrp .swiper-button-next, 
+.month-wrp .swiper-container-rtl .swiper-button-next{
+    transform: rotate(180deg);
+    right:0;
 }

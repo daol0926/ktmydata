@@ -726,6 +726,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-card-w {width:2.375rem;height:2.375rem;background-position:-10.125rem -17.1875rem;}
 .ico-prev:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent #111 transparent transparent;}
 .ico-next:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent transparent transparent #111;}
+.ico-month-prev,
+.ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
+.ico-month-next{transform: rotate(180deg);}
 
 .ico-car{background-image:url(../images/common/ico-car.png);}
 .ico-card{background-image:url(../images/common/ico-card.png);}
