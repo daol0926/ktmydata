@@ -684,6 +684,10 @@ line-height: 1.2;}
 }
 .alarm-wrp .ico-trash{
     display:none;
+    cursor: pointer;
+}
+.alarm-wrp .trash-list .ico-trash{
+    display: block !important;
 }
 
 /* 알람 없음 */
