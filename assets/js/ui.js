@@ -472,7 +472,14 @@ function monthPic(){
 }
 
 function goTrash() {
-	$('.trash-area').click(function(){
-		$(this).parents().find('.trash-list').hide('2000');
-	});
+	$('.trash-area').swipe({ 
+		swipe:function(event, direction) {
+			if( direction == "left" ){ 
+				$(this).parents().find('.trash-list').hide('2000');
+			}else if( direction == "right" ){ 
+				//오른쪽 액션 필요시 작성 필요
+			threshold:0
+			} 
+		}, 
+	}); 
 }

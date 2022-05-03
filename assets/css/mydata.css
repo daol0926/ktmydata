@@ -614,7 +614,8 @@ line-height: 1.2;}
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.35;
-word-break: keep-all;}
+    word-break: keep-all;
+}
 .alarm-wrp .dtl-title>b{
     color:#111;
 }
@@ -659,6 +660,9 @@ word-break: keep-all;}
     border-left: 0;
     padding-left: 0;
 }
+.alarm-wrp .dtl .reverse .ico-area + .title-area{
+    flex:0 0 93%;
+}
 
 /* ico bg colorset */
 .alarm-wrp .ico-card,
@@ -698,4 +702,9 @@ word-break: keep-all;}
 }
 .alarm-wrp.alarm-none .none-msg{
     margin-top:1rem;
+}
+
+/* lnb-full */
+.lnb-full .lnb>ul{
+    justify-content: space-around;
 }
