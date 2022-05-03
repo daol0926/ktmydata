@@ -472,10 +472,20 @@ function monthPic(){
 }
 
 function goTrash() {
-	$('.trash-area').swipe({ 
+	$('.trash-area').click(function(){
+		$(this).parents().find('.trash-list').hide('2000');
+	});
+}
+
+function alarmTrash() {
+	$('.alarm-wrp .dtl>li').swipe({ 
 		swipe:function(event, direction) {
 			if( direction == "left" ){ 
-				$(this).parents().find('.trash-list').hide('2000');
+				$(this).addClass('trash-list');
+				$('.trash-list>div').addClass('reverse');
+				$('.trash-list .ico-area').addClass('trash-area');
+				$('.trash-area').find('i').remove();
+				$('.trash-area').find('.ico-trash').show();
 			}else if( direction == "right" ){ 
 				//오른쪽 액션 필요시 작성 필요
 			threshold:0

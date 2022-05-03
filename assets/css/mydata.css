@@ -682,6 +682,9 @@ line-height: 1.2;}
 .alarm-wrp .ico-lego{
     background-color: #fff6d2;
 }
+.alarm-wrp .ico-trash{
+    display:none;
+}
 
 /* 알람 없음 */
 .alarm-wrp.alarm-none{
