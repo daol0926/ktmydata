@@ -584,7 +584,10 @@ word-break: keep-all;}
 .alarm-wrp .dtl .ico-area.trash-area{
     background-color: #f2f3f7;
     margin:-1rem 0;
-display: flex;align-items: center;justify-content: center;}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .alarm-wrp .dtl .title-area{
     display: flex;
     flex-flow: column;
@@ -620,4 +623,25 @@ display: flex;align-items: center;justify-content: center;}
 }
 .alarm-wrp .ico-lego{
     background-color: #fff6d2;
+}
+
+/* 알람 없음 */
+.alarm-wrp.alarm-none{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: calc(100vh - 10rem);
+    color:#666;
+}
+.alarm-wrp.alarm-none .img-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee; /* 영역 구분 위한 배경, 단위테스트 때 삭제 */
+    width: 100%;
+    height: auto;
+}
+.alarm-wrp.alarm-none .none-msg{
+    margin-top:1rem;
 }
