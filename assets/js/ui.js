@@ -505,6 +505,6 @@ $( function() {
 	});
 	$('.btn-cal-close').click(function(){
 		$(this).hide();
-		$('.ui-datepicker').hide('2000');
+		$('.ui-datepicker, .picker-bg').hide('2000');
 	});
   } );
