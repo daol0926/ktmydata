@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>KT 마이데이터 연결 상세정보</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
 </head>
 <body>
 <!-- wrapper -->
@@ -22,7 +23,7 @@
 	<main id="container" class="connect-detail">
 		<section class="assets-confirm">
 			<div class="assets">
-				<article class="box">
+				<article class="box box-c-white">
 					<h2><span class="bank-name"><img src="./assets/images/bank/ico_bank01.png" alt="KT">KT</span></h2>
 					<div class="info">
 						<dl>
@@ -36,7 +37,7 @@
 						</dl>
 					</div>
 					
-					<div class="info">
+					<div class="info info-c-gray">
 						<h3>연결한 정보</h3>
 						<p>통신사 기본 정보, 통신사 목록</p>
 						<ul>
@@ -57,18 +58,92 @@
 		</section>
 
 		<div class="btn-area fixed-bottom">
-			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-primary">정보변경</button>
-			<button type="button" class="btn btn-light">연결해제</button>
+			<button type="button" class="btn btn-secondary">정보변경</button>
+			<button type="button" class="btn btn-light2" onclick="modal('.bottom-sheet')">연결해제</button>
 		</div>
 	</main>
 	<!-- //container -->
 </div>
 <!-- //wrapper -->
 
+<!-- bottom-sheet full size -->
+<div class="modal bottom-sheet full">
+	<header class="modal-header">
+		<h2 class="title">자산연결 해제</h2>
+		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		<header class="modal-container-header text-center">
+			<h2 class="title">(기관명)<br />자산연결을 해제하시겠습니까?</h2>
+			<p class="title-desc">연결 해제 시, 고객님의 자산정보를<br />더 이상 가져오지 않으며,<br />기존에 수집된 정보는 즉시 삭제됩니다.</p>
+		</header>
+		
+		<div class="terms-cont">
+			<section class="assets-confirm detail inner-wrp">
+				<!-- 통신사 -->
+				<div class="assets">
+					<article class="box">
+						<span class="bank-name"><img src="./assets/images/bank/ico_bank01.png" alt="KT">기관명(통신)</span>
+						<ul>
+							<li>
+								<div class="flex">
+									<div>휴대폰</div>
+									<div class="flex-desc">01090***829</div>
+								</div>
+							</li>
+							<li>
+								<div class="flex">
+									<div>인터넷</div>
+									<div class="flex-desc">14407468979</div>
+								</div>
+							</li>
+							<li class="ass-info">
+								<div class="flex">
+									기본정보, 납입 내역
+								</div>
+							</li>
+						</ul>
+					</article>
+				</div>
+				<div class="modal-notification">
+					연결해제 시 금융사에서 개인(신용)정보를 더 이상 가져오지 않으며, 이미 수집된 개인(신용)정보는 모두 삭제 됩니다.
+				</div>
+				<!--//modal-notification -->
+			</section>
+			<!--//inner-wrp -->
+		</div>
+
+		<div class="btn-area fixed-bottom btn-default">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-primary">정보변경</button>
+			<button type="button" class="btn btn-light2" onclick="modal('.alert')">연결해제</button>
+		</div>
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+<!--// modal bottom-sheet -->
+
+<!-- alert -->
+<div class="modal alert alert-large">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<span class="modal-title">자산연결 해제 완료</span>
+			<p>
+				수집 정보 삭제 및<br />자산연결 해제가 완료되었습니다.
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// alert -->
+
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
-
 </body>
 </html>

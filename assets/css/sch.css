@@ -68,6 +68,20 @@ main .ico{background-repeat: no-repeat;background-position: center;background-si
 .select-month{
     font-size: 1.3rem;
 }
+.date-select .btn-cal-swipe,
+.date-select .btn-cal-close{
+    background-color: #ededed;
+    border-radius: .5rem;
+    width: 2.5rem;
+    height: .3rem;
+    margin-top:-1rem;
+    margin-bottom:1rem;
+}
+.date-select .btn-cal-close{
+    position:absolute;
+    
+    z-index: 11;
+top: 34rem;}
 .dateSwiper{
     margin:1.5rem 0;
     width: calc(100% + 3rem);
@@ -95,6 +109,10 @@ main .ico{background-repeat: no-repeat;background-position: center;background-si
     font-size:0.7rem;
     padding:.8rem .5rem;
     margin-right: .8rem;
+}
+.dateSwiper .swiper-slide .holiday,
+.ui-datepicker-calendar span[title="Sunday"]{
+    color:#e08597;
 }
 .dateSwiper .swiper-slide .num{
     font-weight: bold;
@@ -420,4 +438,86 @@ line-height: 1.35;}
 .month-wrp .swiper-container-rtl .swiper-button-next{
     transform: rotate(180deg);
     right:0;
+}
+
+/* data picker */
+.picker-on .ui-datepicker{
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 2rem;
+    padding: 0 1.25rem 1.25rem;
+border-radius: 0 0 1rem 1rem;}
+.picker-bg{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: 9;
+    background-color: #000;
+    opacity: .3;
+}
+.ui-datepicker-title{
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.05rem 1.25rem 2.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.ui-datepicker-year::after{
+    content: '.';
+}
+.ui-datepicker-prev,
+.ui-datepicker-next{
+    display: block;
+    background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;
+    width: .5rem;
+    height: .5rem;
+    font-size: 0;
+    position: absolute;
+    top: 1.45rem;
+    left: 1.5rem;
+}
+.ui-datepicker-next{
+    left: 8.3rem;
+    transform: rotate(180deg);
+}
+.ui-datepicker-calendar th>span{
+    color:#c2c2c2;
+    font-size: .7rem;
+}
+.ui-datepicker-calendar tbody td{
+    text-align: center;
+    padding: 0 .3rem;
+}
+.ui-datepicker-calendar tbody td a{
+    display: block;
+    padding: 1.62rem 0;
+    text-decoration: none;
+    color:#333;
+    font-weight:600;
+    position: relative;
+}
+.ui-datepicker-calendar .ui-state-active{
+    background-color:#dff3fa;
+    border-radius: 1.5rem;
+}
+/* 특정일 표시 - 개발 적용 후 클래스 수정 필요 */
+.ui-datepicker-calendar tbody tr:nth-child(2) td:nth-child(4)::after{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #5ccbdf;
+    position:absolute;
+    left:calc(50% - .25rem);
+    margin-top: -1rem;
 }

@@ -490,3 +490,21 @@ function alarmTrash(){
 		}, 
 	}); 
 }
+
+/* data picker */
+$( function() {
+	$( "#datepicker" ).datepicker({
+		firstDay: 1,
+		monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ]
+		//dayNamesShort: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+	});
+	$('.picker-bg, .ui-datepicker, .btn-cal-close').hide();
+	$('.hasDatepicker').click(function(){
+		$(this).addClass('picker-on');
+		$('.ui-datepicker, .picker-bg, .btn-cal-close').show();
+	});
+	$('.btn-cal-close').click(function(){
+		$(this).hide();
+		$('.ui-datepicker').hide('2000');
+	});
+  } );

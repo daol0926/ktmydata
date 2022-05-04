@@ -147,3 +147,15 @@
 .c-gray{
     color:#666;
 }
+
+
+/* text align */
+.text-left{
+    text-align:left !important;
+}
+.text-right{
+    text-align:right !important;
+}
+.text-center{
+    text-align:center !important;
+}

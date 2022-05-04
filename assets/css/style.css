@@ -687,6 +687,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .full .modal-header .btn-close {top: -0.5rem;} */
 .full .modal-header .title {text-align: center;}
 .full .modal-container-header .title {margin-top:1rem;}
+.full .modal-container-header .title-desc{margin-top:1rem;color:#666;line-height:1.3;}
 
 .modal.alert {width:100%;max-width:18.375rem;top:50%;left:50%;transform: translate(-50%,-100vh);padding:0 0 1.375rem;border-radius: 0.75rem;}
 .modal.alert.open {transform: translate(-50%,-50%);}
@@ -696,6 +697,11 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .modal.alert .btn-area {display:flex;justify-content: center;}
 .modal.alert .btn-area .btn + .btn {margin-left:0.5rem;}
 .modal.alert .btn-close {top:1.375rem;right:.625rem;}
+.modal.alert-large{max-width: 25rem;}
+.modal.alert-large .modal-msg{font-size: 1.15rem;color:#222;line-height: 1.3;}
+.modal.alert-large .modal-msg .modal-title{font-size: 1.4rem;font-weight: 600;margin-bottom:2rem;display: block;}
+.modal.alert-large .btn-area{padding:.5rem 1.5rem;}
+.modal.alert-large .btn-area .btn{width: 100%;}
 .modal.confirm {width:100%;max-width:18.375rem;top:50%;left:50%;transform: translate(-50%,-100vh);padding:0 0 1.375rem;border-radius: 0.75rem;}
 .modal.confirm.open {transform: translate(-50%,-50%);}
 .modal.confirm .modal-header {padding:1.75rem 1.25rem;}
@@ -736,7 +742,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-cash{background-image:url(../images/common/ico-cash.png);}
 .ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
 .ico-coin{background-image:url(../images/common/ico-coin.png);}
-.ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;}
+.ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
 .ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
 .ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
 .ico-kt{background-image:url(../images/common/ico-kt.png);}
@@ -746,6 +752,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-nike{background-image:url(../images/common/ico-nike.png);}
 .ico-save-arrow{background-image:url(../images/common/ico-btn-arrow.png);background-color: #949494;border-radius: 50%;width: 20px;height:20px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
 .ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
+.ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
 
 .won:after {content:" 원";}
 .monthly:before {content:"월 ";}
