@@ -135,6 +135,7 @@ function perGraph(obj,myPer,total){
 	var perLeft = myPer/total*100;
 	var myWon = myPer.toLocaleString();
 	var msg = $(obj+" .msg"), consum = $(obj+" .consum"), gauge = $(obj+" .gauge"), won = $(obj+" .won");
+	/*
 	if(percent < 50) {
 		msg.html("실속있는 소비하고 <br>할인 혜택도 받으셔야죠!");
 	} else if(percent >= 50 && percent < 75) {
@@ -152,8 +153,12 @@ function perGraph(obj,myPer,total){
 		consum.addClass("over");
 		msg.html("통신비 아끼기에 <br>성공하셨어요!");
 	}
+	*/
+	if(percent > 80) {consum.addClass("stop");}
+	if(percent >= 90) {consum.addClass("rotate");}
+	if(percent >= 100) {consum.addClass("full");}
 	gauge.css("width",percent+"%");
-	consum.css("left",perLeft+"%");
+	consum.css("left",perLeft.toFixed(0)+"%");
 	won.text(myWon);
 }
 
@@ -163,8 +168,8 @@ function coinGraph(obj,myPer,total){
 	var myWon = myPer.toLocaleString();
 	var msg = $(obj+" .msg"), consum = $(obj+" .consum"), gauge = $(obj+" .gauge"), won = $(obj+" .won");
 	if(percent > 100) percent = 100;
-	gauge.css("height",percent+"%");
-	won.text(myWon);
+	gauge.css("width",percent+"%");
+	consum.css("left",perLeft.toFixed(0)+"%");
 }
 
 //결합하고 또 추가 할인 차트
@@ -173,6 +178,12 @@ function chart(obj){
 		data2 = Number(data1)+Number($(obj).attr("data-tv")),
 		data3 = Number(data2);
 	$(obj).css("background","conic-gradient(#f7a23d 0% "+data1+"%, #e84d29 "+data1+"% "+data2+"%, #f9e669 "+data3+"% 100%)");
+}
+function chart2(obj){
+	var datas = $(obj).data();
+	var data1 = Number($(obj).attr("data-data1")),
+		data2 = Number(data1)+Number($(obj).attr("data-data2"));
+	$(obj).css("background","conic-gradient(#b0cce1 0% "+data1+"%, #d1e4f4 "+data1+"% 100%)");
 }
 
 //accordion
