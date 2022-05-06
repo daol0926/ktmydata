@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>KT 마이데이터 시작하기</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
 </head>
-<body>
+<body class="bg-gray">
 <!-- wrapper -->
-<div id="wrapper" class="my-datas">
+<div id="wrapper">
 	<!-- header -->
 	<header id="header" class="bg-white">
 		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
@@ -20,150 +19,139 @@
 	<!-- //header -->
 	
 	<!-- container -->
-	<main id="container" class="bg-white">
-		<div class="container-header bg-white lnb-full">
-			<nav class="lnb">
-				<ul>
-					<li class="current"><a href="#">전체</a></li>
-					<li><a href="#">금융/통신</a></li>
-					<li><a href="#">코인백</a></li>
-					<li><a href="#">자산관리</a></li>
-					<li><a href="#">FUN</a></li>
-				</ul>
-			</nav>
-		</div> <!--//container header -->
+	<main id="container" class="coinback-wrp">
 		<section>
-			<div class="alarm-wrp">
-				<ul class="dtl">
-					<li class="alarm-on">
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-card"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">KB국민 와이즈 올림 카드 결제일이에요</span>
-									<span class="dtl-title-desc won">결제금액: N</span>
-									<span class="dtl-title-desc c-gray">6시간 전</span>
-								</div>
-							</div>
+			<div class="card made-coin">
+				<p>브랜드를 선택해주세요!</p>
+				<div class="card-header">
+					<div class="col-6 save-all">
+						<span class="won">총 0</span>
+					</div>
+					<div class="col-6 save-weekly">
+						<span class="won">이번주 적립 0</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="graph-wrap">
+						<div class="gauge-area">
+							<span class="gauge-bg">
+								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
+								<span class="consum" style="left: 80%;">16,000원</span>
+								<span class="gauge" style="width: 80%"></span>
+							</span>
 						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-kt"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">KT 통신비 납부일이에요</span>
-									<span class="dtl-title-desc">전월대비 <em class="won">N</em> 가량 증가했어요</span>
-									<span class="dtl-title-desc c-gray">6시간 전</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-coin"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">코인백 신규 브랜드 확인해 보실래요?</span>
-									<span class="dtl-title-desc">브랜드명, 브랜드명, 브랜드명 두줄까지 노출 브랜드명, 브랜드명, 브랜드명 두줄까지 노출 브랜드명, 브랜드명, 브랜드명 두줄까지 노출</span>
-									<span class="dtl-title-desc c-gray">3시간 전</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-cash"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">혹시 급여일 아니신가요?!<br />아래 브랜드에서 결제하면 코인이 와르르</span>
-									<span class="dtl-title-desc">브랜드명, 브랜드명, 브랜드명 한줄까지 노출</span>
-									<span class="dtl-title-desc c-gray">6시간 전</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-card"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">카드 포인트 잔액을 알려드려요</span>
-									<div class="row dtl-desc-list">
-										<span class="dtl-title-desc">카드사명 NP</span>
-										<span class="dtl-title-desc">카드사명 NP</span>
-										<span class="dtl-title-desc">카드사명 NP</span>
-									</div>
-									<span class="dtl-title-desc c-gray">6시간 전</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-lego"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">호그와트™앞뜰: 시리우스 구조 출시예정일이에요</span>
-									<span class="dtl-title-desc">출시예정일: 4/29(금)</span>
-									<span class="dtl-title-desc c-gray">3/10(목) 10:00</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-					<li>
-						<!-- 타이틀 -->
-						<div class="row col-12 alram-list">
-							<div class="ico-area">
-								<i class="ico ico-nike"></i>
-								<span class="ico-trash"></span>
-							</div>
-							<div class="title-area">
-								<div class="row column">
-									<span class="dtl-title">우먼스 에어 조던 11 로우 출시예정일이에요</span>
-									<div class="row dtl-desc-list">
-										<span class="dtl-title-desc">출시예정일: 4/28(목)</span>
-										<span class="dtl-title-desc">한국</span>
-									</div>
-									<span class="dtl-title-desc c-gray">3/10(목) 10:00</span>
-								</div>
-							</div>
-						</div>
-						<!--// 타이틀 -->
-					</li>
-				</ul>
-			</div> <!--//alarm-wrp -->
+						<ul>
+							<li>3,000원</li>
+							<li>5,000원</li>
+							<li>10,000원</li>
+							<li>20,000원</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!--//card made-coin -->
 		</section>	
+		<!-- tab -->
+		<section class="tab-wrp">
+			<!-- tab menu -->
+			<ul class="tab-menu tab-line">
+				<li class="focused">
+					<a>브랜드 적립</a>
+				</li>
+				<li>
+					<a>이벤트 적립</a>
+				</li>
+			</ul>
+			<!--//tab menu -->
+
+			<!-- tab cont -->
+			<div class="tab-cont focused">
+				<div class="brand-save-wrp">
+					<div class="brand-info">
+						<p>
+							<strong>선택한 브랜드에서 결제하고<br />통신비 할인 받으세요!</strong>
+							<span>마이데이터에 카드를 연결하면<br />코인이 적립됩니다.</span>
+						</p>
+						<div class="row brand-info-list">
+							<div class="col-3">
+								<i class="ico ico-bc"></i>
+								<span>BC카드</span>
+							</div>
+							<div class="col-3">
+								<i class="ico ico-sh"></i>
+								<span>신한카드</span>
+							</div>
+							<div class="col-3">
+								<i class="ico ico-ss"></i>
+								<span>삼성카드</span>
+							</div>
+						</div>
+					</div> <!--//brand-info -->
+
+					<div class="brand-select">
+						<h2 class="title">브랜드 선택하기</h2>
+						<p>선택 후 마이데이터에 연결된 카드를 사용하시면, 결제한만큼 적립해드립니다!</p>
+						<div class="row select-wrp">
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk1">
+								<label for="chk1">
+									<i class="ico ico-cj-onstyle"></i>
+									<span class="select-name">CJ온스타일</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk2">
+								<label for="chk2">
+									<i class="ico ico-musinsa"></i>
+									<span class="select-name">무신사</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk3">
+								<label for="chk3">
+									<i class="ico ico-ssgmall"></i>
+									<span class="select-name">신세계몰</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk4">
+								<label for="chk4">
+									<i class="ico ico-thehyundai"></i>
+									<span class="select-name">더현대 서울</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+						</div>
+					</div> <!--//brand-select -->
+				</div> <!--//brand save wrp -->
+				<div class="coinback-guide-btn accordion">
+					<div class="tit">
+						<button>
+							<span>코인백 서비스 이용방법 안내</span>
+							<i class="ico ico-fold"></i>
+						</button>
+					</div>
+					<ul class="dtl list-dot">
+						<li>코인백 서비스 관련 안내문구</li>
+						<li>브랜드 선택 관련 안내</li>
+						<li>카드 사용 시 코인백 적립 방법 안내</li>
+						<li>기타 유의사항</li>
+					</ul>
+				</div>	
+				<div class="btn-area">
+					<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+					<button type="button" class="btn btn-secondary btn-square">선택완료 (1/2)</button>
+					<!-- <button type="button" class="btn btn-secondary" disabled>다음</button> -->
+				</div>
+			</div> <!--//tab cont -->
+			<div class="tab-cont">
+				event save area
+			</div>
+			<!--//tab cont -->
+		</section>
+		<!--//tab -->
 	</main>
 	<!-- //container -->
 </div>

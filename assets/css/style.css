@@ -381,6 +381,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .made-coin .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
+.made-coin .save-all{font-size: 1.35rem;font-weight: 600;}
+.made-coin .save-weekly{font-size: 0.9rem;border-left:1px solid #ccc;padding-left:1rem;}
 
 .mission-list li + li {margin-left:.5rem;}
 .mission-list li .mission {width:6.1875rem;height:8rem;padding:.625rem;font-size:.75rem;color:#666;font-weight:500;border:1px solid #ebebeb;border-radius: 0.25rem;text-align: center;}
@@ -799,12 +801,21 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-month-prev,
 .ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
 .ico-month-next{transform: rotate(180deg);}
+.fold .ico-fold,
+.ico-fold.fold{
+    transform: rotate(-180deg);
+}
 
 .ico-car{background-image:url(../images/common/ico-car.png);}
 .ico-card{background-image:url(../images/common/ico-card.png);}
 .ico-card-clip{background-image:url(../images/common/ico-card-clip.png);}
 .ico-cash{background-image:url(../images/common/ico-cash.png);}
 .ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
+.ico-thehyundai{background-image:url(../images/common/ico-thehyundai.png);}
+.ico-ssgmall{background-image:url(../images/common/ico-ssgmall.png);}
+.ico-ss{background-image:url(../images/common/ico-ss.png);}
+.ico-sh{background-image:url(../images/common/ico-sh.png);}
+.ico-bc{background-image:url(../images/common/ico-bc.png);}
 .ico-coin{background-image:url(../images/common/ico-coin.png);}
 .ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
 .ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
@@ -830,6 +841,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .btn-sm {width:7.6875rem;height:2.5rem;line-height:2.5rem;font-size:0.8125rem;border-radius: 0.5rem;}
 .btn-xs {display:inline-block;width:auto;height:1.75rem;line-height:1.75rem;padding:0 0.5625rem;font-size:0.6875rem;border-radius: 0.25rem;}
 .btn-full {width:100%;}
+.btn-square{border-radius: 0;}
 
 .btn-primary {background-color:#5a7fe2;}
 .btn-primary:disabled {background-color:#ebebeb;color:#888;cursor: default;}
@@ -1633,9 +1645,6 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     right:0;
     top: 1.95rem;
 }
-.accordion .tit .ico-fold.fold{
-    transform: rotate(-180deg);
-}
 .accordion .dtl{
     display: none;
 }
@@ -1943,7 +1952,22 @@ margin-top: .7rem;}
     border-bottom: 0;
     padding-bottom: 0;
 }
-
+.tab-wrp .tab-menu.tab-line{
+    border: 0;
+}
+.tab-wrp .tab-menu.tab-line>li{
+    border:0;
+    border-bottom:3px solid #ccc;
+    border-radius: 0;
+}
+.tab-wrp .tab-menu.tab-line>li.focused{
+    background-color: transparent;
+    border-color:#01b1c8;
+    color:#01b1c8;
+}
+.tab-wrp .tab-menu.tab-line>li.focused a{
+    color:#01b1c8;
+}
 
 
 /* .agree-area colorset */
@@ -2338,6 +2362,147 @@ line-height: 1.2;}
 .other-account-wrp .account-box.account-correct .btn-txt{
     color:#888;
     border-color:#888;
+}
+#header + .coinback-wrp{
+    padding-bottom: 0;
+}
+.coinback-wrp .card.made-coin{
+    margin:1.25rem;
+    padding-top:1.25rem;
+}
+
+.brand-save-wrp{}
+.brand-info{
+    background-color: #fff;
+    padding:1.25rem 1.25rem 0;
+    margin-bottom: 4.25rem;
+margin-top: -4.25rem;padding-top: 4.5rem;}
+.brand-info p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    line-height: 1.3;
+    color:#777;
+}
+.brand-info p>strong{
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+    color:#111;
+}
+.brand-info .brand-info-list{
+    padding:1.25rem 3rem;
+    justify-content: space-between;
+}
+.brand-info .brand-info-list>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding:1rem 0;
+    width: 32%;
+    max-width: 32%;
+    background-color: #fff;
+    border:1px solid #01b1c8;
+    border-radius: .25rem;
+margin-bottom: -4rem;font-size: .85rem;}
+.brand-info .brand-info-list .ico[class*=ico-]{
+    width: 100%;
+    height: 3rem;
+    background-size: 45% auto;
+    background-position:center;
+}
+.brand-select{
+    padding:1.25rem;
+}
+.brand-select .title{
+    margin-bottom: 1rem;
+}
+.brand-select>p{
+    word-break: keep-all;
+    line-height: 1.3;
+}
+.brand-select .select-wrp{
+    justify-content: space-between;
+    margin-top:1.5rem;
+}
+.brand-select .select-list{
+    background-color: #fff;
+    width: 49%;
+    margin-bottom: .5rem;
+}
+.brand-select .select-list [class*=ico][class*=ico-]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:6rem;
+    background-position: center;
+    background-size: 80% auto;
+}
+.brand-select .select-list .select-off{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top:.3rem;
+}
+.brand-select .select-list.form-check input[type="checkbox"] + label{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: column;
+    padding:.5rem 1rem;
+    width: 100%;
+    border:1px solid #fff;
+font-size: inherit;}
+.brand-select .select-list.form-check input[type="checkbox"] + label::before,
+.brand-select .select-list.form-check input[type="checkbox"] + label::after{
+    position: absolute;
+    top: 1rem;
+    left: unset;
+    right: .35rem;
+    opacity: 0;
+}
+.brand-select .select-list.form-check input[type="checkbox"] + label::before{
+    background-color: #01b1c8;
+}
+.brand-select .select-list.form-check input[type="checkbox"] + label::after{
+    right: .7rem;
+}
+.brand-select .select-list.form-check input[type="checkbox"]:checked + label{
+    border:1px solid #01b1c8;
+}
+.brand-select .select-list.form-check input[type="checkbox"]:checked + label::before,
+.brand-select .select-list.form-check input[type="checkbox"]:checked + label::after{
+    opacity: 1;
+}
+.coinback-guide-btn{
+    margin:0 1.25rem;
+    background-color: #e5e8ef;
+    position: relative;
+    padding:0 1.25rem 1.25rem;
+    border-radius: .5rem;
+}
+.coinback-guide-btn .tit button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.25rem 0 0;
+    font-size: .85rem;
+    width: 100%;
+}
+.coinback-guide-btn .list-dot{
+    padding-top: 1.25rem;
+}
+.coinback-guide-btn .list-dot li{
+    color:#777;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+/* list dot */
+.list-dot li:before{
+    content: '·';
 }
 
 @media only screen and (max-width:480px){
