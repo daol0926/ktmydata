@@ -1,10 +1,12 @@
 /* margins */
+.ma0{margin:0rem !important;}
 .ma1{margin:1rem !important;}
 .ma1_5{margin:1.5rem !important;}
 .ma2{margin:2rem !important;}
 .ma2_5{margin:2.5rem !important;}
 .ma3{margin:3rem !important;}
 .ma3_5{margin:3.5rem !important;}
+.mt0{margin-top:0rem !important;}
 .mt1{margin-top:1rem !important;}
 .mt1_5{margin-top:1.5rem !important;}
 .mt2{margin-top:2rem !important;}
@@ -139,7 +141,10 @@
 
 /* background */
 .bg-white{
-    background-color: #fff;
+    background-color: #fff !important;
+}
+.bg-gray{
+    background-color: #f2f3f7 !important;
 }
 
 

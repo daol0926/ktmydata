@@ -4,11 +4,6 @@
     display: flex;
 }
 
-/* common - bg */
-.bg-white{
-    background-color: #fff !important;
-}
-
 /* common - ico */
 [class*=bill-ico-]{
     display: block;
@@ -837,4 +832,52 @@ line-height: 1.2;}
 .other-account-wrp .account-box.account-correct .btn-txt{
     color:#888;
     border-color:#888;
+}
+
+/* data-info-wrp */
+.data-info-wrp{
+    padding:1.25rem 0;
+}
+.data-info-wrp .date-select{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: .85rem;
+    margin-bottom: 1.25rem;
+}
+.data-info-wrp .calender-wrp{
+    align-items: center;
+}
+.data-info-wrp .calender-wrp .calender-date-mid{
+    margin:0 .5rem;
+}
+.data-info-wrp .data-info-box{
+    background-color: #fff;
+    border-radius: .5rem;
+    padding:1.25rem;
+    margin-bottom: 1.25rem;
+}
+.data-info-wrp .data-info-box .info-list-title{
+    margin-top:1.5rem;
+}
+.data-info-wrp .data-info-box .info-list-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#777;
+    margin:1.15rem 0;
+}
+.data-info-wrp .data-info-box .info-list-desc.list-dot{
+    font-size: .9rem;
+    margin:.7rem 0;
+    justify-content: flex-start;
+}
+.data-info-wrp .data-info-box .info-list-desc.list-dot::before{
+    content: '·';    
+}
+.data-info-wrp .data-info-box .info-list-desc .btn-txt{
+    font-size: .9rem;
+    color:#888;
 }
