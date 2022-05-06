@@ -305,7 +305,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .performance .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .performance .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
 .msg-area {display:inline-block;position: relative;height: 3.5625rem;margin-bottom:3.625rem;padding:0 6.25rem 0 0;}
-.msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width:6.25rem;height:6.25rem;background: url(../images/home/img_character3.png) no-repeat right bottom / auto 100%;}
+.msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width: 7.25rem;height:6.25rem;background: url(../images/home/img_character6.png) no-repeat right bottom / auto 100%;}
 .msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;width:11.75rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: center;}
 .msg:after {content:"";display:block;position:absolute;bottom:0;right:0.125rem;width:1rem;height:0.6875rem;background: url(../images/common/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;}
 
@@ -414,7 +414,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .budget .chart-area strong {display:block;width:100%;margin-top:0.25rem;font-size:0.875rem;color:#111;}
 .budget .donut-chart {padding-bottom:.5rem;}
 .budget .chart {display: flex;justify-content: center;align-items: center;flex-direction: column;width:6.375rem;height:6.375rem;font-size:.625rem;color:#444;font-weight:400;text-align: center;}
-.budget .chart::before {width:5.5rem;height:5.5rem;}
+.budget .chart::before {width:5.5rem;height: 5.5rem;}
 .budget .chart span {display:block;position: relative;}
 .budget .chart .chart-txt {margin-bottom: 0.1rem;line-height: 1.1;}
 .budget .chart .chart-cate {margin-top:0.25rem;font-size:0.875rem;font-weight:500;color:#111;}
@@ -787,7 +787,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-check {width:1.4375rem;height:1.4375rem;background-position:-1.875rem -1.25rem;}
 .ico-check2 {width:0.5625rem;height:0.375rem;background-position:-3.4375rem 0;}
 .ico-add {width:1.8125rem;height:1.8125rem;background-position:0 -1.25rem;}
-.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);}
+.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
 .ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
 .ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
@@ -826,7 +826,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
 .ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
 .ico-nike{background-image:url(../images/common/ico-nike.png);}
-.ico-save-arrow{background-image:url(../images/common/ico-btn-arrow.png);background-color: #949494;border-radius: 50%;width: 20px;height:20px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
+.ico-save-arrow{background-image:url(../images/common/ico-btn-arrow.png);background-color: #949494;border-radius: 50%;width: 18px;height: 18px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
 .ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
 .ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
 .ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
@@ -1120,7 +1120,7 @@ transform: scale(.8);}
     border-radius: 50%;
     background-color: #fff;
     background-size: 60% auto;
-}
+background-position: center;}
 .day-schedule .history .ico.ico-card-clip{
     background-size: 100% auto;
 border-radius: 0;}
@@ -2599,6 +2599,57 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
 /* list dot */
 .list-dot li:before{
     content: '·';
+}
+
+/* 통합자산 - 신용점수 */
+.credit-list.card .card-body{
+    padding-bottom: 0;
+}
+.credit-list.card .card-body .tit{
+    padding-right: 0;
+}
+.credit-list.card .card-body [class*=ico-txt-]{
+    background: none;
+    color:#fff;
+    background-color:#ccc;
+    border-radius: .25rem;
+    width: fit-content;
+    height: auto;
+    padding:.1rem .5rem;
+}
+.credit-list.card .card-body [class*=ico-txt-]::before{
+    display: none;
+}
+.credit-list.card .card-body .ico-txt-red{
+    background-color:#ff0e0e;
+}
+.credit-list.card .card-body .label{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.credit-list.card .card-body .label::after{
+    content: '점';
+    font-weight: normal;
+    margin-left: .25rem;
+}
+.credit-list.card .credit-before{
+    padding:1.25rem 0;
+    text-align: center;
+    font-size: .9rem;
+}
+.credit-list.card .grade{
+    text-align: right;
+    color:#888;
+}
+.credit-list.card .credit-before .assets-name{
+    display: block;
+    padding:1rem;
+    color:#888;
+    margin-bottom: 1rem;
+}
+.credit-list.card .credit-before .btn-light{
+    border-radius: .25rem;
+    color:#222;
 }
 
 @media only screen and (max-width:480px){
