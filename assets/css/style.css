@@ -816,6 +816,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-ss{background-image:url(../images/common/ico-ss.png);}
 .ico-sh{background-image:url(../images/common/ico-sh.png);}
 .ico-bc{background-image:url(../images/common/ico-bc.png);}
+.ico-hd-card{background-image:url(../images/common/ico-hd-card.png);}
 .ico-coin{background-image:url(../images/common/ico-coin.png);}
 .ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
 .ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
@@ -1541,6 +1542,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .bill-ico-kb{
     background-image:url(../images/common/bill-ico-kb.png);
+    background-size: contain !important;
 }
 .bill-ico-nh{
     background-image:url(../images/common/bill-ico-nh.png);
@@ -2392,8 +2394,8 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
     color:#111;
 }
 .brand-info .brand-info-list{
-    padding:1.25rem 3rem;
-    justify-content: space-between;
+    padding: 1.25rem 1rem;
+    justify-content: center;
 }
 .brand-info .brand-info-list>div{
     display: flex;
@@ -2401,16 +2403,18 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
     justify-content: center;
     flex-flow: column;
     padding:1rem 0;
-    width: 32%;
-    max-width: 32%;
+    width: 29%;
+    max-width: 29%;
     background-color: #fff;
     border:1px solid #01b1c8;
     border-radius: .25rem;
-margin-bottom: -4rem;font-size: .85rem;}
+    margin:0 .25rem -4rem;
+    font-size: .85rem;
+}
 .brand-info .brand-info-list .ico[class*=ico-]{
     width: 100%;
     height: 3rem;
-    background-size: 45% auto;
+    background-size: 2rem auto;
     background-position:center;
 }
 .brand-select{
@@ -2430,6 +2434,28 @@ margin-bottom: -4rem;font-size: .85rem;}
 .brand-select .select-list{
     background-color: #fff;
     width: 49%;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+}
+.brand-select .select-list.add-brand{
+    background-color: #cccfd8;
+}
+.brand-select .select-list.add-brand,
+.brand-select .select-list.add-brand label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#fff;
+    flex-flow: column;
+}
+.brand-select .select-list.add-brand .ico.ico-plus{
+    background-image:url(../images/common/ico-plus.png);
+    background-size: 60% auto;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
     margin-bottom: .5rem;
 }
 .brand-select .select-list [class*=ico][class*=ico-]{
@@ -2451,10 +2477,12 @@ margin-bottom: -4rem;font-size: .85rem;}
     align-items: flex-start;
     justify-content: space-between;
     flex-flow: column;
-    padding:.5rem 1rem;
+    padding:1rem;
     width: 100%;
     border:1px solid #fff;
-font-size: inherit;}
+    font-size: inherit;
+    border-radius: .5rem;
+}
 .brand-select .select-list.form-check input[type="checkbox"] + label::before,
 .brand-select .select-list.form-check input[type="checkbox"] + label::after{
     position: absolute;
@@ -2498,6 +2526,74 @@ font-size: inherit;}
     color:#777;
     font-size: .8rem;
     margin-bottom: .5rem;
+}
+.coin-d-day .btn-xs{
+    margin-right: .5rem;
+    height:1.3rem;
+    line-height: 1.3rem;
+    padding:0;
+    padding-left:.8rem;
+    padding-right:.8rem;
+}
+.coin-d-day .c-gray{
+    font-size:.85rem;
+}
+.payment-list-wrp{
+    padding:1.25rem;
+}
+.payment-list-wrp .title{
+    margin-bottom: 1.5rem;
+}
+.payment-list-wrp .payment-list .payment-list-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9rem;
+    margin-bottom:1.25rem;
+}
+.payment-list-wrp .payment-list .payment-list-box .list-date{
+    margin-top:.5rem;
+    color:#888;
+    font-size: .8rem;
+}
+.payment-list-wrp .payment-list .payment-list-box .ico{
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-position: center;
+    background-color: #fff;
+    margin-right: .5rem;
+    background-size: 90% auto;
+}
+.payment-list-wrp .payment-list .payment-list-box .ico[class*=bill-ico-]{
+    position: unset;
+}
+.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::before{
+    content: '[';
+}
+.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::after{
+    content: ']';
+}
+.payment-list-wrp .payment-list .payment-list-box .btn-area{
+    margin-top: 0;
+    font-size: .8rem;
+    color:#777;
+}
+.payment-list-wrp .payment-list-empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:5rem;
+    color:#777;
+    font-size: .8rem;
+}
+.event-list-wrp{
+    margin-top:-4.25rem;
+    padding:4.25rem 1.25rem 1.25rem;
+}
+.event-list-wrp>ul>li{
+    margin-bottom:1rem;
 }
 
 /* list dot */
