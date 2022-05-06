@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
+</head>
+<body class="bg-gray">
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="bg-white">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>이력정보</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<section>
+			<div class="data-info-wrp data-bill-wrp">
+				<div class="data-header">
+					<h2 class="title">우리카드</h2>
+				</div>
+				<div class="data-info-box">
+					<dl class="data-info-list">
+						<dt class="info-list-title">정보 제공 요청일</dt>
+						<dd class="info-list-desc first">
+							<span>제공 요청일</span>
+							<span>2022.04.19</span>
+						</dd>
+						<dd class="info-list-desc">
+							<span>만료일</span>
+							<span>2022.04.19</span>
+						</dd>
+					</dl>
+					<dl class="data-info-list">
+						<dt class="info-list-title">정보 제공 요청내용</dt>
+						<dd class="info-list-desc first">
+							<span>정기전송 여부</span>
+							<span>정기전송 미신청</span>
+						</dd>
+						<dd class="info-list-desc">
+							<span>정보 요청 기간</span>
+							<span>183일</span>
+						</dd>
+						<dd class="info-list-desc">
+							<span>정보 제공 요청 목적</span>
+							<span>본인신용정보통합조회, 데이터 분석 서비스이용</span>
+						</dd>
+						<dd class="info-list-desc">
+							<span>개인신용정보 보유기간</span>
+							<span>서비스 이용 종료시 또는 삭제 요청 시 까지</span>
+						</dd>
+						<dd class="info-list-desc">
+							<span>정보항목(상품/계획)</span>
+							<span>1개</span>
+						</dd>
+					</dl>
+				</div> <!--//data-info-box -->
+			</div> <!--//data-info-wrp -->
+		</section>	
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//자산 accordion
+	accordion();
+	//알람 리스트
+	alarmTrash();
+</script>
+</body>
+</html>
