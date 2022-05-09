@@ -2621,6 +2621,14 @@ text-align: right;}
 .event-list-wrp>ul>li{
     margin-bottom:1rem;
 }
+.event-list-wrp>ul>li>a{
+    display: block;
+    width: 100%;
+}
+.event-list-wrp>ul>li>a>img{
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
 
 /* list dot */
 .list-dot li:before{
@@ -2722,6 +2730,10 @@ text-align: right;}
 .sort-box .ico-fold{
     margin-left:.5rem;
 }
+
+/* 목표예산설정 */
+.purpose-set-wrp input[type=text]{display: none;}
+.purpose-set-wrp.reset-purpose input[type=text]{display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;}
 
 @media only screen and (max-width:480px){
 	.select-list {justify-content: space-between;}

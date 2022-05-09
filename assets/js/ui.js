@@ -502,10 +502,19 @@ function alarmTrash(){
 	}); 
 }
 
+/* 브랜드 추가 */
 function addBrand(){
 	$('.add-brand').click(function(){
 		$(this).hide();
 		$(this).parents().find('.brand-select').removeClass('select-complete').addClass('select-add');
+	});
+}
+
+/* 목표예산 설정 */
+function purposeSet(){
+	$('.btn-purpose').click(function(){
+		$('.purpose-set-wrp').find('.before-won').hide();
+		$(this).parents().find('.purpose-set-wrp').addClass('reset-purpose');
 	});
 }
 

@@ -175,7 +175,10 @@
 					<div class="tit-area">
 						<h3 class="header-title">한달 예산이 이만큼 남았어요</h3>
 						<div class="row">
-							<strong class="won">1,300,000</strong>
+							<strong class="purpose-set-wrp won">
+								<span class="before-won">1,300,000</span>
+								<input type="text" class="form-control" />
+							</strong>
 							<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표예산 재설정</button>
 						</div>
 					</div>
@@ -327,7 +330,7 @@
 										</li>
 										<li>
 											<div class="coin-list">
-												<div class="row justify-content-between align-items-center">
+												<div class="row align-items-center">
 													<a class="list-box">
 														<i class="ico ico-musinsa"></i>
 													</a>
@@ -493,7 +496,7 @@
 										</li>
 										<li>
 											<div class="coin-list">
-												<div class="row justify-content-between align-items-center">
+												<div class="row align-items-center">
 													<a class="list-box">
 														<i class="ico ico-musinsa"></i>
 													</a>
@@ -545,6 +548,8 @@
 	datePic();
 	//월선택
 	monthPic();
+	//목표예산 설정
+	purposeSet();
 </script>
 </body>
 </html>
