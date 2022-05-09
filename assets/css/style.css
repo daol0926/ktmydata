@@ -16,6 +16,7 @@ main {z-index: 1;height: 100%;}
 #header h1 {font-size:0.9375rem;font-weight:500;}
 #header .btn-back {display:flex;align-items: center;justify-content: center;position:absolute;top:50%;left:0.75rem;padding:0.75rem;transform: translateY(-50%);}
 #header .btn-close {position:absolute;right:0.75rem;padding:0.75rem;}
+#header .ico-list{position:absolute;right:0.75rem;}
 .logo {display:block;width:4.5rem;height:1.3125rem;background:url(../images/common/logo.png) no-repeat 0 0/auto 100%;text-indent: -9999em;}
 .container-header {padding:1.25rem 1.5rem 1.375rem;}
 .container-header .title {font-size:1.25rem;font-weight:700;}
@@ -492,7 +493,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .my-home #header ,.my-datas #header {justify-content: flex-start;background-color:#f2f3f7;}
 .my-home #container,.my-datas #container {position:relative;overflow-x: inherit;padding-bottom:2rem;background-color: #f2f3f7;}
-.my-home .container-header,.my-datas .container-header {position: sticky;top:3rem;left:0; z-index: 10;padding:0 1.5rem 0.5625rem ;background-color: #f2f3f7;}
+.my-home .container-header,
+.my-datas .container-header,
+.my-coinback .container-header,
+.my-sch .container-header {position: sticky;top:3rem;left:0; z-index: 10;padding:0 1.5rem 0.5625rem ;background-color: #f2f3f7;}
 .btn-notification {position: absolute;top:50%;right:1.5rem;transform: translateY(-50%);}
 .btn-notification.dot:after {content:"";display:block;position: absolute;top:-0.25rem;right:0;width:0.5625rem;height:0.5625rem;background-color:#53cee6;border:0.09375rem solid #fff;;border-radius: 100%;}
 
@@ -793,7 +797,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-add {width:1.8125rem;height:1.8125rem;background-position:0 -1.25rem;}
 .ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
 .ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
-.ico-list {width:0.5625rem;height:0.375rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
+.ico-list {width: 1rem;height: 0.75rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
 .ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
 .ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
@@ -917,7 +921,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     width: 100%;
     margin-left: 0;
     background: #fff;
-}
+padding-top: 1.5rem !important;}
 .select-month{
     font-size: 1.3rem;
 }
@@ -1304,7 +1308,7 @@ line-height: 1.35;}
     z-index: 10;
     width: 100%;
     left: 0;
-    top: 2rem;
+    top: 7rem;
     padding: 0 1.25rem 1.25rem;
 border-radius: 0 0 1rem 1rem;}
 .picker-bg{
@@ -2374,7 +2378,7 @@ line-height: 1.2;}
     padding-bottom: 0;
 }
 .coinback-wrp .card.made-coin{
-    margin:1.25rem;
+    margin: 0 0 1.25rem;
     padding-top:1.25rem;
 }
 
@@ -2664,6 +2668,19 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
     height: 100%;
     top:0;
     left:0;
+}
+.my-coinback #header,
+.my-sch #header{
+    background-color: #f2f3f7;
+}
+.my-coinback .tab-wrp{
+    margin: 0;
+    padding: 0;
+}
+
+.my-sch #header,
+.my-sch .container-header{
+    z-index: 9999;
 }
 
 @media only screen and (max-width:480px){
