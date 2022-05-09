@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
+</head>
+<body class="bg-white">
+<!-- wrapper -->
+<div id="wrapper" class="my-coinback">
+	<!-- header -->
+	<header id="header" class="bg-white">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>코인백 내역보기</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<section>
+			<div class="payment-list-wrp coinback-list-wrp">
+				<div class="sort-box">
+					<button onclick="modal('.coinback-dtl')">
+						전체 <i class="ico ico-fold"></i>
+					</button>
+				</div>
+				<ul class="payment-list">
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-secondary btn-round">적립</i>
+							<div>
+								<div class="list-title">
+									<em class="list-cate">브랜드명</em>
+									<span><em class="won">17,000</em> 결제</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won plus">170</span>
+						</div>
+					</li>
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-red btn-round">사용</i>
+							<div>
+								<div class="list-title">
+									<span>통신비 자동 할인</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won minus">3,000</span>
+						</div>
+					</li>
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-secondary btn-round">적립</i>
+							<div>
+								<div class="list-title">
+									<em class="list-cate">브랜드명</em>
+									<span><em class="won">17,000</em> 결제</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won plus">170</span>
+						</div>
+					</li>
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-secondary btn-round">적립</i>
+							<div>
+								<div class="list-title">
+									<em class="list-cate">브랜드명</em>
+									<span><em class="won">17,000</em> 결제</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won plus">170</span>
+						</div>
+					</li>
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-secondary btn-round">적립</i>
+							<div>
+								<div class="list-title">
+									<em class="list-cate">브랜드명</em>
+									<span><em class="won">17,000</em> 결제</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won plus">170</span>
+						</div>
+					</li>
+					<li class="payment-list-box">
+						<div class="col-8 row">
+							<i class="btn btn-xs btn-secondary btn-round">적립</i>
+							<div>
+								<div class="list-title">
+									<em class="list-cate">브랜드명</em>
+									<span><em class="won">17,000</em> 결제</span>
+								</div>
+								<div class="list-date">
+									2022-03-10 12:00
+								</div>
+							</div>
+						</div>
+						<div class="col-4 btn-area">
+							<span class="won plus">170</span>
+						</div>
+					</li>
+				</ul>
+			</div> <!--//payment-list-wrp -->
+		</section>	
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<!-- bottom-sheet -->
+<div class="modal bottom-sheet coinback-dtl">
+	<div class="modal-header">
+		<h2 class="title">전체</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</div>
+	<section class="modal-container">
+		<div class="form-radio-wrap type-chk">
+			<div class="form-radio-btn">
+				<input type="radio" name="regular" id="regularYes" checked><label for="regularYes">적립 내역만 보기</label>
+			</div>
+			<div class="form-radio-btn">
+				<input type="radio" name="regular" id="regularNo"><label for="regularNo">사용 내역만 보기</label>
+			</div>
+		</div>
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>
