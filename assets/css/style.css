@@ -239,6 +239,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .service-wrap header strong {font-weight:700;}
 .service-wrap .cont p {line-height: 1.125rem;}
 .service-wrap .cont b {font-weight:500;}
+.service-wrap.height-fit{height:auto;}
 
 .service-wrap.cancel-complete {flex-direction: row; align-items: flex-start}
 .service-wrap.cancel-complete header {padding-top:8.25rem;}
@@ -534,11 +535,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .card.bill-info .card-body {padding: 0 0 0.875rem;}
 .bill-list .list-title {margin-bottom:0.25rem;}
+.dataON:before,.internet:before,.tv:before{background: url(../images/common/icon_spr.png) no-repeat;content:'';display:inline-block;}
 .dataON:before {background-position:-4.3125rem -6.1875rem;}
-.internet:before {background-position:-7.0625rem -6.1875rem;}
-.tv:before {background-position:-9.8125rem -6.1875rem;}
-.data-5g:before {background-position:-4.375rem -8.9375rem;}
-.internet-tv:before {background-position:-7.0625rem -8.9375rem;}
+.internet:before {content:'';background-position:-7.0625rem -6.1875rem;}
+.tv:before {content:'';background-position:-9.8125rem -6.1875rem;}
+.data-5g:before {content:'';background-position:-4.375rem -8.9375rem;}
+.internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
 
 .card .list li em {display:block;color:#888;}
 .card .list li dl {display:flex;flex-flow: row wrap;align-items: center;justify-content: space-between;}
@@ -1613,7 +1615,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .card.bill-info .bill-list li .bill-price{
     font-size: 1rem;
 }
-.card.bill-info .bill-list > ul > li::before{
+.card.bill-info.before-none .bill-list > ul > li::before{
     content: unset;
 }
 .card.bill-info .bill-list > ul > li{

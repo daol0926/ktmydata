@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 자산연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>자산연결</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<header class="container-header">
+			<div class="summary-txt">자산정보 연결을 요청했습니다. <span class="pagination"><strong>1</strong><em>5</em></span></div>
+		</header>
+
+		<section class="service-wrap cancel height-fit">
+			<article class="cont">
+				<header>
+					<strong>아래 기관에 홍길동님의<br />
+						자산정보를 연결하지 못했습니다.
+					</strong>						
+				</header>
+			</article>	
+		</section>
+
+		<section class="assets-confirm">
+			<!-- 연결 실패 기관이 있는 경우 -->
+			<div class="assets fail" id="assetsFail">
+				<h2><strong>연결 실패 <em class="fail">(3건)</em></strong></h2>
+				<article class="box">
+					<span class="bank-name"><img src="./assets/images/bank/ico_bank10.png" alt="신한은행">신한은행</span>
+					<span class="fail-msg">해당기관 자산 미보유</span>
+				</article>
+				<article class="box">
+					<span class="bank-name"><img src="./assets/images/bank/ico_bank10.png" alt="신한은행">신한은행</span>
+					<span class="fail-msg">해당기관 자산 미보유</span>
+				</article>
+				<article class="box">
+					<span class="bank-name"><img src="./assets/images/bank/ico_bank10.png" alt="신한은행">신한은행</span>
+					<span class="fail-msg">해당기관 자산 미보유</span>
+				</article>
+			</div>
+		</section>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary">다음</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+
+</body>
+</html>
