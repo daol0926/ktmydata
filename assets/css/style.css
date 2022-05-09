@@ -793,6 +793,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-add {width:1.8125rem;height:1.8125rem;background-position:0 -1.25rem;}
 .ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
 .ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
+.ico-list {width:0.5625rem;height:0.375rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
 .ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
 .ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
@@ -2654,6 +2655,15 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
 .credit-list.card .credit-before .btn-light{
     border-radius: .25rem;
     color:#222;
+}
+
+/* 코인백 리스트 추가 20220509 */
+.coinback-list-wrp .dtl{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
 }
 
 @media only screen and (max-width:480px){
