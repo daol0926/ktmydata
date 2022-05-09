@@ -2513,6 +2513,15 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label::after{
     opacity: 1;
 }
+.brand-select.select-add .select-list,
+.brand-select.select-complete .select-list.add-brand,
+.brand-select.select-complete .select-list.focused{
+    display: flex;
+}
+.brand-select.select-complete .select-list{
+    display: none;
+}
+
 .coinback-guide-btn{
     margin:0 1.25rem;
     background-color: #e5e8ef;

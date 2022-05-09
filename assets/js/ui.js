@@ -502,6 +502,13 @@ function alarmTrash(){
 	}); 
 }
 
+function addBrand(){
+	$('.add-brand').click(function(){
+		$(this).hide();
+		$(this).parents().find('.brand-select').removeClass('select-complete').addClass('select-add');
+	});
+}
+
 /* data picker */
 $( function() {
 	$( "#datepicker, #datepicker2" ).datepicker({

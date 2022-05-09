@@ -93,12 +93,12 @@
 						</div>
 					</div> <!--//brand-info -->
 
-					<div class="brand-select">
+					<div class="brand-select select-complete">
 						<h2 class="title">이번주 선택 브랜드</h2>
 						<div class="row select-wrp">
-							<div class="col-6 select-list form-check">
+							<div class="col-6 select-list form-check focused">
 								<input type="checkbox" id="chk1">
-								<label>
+								<label for="chk1">
 									<i class="ico ico-cj-onstyle"></i>
 									<span class="select-name">CJ온스타일</span>
 									<span class="select-off">50%</span>
@@ -108,6 +108,30 @@
 								<label>
 									<i class="ico ico-plus"></i>
 									<span>브랜드 추가</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk2">
+								<label for="chk2">
+									<i class="ico ico-musinsa"></i>
+									<span class="select-name">무신사</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk3">
+								<label for="chk3">
+									<i class="ico ico-ssgmall"></i>
+									<span class="select-name">신세계몰</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk4">
+								<label for="chk4">
+									<i class="ico ico-thehyundai"></i>
+									<span class="select-name">더현대 서울</span>
+									<span class="select-off">50%</span>
 								</label>
 							</div>
 						</div>
@@ -244,6 +268,8 @@
 	accordion();
 	// tab menu
 	tabMenu();	
+	//브랜드 추가
+	addBrand();
 </script>
 </body>
 </html>
