@@ -272,7 +272,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-header strong {display:block;padding-top:0.125rem;margin-bottom:0.125rem;font-size:1.125rem;font-weight:700;}
 .pattern .card-header .character {display:block;position:absolute;top:1rem;right:-0.3125rem;width:6.25rem;height:6.25rem;background-repeat:no-repeat;background-size:100% auto;}
 .pattern .card-header p {max-width:11.625rem;line-height:1.125rem;word-break: keep-all;}
-.pattern .card-body .flex {align-items: flex-start;justify-content: space-between;}
+.pattern .card-body .flex {align-items: flex-start;justify-content: space-around;}
 .pattern .plan {width:8.25rem;}
 .pattern dt {margin-bottom:.625rem;font-size:0.9375rem;}
 .pattern dd {font-size:0.71875rem;color:#898989;font-weight:400;line-height:0.875rem;word-break: keep-all;}
