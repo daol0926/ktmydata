@@ -2740,7 +2740,10 @@ text-align: right;}
     justify-content: flex-start;
 }
 .join-before .swiper-slide img{
+    display: block;
+    margin:0 auto;
     image-rendering: -webkit-optimize-contrast;
+    max-width: 100%;
 }
 .join-before .swiper-pagination{
     margin:1.25rem auto;
