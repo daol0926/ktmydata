@@ -2734,7 +2734,7 @@ text-align: right;}
 /* 목표예산설정 */
 .card-header .purpose-set-wrp.reset-purpose{margin-top: .25rem !important;}
 .purpose-set-wrp input[type=text]{display: none;}
-.purpose-set-wrp.reset-purpose input[type=text]{display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;}
+.purpose-set-wrp.reset-purpose input[type=text]{display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;border: 0;border-bottom: 1px solid #ccc;}
 
 /* join-before */
 .join-before #header{
