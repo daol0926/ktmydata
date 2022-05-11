@@ -172,7 +172,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .request-list .title em {font-weight:400;}
 .request-list .title .fail {color:#ff0e0e;}
 .request-list li {display:flex;justify-content: space-between;align-items: center;margin-top:1rem;}
-.bank-name {display:flex;align-items: center;font-size:0.875rem;}
+.bank-name {display:flex;align-items: center;font-size:0.875rem;text-align: justify;letter-spacing: -0.03rem;}
 .bank-name img {width:1.4375rem;margin-right:.625rem;}
 .request-list .state {display:flex;align-items: center;font-size:0.8125rem;}
 .request-list .state.success {color:#00c76c;}
@@ -1161,7 +1161,7 @@ border-radius: 0;}
 .day-schedule .history .dtl-title{
     font-size: 1rem;
     font-weight: 500;
-line-height: 1.35;}
+line-height: 1.35;letter-spacing: -.06rem;}
 .day-schedule .history .dtl-title>b{
     color:#111;
 }
@@ -1528,7 +1528,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     position: unset;    
     padding: 0.5rem 1.5rem;
     margin: 1rem auto;
-}
+overflow-x: auto;}
 .cate-wrap .inner{
     border-bottom: 0;
 }
@@ -1792,7 +1792,7 @@ margin-top: .7rem;}
 }
 .mya-detail-info .detail-txt .txt-tit{
     font-weight: 600;
-}
+letter-spacing: -.06rem;}
 .mya-detail-info .detail-txt .txt-tit-num{
     color:#777;
     font-size: .85rem;
