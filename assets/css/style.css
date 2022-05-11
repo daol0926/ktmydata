@@ -390,7 +390,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .made-coin .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
-.made-coin .save-all{font-size: 1.35rem;font-weight: 600;}
+.made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.05rem;}
 .made-coin .save-weekly{font-size: 0.9rem;border-left:1px solid #ccc;padding-left:1rem;}
 
 .mission-list li + li {margin-left:.5rem;}
@@ -786,6 +786,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .modal.confirm .modal-header .title {margin:0;font-size:1.1875rem;text-align: center;}
 .modal.confirm .modal-container {padding:0 1.25rem 1.625rem;}
 .modal.confirm .btn-area {display:flex;justify-content: center;}
+.modal.confirm .btn-area.width-full{padding:0 1rem;}
+.modal.confirm .btn-area.width-full .btn{width:100%;}
 .modal.confirm .btn-area .btn + .btn {margin-left:0.5rem;}
 .modal.confirm .btn-close {top:1.375rem;right:.625rem;}
 .modal .modal-msg {font-size: 0.8125rem;color:#888;font-weight:400;line-height:1.125rem;text-align: center;}
@@ -846,6 +848,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
 
 .won:after {content:" 원";}
+.kon:after {content:" KON";}
 .monthly:before {content:"월 ";}
 .p:after {content:" P";}
 .k:after {content:" K";}
@@ -2777,6 +2780,37 @@ text-align: right;}
     background:transparent;
     border:1px solid #ccc;
     top:calc(50% - 2.5rem);
+}
+
+
+/* save-complete */
+.save-complete .title{
+    line-height: 1.25;
+    position: relative;
+    width: fit-content;
+    padding:0 0.5rem;
+    margin:0 auto !important;
+}
+.save-complete .title .kon{
+    color:#169fb9;
+}
+.save-complete .title .kon::after{
+    color:#111;
+}
+.save-complete .title::before{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: .8rem;
+    position: absolute;
+    top: 0.7rem;
+    background-color: #def4f9;
+    z-index: -1;
+    left: 0;
+}
+.save-complete .coin-icon{
+    max-width: 65%;
+    height:auto;
 }
 
 

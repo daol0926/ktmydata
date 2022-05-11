@@ -38,10 +38,10 @@
 				</div>
 				<div class="card-header">
 					<div class="col-6 save-all">
-						<span class="won">총 13,000</span>
+						<span class="kon">총 13,000</span>
 					</div>
 					<div class="col-6 save-weekly">
-						<span class="won">이번주 적립 0</span>
+						<span class="kon">이번주 적립 0</span>
 					</div>
 				</div>
 				<div class="card-body">
@@ -49,15 +49,15 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum" style="left: 80%;">16,000원</span>
+								<span class="consum" style="left: 80%;"><em class="kon">16,000</em></span>
 								<span class="gauge" style="width: 80%"></span>
 							</span>
 						</div>
 						<ul>
-							<li>3,000원</li>
-							<li>5,000원</li>
-							<li>10,000원</li>
-							<li>20,000원</li>
+							<li><span class="kon">3,000</span></li>
+							<li><span class="kon">5,000</span></li>
+							<li><span class="kon">10,000</span></li>
+							<li><span class="kon">20,000</span></li>
 						</ul>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 					<div class="brand-select select-complete">
 						<h2 class="title">이번주 선택 브랜드</h2>
 						<div class="row select-wrp">
-							<div class="col-6 select-list form-check focused">
+							<div class="col-6 select-list form-check focused" onclick="modal('.brand-alert')" >
 								<input type="checkbox" id="chk1">
 								<label for="chk1">
 									<i class="ico ico-cj-onstyle"></i>
@@ -153,7 +153,7 @@
 								</div>
 							</div>
 							<div class="col-4 btn-area">
-								<span class="save-complete">170원 적립완료</span>
+								<span class="save-complete"><em class="kon">170</em> 적립완료</span>
 							</div>
 						</li>
 						<li class="payment-list-box">
@@ -171,7 +171,7 @@
 							</div>
 							<div class="col-4 btn-area">
 								<span class="save-ing">
-									<em class="btn btn-xs btn-secondary btn-round">1,500원 적립</em>
+									<em class="btn btn-xs btn-secondary btn-round" onclick="modal('.save-complete')"><span class="kon">1,500</span> 적립</em>
 								</span>
 							</div>
 						</li>
@@ -189,7 +189,7 @@
 								</div>
 							</div>
 							<div class="col-4 btn-area">
-								<span class="save-complete">170원 적립완료</span>
+								<span class="save-complete"><em class="kon">170</em> 적립완료</span>
 							</div>
 						</li>
 					</ul>
@@ -257,6 +257,48 @@
 	<!-- //container -->
 </div>
 <!-- //wrapper -->
+
+
+<!-- confirm -->
+<div class="modal confirm brand-alert">
+	<header class="modal-header">
+		<h2 class="title">브랜드명</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		<div class="modal-msg text-left">
+			<p>
+				적립한도
+				<strong>기간 내 최대 3,000원</strong>
+			</p>
+			<p class="mt1">
+				적립 기준
+				<strong>신용카드 결제 시</strong>
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area width-full">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// confirm -->
+
+<!-- confirm -->
+<div class="modal confirm save-complete">
+	<header class="modal-header">
+		<h2 class="title">코인백 <span class="kon">1,500</span>이<br />적립되었습니다!</h2>
+	</header>
+	<section class="modal-container">
+		<div class="text-center">
+			<img src="assets/images/common/ico-coin-big.gif" class="coin-icon" />
+		</div>
+	</section>
+</div>
+<!--// confirm -->
+
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
