@@ -105,10 +105,12 @@
 								<span class="cate">브랜드</span>
 								<strong class="won">5,000</strong>
 							</li>
+							<!--
 							<li>
 								<span class="cate">PASS</span>
 								<strong class="won">5,000</strong>
 							</li>
+							-->
 							<li>
 								<span class="cate">미션</span>
 								<strong class="won">5,000</strong>
@@ -500,14 +502,37 @@
 			</header>
 
 			<div class="card my-assets">
+
+				<!-- 예산설정 없음 -->
+				<div class="card-header assets-none" style="display: none;">
+					<div class="tit-area">
+						<h3 class="header-title">한달 목표 예산을 설정해 볼까요?<br />슬기로운 지출 관리를 도와드려요!</h3>
+						<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">예산 재설정하기</button>
+						<i class="ico"></i>
+					</div>
+				</div>
+				<!--//예산설정 없음 -->
+
+
 				<div class="card-header">
 					<div class="tit-area">
 						<h3 class="header-title">한달 예산이 이만큼 남았어요</h3>
 						<strong class="won">1,300,000</strong>
 					</div>
+					<!-- 목표 예산 초과 시 -->
+					<div class="tit-area" style="display:none;">
+						<h3 class="header-title">목표 예산이 초과되었어요.<br />예산을 다시 설정해 보시는 건 어때요?</h3>
+						<div class="row">
+							<strong class="purpose-set-wrp won">
+								<span class="before-won">0</span>
+								<input type="text" class="form-control" />
+							</strong>
+							<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표예산 재설정</button>
+						</div>
+					</div>
+					<!--// 목표 예산 초과 시 -->
 				</div>
 				<div class="card-body">
-					
 
 					<div class="donut-chart">
 						<!-- [D] data에 값을 넣어주세요 -->
@@ -519,7 +544,7 @@
 							</div>
 						</div>
 						
-						<div class="index-area">
+						<div class="index-area pl0">
 							<ul class="chart-index">
 								<li><em>총 목표 예산</em><strong class="won">2,500,000</strong></li>
 								<li><em>오늘까지의 지출</em><strong class="won">1,200,000</strong></li>
@@ -528,6 +553,27 @@
 						</div>
 						
 					</div>
+
+					<!-- 목표 예산 초과 시 -->
+					<div class="donut-chart" style="display:none;">
+						<!-- [D] data에 값을 넣어주세요 -->
+						<div class="chart-area">
+							<div class="chart" data-data1="30" data-data2="70">
+								<span class="chart-txt">지난 주의<br>최대 지출 영역</span>
+								<span class="chart-cate">지출 내역이<br />없습니다</span>
+							</div>
+						</div>
+						
+						<div class="index-area pl0">
+							<ul class="chart-index">
+								<li><em>총 목표 예산</em><strong class="won">0</strong></li>
+								<li><em>오늘까지의 지출</em><strong class="won">11,200,000</strong></li>
+								<li><em>하루 권장 예산</em><strong class="won">0</strong></li>
+							</ul>
+						</div>
+						
+					</div>
+					<!--//목표 예산 초과 시 -->
 		
 					<div class="btn-area">
 						<button type="button" class="btn-txt">주간소비 리포트가 궁금하세요?</button>
