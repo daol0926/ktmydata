@@ -56,7 +56,7 @@ main {z-index: 1;height: 100%;}
 .terms-cont {position:relative;height: 100%;}
 .terms-cont .inner {overflow: hidden;overflow-y: auto;position: absolute;top:0;bottom:0;width:100%;}
 
-.btn-area.fixed-bottom {display:flex;align-items: center;justify-content: center;position:fixed;bottom: 0;left:0;width:100%;height:5.25rem;padding:0 1.25rem;border-top:1px solid #e4e4e4;background-color:#fff;-webkit-box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1); box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1);}
+.btn-area.fixed-bottom {display:flex;align-items: center;justify-content: center;position:fixed;bottom: 0;left:0;width:100%;height:5.25rem;padding:0 1.25rem;border-top:1px solid #e4e4e4;background-color:#fff;-webkit-box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1); box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1);z-index: 1;}
 .btn-area.fixed-bottom button + button {margin-left:0.5rem;}
 .btn-area.fixed-bottom.btn-full{padding:0;height: fit-content;}
 .btn-area.fixed-bottom.btn-full button{width:100%;border-radius: 0;}
