@@ -516,6 +516,15 @@ function purposeSet(){
 		$('.purpose-set-wrp').find('.before-won').hide();
 		$(this).parents().find('.purpose-set-wrp').addClass('reset-purpose');
 	});
+
+	$('.input-purpose').on('input change', function () {
+		if ($(this).val() != '') {
+			$('.btn-reset-complete').prop('disabled', false);
+		}
+		else {
+			$('.btn-reset-complete').prop('disabled', true);
+		}
+	});
 }
 
 /* data picker */

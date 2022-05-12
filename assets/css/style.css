@@ -2739,9 +2739,24 @@ text-align: right;}
 }
 
 /* 목표예산설정 */
-.card-header .purpose-set-wrp.reset-purpose{margin-top: .25rem !important;}
+.purpose-set-wrp{
+    display: flex;
+    align-items: center;
+}
+.purpose-set-wrp .won{
+    margin-top:0;
+}
+.purpose-set-wrp .btn-area{margin-top:0;width: auto !important;}
+.purpose-set-wrp .btn-reset-complete:disabled{background-color: gray;}
+.purpose-set-wrp .btn-reset-complete,
+.purpose-set-wrp.reset-purpose .btn-purpose,
 .purpose-set-wrp input[type=text]{display: none;}
-.purpose-set-wrp.reset-purpose input[type=text]{display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;border: 0;border-bottom: 1px solid #ccc;}
+.purpose-set-wrp.reset-purpose .btn-reset-complete{
+    display: inline-block;
+}
+.purpose-set-wrp.reset-purpose input[type=text]{
+    display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;border: 0;border-bottom: 1px solid #ccc;
+}
 
 /* join-before */
 .join-before #header{
