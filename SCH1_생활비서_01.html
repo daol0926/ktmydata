@@ -47,53 +47,16 @@
 		-->
 		<!--//cate-wrap -->
 		
-		<!-- date-select -->
+	<!-- date-select -->
 		<section class="date-select pb1_5">
 			<div class="row justify-content-between">
-				<div class="row align-items-center month-wrp">
-					<div class="swiper monthSwiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 01</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 02</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 03</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 04</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 05</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 06</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 07</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 08</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 09</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 10</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 11</h3>
-							</div>
-							<div class="swiper-slide">
-								<h3 class="select-month">2022. 12</h3>
-							</div>
-						</div>
-						<div class="swiper-button-next ico-month-prev"></div>
-      					<div class="swiper-button-prev ico-month-next"></div>
+				<!-- data-month-selec -->
+				<div class="data-month-selec" onclick="modal('.month-selec-list')">
+					<div class="month-tab tit">2022년 4월
+						<button type="button" class="ico ico-fold"></button>
 					</div>
 				</div>
+				<!--//data-month-selec -->
 				<button type="button" class="btn-txt c-gray"><i class="ico ico-refresh"></i>구글캘린더 연동중</button>
 			</div>
 			<!-- Swiper -->
@@ -539,6 +502,75 @@
 	<!-- //container -->
 </div>
 <!-- //wrapper -->
+
+
+<!-- modal -->
+<div class="modal bottom-sheet month-selec-list">
+	<header class="modal-header">
+		<h2 class="title">기준 월 선택</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		
+		<div class="scroll-container">
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec01">
+				<label for="monthSelec01">2022 01월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec02">
+				<label for="monthSelec02">2022 02월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec03">
+				<label for="monthSelec03">2022 03월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec04">
+				<label for="monthSelec04">2022 04월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec05">
+				<label for="monthSelec05">2022 05월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec06">
+				<label for="monthSelec06">2022 06월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec01">
+				<label for="monthSelec07">2022 07월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec02">
+				<label for="monthSelec08">2022 08월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec03">
+				<label for="monthSelec09">2022 09월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec04">
+				<label for="monthSelec10">2022 10월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec05">
+				<label for="monthSelec11">2022 11월</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" name="checkedAgree" id="monthSelec06">
+				<label for="monthSelec12">2022 12월</label>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary" id="btnNext" disabled>다음</button>
+		</div>
+
+	</section>
+</div>
+<!--//modal -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
