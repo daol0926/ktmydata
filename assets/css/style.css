@@ -1601,7 +1601,7 @@ overflow-x: auto;}
     align-items: center;
     justify-content: space-between;
     color:#666;
-    padding-top:2rem;
+    /* padding-top:2rem; */
 }
 .data-month-selec .month-tab {
     display: flex;
@@ -1731,6 +1731,7 @@ overflow-x: auto;}
     padding-right:1.875rem;
     color:#777;
     margin-bottom:1rem;
+    font-size: 1.15rem;
 }
 .month-selec-list .form-radio input[type="radio"] + label:before{
     left:unset;
@@ -1748,6 +1749,9 @@ overflow-x: auto;}
     background: url(../images/common/ico-select-chk.png) no-repeat center/auto 60%;
     width: 36px;
     height: 24px;
+}
+.modal.month-selec-list{
+    height:12.5rem;
 }
 
 .scroll-container{
