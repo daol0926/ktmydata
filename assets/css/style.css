@@ -931,12 +931,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 3px 3px 5px #eee;
+    box-shadow: 0 0 5px #ddd;
     border-radius: 0 0 1rem 1rem;
-    width: 100%;
+    width: calc(100% - 1.5rem);
     margin-left: 0;
     background: #fff;
-padding-top: 1.5rem !important;}
+padding: 1.5rem !important;margin: 1.5rem 0.775rem 0;}
 .select-month{
     font-size: 1.3rem;
 }
