@@ -540,12 +540,19 @@ function calPic() {
 		//closeText: '닫기',
 		dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
 	});
+
 	$('.btn-show-calendar').click(function(){
 		$('.date-select').addClass('picker-full');
+		$(this).hide();
+		$('.dateSwiper').hide();
+		$('.btn-hide-calendar').show();
 		$(this).parents().find('body').addClass('scroll-y-hidden');
 	});
 	$('.btn-hide-calendar').click(function(){
 		$('.date-select').removeClass('picker-full');
+		$(this).hide();
+		$('.btn-show-calendar').show();
+		$('.dateSwiper').show();
 		$(this).parents().find('body').removeClass('scroll-y-hidden');
 	});
 }

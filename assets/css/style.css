@@ -1338,6 +1338,15 @@ line-height: 1.35;letter-spacing: -.06rem;}
 .picker-full .ui-datepicker-bg{
     display: block !important;
 }
+.picker-full .ui-datepicker-calendar{
+    animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	visibility: visible !important;		
+}
 .ui-datepicker-bg{
     display: none;
     position: fixed;
