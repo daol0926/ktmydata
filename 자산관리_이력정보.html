@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>KT 마이데이터 시작하기</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
 </head>
 <body class="bg-gray">
 <!-- wrapper -->
@@ -25,15 +24,17 @@
 			<div class="data-info-wrp">
 				<div class="date-select">
 					<div class="col-11">
-						<div class="calender-wrp row">
-							<div class="calender-date" id="datepicker">2022.03.01 <i class="ico ico-calender"></i></div>
+						<div class="calendar-wrp row">
+							<div class="calender-date date-start" id="datepicker">2022.03.01 <i class="ico ico-calender"></i></div>
 							<span class="calender-date-mid">~</span>
-							<div class="calender-date" id="datepicker2">2022.03.01 <i class="ico ico-calender"></i></div>
+							<div class="calender-date date-end" id="datepicker">2022.03.01 <i class="ico ico-calender"></i></div>
+							<!--
 							<div class="picker-bg"></div>
 							<div class="btn-cal-close"></div>
 							<div class="btn-cal-close select-complete">
 								<button type="button" class="btn btn-secondary">선택완료</button>
 							</div>
+							-->
 						</div>
 					</div>
 					<div class="col-1">
@@ -111,6 +112,8 @@
 	accordion();
 	//알람 리스트
 	alarmTrash();
+	//date picker
+	dataCalPic();
 </script>
 </body>
 </html>
