@@ -2432,7 +2432,7 @@ line-height: 1.2;}
     padding-bottom: 0;
 }
 .coinback-wrp .card.made-coin{
-    margin: 0 1.25rem 1.25rem;
+    margin: 0 0.775rem 0.775rem;
     
 padding-top: 1.25rem;}
 
@@ -2481,7 +2481,7 @@ margin-top: -4.25rem;padding-top: 4.5rem;}
     background-position:center;
 }
 .brand-select{
-    padding:1.25rem;
+    padding: 0.775rem;
 }
 .brand-select .title{
     margin-bottom: 1rem;
@@ -2542,7 +2542,7 @@ max-width: 12rem;margin: 0 auto;}
     flex-flow: column;
     padding:1rem;
     width: 100%;
-    border:1px solid #fff;
+    border: 2px solid #fff;
     font-size: inherit;
     border-radius: .5rem;
 }
@@ -2561,7 +2561,7 @@ max-width: 12rem;margin: 0 auto;}
     right: .7rem;
 }
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label{
-    border:1px solid #01b1c8;
+    border: 2px solid #01b1c8;
 }
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label::before,
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label::after{
