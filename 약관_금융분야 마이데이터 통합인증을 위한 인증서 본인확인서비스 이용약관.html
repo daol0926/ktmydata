@@ -5,27 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	<title>KT 마이데이터 정보수집동의</title>
+	<title>KT 마이데이터 이용약관 동의</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
-	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
 </head>
 <body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<h1>Alert</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+
+		<div class="btn-area" style="display: flex;justify-content: center;">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-secondary btn-sm" onclick="modal('.agree-c-blue')" style="margin:0 .5rem;">정보수집 동의</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
 
 <!-- bottom-sheet full size -->
-<div class="modal bottom-sheet full open">
+<div class="modal bottom-sheet full agree-c-blue">
 	<header class="modal-header">
 		<h2 class="title">정보수집 동의</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
-	<section class="modal-container agree-c-blue">
+	<section class="modal-container">
 		<header class="modal-container-header">
 			<div class="summary-txt {">정보수집에 동의하시면 인증이 진행됩니다. <span class="pagination"><strong>3</strong><em>5</em></span></div>
-			<h2 class="title">금융분야 마이데이터 통합인증을 위한 인증서 본인확인서비스 이용약관
-			</h2>
+			<h2 class="title">상세 정보 전송 요구서 이용동의 </h2>
 		</header>
 		
 		<div class="terms-cont">
-			
 			<div class="inner">
 				<h3 class="inner-title">제1조 (목적)</h3>
 				<div class="inner-txt">이 약관은 "금융분야 마이데이터 통합인증을 위한 인증서 본인확인서비스‘(이하 ’본인확인서비스‘)를 제공하기 위해 인증기관인 한국전자인증 주식회사, 한국정보인증 주식회사, 주식회사 코스콤, 사단법인 금융결제원 (이하 이들을 각칭하여 ‘인증기관")과 신용정보주체(이하 ‘가입자")간에 ‘본인확인서비스’ 이용에 관한 권리와 의무, 기타 제반 사항을 정함을 목적으로 합니다.
@@ -184,10 +200,14 @@
 	</section>
 </div>
 <!--// bottom-sheet full size -->
-<!--// modal bottom-sheet -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	modal('.alert');
+	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
+	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+</script>
 
 </body>
 </html>
