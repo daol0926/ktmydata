@@ -646,20 +646,51 @@ function calPic() {
 
 /* data picker - 자산관리 이력정보 */
 function dataCalPic() {
-	$('.date-start').datepicker({
-		firstDay: 1,
-		monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
-		//showButtonPanel: true,
-		//showAnim: "slideDown",
-		//closeText: '닫기',
-		dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+	$('.picker-bg-bk, .btn-cal-close').hide();
+	$('#dateStart, #dateEnd').click(function(){
+		$(this).parents().find('body').addClass('scroll-y-hidden');
+		$('#ui-datepicker-div').addClass('bg-white');
 	});
-	$('.date-end').datepicker({
-		firstDay: 1,
-		monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
-		//showButtonPanel: true,
-		//showAnim: "slideDown",
-		//closeText: '닫기',
-		dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
-	});
+    var dateFormat = "yy/mm/dd",
+    	from = $( "#dateStart" ) //시작일 선택
+		.datepicker({
+			//showMonthAfterYear: true,//연도-월 순서
+			//changeMonth: true,//월 변경 필요시 살리기
+			dateFormat:"yy-mm-dd",
+			firstDay: 1,
+			monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
+			//showButtonPanel: true,
+			showAnim: "slideDown",
+			closeText: '닫기',
+			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+			minDate:0,//오늘 이전 날짜 선택불가
+		})
+		.on( "change", function() {
+		to.datepicker( "option", "minDate", getDate(this) );//종료일의 minDate 지정
+		}),
+		to = $( "#dateEnd" ).datepicker({ //종료일 선택
+			dateFormat:"yy-mm-dd",
+			monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
+			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+			minDate:'+1D' //내일부터 선택가능(+1D/+1M/+1Y..ND, NM, NY)
+		})
+		.on( "change", function() {
+		from.datepicker( "option", "maxDate", getDate(this) );//시작일의 maxDate 지정
+		});
+ 
+    function getDate(element) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+        if(element.id == 'dateStart'){
+        date.setDate(date.getDate()+1);//종료일: 시작일+1일 ~
+        }else{
+         date.setDate(date.getDate()-1);//시작일: 종료일-1일 ~
+        }
+      } catch( error ) {
+        date = null;
+      }
+      return date;
+    }
 }
+ 

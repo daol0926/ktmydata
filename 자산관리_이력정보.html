@@ -23,23 +23,16 @@
 		<section>
 			<div class="data-info-wrp">
 				<div class="date-select">
-					<div class="col-11">
-						<div class="calendar-wrp row">
-							<div class="calender-date date-start" id="datepicker">2022.03.01 <i class="ico ico-calender"></i></div>
-							<span class="calender-date-mid">~</span>
-							<div class="calender-date date-end" id="datepicker">2022.03.01 <i class="ico ico-calender"></i></div>
-							<!--
-							<div class="picker-bg"></div>
-							<div class="btn-cal-close"></div>
-							<div class="btn-cal-close select-complete">
-								<button type="button" class="btn btn-secondary">선택완료</button>
-							</div>
-							-->
+					<div class="calendar-wrp row align-items-center">
+						<div class="calender-date">
+							<input type="text" name="dateStart" id="dateStart" autocomplete="off">
+						</div>
+						<span class="calender-date-mid">&nbsp;~&nbsp;</span>
+						<div class="calender-date">
+							<input type="text" name="dateEnd" id="dateEnd" autocomplete="off">
 						</div>
 					</div>
-					<div class="col-1">
-						<button type="button" class="btn btn-secondary btn-xs btn-round">조회</button>
-					</div>
+					<button type="button" class="btn btn-secondary btn-xs btn-round">조회</button>
 				</div> <!--//date-select -->
 
 				<div class="data-info-box">
@@ -97,6 +90,7 @@
 				</div> <!--//data-info-box -->
 			</div> <!--//data-info-wrp -->
 		</section>	
+		<div class="picker-bg-bk"></div>
 	</main>
 	<!-- //container -->
 </div>
