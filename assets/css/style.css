@@ -1366,7 +1366,7 @@ line-height: 1.35;letter-spacing: -.06rem;}
 }
 .ui-datepicker-prev.ui-state-disabled,
 .ui-datepicker-next.ui-state-disabled{
-    opacity: 0;
+    opacity: 0.4;
     pointer-events: none;
 }
 .ui-datepicker-next{
