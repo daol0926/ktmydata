@@ -2657,7 +2657,7 @@ max-width: 12rem;margin: 0 auto;}
     right: .7rem;
 }
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label{
-    border: 2px solid #01b1c8;
+    border: 3px solid #01b1c8;
 }
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label::before,
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label::after{
