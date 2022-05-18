@@ -530,6 +530,8 @@ function purposeSet(){
 	});
 }
 
+
+/* data picker - 생활비서 */
 var currentDate = new Date();
 var selectedDate = `${currentDate.getFullYear()}${setNumberFormat(currentDate.getMonth() + 1)}${setNumberFormat(currentDate.getDate())}`;
 
@@ -591,7 +593,6 @@ function setNumberFormat(n) {
 	return n;
 }
 
-/* data picker - 생활비서 */
 function calPic() {
 	$('.data-month-selec').datepicker({
 		firstDay: 1,
@@ -649,7 +650,7 @@ function dataCalPic() {
 	$('.picker-bg-bk, .btn-cal-close').hide();
 	$('#dateStart, #dateEnd').click(function(){
 		$(this).parents().find('body').addClass('scroll-y-hidden');
-		$('#ui-datepicker-div').addClass('bg-white');
+		$('#ui-datepicker-div').addClass('bg-white financial-wrp');
 	});
     var dateFormat = "yy/mm/dd",
     	from = $( "#dateStart" ) //시작일 선택
