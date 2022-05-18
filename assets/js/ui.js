@@ -432,59 +432,7 @@ function tabMenu() {
 			$('.tab-wrp .inner-tab-cont:eq(' + num + ')').addClass("focused"); });
 }
 
-var dateSwiper;
-function datePic(){
-	dateSwiper = new Swiper(".dateSwiper", {
-		slidesPerView: 7,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		  },
-		spaceBetween: 5,
-		breakpoints: {
-		  640: {
-			slidesPerView: 7,
-			spaceBetween: 10,
-		  },
-		  768: {
-			slidesPerView: 7,
-			spaceBetween: 20,
-		  },
-		  1024: {
-			slidesPerView: 7,
-			spaceBetween: 30,
-		  },
-		},
-	  });
-
-	setCaleandar();
-}
-
-function monthPic(){
-	var swiper = new Swiper(".monthSwiper", {
-		slidesPerView: 1,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		  },
-		spaceBetween: 10,
-		breakpoints: {
-		  640: {
-			slidesPerView: 1,
-			spaceBetween: 20,
-		  },
-		  768: {
-			slidesPerView: 1,
-			spaceBetween: 40,
-		  },
-		  1024: {
-			slidesPerView: 1,
-			spaceBetween: 50,
-		  },
-		},
-	  });
-}
-
+/* 알람 list swipe */
 function alarmTrash(){
 	$('.alarm-wrp .dtl>li').swipe({ 
 		swipe:function(event, direction) {
@@ -530,6 +478,63 @@ function purposeSet(){
 	});
 }
 
+
+/* datepicker - swiper */
+function monthPic(){
+	var swiper = new Swiper(".monthSwiper", {
+		slidesPerView: 1,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		spaceBetween: 10,
+		breakpoints: {
+		  640: {
+			slidesPerView: 1,
+			spaceBetween: 20,
+		  },
+		  768: {
+			slidesPerView: 1,
+			spaceBetween: 40,
+		  },
+		  1024: {
+			slidesPerView: 1,
+			spaceBetween: 50,
+		  },
+		},
+	  });
+}
+
+var dateSwiper;
+function datePic(){
+	dateSwiper = new Swiper(".dateSwiper", {
+		slidesPerView: 7, //한 화면에 노출되는 갯수
+		slidesPerGroup: 7, //롤링 갯수
+        loop: true, //반복여부
+        loopFillGroupWithBlank: true, //빈칸채우는여부
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		  },
+		spaceBetween: 5,
+		breakpoints: {
+		  640: {
+			slidesPerView: 7,
+			spaceBetween: 10,
+		  },
+		  768: {
+			slidesPerView: 7,
+			spaceBetween: 20,
+		  },
+		  1024: {
+			slidesPerView: 7,
+			spaceBetween: 30,
+		  },
+		},
+	  });
+
+	setCaleandar();
+}
 
 /* data picker - 생활비서 */
 var currentDate = new Date();
@@ -694,4 +699,6 @@ function dataCalPic() {
       return date;
     }
 }
+
+/* */
  
