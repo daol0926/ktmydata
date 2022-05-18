@@ -1364,6 +1364,11 @@ line-height: 1.35;letter-spacing: -.06rem;}
     top: 1.6rem;
     left: 0;
 }
+.ui-datepicker-prev.ui-state-disabled,
+.ui-datepicker-next.ui-state-disabled{
+    opacity: 0;
+    pointer-events: none;
+}
 .ui-datepicker-next{
     left: unset;
     transform: rotate(180deg);
