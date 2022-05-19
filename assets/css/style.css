@@ -64,6 +64,7 @@ main {z-index: 1;height: 100%;}
 .btn-area.fixed-bottom.btn-full button{width:100%;border-radius: 0;}
 
 .summary-txt{display:flex;align-items: center;justify-content: space-between;padding:0 1.5rem 1rem;margin:-0.3125rem -1.5rem 0;font-size:0.875rem;color:#444;border-bottom:1px solid #e4e4e4;}
+.modal .summary-txt.empty{margin-top: -5rem;}
 .summary-txt .pagination {font-size:0.8125rem;color:#888;font-weight:500;letter-spacing: .075rem;}
 .summary-txt .pagination strong {color:#111;font-weight: 700;text-decoration: underline;}
 .summary-txt .pagination em:before {content:"/";font-size:0.6875rem;}
