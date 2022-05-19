@@ -61,7 +61,7 @@ main {z-index: 1;height: 100%;}
 .btn-area.fixed-bottom.btn-full{padding:0;height: fit-content;}
 .btn-area.fixed-bottom.btn-full button{width:100%;border-radius: 0;}
 
-.summary-txt {display:flex;align-items: center;justify-content: space-between;padding:0 1.5rem 1rem;margin:-0.3125rem -1.5rem 0;font-size:0.875rem;color:#444;border-bottom:1px solid #e4e4e4;}
+.summary-txtdisplay:flex;align-items: center;justify-content: space-between;padding:0 1.5rem 1rem;margin:-0.3125rem -1.5rem 0;font-size:0.875rem;color:#444;border-bottom:1px solid #e4e4e4;}
 .summary-txt .pagination {font-size:0.8125rem;color:#888;font-weight:500;letter-spacing: .075rem;}
 .summary-txt .pagination strong {color:#111;font-weight: 700;text-decoration: underline;}
 .summary-txt .pagination em:before {content:"/";font-size:0.6875rem;}
@@ -115,7 +115,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .connect-container {padding-bottom:6.625rem;}
 .connect-container .container-header {padding:1.25rem 0 0;}
-.connect-container .summary-txt {margin:0;border-bottom: 0;}
+.connect-container .summary-txtmargin:0;border-bottom: 0;}
 .connect-wrap > header {padding:2.25rem 1.5rem 3.25rem;background-color:#43d4d3;border-radius: 1rem 1rem 0 0;}
 .connect-wrap .description {margin-bottom:1.875rem;font-size:0.875rem;color:#fff;font-weight:500;line-height:1.25rem;text-align:center;}
 .connect-wrap .description strong {color:#111;}
@@ -209,7 +209,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .assets-mgmt .assets-confirm {margin-top: 0;}
 .assets-mgmt .container-header {display:flex;align-items: center;height:2.8125rem;padding:0 1.5rem;background-color:#5a7fe2;}
-.assets-mgmt .summary-txt {justify-content: flex-start;margin:0;padding:0;border:0;font-size:0.875rem;color:#fff;font-weight:400;}
+.assets-mgmt .summary-txtjustify-content: flex-start;margin:0;padding:0;border:0;font-size:0.875rem;color:#fff;font-weight:400;}
 .assets-mgmt .summary-txt b {text-decoration: underline;}
 .assets-mgmt .connect-assets {margin:0;border-radius:0;}
 .assets-mgmt .assets h2 em {font-size:0.9375rem;font-weight:400;}
@@ -2160,7 +2160,7 @@ line-height: 1.2;}
     border-bottom: 1px solid #e4e4e4;
     padding-bottom:1.2rem;
     margin-bottom:2rem;
-    padding-left:.5rem;
+    /* padding-left:.5rem; */
     color:#9e9e9e;
     line-height: 1.2;
     word-break: break-all;
@@ -3147,7 +3147,7 @@ text-align: right;}
 	.assets ul {justify-content: space-between;}
 }	
 
-@media only screen (min-width:321px) and (max-width:411px){
+@media only screen and (min-width:321px) and (max-width:411px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
         padding: 1.62rem 0.64rem;
