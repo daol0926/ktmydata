@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<style>
+		.pass-bn-wrp{
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			width:20rem;
+			height:20rem;
+			background-color: #ccc;
+			position: fixed;
+			top:calc(50% - 10rem);
+			left:calc(50% - 10rem);
+			position: relative;
+			overflow: hidden;
+		}
+		.pass-bn-wrp .pass-bn-area{
+			height:calc(100% - 1.5rem);
+		}
+		.pass-bn-wrp .pass-bn-area .swiper-pagination{
+			margin-top: -2.5rem;
+		}
+		.pass-bn-wrp .btn-area{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 0;
+			height: 1.5rem;
+			background-color: #eee;
+			padding: .5rem;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- pass-bn-wrp -->
+	<div class="pass-bn-wrp layerPopup">
+		<!-- Swiper -->
+		<div class="swiper pass-bn-area">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">Slide 1</div>
+			  <div class="swiper-slide">Slide 2</div>
+			  <div class="swiper-slide">Slide 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--//Swiper -->
+		<div class="btn-area">
+			<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
+			<button type="button" class="btn-more btnClose">닫기</button>
+		</div>
+	</div>
+	<!--//pass-bn-wrp -->
+
+
+
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/js/ui.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.cookie.min.js"></script>
+	<script type="text/javascript">
+		passInnerBanner();
+		layerPopupWrp();
+	</script>
+</body>
+</html>
