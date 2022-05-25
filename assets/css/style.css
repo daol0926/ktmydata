@@ -1359,13 +1359,7 @@ line-height: 1.35;letter-spacing: -.06rem;}
     color: #111;
     line-height: 1.25;
     
-}
-.ui-datepicker-year::after{
-    content: '년';
-}
-.ui-datepicker-month::after{
-    content: '월';
-}
+margin-top: -.55rem;margin-right: -1rem;}
 .ui-datepicker-prev,
 .ui-datepicker-next{
     display: block;
@@ -1386,7 +1380,7 @@ line-height: 1.35;letter-spacing: -.06rem;}
     left: unset;
     transform: rotate(180deg);
     right: 0;
-}
+z-index: 1;}
 .ui-datepicker-calendar th>span{
     color:#c2c2c2;
     font-size: .7rem;
@@ -1395,7 +1389,8 @@ line-height: 1.35;letter-spacing: -.06rem;}
     text-align: center;
     padding: 0 .3rem;
     height: 4.2rem;
-position: relative;}
+    position: relative;
+}
 .ui-datepicker-calendar tbody td span,
 .ui-datepicker-calendar tbody td a{
     display: block;
@@ -1405,17 +1400,38 @@ position: relative;}
     font-weight:600;
     position: relative;
     font-size: 1rem;
-display: flex;align-items: center;justify-content: center;}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .data-month-selec .ui-datepicker-calendar tbody td span,
 .data-month-selec .ui-datepicker-calendar tbody td a{
     padding: 1.62rem .52rem;
 }
+/*
+.data-month-selec .ui-datepicker-next,
+.data-month-selec .ui-datepicker-prev {
+    display: none;
+}
+ */
 .ui-datepicker-calendar .ui-state-active{
     background-color:#dff3fa;
     border-radius: 1.5rem;
 }
-/* 특정일 표시 - 개발 적용 후 클래스 수정 필요 */
-.ui-datepicker-calendar tbody tr:nth-child(2) td:nth-child(4)::after{
+.ui-datepicker-header select{
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border:0;
+    padding: 0;
+    margin-top: -.13rem;
+}
+.ui-datepicker-header .ui-datepicker-year::after{
+    content: '년';
+}
+/* 특정일 표시 - 백엔드 적용 후 클래스 수정 필요 */
+.ui-datepicker-calendar tbody tr:nth-child(2) td:nth-child(4)::after, /* 백엔드 적용 후 삭제 */
+.ui-datepicker-calendar .calendar-bullet{
     content: '';
     display: block;
     width: .5rem;
@@ -1437,6 +1453,15 @@ display: flex;align-items: center;justify-content: center;}
     padding: 1rem;
     width: fit-content;
 }
+.data-month-selec .ui-datepicker-header::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: .2rem;
+    width: .7rem;
+    height: 1rem;
+    background-color: #fff;
+top: 1.2rem;}
 .data-month-selec .ui-datepicker{
     display: block;
     /* background: #fff; */
