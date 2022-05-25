@@ -733,6 +733,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .history .dtl li em {margin-top:.5rem;font-size:.75rem;color:#666;}
 .history .dtl li.cancel {color:#666;}
 .history .dtl li.cancel .won {text-decoration:line-through}
+.history .date-srch-desc{font-size: .75rem;text-align: center;font-weight: 500;}
+.history .date-srch-desc p{padding-bottom: 1rem;}
 
 .pay-dtl.modal {padding-bottom:2.375rem;}
 .pay-dtl .modal-header .title {padding-bottom:.625rem;margin-bottom:0;font-size:1.125rem;}
