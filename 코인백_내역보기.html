@@ -26,7 +26,7 @@
 			<div class="payment-list-wrp coinback-list-wrp">
 				<div class="sort-box">
 					<button onclick="modal('.coinback-dtl')">
-						전체 <i class="ico ico-fold"></i>
+						<span class="sort-txt">전체</span><i class="ico ico-fold"></i>
 					</button>
 				</div>
 				<ul class="payment-list">
@@ -142,13 +142,18 @@
 <!-- bottom-sheet -->
 <div class="modal bottom-sheet coinback-dtl">
 	<div class="modal-header">
+		<!--
 		<h2 class="title">전체</h2>
+		-->
 		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
 	</div>
-	<section class="modal-container">
+	<section class="modal-container pt1">
 		<div class="form-radio-wrap type-chk">
 			<div class="form-radio-btn">
-				<input type="radio" name="regular" id="regularYes" checked><label for="regularYes">적립 내역만 보기</label>
+				<input type="radio" name="regular" id="regularAll" checked><label for="regularAll">전체 내역 보기</label>
+			</div>
+			<div class="form-radio-btn">
+				<input type="radio" name="regular" id="regularYes"><label for="regularYes">적립 내역만 보기</label>
 			</div>
 			<div class="form-radio-btn">
 				<input type="radio" name="regular" id="regularNo"><label for="regularNo">사용 내역만 보기</label>
@@ -161,5 +166,8 @@
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	coinbackSortList();
+</script>
 </body>
 </html>
