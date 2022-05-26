@@ -1746,6 +1746,9 @@ overflow-x: auto;}
 .bill-ico-wr{
     background-image:url(../images/common/bill-ico-wr.png);
 }
+.bill-ico-sh{
+    background-image:url(../images/common/ico-sh.png);
+}
 .my-home #header, .my-datas #header{
     justify-content: center;
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<link type="text/css" rel="stylesheet" href="assets/css/mydata.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="bg-white title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>자동차보험 조회</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white sch-comn">
+		<section class="btn-area text-right">
+			<button type="button" class="btn-txt">보험 정보</button>
+		</section>
+		<!-- mya-detail-info type gray -->
+		<section class="mya-detail-info type-gray">
+			<dl>
+				<dt class="detail-title column">
+					<div class="row">
+						<div class="detail-ico">
+							<i class="bill-ico-kb"></i>
+						</div>
+						<div class="detail-txt">
+							<span class="txt-tit">KB다이렉트 자동차보험</span>
+							<span class="txt-tit-num copy-num">123456789111</span>
+						</div>
+					</div>
+					<div class="detail-price won"><!--<span class="payment-method">월납</span>-->1,190,000</div>
+				</dt>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">차량명</span>
+					<span class="detail-li-desc">A250 4MATIC</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">보험시작일</span>
+					<span class="detail-li-desc">2021년 9월 1일</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">보험종료일</span>
+					<span class="detail-li-desc">2022년 9월 1일</span>
+				</dd>
+			</dl>
+		</section>	
+		<!--//mya-detail-info -->
+
+		<div class="dtl-history mt1">
+			<div class="history">
+				<ul>
+					<li>
+						<span class="date">2021.08.31 (화)</span>
+						<ul class="dtl">
+							<li>
+								<span class="align-l">
+									<strong>실제납입보험료</strong>
+									<em class="time">1회차</em>
+								</span>
+								<span class="align-r">
+									<span class="won">1,190,000</span>
+									<em class="plan">자동이체</em>
+								</span>
+							</li>
+						</ul>
+					</li>
+					<li>2022.3 ~ 2022.5 내역을 조회했어요</li>
+				</ul>
+			</div>
+			<!--//history -->
+		</div> <!--//dtl-history -->
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//약정정보 배너 Swiper
+	thumbSwiper('.recomm','auto',4,10)
+	//특별혜택 배너 Swiper
+	bannerSwiper('.special-banner', 1.1, 15);
+	//제공혜택 배너 Swiper
+	thumbSwiper('.benefit-info','auto',0,10)
+	//자산 accordion
+	accordion();
+	//tab
+	tabMenu();
+</script>
+</body>
+</html>
