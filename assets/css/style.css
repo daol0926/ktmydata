@@ -1899,7 +1899,6 @@ position: relative;}
     font-size: 0.8rem;
     color:#aaa;
 }
-
 .month-selec-list .form-radio{
     width: 100%;
 }
@@ -1931,7 +1930,10 @@ position: relative;}
 .modal.month-selec-list{
     height:12.5rem;
 }
-
+.month-selec-list.h-auto,
+.modal .month-selec-list.h-auto{
+    height: auto;
+}
 .scroll-container{
     overflow-y: auto;
     height:230px;
