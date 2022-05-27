@@ -40,6 +40,7 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
 .ml_5{margin-left:0.5rem !important;}
 .ml1{margin-left:1rem !important;}
 .ml1_5{margin-left:1.5rem !important;}
+.ml1_8{margin-left:1.8rem !important;}
 .ml2{margin-left:2rem !important;}
 .ml2_5{margin-left:2.5rem !important;}
 .ml3{margin-left:3rem !important;}
@@ -178,6 +179,11 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
 }
 .bg-gray{
     background-color: #f2f3f7 !important;
+}
+
+/* line color */
+.line-gray{
+	border:1px solid #e4e4e4;
 }
 
 

@@ -32,8 +32,13 @@
 			</nav>
 		</div>
 		<section>
-			<div class="card made-coin">
-				<p>브랜드를 선택해주세요!</p>
+			<!-- 브랜드 선택 전 -->
+			<div class="card made-coin" style="display: none;">				
+				<div class="row justify-content-between align-items-center">
+					<p>브랜드를 선택해주세요!</p>
+					<span class="desc-txt">(1KON = 1원)</span>
+				</div>
+				
 				<div class="card-header">
 					<div class="col-6 save-all">
 						<span class="kon">총 0</span>
@@ -47,7 +52,7 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum" style="left: 80%;"><em class="kon">16,000</em></span>
+								<span class="consum" style="left: 80%;">K</span>
 								<span class="gauge" style="width: 80%"></span>
 							</span>
 						</div>
@@ -55,11 +60,55 @@
 							<li><span class="kon">3,000</span></li>
 							<li><span class="kon">5,000</span></li>
 							<li><span class="kon">10,000</span></li>
-							<li><span class="kon">20,000</span></li>
 						</ul>
 					</div>
 				</div>
 			</div> <!--//card made-coin -->
+			<!--//브랜드 선택 전 -->
+
+			<!-- 브랜드 선택 후 -->
+			<div class="card made-coin">
+				<div class="row justify-content-between align-items-center">
+					<p>
+						<span class="btn btn-xs btn-light-secondary btn-round">D - 26</span>
+						<span class="desc-txt">2022-03-13 00:00 까지</span>
+					</p>
+					<span class="desc-txt">(1KON = 1원)</span>
+				</div>
+				
+				<div class="card-header">
+					<div class="col-6 save-all">
+						<span class="kon">총 13,000</span>
+					</div>
+					<div class="col-6 save-weekly">
+						<span class="kon">이번주 적립 0</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="graph-wrap">
+						<div class="gauge-area">
+							<span class="gauge-bg">
+								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
+								<span class="consum" style="left: 70%;">K</span>
+								<span class="gauge" style="width: 70%;"></span>
+								<span class="consum-msg">조금만 더 모아 보세요!</span>
+							</span>
+						</div>
+						<ul>
+							<li><span class="kon">3,000</span></li>
+							<li><span class="kon">5,000</span></li>
+							<li><span class="kon">10,000</span></li>
+						</ul>
+					</div>
+					<div class="desc-msg bd-top agree-c-blue">
+						<div class="form-check">
+							<input type="checkbox" id="autoDiscount" checked><label for="autoDiscount">통신비 자동 할인중</label>
+						</div>
+						<p class="desc-txt ml1_8">전전월 15일부터 전월 14일 까지 적립한 코인 실적에 따라 통신비를 할인해 드립니다.</p>
+					</div>
+				</div>
+			</div> <!--//card made-coin -->
+			<!--//브랜드 선택 후 -->
 		</section>	
 		<!-- tab -->
 		<section class="tab-wrp">
@@ -78,8 +127,7 @@
 			<div class="tab-cont focused">
 				<div class="brand-save-wrp">
 					<!-- 등록 카드 없을 때 -->
-					<!--
-					<div class="brand-info empty">
+					<div class="brand-info empty desc-empty" style="display: none;">
 						<p class="pb1">
 							<strong>앗! 등록된 카드가 없네요.</strong>
 							<span>카드 연결 후 등록된 카드로 브랜드를 이용하시면,<br />사용 실적에 따라 코인을 적립해 드려요!</span>
@@ -88,7 +136,6 @@
 						</p>
 						<button type="button" class="btn btn-light-secondary">내 카드 등록 하기</button>
 					</div> 
-					-->
 					<!--//brand-info -->
 					<!-- //등록 카드 없을 때 -->
 
@@ -157,7 +204,7 @@
 				<div class="coinback-guide-btn accordion">
 					<div class="tit">
 						<button>
-							<span>코인백 서비스 이용방법 안내</span>
+							<span>KON 적립 서비스 이용방법 안내</span>
 							<i class="ico ico-fold"></i>
 						</button>
 					</div>
