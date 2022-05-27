@@ -3226,6 +3226,21 @@ text-align: right;}
 .desc-msg .form-check + .desc-txt{margin-top: .5rem;}
 .desc-msg.bd-top{border-top: 1px solid #e4e4e4;padding-top: 1rem;margin-top: 1rem;}
 
+.inner-iframe{
+    position: relative;
+    width: 100%;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+.inner-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
