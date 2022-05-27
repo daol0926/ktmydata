@@ -878,20 +878,13 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .btn-full {width:100%;}
 .btn-square{border-radius: 0;}
 
-/*
-.btn-secondary {background-color:#5a7fe2;}
-.btn-secondary:disabled {background-color:#ebebeb;color:#888;cursor: default;}
-*/
-.btn-secondary {background-color:#01b1c8;}
-.btn-secondary:disabled {background-color:#ebebeb;color:#888;cursor: default;}
 .btn-red{background-color:#fd0e0e;}
 .btn-light {background-color:#ebebeb;color:#888;}
 .btn-light:disabled {background-color:#ebebeb;color:#111;cursor: default;}
-.btn-light-secondary {color: #fff;background-color: #5ccddf;border-radius: 0.25rem;}
+.btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
 .btn-more {font-size:.75rem;color:#888;text-decoration: underline;}
 .btn-dark{background-color: #444;color:#fff;}
 .btn-gray{background-color: #dadada;color:#fff;}
-.btn-light-secondary{background-color: #5ccddf;}
 
 .btn-txt {font-size:.75rem;color:#111;border-bottom:1px solid #111;line-height:1;}
 .btn-txt.c-gray{border-color:#666;}
@@ -1041,7 +1034,7 @@ padding: 1.5rem 0.775rem !important;margin: 1.5rem 0.775rem 0;}
 /* right: -10px; */left: unset;}
 
 
-.date-select .btn.btn-secondary.white{
+.date-select .btn.btn-light-secondary.white{
     background-color: #FFF;
     border:1px solid #5ccbdf;
     color:#5ccbdf;
@@ -1051,7 +1044,7 @@ padding: 1.5rem 0.775rem !important;margin: 1.5rem 0.775rem 0;}
     align-items: center;
     justify-content: center;
 }
-.date-select .btn.btn-secondary.white .ico{
+.date-select .btn.btn-light-secondary.white .ico{
     margin-right:.5rem;
 }
 
@@ -2303,7 +2296,7 @@ line-height: 1.2;}
     padding:1rem;
     line-height: 1.3;
 }
-.agree-c-blue .btn-secondary{
+.agree-c-blue .btn-light-secondary{
     background-color: #5ccbdf;
 }
 .agree-c-blue .btn-light-secondary{
@@ -2868,7 +2861,7 @@ text-align: right;}
 .event-list-wrp .event-box.bg-lightpurple{
     background-color: #e5f1ff;
 }
-.event-list-wrp .event-end .btn-secondary{
+.event-list-wrp .event-end .btn-light-secondary{
     background-color:#959AAE;
 }
 
