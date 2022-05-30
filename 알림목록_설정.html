@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="bg-white title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>알림 설정</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white">
+		<section class="desc-area mt1">
+			<div class="notification-wrp">
+				<p class="notification-wrp-list">KT 마이데이터에서 발송되는 알림 전체의 수신 여부는 PASS앱 &gt; 알림 설정 &gt; KT 마이데이터 서비스 알림에서 설정하실 수 있습니다.</p>
+			</div>
+		</section>
+		<section>
+			<div class="alarm-wrp">
+				<ul class="dtl">
+					<li>
+						<div class="row	justify-content-between align-items-center">
+							<strong>금융/통신</strong>
+							<label class="btn-switch">
+								<input type="checkbox" class="checkbox" checked="checked">
+								<span class="slider"></span>
+							</label>
+						</div>
+						<div class="dtl-title-desc">카드 결제일, 통신비 납부일, 급여일 등<br />금융&통신 관련 일정을 알려드려요</div>
+					</li>
+					<li>
+						<div class="row	justify-content-between align-items-center">
+							<strong>코인백</strong>
+							<label class="btn-switch">
+								<input type="checkbox" class="checkbox">
+								<span class="slider"></span>
+							</label>
+						</div>
+						<div class="dtl-title-desc">코인백 신규 브랜드 확인 및 코인 적립 내역,<br />코인 적립 이벤트를 알려드려요</div>
+					</li>
+					<li>
+						<div class="row	justify-content-between align-items-center">
+							<strong>카드포인트</strong>
+							<label class="btn-switch">
+								<input type="checkbox" class="checkbox">
+								<span class="slider"></span>
+							</label>
+						</div>
+						<div class="dtl-title-desc">카드 포인트 잔액을 알려드려요</div>
+					</li>
+					<li>
+						<div class="row	justify-content-between align-items-center">
+							<strong>FUN</strong>
+							<label class="btn-switch">
+								<input type="checkbox" class="checkbox" checked="checked">
+								<span class="slider"></span>
+							</label>
+						</div>
+						<div class="dtl-title-desc">레고 및 나이키 출시 예정일을 알려드려요</div>
+					</li>
+				</ul>
+			</div> <!--//alarm-wrp -->
+		</section>	
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//자산 accordion
+	accordion();
+	//알람 리스트
+	alarmTrash();
+</script>
+</body>
+</html>
