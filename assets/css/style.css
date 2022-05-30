@@ -1436,7 +1436,7 @@ z-index: 1;}
 }
 /* 특정일 표시 */
 .ui-datepicker-calendar tbody tr td.colordot::after,
-.ui-datepicker-calendar .swiper-wrapper div.colordot::after{
+.dateSwiper .swiper-wrapper div.colordot::after{
     content: '';
     display: block;
     width: .5rem;
@@ -1447,7 +1447,7 @@ z-index: 1;}
     left:calc(50% - .25rem);
     margin-top: -1rem;
 }
-.ui-datepicker-calendar .swiper-wrapper div.colordot::after{
+.dateSwiper .swiper-wrapper div.colordot::after{
     margin-top: 0.5rem;
 }
 .picker-btn-area{
