@@ -2309,8 +2309,8 @@ line-height: 1.2;}
     background-color: #5ccbdf;
 }
 .agree-c-blue .btn-light-secondary{
-    background-color: #fff;
-    border: 1px solid #e4e4e4;
+    /* background-color: #fff; */
+    /* border: 1px solid #e4e4e4; */
 }
 .agree-c-blue .btn-area.fixed-bottom.btn-default{
     padding:1.25rem;
