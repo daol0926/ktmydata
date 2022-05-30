@@ -96,6 +96,8 @@ main {z-index: 1;height: 100%;}
 .certify-wrap .cert-bas em {background-position:-4.4375rem 0;}
 .certify-wrap .cert-fin em {background-position:-7.375rem 0;}
 .certify-wrap .cert-payco em {background-position:-4.4375rem -3.125rem;}
+.certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.png) no-repeat center/auto 70% #efefef;}
+.certify-wrap .cert-naver em {background:url(../images/bank/ico_bank08.png) no-repeat center/auto 70% #efefef;}
 
 article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .certify {display:flex;align-items: center;position:relative;width:100%;padding:1rem 1.5rem;font-size:0.875rem;border-top:1px solid #e4e4e4;}
@@ -1363,8 +1365,9 @@ line-height: 1.35;letter-spacing: -.06rem;}
     font-weight: 600;
     color: #111;
     line-height: 1.25;
-    
-margin-top: -.55rem;margin-right: -1rem;}
+    /* margin-top: -.55rem; */
+    /* margin-right: -1rem; */
+    }
 .ui-datepicker-prev,
 .ui-datepicker-next{
     display: block;
@@ -1434,6 +1437,9 @@ z-index: 1;}
 .ui-datepicker-header .ui-datepicker-year::after{
     content: '년';
 }
+.ui-datepicker-header .ui-datepicker-month::after{
+    content: '월';
+}
 /* 특정일 표시 */
 .ui-datepicker-calendar tbody tr td.colordot::after,
 .dateSwiper .swiper-wrapper div.colordot::after{
@@ -1462,14 +1468,15 @@ z-index: 1;}
     width: fit-content;
 }
 .data-month-selec .ui-datepicker-header::after{
-    content: '';
+    /* content: ''; */
     display: block;
     position: absolute;
     right: .2rem;
     width: .7rem;
     height: 1rem;
     background-color: #fff;
-top: 1.2rem;}
+    top: 1.2rem;
+    }
 .data-month-selec .ui-datepicker{
     display: block;
     /* background: #fff; */
