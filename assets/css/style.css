@@ -3243,6 +3243,36 @@ text-align: right;}
     height: 100%;
 }
 
+/* 배너 */
+.pass-bn-wrp{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width:20rem;
+    height:20rem;
+    background-color: #ccc;
+    position: fixed;
+    top:calc(50% - 10rem);
+    left:calc(50% - 10rem);
+    position: relative;
+    overflow: hidden;
+}
+.pass-bn-wrp .pass-bn-area{
+    height:calc(100% - 1.5rem);
+}
+.pass-bn-wrp .pass-bn-area .swiper-pagination{
+    margin-top: -2.5rem;
+}
+.pass-bn-wrp .btn-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    height: 1.5rem;
+    background-color: #eee;
+    padding: .5rem;
+}
+
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
