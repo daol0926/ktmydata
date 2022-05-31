@@ -2279,6 +2279,13 @@ line-height: 1.2;}
     top: .1rem;
     display: block;
 }
+.agree-c-blue .inner-txt ol>li>ul.li-num>li{
+    padding-left: 0;
+    margin-bottom: .5rem;
+}
+.agree-c-blue .inner-txt ol>li>ul.li-num>li::before{
+    content: '';
+}
 .agree-c-blue .inner-txt-desc ul>li{
     margin-left: 0;
     padding-left:.8rem;
