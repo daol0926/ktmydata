@@ -281,6 +281,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-header .character {display:block;position:absolute;top:1rem;right:-0.3125rem;width:6.25rem;height:6.25rem;background-repeat:no-repeat;background-size:100% auto;}
 .pattern .card-header p {max-width:11.625rem;line-height:1.125rem;word-break: keep-all;}
 .pattern .card-body .flex {align-items: flex-start;justify-content: space-between;}
+.pattern .card-body .flex.column{flex-flow: column;}
+.pattern .card-body .flex.column dl, 
+.pattern .card-body .flex.column dd{width: 100%;}
+.pattern .card-body .flex.column dl{padding:.5rem 0;border-bottom:1px solid #e4e4e4;margin-bottom:.2rem;}
+.pattern .card-body .flex.column dd{display: flex;justify-content: space-between;}
+.pattern .card-body .flex.column dl:last-child{border-bottom: 0;margin-bottom: 0;}
 .pattern dt {margin-bottom:.625rem;font-size:0.9375rem;}
 .pattern dd {font-size:0.71875rem;color:#898989;font-weight:400;line-height:0.875rem;word-break: keep-all;}
 .pattern dd .won, .pattern dd .kon{font-size:1.4375rem;color:#0fbcdd;font-weight:700;margin-bottom: .5rem;}
@@ -340,6 +346,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .consum {display:inline-block;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;line-height: 1.625rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;}
 .consum:after {content:"";display:block;position:absolute;bottom:-0.25rem;left:0.75rem;width:.5rem;height:0.3125rem;background: url(../images/common/icon_spr.png) no-repeat -3.1875rem -2.5625rem / 12.5rem auto;}
 .consum.stop {left:80% !important;}
+.consum em{display:inline-flex;align-items:center;justify-content:center;background:url(../images/common/ico-kon.png) no-repeat center/contain;width:1.1rem;height:1.1rem;text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);margin-left:.3rem;font-size: .65rem;padding-right: .1rem;}
 .consum[style="left: 82%;"]:after {left:1.2rem;}
 .consum[style="left: 83%;"]:after {left:1.3rem;}
 .consum[style="left: 84%;"]:after {left:1.4rem;}
@@ -466,21 +473,30 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .top3 .card + .card {margin:0;border-radius: 0;}
 .top3 .card .card-header .header-title {font-size:1.125rem;line-height:1.3125rem;}
 .top3 .card .card-body {padding-bottom:0;}
-.top3 .tag {width:100%;padding:.5rem 0 0;font-size:0.875rem;color:#888;font-weight:400;}
-[class*='similar-'] ol {display:flex;justify-content: space-between;}
-[class*='similar-'] li {flex:1;display:flex;flex-direction: column;align-items: center;justify-content: center;flex-wrap: wrap;position: relative;min-height:6.1875rem;background-color:#f2f3f7;border-radius: 0.25rem;text-align: center;}
-[class*='similar-'] li + li {margin-left:.5rem;}
+.top3 .tag {width:100%;padding:.5rem 0 0;font-size: 0.75rem;color: #888;font-weight: 300;}
+[class*='similar-'] ol {display:flex;justify-content: space-between;flex-flow: column;margin-top: -.5rem;}
+[class*='similar-'] li {flex:1;display:flex;/* flex-direction: column; *//* align-items: center; *//* justify-content: center; *//* flex-wrap: wrap; */position: relative;/* min-height:6.1875rem; *//* background-color:#f2f3f7; *//* border-radius: 0.25rem; */text-align: center;border-bottom: 1px solid #e4e4e4;padding:0 0 1rem;margin-bottom: 1rem;/* flex-flow: column; */}
+/*[class*='similar-'] li + li {margin-left:.5rem;}
 [class*='similar-'] li:before {content:"";display:block;position:absolute;top:0;left:0.75rem;width:1.1875rem;height:1.4375rem;padding-top:0.25rem;font-size:0.6875rem;color:#fff;background: url(../images/common/icon_spr.png) no-repeat -4.625rem -12.375rem;background-size:12.5rem auto;text-align: center;}
-[class*='similar-'] li:nth-child(1):before {content:"1";}
-[class*='similar-'] li:nth-child(2):before {content:"2";}
-[class*='similar-'] li:nth-child(3):before {content:"3";}
+*/
+[class*='similar-'] li:nth-child(1){align-items: flex-end;}
+[class*='similar-'] li:last-child{border-bottom: 0;margin-bottom: 0;}
+[class*='similar-'] li::before{content: '';display:inline-flex;width:2rem;height:2rem;background-position:center;background-size:contain;background-repeat: no-repeat;margin:0;}
+[class*='similar-'] li:nth-child(1)::before{background-image: url(../images/common/ico-grade1.png);width:3.5rem;height:3.5rem;}
+[class*='similar-'] li:nth-child(2)::before{background-image: url(../images/common/ico-grade2.png);}
+[class*='similar-'] li:nth-child(3)::before{background-image: url(../images/common/ico-grade3.png);}
+[class*='similar-'] li .prod-name:before{content:'';display:block;background-color:#53cee6;color:#fff;height:1.25rem;line-height: 1.25rem;text-align: center;padding:0 .8rem;font-size: 0.6875rem;border-radius: 2rem;width: fit-content;margin:0 .5rem;}
+[class*='similar-'] li:nth-child(1) .prod-name{display:flex;flex-flow:column;align-items: flex-start;font-size: 1.1rem;color:#111;font-weight: 500;}
+[class*='similar-'] li:nth-child(1) .prod-name:before {content:"1위";margin-left: 0;margin-bottom: .25rem;}
+[class*='similar-'] li:nth-child(2) .prod-name:before {content:"2위";}
+[class*='similar-'] li:nth-child(3) .prod-name:before {content:"3위";}
 
 .top3 .similar-property {padding-bottom:1.5rem;}
 .top3 .similar-age .card-header {padding:1.75rem 0 1.125rem;}
-.top3 .prod-name {display:flex;align-items: center;justify-content: center;width:100%;height:4.375rem;font-size:0.875rem;font-weight:500;color:#444;line-height: 1.125rem;}
+.top3 .prod-name {display:flex;align-items: center;/* justify-content: center; *//* width:100%; *//* height:4.375rem; */font-size:0.875rem;font-weight:500;color:#444;line-height: 1.125rem;}
 .top3 .prod-price {display:block;width:100%;font-size:.75rem;color:#444;}
 
-[class^='my-'] section.my-status {margin-top: 1.5rem;}
+[class^='my-'] section.my-status {margin-top: .75rem;}
 .my-status header {display: flex;align-items: center;justify-content: space-between;margin-bottom:1rem;}
 .my-status .card .card-header .header-title {font-size:0.9375rem;font-weight:500;}
 .my-status .card-header .won {display:block;margin-top:.5rem;font-size:1.0625rem;font-weight: 700;}
@@ -562,15 +578,15 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .card .list > ul > li + li {border-top:1px solid #e4e4e4;}
 .card .list > ul > li strong {display:block;margin-bottom:0.375rem;}
 .card .list > ul > li em {font-weight:400;}
-.card .list > ul > li:before {content:"";display:block;position: absolute;top:50%;left:0;width:2.6875rem;height:2.6875rem;transform: translateY(-50%);background-image: url(../images/common/icon_spr.png);background-repeat:no-repeat;background-size:12.5rem auto;}
+.card .list > ul > li:before {content:"";display:block;position: absolute;top:50%;left:0;width:2.6875rem;height:2.6875rem;transform: translateY(-50%);/* background-image: url(../images/common/icon_spr.png); */background-repeat:no-repeat;background-size: auto 70%;border-radius: 50%;background-position: center;}
 
 .card.bill-info .card-body {padding: 0 0 0.875rem;}
 .bill-list .list-title {margin-bottom:0.25rem;}
-.dataON:before,.internet:before,.tv:before{background: url(../images/common/icon_spr.png) no-repeat;content:'';display:inline-block;}
-.dataON:before {background-position:-4.3125rem -6.1875rem;}
-.internet:before {content:'';background-position:-7.0625rem -6.1875rem;}
-.tv:before {content:'';background-position:-9.8125rem -6.1875rem;}
-.data-5g:before {content:'';background-position:-4.375rem -8.9375rem;}
+.dataON:before,.internet:before,.tv:before{/* background: url(../images/common/icon_spr.png) no-repeat; */content:'';display:inline-block;}
+.dataON:before {/* background-position:-4.3125rem -6.1875rem; */background-color: #fdf0f7;background-image: url(../images/common/ico-dataon.png);}
+.internet:before {content:'';background-position:-7.0625rem -6.1875rem;background-color: #e3efff;background-image: url(../images/common/ico-wifi.png);}
+.tv:before {content:'';background-position:-9.8125rem -6.1875rem;background-color: #f4f0fd;background-image: url(../images/common/ico-tv.png);}
+.data-5g:before {content:'';background-position:-4.375rem -8.9375rem;background: #fdf0f7;background-image: url(../images/common/ico-mobile.png);}
 .internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
 
 .card .list li em {display:block;color:#888;}
@@ -656,7 +672,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assets .assets-list li span {margin:0;font-size: .75rem;color:#888;}
 .my-assets .assets-list li strong {display:block;margin-top:0.25rem;font-size: 0.9375rem;color:#444;}
 .my-assets .assets-list li strong.won:after {font-weight: 500;}
-.my-assets .assets-list .assets-name i {width: 4.5rem;height: 4.5rem;}
+.my-assets .assets-list .assets-name i {width: 4.5rem;height: 4.5rem;display: flex;align-items: center;justify-content: center;}
 .my-assets .assets-list + button {margin-top:.5rem;}
 .my-status .assets-list li .assets-name:before {margin:0;}
 
@@ -677,22 +693,22 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assetsDtl .dtl strong {display:block;font-size:0.875rem;}
 .my-assetsDtl .dtl .won:after {font-weight:500;}
 .assets-name i {display:flex;align-items: center;justify-content: center;margin:0;border-radius:100%;}
-.assets-name i:before {content:"";display:inline-block;width: 1.3125rem;height:1.3125rem;margin-right:0;background: url(../images/common/icon_spr.png) no-repeat 0 -15.625rem / 12.5rem auto;vertical-align: middle;}
-.assets-name .credit-card {background-color:#defefe;}
-.assets-name .bank {background-color:#e3efff;}
-.assets-name .securities {background-color:#f4ffe3;}
-.assets-name .paymoney {background-color:#eaf9e7;}
-.assets-name .insurance {background-color:#f4f0fd;}
-.assets-name .capital {background-color:#ffefec;}
-.assets-name .guarantee {background-color:#defefe;}
+.assets-name i:before {content:"";display:inline-block;width: 70%;height: 50%;background: url(../images/common/ico-card.png) no-repeat center/auto 100%;vertical-align: middle;}
+.assets-name .credit-card {background-color: #f0e9ff;}
+.assets-name .bank {background-color: #e3efee;}
+.assets-name .securities {background-color: #f8f6ed;}
+.assets-name .paymoney {background-color: #f6f8ff;}
+.assets-name .insurance {background-color: #ffefec;}
+.assets-name .capital {background-color: #f4f3e5;}
+.assets-name .guarantee {background-color: #f4f0fd;}
 
-.assets-name .credit-card:before {background-position-x:0;}
-.assets-name .bank:before {background-position-x:-1.375rem;}
-.assets-name .securities:before {background-position-x:-2.75rem;}
-.assets-name .paymoney:before {background-position-x:-4.125rem;}
-.assets-name .insurance:before {background-position-x:-5.5rem;}
-.assets-name .capital:before {background-position-x:-6.875rem;}
-.assets-name .guarantee:before {background-position-x:-8.25rem;}
+.assets-name .credit-card:before {/* background-position-x:0; */}
+.assets-name .bank:before {/* background-position-x:-1.375rem; */background-image: url(../images/common/ico-bank.png);}
+.assets-name .securities:before {/* background-position-x:-2.75rem; */background-image: url(../images/common/ico-securities.png);}
+.assets-name .paymoney:before {/* background-position-x:-4.125rem; */background-image: url(../images/common/ico-paymoney.png);height: 65%;}
+.assets-name .insurance:before {/* background-position-x:-5.5rem; */background-image: url(../images/common/ico-ins.png);}
+.assets-name .capital:before {/* background-position-x:-6.875rem; */background-image: url(../images/common/ico-capital.png);width: 65%;background-size: 100% auto;}
+.assets-name .guarantee:before {/* background-position-x:-8.25rem; */background-image: url(../images/common/ico-ins-cert.png);height: 61%;}
 
 /* 카드 사용내역 */
 #header + .card-dtl {padding-bottom:0;}
@@ -1122,7 +1138,8 @@ position: relative;}
 }
 .card.my-assets .chart .ico{
     position: relative;
-transform: scale(.8);}
+    /* transform: scale(.8); */
+    }
 .card.my-assets .header-title{
     margin-bottom: .5rem;
 }
@@ -1763,7 +1780,7 @@ overflow-x: auto;}
     background-image:url(../images/common/ico-sh.png);
 }
 .my-home #header, .my-datas #header{
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 /* container */
@@ -2205,6 +2222,9 @@ letter-spacing: -.06rem;}
     height: calc(100vh - 11rem);
     padding-bottom: 5.25rem;
 }
+.agree-c-blue .terms-cont .inner.inner-min{
+    height:calc(100vh - 15rem);
+}
 .agree-c-blue .modal-container-header{
     margin-bottom: 0;
 }
@@ -2279,12 +2299,12 @@ line-height: 1.2;}
     top: .1rem;
     display: block;
 }
-.agree-c-blue .inner-txt ol>li>ul.li-num>li{
-    padding-left: 0;
-    margin-bottom: .5rem;
+.agree-c-blue .inner-txt ul.li-num>li{
+    padding-left: 0 !important;
+    margin-bottom: .5rem !important;
 }
-.agree-c-blue .inner-txt ol>li>ul.li-num>li::before{
-    content: '';
+.agree-c-blue .inner-txt ul.li-num>li::before{
+    content: '' !important;
 }
 .agree-c-blue .inner-txt-desc ul>li{
     margin-left: 0;
@@ -3337,6 +3357,11 @@ text-align: right;}
     font-weight: 600;
     /* text-decoration: underline; */
     font-size: 1.2rem;
+}
+
+.underline{
+    color:#0fbcdd;
+    border-bottom: 1px solid #0fbcdd;
 }
 
 @media only screen and (max-width:319px){

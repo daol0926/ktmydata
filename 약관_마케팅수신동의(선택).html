@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 이용약관 동의</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<h1>Alert</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+
+		<div class="btn-area" style="display: flex;justify-content: center;">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.agree-c-blue')" style="margin:0 .5rem;">[선택] 마케팅 수신 동의</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<!-- bottom-sheet full size -->
+<div class="modal bottom-sheet full agree-c-blue">
+	<header class="modal-header">
+		<h2 class="title">[선택] 마케팅 수신 동의</h2>
+		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		<header class="modal-container-header">
+			<h2 class="title">[고객 맞춤 상품/서비스 추천을 위한 마케팅 수신 동의] </h2>
+		</header>
+		
+		<div class="terms-cont">
+			<div class="inner inner-min">
+				<div class="inner-txt">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">수집 · 이용<br />목적</th>
+								<th scope="col">수집 항목</th>
+								<th scope="col">보유 및<br />이용기간</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>KT 마이데이터의 제공 서비스 이용실적 정보 통계/분석 및 고객별 맞춤 상품/서비스 추천 및 혜택 제공</td>
+								<td>서비스 이용내역 
+									(연결 자산 정보, KON백 이용 정보, 생활비서 이용 정보 등)</td>
+								<td>회원 탈퇴 시 또는 마케팅 수신 동의 철회시까지</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>				
+				<div class="inner-txt">
+					<ul class="li-num">
+						<li>※ 본 동의 사항은 선택적 동의 사항으로, 동의하지 않더라도 서비스 가입 및 이용이 가능합니다. 
+							<br />단, 일부 서비스 이용이 제한될 수 있습니다. </li>
+						<li>※ 동의 의사를 철회하고자 하는 경우에는 ‘PASS 앱 > 전체 메뉴 > 서비스 설정 및 약관 > 약관 및 서비스 동의 > KT 마이데이터 서비스’ 메뉴를 통해 동의 철회가 가능합니다.  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>
+			<!-- <button type="button" class="btn btn-light-secondary" disabled>다음</button> -->
+		</div>
+
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	modal('.alert');
+	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
+	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+	scrollChk('.modal');
+</script>
+
+</body>
+</html>

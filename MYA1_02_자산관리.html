@@ -52,7 +52,7 @@
 				<div class="card-body">
 					<div class="card-body-header">
 						<dl class="total">
-							<dt>4월 청구 금액</dt><dd><span class="won">104,000</span><button type="button"><span class="ico ico-arr"></span></button></dd>
+							<dt>4월 청구 금액</dt><dd><span class="won underline">104,000</span><button type="button"><span class="ico ico-arr"></span></button></dd>
 						</dl>
 						<dl>
 							<dt>이용금액</dt><dd><span class="won">104,000</span></dd>
@@ -113,6 +113,7 @@
 									</dd>
 								</dl>
 							</li>
+							<!--
 							<li class="internet-tv">
 								<dl>
 									<dt><strong>인터넷/TV</strong><i class="badge">D-30</i></dt>
@@ -128,6 +129,7 @@
 									</dd>
 								</dl>
 							</li>
+							-->
 						</ul>
 					</div>
 
@@ -155,13 +157,30 @@
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 								</div>
 							</div>
-
-
 						</div>
-					</div>
+					</div> <!--//recomm -->
 				</div>
 			</div>
 		</section>
+
+		<div class="image-banner mt1">
+			<div class="event-banner-top">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn1.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn3.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
 
 		<!--
 		<section>
@@ -265,7 +284,7 @@
 						</div>
 					</div>
 	
-					<button type="button" class="btn btn-light-secondary btn-sm btn-full">자산 추가</button>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
 				</div>
 			</div>
 
@@ -511,6 +530,8 @@
 	thumbSwiper('.benefit-info','auto',0,10)
 	//자산 accordion
 	accordion();
+	//이벤트 Swiper
+	bannerSwiper('.event-banner-top', 1, 16);
 </script>
 </body>
 </html>
