@@ -3228,6 +3228,7 @@ text-align: right;}
 .desc-empty strong{display: block;font-weight: normal;margin-bottom: .5rem;font-size: 1rem !important;padding-bottom: 0 !important;}
 .desc-empty .btn-area{margin-top: 1rem;}
 .desc-empty .btn{height: 2.7rem;line-height: 2.7rem;}
+.desc-empty .btn.btn-xs{height:1.5rem;line-height: 1.5rem;}
 .desc-empty .highlights{font-weight: 600;}
 
 .desc-msg .desc-txt{line-height: 1.4;}
