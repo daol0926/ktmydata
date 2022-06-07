@@ -789,6 +789,25 @@
 		<div class="aside-bottom-right">
 			<button type="button" class="btn-pass-home">PASS홈</button>
 		</div>
+
+		<!-- 공지팝업 -->
+		<div class="pass-bn-wrp layerPopup">
+			<!-- Swiper -->
+			<div class="swiper pass-bn-area">
+				<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--//Swiper -->
+			<div class="btn-area">
+				<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
+				<button type="button" class="btn-more btnClose">닫기</button>
+			</div>
+		</div>
+		<!--//공지팝업 -->
 	</main>
 	<!-- //container -->
 </div>
@@ -815,6 +834,11 @@
 	
 	//결합하고 또 추가 할인 차트
 	chart2('.budget .chart');
+
+
+	//공지팝업
+	passInnerBanner();
+	layerPopupWrp();
 </script>
 </body>
 </html>

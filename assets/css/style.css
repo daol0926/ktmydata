@@ -3287,9 +3287,10 @@ text-align: right;}
     height:20rem;
     background-color: #ccc;
     position: fixed;
-    top:calc(50% - 10rem);
-    left:calc(50% - 10rem);
-    position: relative;
+    top: calc(50vh - 10rem);
+    left:
+    calc(50% - 10rem);
+    position: fixed;
     overflow: hidden;
 }
 .pass-bn-wrp .pass-bn-area{
