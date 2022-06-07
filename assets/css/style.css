@@ -1424,6 +1424,7 @@ z-index: 1;}
     padding: 0 .3rem;
     height: 4.2rem;
     position: relative;
+    width: 13vw;
 }
 .ui-datepicker-calendar tbody td span,
 .ui-datepicker-calendar tbody td a{
@@ -1440,7 +1441,7 @@ z-index: 1;}
 }
 .data-month-selec .ui-datepicker-calendar tbody td span,
 .data-month-selec .ui-datepicker-calendar tbody td a{
-    padding: 1.62rem .52rem;
+    /* padding: 1.62rem .52rem; */
 }
 /*
 .data-month-selec .ui-datepicker-next,
@@ -1467,8 +1468,7 @@ z-index: 1;}
     content: '월';
 }
 /* 특정일 표시 */
-.ui-datepicker-calendar tbody tr td.colordot::after,
-.dateSwiper .swiper-wrapper div.colordot::after{
+.ui-datepicker-calendar tbody tr td.colordot::after{
     content: '';
     display: block;
     width: .5rem;
@@ -1480,6 +1480,14 @@ z-index: 1;}
     margin-top: -1rem;
 }
 .dateSwiper .swiper-wrapper div.colordot::after{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #5ccbdf;
+    position:absolute;
+    left:calc(50% - .25rem);
     margin-top: 0.5rem;
 }
 .picker-btn-area{
@@ -3403,7 +3411,7 @@ text-align: right;}
 @media only screen and (min-width:321px) and (max-width:411px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
-        padding: 1.62rem 0.64rem;
+        /* padding: 1.62rem 0.64rem; */
     }
 }
 
