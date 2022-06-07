@@ -174,6 +174,13 @@ function calPic() {
 		},
 	});
 
+	$('.ui-datepicker-header').click(function(){
+		$('.date-month-selec-wrp').removeClass('hide');
+	});
+	$('.date-month-selec-wrp ul li').click(function(){
+		$('.date-month-selec-wrp').addClass('hide');
+	});
+
 	$('.btn-show-calendar').click(function(){
 		$('.date-select').addClass('picker-full');
 		$(this).hide();

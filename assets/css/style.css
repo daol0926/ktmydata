@@ -1532,6 +1532,13 @@ z-index: 1;}
 	visibility: visible !important;		
 }
 */
+.data-month-selec.sch-picker .ui-datepicker-header{
+    padding: 1rem 0;
+}
+.sch-picker .ui-datepicker-prev, 
+.sch-picker .ui-datepicker-next{
+    display: none;
+}
 
 /* datepicker - 자산관리 이력정보 */
 .calender-date .ui-datepicker{
@@ -3371,6 +3378,13 @@ text-align: right;}
     color:#0fbcdd;
     border-bottom: 1px solid #0fbcdd;
 }
+
+/* select-list-wrp */
+.select-list-wrp.hide{display: none;}
+.select-list-wrp{display:block;position:absolute;background-color:#fff;border-radius: .5rem;box-shadow: 0 0 .3rem rgb(0 0 0 / 30%);margin-top: 1.5rem;z-index:11;padding: 1rem;}
+.select-list-wrp>ul>li{margin-bottom: .5rem;}
+.select-list-wrp>ul>li:last-child{margin-bottom: 0;}
+.select-list-wrp .focused{font-weight: 600;}
 
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
