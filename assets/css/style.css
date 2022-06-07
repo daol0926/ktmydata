@@ -3283,7 +3283,7 @@ text-align: right;}
     width: 100%;
     padding-bottom: 0;
     overflow: hidden;
-    height: 100vh;
+    height: 25rem;
 }
 .inner-iframe iframe{
     position: absolute;
