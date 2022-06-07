@@ -860,6 +860,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-savelist{background: url(../images/common/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
 .fold .ico-fold,
 .ico-fold.fold{transform: rotate(-180deg);}
+.fold-connect{pointer-events: none;}
+.fold-connect .ico-fold{transform: rotate(-90deg);}
 .ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
 .btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
 
@@ -1095,6 +1097,10 @@ padding: 1.5rem 0.775rem !important;margin: 1.5rem 0.775rem 0;}
 .desc-wrp .desc-txt{
     line-height: 1.5;
     font-size: 0.9rem;
+}
+.desc-wrp .desc-txt em{
+    color: #111;
+    font-weight: 500;
 }
 
 /* chart */

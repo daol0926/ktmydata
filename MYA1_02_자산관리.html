@@ -136,7 +136,6 @@
 					<div class="recomm">
 						<h4>홍길동님, 이건 어떠세요?</h4>
 						<div class="banner-area">
-
 							<!--
 							<div class="swiper-container gallery-container gallery-thumbs tag-btn">
 								<div class="swiper-wrapper">
@@ -148,7 +147,7 @@
 								</div>
 							</div>
 							-->
-							<div class="swiper-container gallery-container gallery-banner">
+							<div class="swiper-container gallery-container gallery-thumbs">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
@@ -285,6 +284,14 @@
 					</div>
 	
 					<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
+					<!-- 자산 추가 전 -->
+					<!--
+					<div class="desc-wrp">
+						<span class="desc-txt">흩어져 있던 내 자산을 <em>한 방에 정리해드려요!</em></span>
+					</div>					
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">지금 바로 정리하러 가기</button>
+					-->
+					<!--//자산 추가 전 -->
 				</div>
 			</div>
 
@@ -297,6 +304,12 @@
 									<span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><em>(2건)</em></span>
 									<strong class="won">108,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -322,6 +335,12 @@
 									<span class="assets-name"><i class="bank"></i><span class="label">은행</span><em>(7건)</em></span>
 									<strong class="won">12,000,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -347,6 +366,12 @@
 									<span class="assets-name"><i class="securities"></i><span class="label">증권</span><em>(1건)</em></span>
 									<strong class="won">40,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -372,6 +397,12 @@
 									<span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><em>(3건)</em></span>
 									<strong class="won">150,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -397,6 +428,12 @@
 									<span class="assets-name"><i class="insurance"></i><span class="label">보험</span><em>(1건)</em></span>
 									<strong class="monthly won">64,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -422,6 +459,12 @@
 									<span class="assets-name"><i class="capital"></i><span class="label">캐피탈</span><em>(1건)</em></span>
 									<strong class="won">2,000,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -447,6 +490,12 @@
 									<span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><em>(1건)</em></span>
 									<strong class="won">3,000,000</strong>
 									<button type="button"><em class="ico ico-fold"></em></button>
+									<!-- 연결 전 일 때 -->
+									<!--
+									<strong>연결하기</strong>
+									<button type="button" class="fold-connect"><em class="ico ico-fold"></em></button>
+									-->
+									<!--//연결 전 일 때 -->
 								</div>
 								<div class="dtl">
 									<ul>
@@ -506,7 +555,7 @@
 								<span class="assets-name">
 									내 신용점수를 확인해 보세요.
 								</span>
-								<button type="button" class="btn btn-light">조회하기</button>
+								<button type="button" class="btn btn-light-secondary btn-sm btn-full">조회하기</button>
 							</li>
 						</ul>
 					</div>
@@ -523,11 +572,11 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//약정정보 배너 Swiper
-	thumbSwiper('.recomm','auto',4,10)
+	thumbSwiper('.recomm', 1, 16);
 	//특별혜택 배너 Swiper
 	bannerSwiper('.special-banner', 1.1, 15);
 	//제공혜택 배너 Swiper
-	thumbSwiper('.benefit-info','auto',0,10)
+	thumbSwiper('.benefit-info','auto',0,10);
 	//자산 accordion
 	accordion();
 	//이벤트 Swiper
