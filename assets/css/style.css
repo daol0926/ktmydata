@@ -882,6 +882,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
 .ico-kt{background-image:url(../images/common/ico-kt.png);}
 .ico-lego{background-image:url(../images/common/ico-lego.png);}
+.bill-ico-naver,
+.ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.png);}
 .ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
 .ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
 .ico-nike{background-image:url(../images/common/ico-nike.png);}
@@ -1767,7 +1769,6 @@ overflow-x: auto;}
     left: -3rem;
     top: -.3rem;
     background-color:#ddf1ff;
-    background-image:none;
     width:2.375rem;
     height:2.375rem;
     border-radius: 50%;

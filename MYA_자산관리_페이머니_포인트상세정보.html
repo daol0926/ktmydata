@@ -15,39 +15,39 @@
 	<!-- header -->
 	<header id="header" class="bg-white title-left">
 		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
-		<h1>카드포인트 조회</h1>
+		<h1>페이머니/포인트 상세정보</h1>
 	</header>
 	<!-- //header -->
 	
 	<!-- container -->
-	<main id="container" class="bg-white sch-comn">
-		<!--
-		<section class="btn-area text-right">
-			<button type="button" class="btn-txt">보험 정보</button>
-		</section>
-		-->
-		<!-- mya-detail-info type gray -->
-		<section class="mya-detail-info type-gray">
+	<main id="container" class="bg-white">
+		<!-- mya-detail-info type default -->
+		<section class="mya-detail-info">
 			<dl>
-				<dt class="detail-title column">
-					<div class="row">
-						<div class="detail-ico">
-							<i class="bill-ico-sh"></i>
-						</div>
-						<div class="detail-txt">
-							<span class="txt-tit">신한카드 마이신한포인트
-							</span>
-							<!--
-							<span class="txt-tit-num copy-num">123456******1234
-							</span>
-							-->
-						</div>
+				<dt class="detail-title">
+					<div class="detail-ico">
+						<i class="bill-ico-naver"></i>
 					</div>
-					<div class="detail-price won"><!--<span class="payment-method">월납</span>-->4,457</div>
+					<div class="detail-txt">
+						<span class="txt-tit">네이버페이 포인트</span>
+						<span class="txt-tit-num">네이버파이낸셜</span>
+					</div>
 				</dt>
 				<dd class="detail-li-loop">
-					<span class="detail-li-tit">소멸예정 포인트</span>
-					<span class="detail-li-desc">0</span>
+					<span class="detail-li-tit">서비스명</span>
+					<span class="detail-li-desc">네이버페이 포인트</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">정보 생성일</span>
+					<span class="detail-li-desc">2011.01.19</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">자동충전 등록여부</span>
+					<span class="detail-li-desc">미등록</span>
+				</dd>
+				<dd class="detail-li-loop">
+					<span class="detail-li-tit">계정정보</span>
+					<span class="detail-li-desc">Insh****</span>
 				</dd>
 			</dl>
 		</section>	
@@ -61,10 +61,14 @@
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
+	//약정정보 배너 Swiper
+	thumbSwiper('.recomm','auto',4,10)
+	//특별혜택 배너 Swiper
+	bannerSwiper('.special-banner', 1.1, 15);
+	//제공혜택 배너 Swiper
+	thumbSwiper('.benefit-info','auto',0,10)
 	//자산 accordion
 	accordion();
-	//tab
-	tabMenu();
 </script>
 </body>
 </html>
