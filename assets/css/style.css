@@ -346,6 +346,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .consum:after {content:"";display:block;position:absolute;bottom:-0.25rem;left:0.75rem;width:.5rem;height:0.3125rem;background: url(../images/common/icon_spr.png) no-repeat -3.1875rem -2.5625rem / 12.5rem auto;}
 .consum.stop {left:80% !important;}
 .consum em{display:inline-flex;align-items:center;justify-content:center;background:url(../images/common/ico-kon.png) no-repeat center/contain;width:1.1rem;height:1.1rem;text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);margin-left:.3rem;font-size: .65rem;padding-right: .1rem;}
+.consum em.kon::after{content: 'K';}
 .consum[style="left: 82%;"]:after {left:1.2rem;}
 .consum[style="left: 83%;"]:after {left:1.3rem;}
 .consum[style="left: 84%;"]:after {left:1.4rem;}
