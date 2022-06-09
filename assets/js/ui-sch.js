@@ -175,6 +175,8 @@ function calPic() {
 		},
 	});
 
+	$('.date-select .btn-hide-calendar').hide();
+
 	$('.ui-datepicker-header').click(function(){
 		$('.date-month-selec-wrp').removeClass('hide');
 	});

@@ -1223,6 +1223,11 @@ position: relative;}
     background-size: 60% auto;
     background-position: center;
 }
+.day-schedule .history .ico-img{
+    width: 3rem;
+    max-height: 3rem;
+    border-radius: 0;
+}
 .day-schedule .history .ico[class*=code-ico-]{
     background-size: auto 100%;
 }
@@ -1260,6 +1265,13 @@ line-height: 1.35;letter-spacing: -.06rem;}
     content: '▲';
     color:#e04704;
     font-size: .5rem;
+}
+.day-schedule .history .c-gray.dn::after{
+    content: '▲';
+    color:#2f88ed;
+    font-size: .5rem;
+    display: inline-block;
+    transform: rotate(-180deg);
 }
 .day-schedule .history .dtl li span > .won{
     display: inline-block;
