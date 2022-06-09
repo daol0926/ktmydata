@@ -790,7 +790,7 @@
 			<button type="button" class="btn-pass-home">PASS홈</button>
 		</div>
 
-		<!-- 공지팝업 -->
+		<!-- 공지팝업 -->		
 		<div class="pass-bn-wrp layerPopup">
 			<!-- Swiper -->
 			<div class="swiper pass-bn-area">
@@ -803,9 +803,18 @@
 			</div>
 			<!--//Swiper -->
 			<div class="btn-area">
+				<span id="check" class="btnTodayHide">
+					<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
+					<label for="chkday">오늘 하루동안 보지 않기</label>
+				</span>
+				<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
+			</div>
+			<!--
+			<div class="btn-area">
 				<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
 				<button type="button" class="btn-more btnClose">닫기</button>
 			</div>
+			-->
 		</div>
 		<!--//공지팝업 -->
 	</main>
@@ -816,7 +825,6 @@
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
-<script type="text/javascript" src="assets/js/jquery.cookie.min.js"></script>
 <script>
 	//실적 Swiper
 	bannerSwiper('.performance', 1, 16);

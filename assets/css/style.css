@@ -3412,6 +3412,11 @@ text-align: right;}
     background-color: #eee;
     padding: .5rem;
 }
+.pass-bn-wrp .btn-area input{
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+}
 
 /* mbti */
 [class*=ico-mbti-]{display:block;background:url(../images/icon/mbti_sch/mbti_sch_03.png) no-repeat center/auto 100%;width: 4.5rem;height: 4.55rem;position:absolute;right:0;top: -2rem;}
