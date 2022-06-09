@@ -19,7 +19,7 @@ main {z-index: 1;height: 100%;}
 #header .btn-right,
 #header .btn-close {position:absolute;right:0.75rem;padding:0.75rem;}
 #header .ico-list{position:absolute;right:0.75rem;}
-.logo {display:block;width:4.5rem;height:1.3125rem;background:url(../images/common/logo.png) no-repeat 0 0/auto 100%;text-indent: -9999em;}
+.logo {display:block;width: 9rem;height:1.3125rem;background:url(../images/common/logo.png) no-repeat 0 0/auto 100%;text-indent: -9999em;}
 .container-header {padding: .625rem .75rem .6875rem;}
 .container-header .title {font-size:1.25rem;font-weight:700;}
 
