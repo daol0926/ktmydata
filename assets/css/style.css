@@ -1233,7 +1233,8 @@ position: relative;}
 }
 .day-schedule .history .ico.ico-card-clip{
     background-size: 100% auto;
-border-radius: 0;}
+    border-radius: 0;
+}
 .day-schedule .history .dtl-inner{
     margin-top:1rem;
     background-color: #fff;
@@ -3482,6 +3483,10 @@ text-align: right;}
 .select-list-wrp .focused{font-weight: 600;}
 
 /* icon list */
+.code-ico{
+    background-color: #fff;
+    border-radius: 50% !important;
+}
 [class*=code-ico-]{
     display: inline-block;
     background-repeat: no-repeat;
