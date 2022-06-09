@@ -68,7 +68,7 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
 .pa2_5{padding:2.5rem !important;}
 .pa3{padding:3rem !important;}
 .pa3_5{padding:3.5rem !important;}
-.pl0{padding: 0 !important;}
+.pl0{padding-left: 0 !important;}
 .pl1{padding-left:1rem !important;}
 .pl1_5{padding-left:1.5rem !important;}
 .pl2{padding-left:2rem !important;}

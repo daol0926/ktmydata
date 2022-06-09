@@ -23,7 +23,7 @@ main {z-index: 1;height: 100%;}
 .container-header {padding: .625rem .75rem .6875rem;}
 .container-header .title {font-size:1.25rem;font-weight:700;}
 
-.highlights{background-color: #ceeff5;color:#111;padding:0 .5rem;line-height: 1.5;}
+.highlights{background-color: #ceeff5;color:#111;padding: 0 0.1rem;line-height: 1.5;}
 
 .consider-wrap .container-header {padding:1.75rem 1.5rem 4.25rem;font-size:0.875rem;color:#fff;background:#43d4d3 url(../images/common/bg_consider.png) no-repeat right bottom / auto 8.3125rem;}
 .consider-wrap .container-header h2 {margin-bottom:1.25rem;font-size:1.3125rem;font-weight:700;line-height:1.875rem;}
