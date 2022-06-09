@@ -343,7 +343,7 @@ function scrollChk(obj){
 	var divHeight = divScroll.height();
 	if( divScroll.hasScrollBar() ){
 		divScroll.scrollTop(0);
-		$(obj+" .modal-container .btn-light-secondary").text("아래로 이동하기").attr("onclick","scrollDown(this)");
+		$(obj+" .modal-container .btn-light-secondary").text("아래로 내려보기").attr("onclick","scrollDown(this)");
 	}
 	divScroll.scroll(function(){  
 		console.log($(this)[0].scrollHeight +" / "+ Math.round($(this).scrollTop())) 
