@@ -1065,7 +1065,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .dateSwiper .swiper-slide.todayHighlight .num{
     color:#fff;
 }
-.dateSwiper .swiper-slide.focused .num{
+.dateSwiper .focused .num{
     border:2px solid #5ccbdf;
     border-radius: .25rem;
 }
@@ -1076,7 +1076,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     background-image: url(../images/common/ico-dateswiper-arrow.png);
     background-size: 6px 10px;
     width: 1.5rem;
-    height: 2.5rem;
+    height: 3rem;
     left: 0;
     top: 50%;
     background-color: #fff;
@@ -2346,6 +2346,7 @@ line-height: 1.2;}
     line-height: 1.2;
     word-break: break-all;
     text-align: justify;
+    padding-left: .5rem;
 }
 .agree-c-blue .terms-cont .inner .inner-txt:last-child{
     border-bottom: 0;
