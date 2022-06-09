@@ -1002,7 +1002,7 @@ padding: 1.5rem 0.775rem !important;margin: 1.5rem 0.775rem 0;}
     padding:0 1.5rem;
 }
 .dateSwiper .swiper-slide{
-    padding:.8rem .5rem;
+    padding: 1rem;
     margin-right: .8rem;
     pointer-events: none;
 }
@@ -1041,7 +1041,6 @@ padding: 1.5rem 0.775rem !important;margin: 1.5rem 0.775rem 0;}
 .dateSwiper .swiper-slide.todayHighlight{
     background-color: #5ccbdf;
     border-radius: 1.5rem;
-    padding: 1rem;
 }
 .dateSwiper .swiper-slide.todayHighlight a,
 .dateSwiper .swiper-slide.todayHighlight .num{
@@ -1302,8 +1301,9 @@ line-height: 1.35;letter-spacing: -.06rem;}
     margin-right: .5rem;
 }
 .coin-list .btn{
-    position:absolute;
-    right:0;
+    position:
+    absolute;
+    right: .5rem;
 }
 
 /* weekly-report */
@@ -1571,6 +1571,16 @@ z-index: 1;}
 .sch-picker .ui-datepicker-prev, 
 .sch-picker .ui-datepicker-next{
     display: none;
+}
+.sch-picker .ui-datepicker-title::after{
+    content: '';
+    display: inline-block;
+    background: url(../images/common/ico-btn-arrow.png) no-repeat center/6px 10px;
+    transform: rotate(90deg);
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    right: -1rem;
 }
 
 /* datepicker - 자산관리 이력정보 */
