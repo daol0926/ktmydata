@@ -117,7 +117,7 @@ function setCaleandar(year, month) {
 					headerH += item.offsetHeight;
 				});
 
-				window.scrollTo({top: positionTop - headerH - 52, behavior: 'smooth'});
+				window.scrollTo({top: positionTop - headerH - 300, behavior: 'smooth'});
 			}
 
 			e.preventDefault();
