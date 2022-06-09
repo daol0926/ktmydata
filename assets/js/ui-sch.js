@@ -94,7 +94,7 @@ function setCaleandar(year, month) {
 		var temp2 = `${setDate.year}${setNumberFormat(setDate.month)}${setNumberFormat(i)}`;
 
 		if (temp2 == selectedDate) {
-			dateHtml += `<div class="swiper-slide focused"><a href="#" class="date-select__item" data-target="${temp2}"><span>${temp}</span><span class="num">${setNumberFormat(i)}</span></a></div>`;
+			dateHtml += `<div class="swiper-slide todayHighlight"><a href="#" class="date-select__item" data-target="${temp2}"><span>${temp}</span><span class="num">${setNumberFormat(i)}</span></a></div>`;
 			index = i;
 		} else {
 			dateHtml += `<div class="swiper-slide"><a href="#" class="date-select__item" data-target="${temp2}"><span>${temp}</span><span class="num">${setNumberFormat(i)}</span></a></div>`;
@@ -146,6 +146,7 @@ function calPic() {
 		//showButtonPanel: true,
 		//showAnim: "slideDown",
 		//closeText: '닫기',
+		todayHighlight : true ,
 		dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
 		monthNamesShort: [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월" ], // 220525 수정 : 월 name 변경 (년도 name 변경은 없음)
 		//changeMonth: true, // 220525 수정 : 월 선택 옵션 추가

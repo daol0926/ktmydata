@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+	<!--// Layer Popup Begins //-->
+<div class="layerPop">
+	<div class="inform-layer">
+		<div class="btn-popup-close">
+			<a id="btn-inform-close" class="btn-close" title="오늘하루 보지않기"><span class="blind">닫기</span></a>
+		</div>					
+		<div class="inform-box">
+			<div class="inform-header">
+				<img src="../_img/common/logo.png" title="logo">
+				<h2>알려 드립니다</h2>
+			</div>			
+			<div class="inform-body">
+				<p>아래 기간 동안 시스템 점검으로 인하여<br>서비스
+접속이 제한 됨을 알려 드립니다. </p>
+				<p class="mt20">이용에 불편을 드려 죄송합니다.</p>
+				<p class="inform-date mt20">2017. 11.24(금) 19:00 ~ 2017.11.27(월) 08:00</p>
+			</div>		
+		</div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	var layer = $('.layerPop');
+    var btnClose = $('.btn-close');
+	var edate= new Date("2017/11/27 08:00:00"); 
+
+	//닫기버튼 누를시 하루동안 열지않기
+	cookiedata = document.cookie;
+
+    if ( Date.now() <= edate && cookiedata.indexOf("layerCookie=done") < 0 ){     
+		layer.show();
+	}
+    else {
+    	layer.hide();
+    }
+
+	function setCookie( name, value, expiredays ) {
+        var todayDate = new Date();
+        todayDate.setDate( todayDate.getDate() + expiredays ); 
+        document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+
+	btnClose.on("click", function(){
+        //expiredays의 1은 하루를 의미한다, 일주일은 7, 1년은 365로 입력
+		setCookie( "layerCookie", "done" , 1);
+		layer.fadeOut('fast');
+	})
+});
+</script>
+<!--// LayerPopup Ends //-->
+</body>
+</html>
