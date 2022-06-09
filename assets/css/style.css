@@ -364,7 +364,22 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .consum[style="left: 96%;"]:after {left:3rem;}
 .consum[style="left: 97%;"]:after {left:3.2rem;}
 .consum[style="left: 98%;"]:after {left:3.4rem;}
-.consum[style="left: 99%;"]:after {left:3.5rem;}
+.consum[style="left: 99%;"]:after,
+.consum[style="left: 100%;"]::after {left:3.5rem;}
+.consum[style="left: 87%;"],
+.consum[style="left: 88%;"],
+.consum[style="left: 89%;"]{margin-left: -4rem;}
+.consum[style="left: 90%;"],
+.consum[style="left: 91%;"],
+.consum[style="left: 92%;"],
+.consum[style="left: 93%;"],
+.consum[style="left: 94%;"],
+.consum[style="left: 95%;"],
+.consum[style="left: 96%;"],
+.consum[style="left: 97%;"],
+.consum[style="left: 98%;"],
+.consum[style="left: 99%;"],
+.consum[style="left: 100%;"]{margin-left: -4rem;}
 .consum.rotate:after {transform: rotateY(180deg);}
 .consum.full {left:auto !important;right:-.5rem;}
 .consum.full:after {left:auto;right:.75rem;}
@@ -1040,6 +1055,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     padding-bottom:2px;
     pointer-events: none;
     padding: .2rem;
+    border: 2px solid transparent;
 }
 .dateSwiper .swiper-slide.todayHighlight{
     background-color: #5ccbdf;
@@ -3342,7 +3358,7 @@ text-align: right;}
     width: 100%;
     padding-bottom: 0;
     overflow: hidden;
-    height: 16rem;
+    height: 25rem;
 }
 .inner-iframe iframe{
     position: absolute;
