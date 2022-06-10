@@ -3656,6 +3656,20 @@ text-align: right;}
 .code-ico-B4AADL0000{background-image:url(../images/icon/B4AADL0000.png);}
 
 
+/* 자산관리 */
+.assets-manage .card .list > ul > li:before,
+.assets-manage .card.bill-info .bill-list > ul > li::before{
+    background-size: contain;
+}
+.assets-manage .assets-name i:before{
+    width: 100%;
+    height: 100%;
+}
+.assets-manage .code-ico{
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
