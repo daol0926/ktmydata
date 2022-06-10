@@ -59,6 +59,7 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
 .mr2_5{margin-right:2.5rem !important;}
 .mr3{margin-right:3rem !important;}
 .mr3_5{margin-right:3.5rem !important;}
+.mb0{margin-bottom: 0 !important;}
 /* paddings */
 .paDefault{padding:0 .775rem !important;}
 .pa0{padding: 0 !important;}
@@ -96,6 +97,7 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
 .pb2_5{padding-bottom:2.5rem !important;}
 .pb3{padding-bottom:3rem !important;}
 .pb3_5{padding-bottom:3.5rem !important;}
+.pb5{padding-bottom:5rem !important;}
 /* Border */
 .bt0{border-top:0 !important}
 .bb0{border-bottom:0 !important}

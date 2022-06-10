@@ -199,6 +199,35 @@ function accordion(){
 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
 	});
 }
+function accordionAssets(){
+	$(document).on('click','.accordion .tit .fold-btn', function() {
+		function slideDown(target) {
+			slideUp();
+			$(target).addClass('fold').parent().next().slideDown('fast');
+			$('.coinback-guide-btn').addClass('view');
+		}
+		function slideUp() {
+			$('.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
+			$('.coinback-guide-btn').removeClass('view');
+		}
+		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
+	});
+}
+function accordionKon(){
+	$(document).on('click','.accordion .tit button', function() {
+		function slideDown(target) {
+			slideUp();
+			$(target).addClass('fold').parent().next().slideDown('fast');
+			$('.coinback-guide-btn').addClass('view');
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		}
+		function slideUp() {
+			$('.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
+			$('.coinback-guide-btn').removeClass('view');
+		}
+		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
+	});
+}
 
 //자산 설정 카테고리 sticky
 function cateSticky(){

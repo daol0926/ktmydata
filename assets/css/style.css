@@ -348,7 +348,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .performance .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .performance .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
 .msg-area {display:inline-block;position: relative;height: 3.5625rem;margin-bottom:3.625rem;padding:0 6.25rem 0 0;}
-.msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width: 7.25rem;height:6.25rem;background: url(../images/icon/mbti_home/mbti_home_02.png) no-repeat right bottom / auto 100%;}
+.msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width: 7.25rem;height:6.25rem;background: url(../images/icon/mbti/mbti-default.png) no-repeat right bottom / auto 100%;}
 .msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;width: 12.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;}
 .msg:after {content:"";display:block;position:absolute;bottom:0;right:0.125rem;width:1rem;height:0.6875rem;background: url(../images/common/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;}
 
@@ -726,8 +726,6 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-name .insurance {background-color: #ffefec;}
 .assets-name .capital {background-color: #f4f3e5;}
 .assets-name .guarantee {background-color: #f4f0fd;}
-
-.assets-name .credit-card:before {/* background-position-x:0; */}
 .assets-name .bank:before {/* background-position-x:-1.375rem; */background-image: url(../images/common/ico-bank.png);}
 .assets-name .securities:before {/* background-position-x:-2.75rem; */background-image: url(../images/common/ico-securities.png);}
 .assets-name .paymoney:before {/* background-position-x:-4.125rem; */background-image: url(../images/common/ico-paymoney.png);height: 65%;}
@@ -1405,16 +1403,6 @@ z-index: 1;}
     align-items: center;
     justify-content: center;
 }
-.data-month-selec .ui-datepicker-calendar tbody td span,
-.data-month-selec .ui-datepicker-calendar tbody td a{
-    /* padding: 1.62rem .52rem; */
-}
-/*
-.data-month-selec .ui-datepicker-next,
-.data-month-selec .ui-datepicker-prev {
-    display: none;
-}
- */
 .ui-datepicker-calendar .ui-state-active{
     background-color:#dff3fa;
     border-radius: 1.5rem;
@@ -1812,9 +1800,6 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .bill-ico-sh{
     background-image:url(../images/common/ico-sh.png);
-}
-.my-home #header, .my-datas #header{
-    /* justify-content: center; */
 }
 
 /* container */
@@ -2783,94 +2768,52 @@ max-width: 12rem;margin: 0 auto;}
     display: none;
 }
 
-.coinback-guide-btn{
-    margin: 0 0.775rem;
-    background-color: #e5e8ef;
-    position: relative;
-    padding:0 1.25rem 1.25rem;
-    border-radius: .5rem;
-}
-.coinback-guide-btn .tit button{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:1.25rem 0 0;
-    font-size: .85rem;
-    width: 100%;
-}
-.coinback-guide-btn .list-dot{
-    padding-top: 1.25rem;
-}
-.coinback-guide-btn .list-dot li{
-    color:#777;
-    font-size: .8rem;
-    margin-bottom: .5rem;
-}
-.coin-d-day .btn-xs{
-    margin-right: .5rem;
-    height:1.3rem;
-    line-height: 1.3rem;
-    padding:0;
-    padding-left:.8rem;
-    padding-right:.8rem;
-}
-.coin-d-day .c-gray{
-    font-size:.85rem;
-}
-.payment-list-wrp{
-    padding:1.25rem;
-}
-.payment-list-wrp .title{
-    margin-bottom: 1.5rem;
-}
-.payment-list-wrp .payment-list .payment-list-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: .9rem;
-    margin-bottom:1.25rem;
-}
-.payment-list-wrp .payment-list .payment-list-box .list-date{
-    margin-top:.5rem;
-    color:#888;
-    font-size: .8rem;
-}
-.payment-list-wrp .payment-list .payment-list-box .ico{
-    display: inline-flex;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background-position: center;
-    background-color: #fff;
-    margin-right: .5rem;
-    background-size: 90% auto;
-}
-.payment-list-wrp .payment-list .payment-list-box .ico[class*=bill-ico-]{
-    position: unset;
-}
-.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::before{
-    content: '[';
-}
-.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::after{
-    content: ']';
-}
-.payment-list-wrp .payment-list .payment-list-box .btn-area{
-    margin-top: 0;
-    font-size: .8rem;
-    color:#777;
-text-align: right;}
-.payment-list-wrp .payment-list-empty{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:5rem;
-    color:#777;
-    font-size: .8rem;
-}
-.event-list-wrp{
-    margin-top:-4.25rem;
-    padding: 4.25rem 0 1.25rem;
-}
+/* KON적립[코인백] */
+.coin-d-day .btn-xs{margin-right: .5rem;height:1.3rem;line-height: 1.3rem;padding:0;padding-left:.8rem;padding-right:.8rem;}
+.coin-d-day .c-gray{font-size:.85rem;}
+
+.coinback-guide-btn{margin: 0 0.775rem;background-color: #e5e8ef;position: relative;padding:0 1.25rem 1.25rem;border-radius: .5rem;}
+.coinback-guide-btn .tit button{display: flex;align-items: center;justify-content: space-between;padding:1.25rem 0 0;font-size: .85rem;width: 100%;}
+.coinback-guide-btn .list-dot{padding-top: 1.25rem;}
+.coinback-guide-btn .list-dot li{color:#777;font-size: .8rem;margin-bottom: .5rem;}
+
+.coinback-guide-btn.view{position:absolute;top: 7.1rem;background-color:#f2f3f7;margin: 0;padding: 0 0.775rem 1.25rem;z-index: 2;border-radius: 0;}
+.coinback-guide-btn.view .cont-wrp{background-color: #fff;padding:0 1.25rem 1.25rem;border-bottom: 1px solid #e4e4e4;border-radius: .85rem;}
+.coinback-guide-btn.view .tit{padding-bottom: 1.25rem;border-bottom: 1px solid #e4e4e4;margin-bottom: 1.25rem;}
+
+.coinback-guide-container>li{margin-top:1.25rem;border-bottom: 1px solid #e4e4e4;padding-bottom: 1rem;}
+.coinback-guide-container>li:last-child{border-bottom: 0;}
+.coinback-guide-container img{display: block;margin:.5rem auto;max-width: 60%;}
+.coinback-guide-container .title{margin-bottom: .8rem;}
+.coinback-guide-container .title .num{color:#0fbcdd;font-weight: 600;font-size: 1rem;}
+.coinback-guide-container .title .num::after{content: '.';}
+.coinback-guide-container .title .txt{color:#111;font-weight: 500;margin-bottom: .8rem;}
+.coinback-guide-container .inner-title{position: relative;font-size: .9rem;padding-top: 0.12rem;}
+.coinback-guide-container .inner-title .num{display: inline-flex;align-items: center;justify-content: center;color:#0fbcdd;font-weight: 500;background-color: #d4f3f9;border-radius: .3rem;width:1.5rem;height:1.5rem;position:absolute;left:0;top:0;}
+.coinback-guide-container .inner-title .txt{display:block;color:#666;font-size: .85rem;word-break: keep-all;line-height: 1.4;}
+.coinback-guide-container .inner-title .txt + .bn-area{margin-top: 1rem;}
+.coinback-guide-container .inner-title .num + .txt{margin-left: 2rem;}
+.coinback-guide-container .inner-title + .inner-title{margin-top: 2rem;}
+.coinback-guide-container .inner-title .payment-list-wrp{transform: scale(.85);}
+.coinback-guide-container .inner-title-wrp .inner-title + .inner-title{margin-top: .9rem;}
+.coinback-guide-container .inner-desc{color:#666;margin-top: 1.7rem;font-size: .88rem;}
+.coinback-guide-container .inner-desc a{text-decoration: none;}
+.coinback-guide-container .img2{margin: -2.5rem auto -1.5rem;}
+.coinback-guide-container .btn-sm{min-width: fit-content;padding-left:1rem;padding-right:1rem;height: 2rem;line-height: 2rem;margin: 0 auto;}
+.coinback-guide-container .highlights{text-align: center;height: .9rem;line-height: .3;width: fit-content;padding: 0 .3rem;margin: 1rem auto 0;}
+
+.payment-list-wrp{padding:1.25rem;}
+.payment-list-wrp .title{margin-bottom: 1.5rem;}
+.payment-list-wrp .payment-list .payment-list-box{display: flex;justify-content: space-between;align-items: center;font-size: .9rem;margin-bottom:1.25rem;}
+.payment-list-wrp .payment-list .payment-list-box .list-date{margin-top:.5rem;color:#888;font-size: .8rem;}
+.payment-list-wrp .payment-list .payment-list-box .ico{display: inline-flex;width: 2rem;height: 2rem;border-radius: 50%;background-position: center;background-color: #fff;margin-right: .5rem;background-size: 90% auto;}
+.payment-list-wrp .payment-list .payment-list-box .ico[class*=bill-ico-]{position: unset;}
+.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::before{content: '[';}
+.payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::after{content: ']';}
+.payment-list-wrp .payment-list .payment-list-box .btn-area{margin-top: 0;font-size: .8rem;color:#777;text-align: right;}
+.payment-list-wrp .payment-list-empty{display: flex;align-items: center;justify-content: center;height:5rem;color:#777;font-size: .8rem;}
+
+.event-list-wrp{margin-top:-4.25rem;padding: 4.25rem 0 1.25rem;}
 .event-list-wrp .event-list-num{
     margin:0 1.5rem 1rem;
     display: block;
@@ -3343,7 +3286,23 @@ text-align: right;}
 }
 
 /* mbti */
-[class*=ico-mbti-]{display:block;background:url(../images/icon/mbti_sch/mbti_sch_03.png) no-repeat center/auto 100%;width: 4.5rem;height: 4.55rem;position:absolute;right:0;top: -2rem;}
+[class*=ico-mbti-]{display:block;background:url(../images/icon/mbti/mbti-default.png) no-repeat center/auto 100%;width: 4.5rem;height: 4.55rem;position:absolute;right:0;top: -2rem;}
+.ico-mbti-enfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-entp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-esfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-esfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-estj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-estp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-infj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-infp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-intj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-intp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-isfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-isfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-istj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-istp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
 
 /* pass webview */
 .pass-webview{
@@ -3405,6 +3364,20 @@ text-align: right;}
 .select-list-wrp>ul>li:last-child{margin-bottom: 0;}
 .select-list-wrp .focused{font-weight: 600;}
 
+/* 자산관리 */
+.assets-manage .card .list > ul > li:before,
+.assets-manage .card.bill-info .bill-list > ul > li::before{
+    background-size: contain;
+}
+.assets-manage .assets-name i:before{
+    width: 100%;
+    height: 100%;
+}
+.assets-manage .code-ico{
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
 /* icon list - img ico */
 .ico {display:inline-block;background:url(../images/common/icon_spr.png) no-repeat 0 0 / 12.5rem auto;text-indent:-9999em;}
 .ico-back {width:0.5625rem;height:1rem;background-position:0 0;}
@@ -3432,7 +3405,9 @@ text-align: right;}
 .ico-savelist{background: url(../images/common/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
 .fold .ico-fold,
 .ico-fold.fold{transform: rotate(-180deg);}
-.fold-connect{pointer-events: none;}
+.my-assetsDtl .tit button.fold-connect.fold,
+.fold-connect.fold{transform: translateY(-50%) rotate(0);}
+.fold-connect.fold .ico-fold,
 .fold-connect .ico-fold{transform: rotate(-90deg);}
 .ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
 .btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
@@ -3478,6 +3453,8 @@ text-align: right;}
     background-size: contain;
     background-color: #fff;
     border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
 }
 /* icon list - 통신 */
 .code-ico-F1AAAN0000{background-image:url(../images/icon/F1AAAN0000.png);}
@@ -3658,6 +3635,7 @@ text-align: right;}
 .btn-light {background-color:#e4e4e4;color:#888;}
 .btn-light:disabled {background-color:#e4e4e4;color:#111;cursor: default;}
 .btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
+.btn-light-gray{color:#111;background-color: #f2f3f7;}
 .btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */}
 .btn-dark{background-color: #444;color:#fff;}
 .btn-gray{background-color: #dadada;color:#fff;}
@@ -3680,21 +3658,6 @@ text-align: right;}
 
 .btn-pass-home{background-color: #ff3a4b;border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;}
 
-
-
-/* 자산관리 */
-.assets-manage .card .list > ul > li:before,
-.assets-manage .card.bill-info .bill-list > ul > li::before{
-    background-size: contain;
-}
-.assets-manage .assets-name i:before{
-    width: 100%;
-    height: 100%;
-}
-.assets-manage .code-ico{
-    background-color: transparent !important;
-    border-radius: 0 !important;
-}
 
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
