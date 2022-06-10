@@ -204,11 +204,9 @@ function accordionAssets(){
 		function slideDown(target) {
 			slideUp();
 			$(target).addClass('fold').parent().next().slideDown('fast');
-			$('.coinback-guide-btn').addClass('view');
 		}
 		function slideUp() {
-			$('.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
-			$('.coinback-guide-btn').removeClass('view');
+			$('.accordion .tit .fold-btn').removeClass('fold').parent().next().slideUp('fast');
 		}
 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
 	});
