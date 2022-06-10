@@ -119,20 +119,29 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .certify-wrap.pw-wrap h2:before {content:"";display:block;width:4.25rem;height:3.1875rem;margin:0 auto;margin-bottom:1.5rem;background: url(../images/common/icon_spr.png) no-repeat 0 -6.875rem / 12.5rem auto;}
 .certify-wrap.pw-wrap .certify-password {position: static;width:100%;}
 
+/* 자산연결 */
 .connect-container {padding-bottom:6.625rem;}
 .connect-container .container-header {padding:1.25rem 0 0;}
 .connect-container .summary-txt{margin:0;border-bottom: 0;}
-.connect-wrap > header {padding:2.25rem 1.5rem 3.25rem;background-color:#43d4d3;border-radius: 1rem 1rem 0 0;}
-.connect-wrap .description {margin-bottom:1.875rem;font-size:0.875rem;color:#fff;font-weight:500;line-height:1.25rem;text-align:center;}
+.connect-container .assets{margin:.75rem;background-color: #f2f3f7;border-radius: .5rem;}
+.connect-container .assets + .assets {border-top:0;}
+.connect-container .card-select,
+.connect-container .check-label .box{width: 5.8rem;height: 5.8rem;}
+.connect-container .check-label .box{background-color: #fff;display: flex;flex-flow: column;align-items: center;justify-content: center;border: 3px solid transparent;padding-top: .8rem;}
+.connect-container .check-label .box .text{height: 1.8rem;font-weight: 400;}
+.connect-container .check-label input:checked + .box{border:3px solid #0fbcdd;}
+.connect-container .check-label input:checked + .box:after{background-color: #0fbcdd;border-radius: 50%;background-image: url(../images/common/ico-btn-arrow3.png);background-position: center;background-size: auto 43%;transform: rotate(90deg);width: 1.25rem;height: 1.25rem;}
+.connect-container .select-list li{width: 33.3333%;}
+.connect-wrap > header {padding: 1.5rem;background-color: #f2f3f7;border-radius: .5rem;margin: .75rem;}
+.connect-wrap .description {margin-bottom: .975rem;font-size:0.875rem;/* color:#fff; */font-weight:500;line-height:1.25rem;text-align:center;}
 .connect-wrap .description strong {color:#111;}
-.connect-wrap > header .box {border:0 !important;}
-.card-select {display:flex;flex-direction: column;align-items: center; width:6.1875rem;height:6.1875rem;line-height:1;background-color:#00c9c8;border-radius: 0.625rem;text-align: center;}
-.card-select span {display:flex;align-items: center;height:4.375rem;}
-.card-select em {display:block;font-size: 0.8125rem;color:#111;}
+.card-select {display:flex;flex-direction: column;align-items: center; width:6.1875rem;height:6.1875rem;line-height:1;background-color: #cccfd8;border-radius: 0.625rem;text-align: center;justify-content: center;}
+.card-select span {display:flex;align-items: center;/* height: 3.375rem; *//* margin-bottom: .5rem; */}
+.card-select em {display:block;font-size: 0.8125rem;color: #fff;}
 .select-list {display:flex;flex-wrap: wrap;justify-content: center;}
 .select-list li {padding:.25rem .125rem;}
 .check-label .box {display:block;position:relative;width:6.1875rem;height:6.1875rem;padding:0;border:1px solid #f5f5f5;background-color:#f5f5f5;border-radius: 0.625rem;text-align: center;}
-.check-label [class*=code-ico-] {display:block;width:100%;height:4.375rem;border-radius: 0;background-color: transparent;}
+.check-label [class*=code-ico-] {display:block;width: 3.5rem;height: 2.1rem;border-radius: 0;background-color: transparent;background-size: contain;margin: 0 auto .8rem;}
 .check-label .text {display: block;font-size:0.8125rem;font-weight:500;}
 .check-label.lock .text:after {content:"";display:inline-block;width:0.8125rem;height:1rem;margin:0 -0.25rem 0 0.25rem;background:url(../images/common/icon_spr.png) no-repeat -2.625rem 0 / 12.5rem auto; vertical-align: middle;}
 .check-label input {position:absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border:0;opacity:0;}
@@ -141,20 +150,20 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .connect-assets {margin-top:-1rem;background-color:#fff;border-radius: 1rem 1rem 0 0;}
 .cate-wrap {position:sticky;top:-1.5rem;left:0;z-index:20;}
-.cate-wrap .inner {padding:1rem 1.5rem 1rem;border-bottom:1px solid #e4e4e4;background-color:#fff;}
+.cate-wrap .inner {padding: 1rem .75rem 0;border-bottom:1px solid #e4e4e4;background-color:#fff;}
 .cate-wrap .fixed {position:fixed;left:0;z-index:1;width:100%;padding:1rem 1.5rem 1rem;background-color:#fff;}
 .cate-wrap ul {display:flex;flex-wrap: wrap;margin:0 -.125rem;}
 .cate-wrap ul li {padding:.1875rem .125rem;}
 .cate-wrap button {display:flex;align-items: center;height:1.9375rem;padding:0 .75rem;font-size:0.8125rem;color:#888;font-weight:500;border-radius:1rem;background-color:#e4e4e4;}
 .cate-wrap button.current {background-color:#111;color:#fff;}
 
-.assets {padding:2rem 1.5rem 1.875rem;}
+.assets {padding: 1.5rem;}
 .assets + .assets {border-top:.5rem solid #e4e4e4;}
 .assets h2 {display:flex;justify-content: space-between;margin-bottom:0.9375rem;font-size:1.0625rem;}
 .assets h2 button {font-size:.75rem;color:#888;font-weight:500;}
 .assets ul {margin:0 -.125rem;justify-content: flex-start;}
 .assets li {padding:.25rem .125rem;}
-.check-label.recomm .box:before {content:"추천";display:flex;justify-content: center;align-items: center;position:absolute;top:0.375rem;left:0.375rem;padding:0.25rem 0.25rem;font-size:0.625rem;color:#fff;font-weight:500;border-radius:0.375rem;background-color:#f05d15;line-height:1;}
+.check-label.recomm .box:before {content:"추천";display:flex;justify-content: center;align-items: center;position:absolute;top: 0.2rem;left: 0.2rem;padding:0.15rem 0.25rem;background-color: #ffd9d8;color: #e03838;font-size: .675rem;line-height:1;border-radius: .25rem;}
 
 .policy-wrap {padding:0 1.5rem;font-size:.875rem;font-weight:400;line-height:1.5;}
 .policy-wrap header {position:sticky;top:0;left:0;padding: 1.25rem 0;background-color: #fff;text-align: left;}
@@ -197,8 +206,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .assets.fail .bank-name {margin-bottom: 0;}
 .assets-confirm .box {padding: .625rem .5rem;border-radius:.625rem;background-color:#f5f5f5;}
 .assets-confirm .box + .box {margin-top:.625rem;}
-.assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;}
-.assets-confirm .box [class*=code-ico-]{width:1.875rem;height: 1.875rem;margin-right:.5rem;}
+.assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
+.assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;border-radius: 0;background-color: transparent;position: absolute;z-index: 1;left: 0.325rem;}
+.assets-confirm .box .bank-name::before{content: '';border-radius: 50%;background-color: #fff;width: 1.875rem;height: 1.875rem;display: block;position: absolute;z-index: 0;left: 0;}
 .assets-confirm .box ul {padding:0 1.25rem;border-radius:.625rem;background-color:#fff;}
 .assets-confirm .box li {padding: 0.3125rem 0.125rem;}
 .assets-confirm .box li .flex {align-items: center;justify-content: space-between;width:100%;padding:.625rem 0;}
@@ -849,104 +859,6 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .modal .modal-msg strong {display:block;color:#111;font-weight:500;}
 .modal .btn-close {position: absolute;top:0.1875rem;right:-0.6875rem;padding:0.625rem;}
 
-.ico {display:inline-block;background:url(../images/common/icon_spr.png) no-repeat 0 0 / 12.5rem auto;text-indent:-9999em;}
-.ico-back {width:0.5625rem;height:1rem;background-position:0 0;}
-.ico-close {width:0.9375rem;height:0.9375rem;background-position:-1.5625rem 0;}
-.ico-arr {width:0.375rem;height:0.5625rem;background-position:-.75rem -.5rem;}
-.ico-check {width:1.4375rem;height:1.4375rem;background-position:-1.875rem -1.25rem;}
-.ico-check2 {width:0.5625rem;height:0.375rem;background-position:-3.4375rem 0;}
-.ico-add {width:1.8125rem;height:1.8125rem;background-position:0 -1.25rem;}
-.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
-.ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
-.ico-list {width: 1rem;height: 0.75rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
-.ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
-.ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
-.ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
-.ico-bell {width:1.125rem;height:1.1875rem;background-position:-6.0625rem -12.375rem;}
-.ico-bell2 {width:1.1875rem;height:1.0625rem;background-position:-6.0625rem -14rem;}
-.ico-bell3 {width:1rem;height:1rem;background-position:-7.4375rem -14rem;}
-.ico-card-w {width:2.375rem;height:2.375rem;background-position:-10.125rem -17.1875rem;}
-.ico-prev:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent #111 transparent transparent;}
-.ico-next:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent transparent transparent #111;}
-.ico-month-prev,
-.ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
-.ico-month-next{transform: rotate(180deg);}
-.ico-notification{display: block;margin:0 auto 1rem;width: 5.5rem;height: 3.5rem;background:url(../images/common/ico-notification.png) no-repeat center/auto 100%;}
-.ico-savelist{background: url(../images/common/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
-.fold .ico-fold,
-.ico-fold.fold{transform: rotate(-180deg);}
-.fold-connect{pointer-events: none;}
-.fold-connect .ico-fold{transform: rotate(-90deg);}
-.ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
-.btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
-
-.ico-car{background-image:url(../images/common/ico-car.png);}
-.ico-card{background-image:url(../images/common/ico-card.png);}
-.ico-card-clip{background-image:url(../images/common/ico-card-clip.png);}
-.ico-cash{background-image:url(../images/common/ico-cash.png);}
-.ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
-.ico-thehyundai{background-image:url(../images/common/ico-thehyundai.png);}
-.ico-ssgmall{background-image:url(../images/common/ico-ssgmall.png);}
-.ico-ss{background-image:url(../images/common/ico-ss.png);}
-.ico-sh{background-image:url(../images/common/ico-sh.png);}
-.ico-bc{background-image:url(../images/common/ico-bc.png);}
-.ico-hd-card{background-image:url(../images/common/ico-hd-card.png);}
-.ico-coin{background-image:url(../images/common/ico-coin.png);}
-.ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
-.ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
-.ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
-.ico-kt{background-image:url(../images/common/ico-kt.png);}
-.ico-lego{background-image:url(../images/common/ico-lego.png);}
-.bill-ico-naver,
-.ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.png);}
-.ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
-.ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
-.ico-nike{background-image:url(../images/common/ico-nike.png);}
-.ico-save-arrow{background-image:url(../images/common/ico-btn-arrow3.png);background-color: #85d7e7;border-radius: 50%;width: 18px;height: 18px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
-.ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
-.ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
-.ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
-
-.won:after {content:" 원";}
-.kon:after {content:" KON";}
-.monthly:before {content:"월 ";}
-.p:after {content:" P";}
-.k:after {content:" K";}
-.gun:after {content:"건";}
-.per::after{content: " %";}
-
-.btn {display:block;width:100%;height:3.375rem;line-height:3.375rem;border-radius:0.875rem;color:#fff;font-size:1rem;font-weight:500;text-align:center;}
-.btn-sm {width:7.6875rem;height:2.5rem;line-height:2.5rem;font-size:0.8125rem;border-radius: 0.5rem;}
-.btn-xs {display:inline-block;width:auto;height: 1.5rem;line-height: 1.5rem;padding:0 0.5625rem;font-size:0.6875rem;border-radius: 0.25rem;}
-.btn-full {width:100%;}
-.btn-square{border-radius: 0;}
-
-.btn-red{background-color:#fd0e0e;}
-.btn-light {background-color:#e4e4e4;color:#888;}
-.btn-light:disabled {background-color:#e4e4e4;color:#111;cursor: default;}
-.btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
-.btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */}
-.btn-dark{background-color: #444;color:#fff;}
-.btn-gray{background-color: #dadada;color:#fff;}
-
-.btn-txt {font-size:.75rem;color:#111;border-bottom:1px solid #111;line-height:1;}
-.btn-txt.c-gray{border-color:#666;}
-.btn-txt.undline-none{border-bottom:0;font-weight: 400;}
-.btn-txt.undline-none .ico{margin-left:.5rem;}
-.btn-border {border:1px solid #bfbfbf;border-radius:30px;}
-.btn-refresh {padding:0.25rem 0.1875rem;}
-
-.btn-round{border-radius: 2rem;}
-
-.btn-switch {overflow: hidden;position: relative;width: 3rem;height: 1.625rem;border-radius: 1rem;}
-.btn-switch input { opacity: 0;width: 0;height: 0;}
-.btn-switch .slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: #cecece;transition: 0.2s all ease;}
-.btn-switch .slider:before {content: "";position: absolute;top:50%;left: 0.1875rem;width: 1.375rem;height: 1.375rem;transform: translateY(-50%);background-color: #fff;border-radius: 50%;transition: 0.2s all ease;}
-.btn-switch input:checked + .slider {background-color: #53cee6;}
-.btn-switch input:checked + .slider:before {left: 1.4375rem;}
-
-.btn-pass-home{background-color: #ff3a4b;border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;}
-
 /* popup */
 .dimmed {overflow: hidden;}
 .dimmed:after {content:"";display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);z-index:10;}
@@ -1214,6 +1126,10 @@ position: relative;}
     top: 0.625rem;
     left: 0.125rem;
     /* z-index: 2; */
+}
+.day-schedule .history .ico-area .code-ico{
+    width: 2rem;
+    border-radius: 0 !important;
 }
 .day-schedule .history .ico[class*=ico-]{
     width: 3rem;
@@ -1845,10 +1761,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 /* sch cate-wrap */
 .cate-wrap{
-    position: unset;    
-    padding: 0.5rem 1.5rem;
-    margin: 1rem auto;
-overflow-x: auto;}
+    position: unset;
+    padding: 0.25rem .75rem;
+    margin: .5rem auto;
+    overflow-x: auto;
+    }
 .cate-wrap .inner{
     border-bottom: 0;
 }
@@ -1860,6 +1777,10 @@ overflow-x: auto;}
 .cate-wrap ul>li:last-child{
     padding-right: 30px;
 }
+
+/* 자산연결 cate-wrap */
+.connect-container .cate-wrap button{background-color:#fff;border:1px solid #e4e4e4;color:#111;min-width: 4rem;text-align: center;justify-content: center;}
+.connect-container .cate-wrap button.current{background-color:#54cee6;border:1px solid #54cee6;color:#fff;}
 
 /* bill-ico */
 [class*=bill-ico-]{
@@ -2769,9 +2690,10 @@ line-height: 1.2;}
     font-size: .85rem;
 }
 .brand-info .brand-info-list .ico[class*=ico-]{
-    width: 100%;
-    height: 3rem;
-    background-size: 80% auto;
+    width: 4rem;
+    height: 2.5rem;
+    background-size: contain;
+    margin-bottom: .75rem;
 }
 .brand-select{
     padding: 0.775rem;
@@ -2805,15 +2727,6 @@ line-height: 1.2;}
     color:#fff;
     flex-flow: column;
     min-height: 11.05rem;
-}
-.brand-select .select-list.add-brand .ico.ico-plus{
-    background-image:url(../images/common/ico-plus.png);
-    background-size: 60% auto;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-bottom: .5rem;
 }
 .brand-select .select-list [class*=ico][class*=ico-]{
     display: flex;
@@ -3492,7 +3405,68 @@ text-align: right;}
 .select-list-wrp>ul>li:last-child{margin-bottom: 0;}
 .select-list-wrp .focused{font-weight: 600;}
 
-/* icon list */
+/* icon list - img ico */
+.ico {display:inline-block;background:url(../images/common/icon_spr.png) no-repeat 0 0 / 12.5rem auto;text-indent:-9999em;}
+.ico-back {width:0.5625rem;height:1rem;background-position:0 0;}
+.ico-close {width:0.9375rem;height:0.9375rem;background-position:-1.5625rem 0;}
+.ico-arr {width:0.375rem;height:0.5625rem;background-position:-.75rem -.5rem;}
+.ico-check {width:1.4375rem;height:1.4375rem;background-position:-1.875rem -1.25rem;}
+.ico-check2 {width:0.5625rem;height:0.375rem;background-position:-3.4375rem 0;}
+.ico-add {width: 2.5rem;height: 2.5rem;background-position:0 -1.25rem;background-color: #fff;border-radius: 50%;}
+.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
+.ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
+.ico-list {width: 1rem;height: 0.75rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
+.ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
+.ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
+.ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
+.ico-bell {width:1.125rem;height:1.1875rem;background-position:-6.0625rem -12.375rem;}
+.ico-bell2 {width:1.1875rem;height:1.0625rem;background-position:-6.0625rem -14rem;}
+.ico-bell3 {width:1rem;height:1rem;background-position:-7.4375rem -14rem;}
+.ico-card-w {width:2.375rem;height:2.375rem;background-position:-10.125rem -17.1875rem;}
+.ico-prev:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent #111 transparent transparent;}
+.ico-next:after {content: "";display: inline-block;border-width: 0.5rem;border-style: solid;border-color: transparent transparent transparent #111;}
+.ico-month-prev,
+.ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
+.ico-month-next{transform: rotate(180deg);}
+.ico-notification{display: block;margin:0 auto 1rem;width: 5.5rem;height: 3.5rem;background:url(../images/common/ico-notification.png) no-repeat center/auto 100%;}
+.ico-savelist{background: url(../images/common/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
+.fold .ico-fold,
+.ico-fold.fold{transform: rotate(-180deg);}
+.fold-connect{pointer-events: none;}
+.fold-connect .ico-fold{transform: rotate(-90deg);}
+.ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
+.btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
+
+.ico-car{background-image:url(../images/common/ico-car.png);}
+.ico-card{background-image:url(../images/common/ico-card.png);}
+.ico-card-clip{background-image:url(../images/common/ico-card-clip.png);}
+.ico-cash{background-image:url(../images/common/ico-cash.png);}
+.ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
+.ico-thehyundai{background-image:url(../images/common/ico-thehyundai.png);}
+.ico-ssgmall{background-image:url(../images/common/ico-ssgmall.png);}
+.ico-ss{background-image:url(../images/common/ico-ss.png);}
+.ico-sh{background-image:url(../images/common/ico-sh.png);}
+.ico-bc{background-image:url(../images/common/ico-bc.png);}
+.ico-hd-card{background-image:url(../images/common/ico-hd-card.png);}
+.ico-coin{background-image:url(../images/common/ico-coin.png);}
+.ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
+.ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
+.ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
+.ico-kt{background-image:url(../images/common/ico-kt.png);}
+.ico-lego{background-image:url(../images/common/ico-lego.png);}
+.bill-ico-naver,
+.ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.png);}
+.ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
+.ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
+.ico-nike{background-image:url(../images/common/ico-nike.png);}
+.ico-save-arrow{background-image:url(../images/common/ico-btn-arrow3.png);background-color: #85d7e7;border-radius: 50%;width: 18px;height: 18px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
+.ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
+.ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
+.ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
+.brand-select .select-list .ico.ico-plus,
+.ico-plus{background-image:url(../images/common/ico-plus.png);background-size: 60% auto;background-color: #fff;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
+
+/* icon list - code ico */
 .code-ico{
     background-color: #fff;
     border-radius: 50% !important;
@@ -3501,7 +3475,7 @@ text-align: right;}
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: contain;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -3665,6 +3639,48 @@ text-align: right;}
 /* icon list - 보증보험 */
 .code-ico-B4AADL0000{background-image:url(../images/icon/B4AADL0000.png);}
 
+/* after, button custom */
+.won:after {content:" 원";}
+.kon:after {content:" KON";}
+.monthly:before {content:"월 ";}
+.p:after {content:" P";}
+.k:after {content:" K";}
+.gun:after {content:"건";}
+.per::after{content: " %";}
+
+.btn {display:block;width:100%;height:3.375rem;line-height:3.375rem;border-radius:0.875rem;color:#fff;font-size:1rem;font-weight:500;text-align:center;}
+.btn-sm {width:7.6875rem;height:2.5rem;line-height:2.5rem;font-size:0.8125rem;border-radius: 0.5rem;}
+.btn-xs {display:inline-block;width:auto;height: 1.5rem;line-height: 1.5rem;padding:0 0.5625rem;font-size:0.6875rem;border-radius: 0.25rem;}
+.btn-full {width:100%;}
+.btn-square{border-radius: 0;}
+
+.btn-red{background-color:#fd0e0e;}
+.btn-light {background-color:#e4e4e4;color:#888;}
+.btn-light:disabled {background-color:#e4e4e4;color:#111;cursor: default;}
+.btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
+.btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */}
+.btn-dark{background-color: #444;color:#fff;}
+.btn-gray{background-color: #dadada;color:#fff;}
+
+.btn-txt {font-size:.75rem;color:#111;border-bottom:1px solid #111;line-height:1;}
+.btn-txt.c-gray{border-color:#666;}
+.btn-txt.undline-none{border-bottom:0;font-weight: 400;}
+.btn-txt.undline-none .ico{margin-left:.5rem;}
+.btn-border {border:1px solid #bfbfbf;border-radius:30px;}
+.btn-refresh {padding:0.25rem 0.1875rem;}
+
+.btn-round{border-radius: 2rem;}
+
+.btn-switch {overflow: hidden;position: relative;width: 3rem;height: 1.625rem;border-radius: 1rem;}
+.btn-switch input { opacity: 0;width: 0;height: 0;}
+.btn-switch .slider {position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;background-color: #cecece;transition: 0.2s all ease;}
+.btn-switch .slider:before {content: "";position: absolute;top:50%;left: 0.1875rem;width: 1.375rem;height: 1.375rem;transform: translateY(-50%);background-color: #fff;border-radius: 50%;transition: 0.2s all ease;}
+.btn-switch input:checked + .slider {background-color: #53cee6;}
+.btn-switch input:checked + .slider:before {left: 1.4375rem;}
+
+.btn-pass-home{background-color: #ff3a4b;border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;}
+
+
 
 /* 자산관리 */
 .assets-manage .card .list > ul > li:before,
@@ -3690,6 +3706,7 @@ text-align: right;}
 @media only screen and (max-width:480px){
 	.select-list {justify-content: space-between;}
 	.assets ul {justify-content: space-between;}
+    .connect-container .assets ul{justify-content: flex-start;}
 }	
 
 @media only screen and (min-width:412px){
