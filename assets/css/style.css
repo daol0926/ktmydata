@@ -2779,7 +2779,7 @@ max-width: 12rem;margin: 0 auto;}
 .coinback-guide-btn .list-dot li{color:#777;font-size: .8rem;margin-bottom: .5rem;}
 
 .coinback-guide-btn.view{position:absolute;top: 7.1rem;background-color:#f2f3f7;margin: 0;padding: 0 0.775rem 1.25rem;z-index: 2;border-radius: 0;}
-.coinback-guide-btn.view .cont-wrp{background-color: #fff;padding:0 1.25rem 1.25rem;border-bottom: 1px solid #e4e4e4;border-radius: .85rem;}
+.coinback-guide-btn.view .cont-wrp{background-color: #fff;padding: .5rem 1.25rem 1.25rem;border-bottom: 1px solid #e4e4e4;border-radius: .85rem;}
 .coinback-guide-btn.view .tit{padding-bottom: 1.25rem;border-bottom: 1px solid #e4e4e4;margin-bottom: 1.25rem;}
 
 .coinback-guide-container>li{margin-top:1.25rem;border-bottom: 1px solid #e4e4e4;padding-bottom: 1rem;}
