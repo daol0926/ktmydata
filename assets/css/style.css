@@ -708,15 +708,16 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assetsDtl .tit .assets-name i {width:2.375rem;height:2.375rem;margin-right:0.5rem;}
 .my-assetsDtl .tit .assets-name .label {margin-right:0.1875rem;font-weight: 500;}
 .my-assetsDtl .tit .won:after {font-weight: 500;}
-.my-assetsDtl .tit button {position: absolute;top:50%;right: 0;padding:.75rem .5rem;transform: translateY(-50%) rotate(0);transition: all .2s;}
-.my-assetsDtl .tit button.fold {transform: translateY(-50%) rotate(-180deg);}
-.my-assetsDtl .dtl {display:none;padding:0 0.9375rem;margin-bottom:1.25rem;background-color:#f5f5f5;border-radius: 0.25rem;}
+.my-assetsDtl .tit button {position: absolute;top:50%;right: 0;padding:.75rem .5rem;transform: translateY(-50%) rotate(0);transition: all .2s;/* border: 1px solid red; */width: 100%;text-align: right;}
+.my-assetsDtl .tit button.fold {/* transform: translateY(-50%) rotate(-180deg); */}
+.my-assetsDtl .dtl {display:none;padding:0 0.9375rem;margin-bottom:1.25rem;background-color:#f5f5f5;border-radius: 0.25rem;position: relative;}
 .my-assetsDtl .dtl li {display:flex;align-items: center;padding:1.25rem 0;}
 .my-assetsDtl .dtl li + li {border-top:1px solid #e4e4e4;}
 .my-assetsDtl .dtl .img {width:2.375rem;margin-right:1rem;}
 .my-assetsDtl .dtl .name {display:block;margin-bottom:0.5rem;font-size:0.8125rem;color: #888;}
 .my-assetsDtl .dtl strong {display:block;font-size:0.875rem;}
 .my-assetsDtl .dtl .won:after {font-weight:500;}
+.my-assetsDtl .dtl .per{position:absolute;right: 0.775rem;top: calc(50% - .5rem);font-size: 0.8rem;}
 .assets-name i {display:flex;align-items: center;justify-content: center;margin:0;border-radius:100%;}
 .assets-name i:before {content:"";display:inline-block;width: 70%;height: 50%;background: url(../images/common/ico-card.png) no-repeat center/auto 100%;vertical-align: middle;}
 .assets-name .credit-card {background-color: #f0e9ff;}
@@ -3660,6 +3661,10 @@ max-width: 12rem;margin: 0 auto;}
 .btn-switch input:checked + .slider:before {left: 1.4375rem;}
 
 .btn-pass-home{background-color: #ff3a4b;border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;}
+
+.btn-txt-only>div{position:relative;}
+.btn-txt-only>div::after{content: '';display: block;width: 1px;height:.8rem;position:absolute;right:0;top:.25rem;background-color: #888;}
+.btn-txt-only>div:last-child::after{display: none;}
 
 
 @media only screen and (max-width:319px){
