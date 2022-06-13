@@ -3411,7 +3411,7 @@ max-width: 12rem;margin: 0 auto;}
 .my-assetsDtl .tit button.fold-connect.fold,
 .fold-connect.fold{transform: translateY(-50%) rotate(0);}
 .fold-connect.fold .ico-fold,
-.fold-connect .ico-fold{transform: rotate(-90deg);}
+.fold-connect .ico-fold{/* transform: rotate(-90deg); */width: 0.375rem;height: 0.5625rem;background-position: -.75rem -.5rem !important;}
 .ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
 .btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
 
