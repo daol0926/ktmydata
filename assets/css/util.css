@@ -203,7 +203,10 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
     color:#666;
 }
 .c-blue{
-    color:#01b1c8;
+    color:#53cee6;
+}
+.c-blue.won::after{
+	color:#111;
 }
 
 /* text align */

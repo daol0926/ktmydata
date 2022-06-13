@@ -72,7 +72,7 @@ a {color:#888;}
 
 .form-radio-wrap.form-secondary{background-color:transparent;}
 .form-secondary .form-radio-btn input[type="radio"] + label {background-color:#fff; border:1px solid #ccc;margin:0 .1rem;color:#111;}
-.form-secondary .form-radio-btn input[type="radio"]:checked + label {color:#fff;background-color:#01b1c8;border-color:#01b1c8;}
+.form-secondary .form-radio-btn input[type="radio"]:checked + label {color:#fff;background-color:#53cee6;border-color:#53cee6;}
 
 /*-------------------------- PLACEHOLDER -------------------------*/
 :-ms-input-placeholder {font-weight:400;color:#bebebe !important;} /* IE 10 + */
