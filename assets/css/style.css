@@ -3300,8 +3300,9 @@ line-height: 1.2;}
 .desc-empty .highlights{font-weight: 600;}
 
 .desc-msg .desc-txt{line-height: 1.4;}
-.desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;}
-.desc-msg .form-check + .desc-txt{margin-top: .5rem;}
+.desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;display: inline-flex;align-items: c;}
+.desc-msg .form-check + .desc-txt{margin-top: .25rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;}
+.desc-msg .form-check + .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.55rem;right: 45%;}
 .desc-msg.bd-top{border-top: 1px solid #e4e4e4;padding-top: 1rem;margin-top: 1rem;}
 
 .inner-iframe{
@@ -3513,6 +3514,7 @@ line-height: 1.2;}
 .ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
 .brand-select .select-list .ico.ico-plus,
 .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
+.ico-desc-info{display:inline-block;width:1rem;height:1rem;border-radius: 50%;border:1px solid #53cee6;background:url(../images/common/ico-desc-info.png) no-repeat center/auto 80%;margin-left:.25rem;;}
 
 /* icon list - code ico */
 .code-ico{
