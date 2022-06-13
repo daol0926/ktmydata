@@ -394,6 +394,18 @@ function scrollDown(that){
 	});		
 }
 
+//스크롤 추가 20220614
+function scrollTest() {
+	$('.terms-test').bind('scroll', function() {
+		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
+			//alert('aaaaa');
+			$(".btn-light-secondary").text("동의");
+		} else {
+			$(".btn-light-secondary").text("아래로 내려보기");
+		}
+	})
+}
+
 function seqInit(){ 
 	var seqIdx = 0, seq_play = true;
 	var img_load = 0;//시작 번호
