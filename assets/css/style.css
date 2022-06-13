@@ -318,6 +318,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-home .image-banner {margin-top:0.9375rem;}
 .my-home .image-banner a {display:block;}
 .my-home .image-banner img{image-rendering: -webkit-optimize-contrast;}
+.my-home .assets-name i:before{width:100%;height:100%;}
 
 .coin-back .bg-box {margin-bottom:1.5rem;}
 .coin-back ul {width: 100%;}
@@ -3460,6 +3461,9 @@ max-width: 12rem;margin: 0 auto;}
     width: 2rem;
     height: 2rem;
 }
+/* icon list - 공통 */
+.code-ico-card{background-image:url(../images/icon/ico-card.png);border-radius: 0;}
+
 /* icon list - 통신 */
 .code-ico-F1AAAN0000{background-image:url(../images/icon/F1AAAN0000.png);}
 .code-ico-F1AAGI0000{background-image:url(../images/icon/F1AAGI0000.png);}
