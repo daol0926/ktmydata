@@ -637,26 +637,28 @@
 	<section class="modal-container agree-c-blue">
 		
 		<div class="agree-area info-agreement">
+			<!--
 			<div class="form-check check-all">
 				<input type="checkbox" id="agreeAll"><label for="agreeAll">전체동의</label>
 			</div>
+			-->
 			<div class="form-check">
-				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] KCB 올크레딧 이용 약관</label>
+				<label for="agree01">KCB 올크레딧 이용 약관</label>
 				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" name="checkedAgree" id="agree02"><label for="agree02">[필수] 개인(신용)정보 수집·이용</label>
+				<label for="agree02">개인(신용)정보 수집·이용</label>
 				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
 			</div>
 			<div class="form-check">
-				<input type="checkbox" name="checkedAgree" id="agree03"><label for="agree03">[필수] 개인(신용)정보 제3자제공 동의</label>
+				<label for="agree03">개인(신용)정보 제3자제공 동의</label>
 				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
 			</div>
 		</div>
 
 		<div class="btn-area fixed-bottom">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-light-secondary" id="btnNext" disabled>다음</button>
+			<button type="button" class="btn btn-light-secondary" id="btnNext" disabled>모두 동의하고 진행하기</button>
 		</div>
 
 	</section>
@@ -675,7 +677,7 @@
 	//이벤트 Swiper
 	bannerSwiper('.event-banner-top', 1, 16);
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
-	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 </script>
 </body>
 </html>
