@@ -406,6 +406,17 @@ function scrollTest() {
 	})
 }
 
+//kon적립 스크롤 따라 show hide
+function konScroll() {
+	$(window).scroll(function() {
+		if($(this).scrollTop()) {
+			$('.made-coin').parent().addClass('fixed');
+		} else {
+			$('.made-coin').parent().removeClass('fixed');
+		}
+	})
+}
+
 function seqInit(){ 
 	var seqIdx = 0, seq_play = true;
 	var img_load = 0;//시작 번호

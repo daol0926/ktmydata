@@ -2677,6 +2677,22 @@ letter-spacing: -.06rem;}
     margin: 0 0.775rem 1.5rem;
     padding-top: 1.25rem;
 }
+.coinback-wrp .fixed{
+    position:
+    fixed;
+    z-index: 2;
+    background-color: #f2f3f7;
+    padding: 0.775rem 0.775rem 1.5rem;
+    margin-top: -.8rem;
+    width: 100%;
+}
+.coinback-wrp .fixed .made-coin{
+    width: 100%;
+    margin: 0;
+}
+.coinback-wrp .fixed .card-body{
+    display: none;
+}
 
 .brand-info{
     background-color: #fff;
