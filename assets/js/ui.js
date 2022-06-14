@@ -461,14 +461,16 @@ function tabMenu() {
 		$(".tab-wrp .tab-menu li").removeClass("focused"); 
 		$(".tab-wrp .tab-cont").removeClass("focused"); 
 		$('.tab-wrp .tab-menu li:eq(' + num + ')').addClass("focused"); 
-		$('.tab-wrp .tab-cont:eq(' + num + ')').addClass("focused"); });
+		$('.tab-wrp .tab-cont:eq(' + num + ')').addClass("focused"); 
+	});
 	
-		$(".tab-wrp .inner-tab li a").on("click", function(){  
-			const num = $(".tab-wrp .inner-tab li a").index($(this)); 
-			$(".tab-wrp .inner-tab li").removeClass("focused"); 
-			$(".tab-wrp .inner-tab-cont").removeClass("focused"); 
-			$('.tab-wrp .inner-tab li:eq(' + num + ')').addClass("focused"); 
-			$('.tab-wrp .inner-tab-cont:eq(' + num + ')').addClass("focused"); });
+	$(".tab-wrp .inner-tab li a").on("click", function(){  
+		const num = $(".tab-wrp .inner-tab li a").index($(this)); 
+		$(".tab-wrp .inner-tab li").removeClass("focused"); 
+		$(".tab-wrp .inner-tab-cont").removeClass("focused"); 
+		$('.tab-wrp .inner-tab li:eq(' + num + ')').addClass("focused"); 
+		$('.tab-wrp .inner-tab-cont:eq(' + num + ')').addClass("focused"); 
+	});
 }
 
 /* 알람 list swipe */
@@ -497,6 +499,13 @@ function addBrand(){
 	$('.add-brand').click(function(){
 		$(this).hide();
 		$(this).parents().find('.brand-select').removeClass('select-complete').addClass('select-add');
+	});
+}
+
+/* desc info */
+function descInfo(){
+	$('.ico-desc-info').click(function(){
+		$(this).toggleClass('focused');
 	});
 }
 

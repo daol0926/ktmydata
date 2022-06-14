@@ -2803,9 +2803,59 @@ letter-spacing: -.06rem;}
     flex-flow: column;
     padding:1rem;
     width: 100%;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     font-size: inherit;
     border-radius: .5rem;
+}
+.brand-select .select-list.form-check.disabled{
+    pointer-events: none;
+    border-radius: .5rem;
+}
+.brand-select .select-list.form-check.disabled input[type="checkbox"] + label{
+    border:0;
+}
+.brand-select .select-list.form-check.disabled::before,
+.brand-select .select-list.form-check.procedure-disabled::before{
+    content: '조기마감';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: url(../images/common/ico-early.png) no-repeat left center/contain;
+    width: fit-content;
+    height: 1.5rem;
+    z-index: 1;
+    color:#fff;
+    padding-left: 2rem;
+    left: calc(50% - 2.75rem);
+}
+.brand-select .select-list.form-check.disabled::after,
+.brand-select .select-list.form-check.procedure-disabled::after{
+    content:'';
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border-radius: .5rem;
+    background: rgb(153,153,153);
+    background: linear-gradient(180deg, rgba(153,153,153,.4) 0%, rgba(69,69,69,.5) 55%, rgba(17,17,17,.85) 100%);
+    color:#fff;
+}
+.brand-select .select-list.form-check.procedure-disabled::before{
+    content: '선착순마감';
+    left: calc(50% - 3.25rem);
+    margin-top: -2rem;
+}
+.brand-select .select-list.form-check.procedure-disabled::after{
+    content: '내일 다시 신청하셔서 KON 적립 받아가세요!';
+    text-align: center;
+    font-size: .85rem;
+    word-break: keep-all;
+    padding: 2.5rem 1rem 0;
 }
 .brand-select .select-list.form-check input[type="checkbox"] + label::before,
 .brand-select .select-list.form-check input[type="checkbox"] + label::after{
@@ -3307,10 +3357,11 @@ letter-spacing: -.06rem;}
 .desc-empty .highlights{font-weight: 600;}
 
 .desc-msg .desc-txt{line-height: 1.4;}
-.desc-msg .form-check .desc-txt{display:none;}
-.desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;display: inline-flex;align-items: center;}
-.desc-msg .form-check input[type="checkbox"]:checked + label .desc-txt{display:block;margin-top: 6.8rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
-.desc-msg .form-check input[type="checkbox"]:checked + label .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.55rem;right: 45%;}
+.desc-msg .form-check .desc-txt{display: none;}
+.desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.58rem;right: 51%;}
+.desc-msg .form-check input[type="checkbox"] + label{display: inline-flex;align-items: center;}
+.desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;}
+.desc-msg .form-check .focused + .desc-txt{display:block;margin-top: 5.8rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
 .desc-msg.bd-top{border-top: 1px solid #e4e4e4;padding-top: 1rem;margin-top: 1rem;}
 
 .inner-iframe{
