@@ -32,14 +32,22 @@
 			</nav>
 		</div>
 		<section>
-			<div class="card made-coin">
-				<div class="row coin-d-day align-items-center">
-					<span class="btn btn-xs btn-light-secondary btn-round">D - 26</span>
-					<span class="c-gray">2022-03-13 00:00 까지</span>
+			<!-- 브랜드 선택 전 -->
+			<div class="card made-coin" style="display: none;">	
+				<div class="row">
+					<strong class="row-title">브랜드를 선택해주세요!
+					</strong>
+				</div>	
+				<!--
+				<div class="row justify-content-between align-items-center">
+					<p>브랜드를 선택해주세요!</p>
+					<span class="desc-txt">(1KON = 1원)</span>
 				</div>
+				-->		
+				
 				<div class="card-header">
 					<div class="col-6 save-all">
-						<span class="kon">총 13,000</span>
+						<span class="kon">총 0</span>
 					</div>
 					<div class="col-6 save-weekly">
 						<span class="kon">이번주 적립 0</span>
@@ -50,8 +58,52 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum" style="left: 80%;"><em>K</em>15,200</span>
+								<span class="consum" style="left: 80%;"><em>K</em></span>
 								<span class="gauge" style="width: 80%"></span>
+							</span>
+						</div>
+						<ul>
+							<li><span class="">3천</span></li>
+							<li><span class="">5천</span></li>
+							<li><span class="">1만</span></li>
+						</ul>
+					</div>
+				</div>
+			</div> <!--//card made-coin -->
+			<!--//브랜드 선택 전 -->
+
+			<!-- 브랜드 선택 후 -->
+			<div class="card made-coin">
+				<!--
+				<div class="row justify-content-between align-items-center">
+					<p>
+						<span class="btn btn-xs btn-light-secondary btn-round">D - 26</span>
+						<span class="desc-txt">2022-03-13 까지</span>
+					</p>
+					<span class="desc-txt">(1KON = 1원)</span>
+				</div>
+				-->	
+				<div class="row pb1">
+					<strong class="row-title">내 KON 적립 현황</strong>
+				</div>
+				<div class="card-header pt0">
+					<div class="col-6 save-all">
+						<span class="kon">총 5,200</span>
+					</div>
+					<div class="col-6 save-weekly">
+						<span class="kon">이번주 적립 0</span>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="graph-wrap">
+						<div class="gauge-area">
+							<span class="gauge-bg">
+								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
+								<span class="consum" style="left: 30%;"><em>K</em></span>
+								<span class="gauge" style="width: 30%;"></span>
+								<!--
+								<span class="consum-msg">조금만 더 모아 보세요!</span>
+								-->
 							</span>
 						</div>
 						<ul>
@@ -61,24 +113,35 @@
 							<li><span class="">2만</span></li>
 						</ul>
 					</div>
+					<div class="desc-msg bd-top agree-c-blue">
+						<div class="form-check">
+							<input type="checkbox" id="autoDiscount">
+							<label for="autoDiscount">
+								통신비 자동 할인 받기
+							</label>
+							<i class="ico-desc-info"></i>
+							<p class="desc-txt ml1_8">전전월 15일부터 전월 14일 까지 적립한 코인 실적에 따라 통신비를 할인해 드립니다.</p>
+						</div>
+					</div>
 				</div>
 			</div> <!--//card made-coin -->
+			<!--//브랜드 선택 후 -->
 		</section>	
 		<!-- tab -->
 		<section class="tab-wrp">
 			<!-- tab menu -->
 			<ul class="tab-menu tab-line">
 				<li class="focused">
-					<a>브랜드 적립</a>
+					<a><i class="code-ico-brand-save"></i>브랜드 적립</a>
 				</li>
 				<li>
-					<a>쇼핑/구독 적립</a>
+					<a><i class="code-ico-event-save"></i>쇼핑/구독 적립</a>
 				</li>
 			</ul>
 			<!--//tab menu -->
 
 			<!-- tab cont -->
-			<div class="tab-cont focused">
+			<div class="tab-cont focused pb5">
 				<div class="brand-save-wrp">
 					<div class="brand-info">
 						<p>
@@ -87,27 +150,70 @@
 						</p>
 						<div class="row brand-info-list">
 							<div class="col-3">
-								<i class="ico ico-sh"></i>
+								<i class="ico code-ico-A1AAIP0000"></i>
 								<span>신한 카드</span>
 							</div>
 						</div>
 					</div> <!--//brand-info -->
 
-					<div class="brand-select">
+					<div class="brand-select select-complete">
 						<h2 class="title">이번주 선택 브랜드</h2>
 						<div class="row select-wrp">
-							<div class="col-6 select-list form-check">
+							<div class="col-6 select-list form-check focused" onclick="modal('.brand-alert')" >
 								<input type="checkbox" id="chk1">
-								<label>
+								<label for="chk1">
 									<i class="ico ico-cj-onstyle"></i>
 									<span class="select-name">CJ온스타일</span>
 									<span class="select-off">50%</span>
+									<span class="kon ico-kon">최대 3,000</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check focused">
+								<input type="checkbox" id="chk2">
+								<label for="chk2">
+									<i class="ico ico-musinsa"></i>
+									<span class="select-name">무신사</span>
+									<span class="select-off">50%</span>
+									<span class="kon ico-kon">최대 3,000</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check focused">
+								<input type="checkbox" id="chk2">
+								<label for="chk2">
+									<i class="ico ico-musinsa"></i>
+									<span class="select-name">무신사</span>
+									<span class="select-off">50%</span>
+									<span class="kon ico-kon">최대 3,000</span>
 								</label>
 							</div>
 							<div class="col-6 select-list add-brand">
 								<label>
 									<i class="ico ico-plus"></i>
 									<span>브랜드 추가</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk2">
+								<label for="chk2">
+									<i class="ico ico-musinsa"></i>
+									<span class="select-name">무신사</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk3">
+								<label for="chk3">
+									<i class="ico ico-ssgmall"></i>
+									<span class="select-name">신세계몰</span>
+									<span class="select-off">50%</span>
+								</label>
+							</div>
+							<div class="col-6 select-list form-check">
+								<input type="checkbox" id="chk4">
+								<label for="chk4">
+									<i class="ico ico-thehyundai"></i>
+									<span class="select-name">더현대 서울</span>
+									<span class="select-off">50%</span>
 								</label>
 							</div>
 						</div>
@@ -120,18 +226,197 @@
 					</div>
 				</div> <!--//payment-list-wrp -->
 				<div class="coinback-guide-btn accordion">
-					<div class="tit">
-						<button>
-							<span>코인백 서비스 이용방법 안내</span>
-							<i class="ico ico-fold"></i>
-						</button>
+					<div class="cont-wrp">
+						<div class="tit">
+							<button>
+								<span>KON 적립 서비스 이용방법 안내</span>
+								<i class="ico ico-fold"></i>
+							</button>
+						</div>
+						<ul class="dtl coinback-guide-container">
+							<!-- 1 -->
+							<li>
+								<!-- title -->
+								<div class="title">
+									<span class="num">1</span>
+									<span class="txt">KON 적립 서비스는 어떤 건가요?</span>
+								</div>
+								<!--//title -->
+								<!-- inner-title -->
+								<div class="inner-title">
+									<span class="num">1</span>
+									<span class="txt">KON 적립 서비스는 KT 마이데이터 서비스에 가입하여 카드를 연결한 회원이 마이데이터 제휴 브랜드를 이용할 경우, 카드 결제 내역에 대한 리워드 혜택을 드리는 서비스입니다.</span>
+									<div class="bn-area">
+										<button type="button" class="btn btn-light-gray btn-sm">서비스 가입하고, 카드 연결하기</button>
+										<img src="assets/images/kon/desc-img1.png" />
+										<p class="highlights">제휴 브랜드 이용하고, 리워드 혜택 받으세요!</p>
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">2</span>
+									<span class="txt">단, KON 적립 이벤트 참여 시에는<br />카드를 연결하지 않아도 KON 적립이 가능합니다.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img2.png" class="img2" />
+										<p class="highlights">KON적립 이벤트 참여만하면 적립가능!</p>
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">3</span>
+									<span class="txt">제휴사 정책에 따라 브랜드별 적립률 및 최대 적립 금액은 상이할 수 있습니다.</span>
+								</div>
+								<!--// inner-title -->
+							</li>
+							<!--//1 -->
+							<!-- 2 -->
+							<li>
+								<!-- title -->
+								<div class="title">
+									<span class="num">2</span>
+									<span class="txt">KON 적립 방법에 대해 알고 싶어요!</span>
+								</div>
+								<!--//title -->
+								<!-- inner-title -->
+								<div class="inner-title">
+									<span class="num">1</span>
+									<span class="txt">KT 마이데이터 서비스에 가입하시고 카드를 연결해 주세요.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img3.png" />
+										<button type="button" class="btn btn-light-gray btn-sm">서비스 가입 후 카드 연결하기</button>
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">2</span>
+									<span class="txt">등록하신 카드로 제휴 브랜드를 이용해 주세요.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img4.png" />
+										<button type="button" class="btn btn-light-gray btn-sm">제휴브랜드 이용하기</button>
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">3</span>
+									<span class="txt">이용하신 브랜드를 선택해 주세요. 해당 브랜드의 최대 KON 적립 금액을 확인하실 수 있습니다.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img5.png" />
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">4</span>
+									<span class="txt">선택한 브랜드에 대한 결제 내역 및 KON 적립 금액을 확인한 후 적립 버튼을 누르시면 KON이 적립됩니다.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img6.png" class="img6" />
+										<!--
+										<div class="payment-list-wrp bg-gray">
+											<ul class="payment-list">
+												<li class="payment-list-box mb0">
+													<div class="col-8 row">
+														<i class="ico code-ico-D1AAFO0000"></i>
+														<div>
+															<div class="list-title">
+																<em class="list-cate">현대카드</em>
+																<span class="won">15,000</span>
+															</div>
+															<div class="list-date">
+																2022-03-10 12:00
+															</div>
+														</div>
+													</div>
+													<div class="col-4 btn-area">
+														<span class="save-ing">
+															<em class="btn btn-xs btn-light-secondary btn-round" onclick="modal('.save-complete')"><span class="kon">1,500</span> 적립</em>
+														</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										--> <!--//payment-list-wrp -->
+									</div>
+								</div>
+
+								<div class="inner-title">
+									<span class="num">5</span>
+									<span class="txt">‘통신비 자동 할인받기’로 설정되어 있는 경우, KON 적립 실적에 따라 자동으로 통신비를 할인해 드립니다. 원치 않으실 경우 체크를 해제해 주세요.</span>
+									<div class="bn-area">
+										<img src="assets/images/kon/desc-img7.png" class="img7" />
+										<!--
+										<div class="desc-msg agree-c-blue">
+											<div class="form-check">
+												<input type="checkbox" id="autoDiscount" checked><label for="autoDiscount">통신비 자동 할인 받기</label>
+											</div>
+											<p class="desc-txt ml1_8">전전월 15일부터 전월 14일 까지 적립한 코인 실적에 따라 통신비를 할인해 드립니다.</p>
+										</div>
+										-->
+									</div>
+								</div>
+								<!--// inner-title -->
+							</li>
+							<!--//2 -->
+							<!-- 3 -->
+							<li>
+								<!-- title -->
+								<div class="title">
+									<span class="num">3</span>
+									<span class="txt">유의 사항이 있나요?</span>
+								</div>
+								<!--//title -->
+								<div class="inner-title-wrp">
+									<!-- inner-title -->
+									<div class="inner-title">
+										<span class="num">1</span>
+										<span class="txt">본 서비스는 한국 시간 기준으로 운영됩니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">2</span>
+										<span class="txt">각 브랜드의 국내 가맹점에 대한 결제에 한해
+											이용할 수 있습니다.
+											</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">3</span>
+										<span class="txt">전전월 15일부터 전월 14일까지 적립한 
+											KON 실적에 따라 통신비를 할인해 드립니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">4</span>
+										<span class="txt"> KON 적립 기간 이후 카드 결제를 취소하더라도, 
+											기간 내 적립한 KON은 계속 유지됩니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">5</span>
+										<span class="txt">카드 연결을 해제하더라도 기존에 적립한 
+											KON은 계속 유지됩니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">6</span>
+										<span class="txt">등록한 카드를 해지할 경우 KON 적립이
+											불가합니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">7</span>
+										<span class="txt">특정 브랜드 결제 내역에 대해 그 주 동안 KON을 
+											적립하지 않을 경우 적립 기회가 소멸됩니다.</span>
+									</div>
+									<div class="inner-title">
+										<span class="num">8</span>
+										<span class="txt">제휴 브랜드사의 사정에 따라 브랜드 선택 기간 중 
+											참여가 종료될 수 있습니다.</span>
+									</div>
+								</div>
+								<!--//inner-title-wrp -->
+								<!-- inner-desc -->
+								<div class="inner-desc">
+									* 문의처:㈜핀크럭스 고객센터<br />
+									<a href="https://www.pincrux.com/sub.html?param=1" target="_blank">https://www.pincrux.com/sub.html?param=1</a>
+								</div>
+								<!--//inner-desc -->
+							</li>
+							<!--//3 -->
+						</ul>
 					</div>
-					<ul class="dtl list-dot">
-						<li>코인백 서비스 관련 안내문구</li>
-						<li>브랜드 선택 관련 안내</li>
-						<li>카드 사용 시 코인백 적립 방법 안내</li>
-						<li>기타 유의사항</li>
-					</ul>
 				</div>	
 				<div class="btn-area fixed-bottom">
 					<!-- [D] 버튼 활성화 시 disabled 삭제 -->
@@ -189,9 +474,15 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//자산 accordion
-	accordion();
+	accordionKon();
 	// tab menu
 	tabMenu();	
+	//desc info
+	descInfo();
+	//코인백 적립 총 내역 show hide
+	konScroll();	
+	//브랜드 추가
+	addBrand();
 </script>
 </body>
 </html>
