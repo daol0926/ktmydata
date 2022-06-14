@@ -1721,8 +1721,7 @@ margin-bottom: 0;}
     padding-top: 1.25rem;
     border-top: 1px solid #e4e4e4;
 }
-.data-info-wrp .data-info-box .data-info-list:first-child .info-list-title{
-    margin-top: 0;
+.data-info-wrp .data-info-box .data-info-list dt.info-list-title{
     padding-top: 0;
     border-top: 0;
 }
