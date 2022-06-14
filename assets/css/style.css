@@ -2677,6 +2677,9 @@ letter-spacing: -.06rem;}
     margin: 0 0.775rem 1.5rem;
     padding-top: 1.25rem;
 }
+.coinback-wrp .card.made-coin .row-title{
+    font-size: 0.85rem;
+}
 .coinback-wrp .fixed{
     position:
     fixed;
