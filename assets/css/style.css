@@ -621,6 +621,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .tv:before {content:'';background-position:-9.8125rem -6.1875rem;background-color: #f4f0fd;background-image: url(../images/common/ico-tv.png);}
 .data-5g:before {content:'';background-position:-4.375rem -8.9375rem;background: #fdf0f7;background-image: url(../images/common/ico-mobile.png);}
 .internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
+.homeTel:before {content:'';background-image:url(../images/common/ico-phone.png);}
 
 .card .list li em {display:block;color:#888;}
 .card .list li dl {display:flex;flex-flow: row wrap;align-items: center;justify-content: space-between;}
