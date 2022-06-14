@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<style>
+		.square-list.type-new ul li.box .icon-wrap {
+			display: block;
+			margin-top: 3.125rem;
+		}
+		.square-list.type-new ul li.box .icon-wrap span img{
+			width: 6.5rem;
+			height: fit-content;
+		}
+		.square-list.type-new ul li.box {
+			box-sizing: border-box;
+			border: 0.125rem solid #d5d5d5;
+			border-radius: 0.625rem;
+			text-align: center;
+			padding: 0 1rem 1rem;
+			margin: 1.25rem 0;
+		}
+		.square-list.type-new ul li.box .icon-wrap span:first-child:after {
+			content: '';
+			display: inline-block;
+			width: 2.5625rem;
+			height: 1.9375rem;
+			background: url(assets/images/common/icon-sub4-arrow.png) no-repeat center center;
+			background-size: cover;
+			vertical-align: top;
+			margin: 1.375rem 0.875rem 0 1.125rem;
+		}
+		.square-list .tit {
+			display: block;
+			position: relative;
+			font-size: 1.875rem;
+			font-weight: 500;
+			margin-top: 1.875rem;
+		}
+		.btn.sub-wide-btn {
+			width: 100%;
+			line-height: 6.25rem;
+			color: #fff;
+			background: #012163;
+			font-weight: 500;
+			font-size: 1.375rem;
+			text-align: center;
+			height: 6.25rem;
+			text-decoration: none;
+		}
+		.btn.sub-wide-btn.btn-edit {
+			background: #7781c2;
+		}
+		.square-list .tit + p{
+			margin:1rem auto;
+		}
+		.btn.sub-wide-btn + .btn.sub-wide-btn{
+			margin:.5rem auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="section">
+		<div class="square-list type-new cert-center-box">
+			<ul class="cert-center-list">
+				<li class="box">
+					<span class="icon-wrap">
+						<span><img src="assets/images/common/icon-sub4-01.png" alt=""></span>
+						<span><img src="assets/images/common/icon-sub4-02.png" alt=""></span>
+					</span>
+					<strong class="tit">공동인증서 내보내기</strong>
+					<p>
+						현재PC에 보관된 인증서를 스마트폰<br>
+						또는 다른 PC로 복사합니다
+					</p>
+					<a href="" class="btn sub-wide-btn btn-edit">인증 프로그램 다운로드</a>
+					<a href="" class="btn sub-wide-btn btn-edit">인증서 내보내기</a>
+				</li>
+			</ul>
+			<!-- <a href="/vestsign/cert_export.html" target="_blank" class="btn sub-wide-btn btn-edit" style="margin-top:2rem; margin-left:5rem; border-radius: 0.375rem;">병적증명서용 인증서 내보내기</a> -->
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>
