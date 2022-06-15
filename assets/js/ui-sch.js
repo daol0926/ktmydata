@@ -45,6 +45,7 @@ function monthPic(){
 var dateSwiper;
 function datePic(){
 	dateSwiper = new Swiper(".dateSwiper", {
+		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
 		slidesPerView: 7, //한 화면에 노출되는 갯수
 		slidesPerGroup: 7, //롤링 갯수
         loop: true, //반복여부

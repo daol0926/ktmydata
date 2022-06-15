@@ -3469,21 +3469,21 @@ letter-spacing: -.06rem;}
 /* mbti */
 [class*=ico-mbti-]{display:block;background:url(../images/icon/mbti/mbti-default.png) no-repeat center/auto 100%;width: 4.5rem;height: 4.55rem;position:absolute;right:0;top: -2rem;}
 .ico-mbti-enfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-entp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-esfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-esfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-estj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-estp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-infj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-infp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-intj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-intp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-isfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-isfp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-istj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
-.ico-mbti-istp{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfp.png);}
+.ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-entj.png);}
+.ico-mbti-entp{background-image:url(../images/icon/mbti/mbti-entp.png);}
+.ico-mbti-esfj{background-image:url(../images/icon/mbti/mbti-esfj.png);}
+.ico-mbti-esfp{background-image:url(../images/icon/mbti/mbti-esfp.png);}
+.ico-mbti-estj{background-image:url(../images/icon/mbti/mbti-estj.png);}
+.ico-mbti-estp{background-image:url(../images/icon/mbti/mbti-estp.png);}
+.ico-mbti-infj{background-image:url(../images/icon/mbti/mbti-infj.png);}
+.ico-mbti-infp{background-image:url(../images/icon/mbti/mbti-infp.png);}
+.ico-mbti-intj{background-image:url(../images/icon/mbti/mbti-intj.png);}
+.ico-mbti-intp{background-image:url(../images/icon/mbti/mbti-intp.png);}
+.ico-mbti-isfj{background-image:url(../images/icon/mbti/mbti-isfj.png);}
+.ico-mbti-isfp{background-image:url(../images/icon/mbti/mbti-isfp.png);}
+.ico-mbti-istj{background-image:url(../images/icon/mbti/mbti-istj.png);}
+.ico-mbti-istp{background-image:url(../images/icon/mbti/mbti-istp.png);}
 
 /* pass webview */
 .pass-webview{
