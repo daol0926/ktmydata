@@ -2711,13 +2711,13 @@ letter-spacing: -.06rem;}
     font-size: 0.85rem;
 }
 .coinback-wrp .fixed{
-    position:
-    fixed;
+    position:fixed;
     z-index: 2;
     background-color: #f2f3f7;
     padding: 0.775rem 0.775rem 1.5rem;
     margin-top: -.8rem;
     width: 100%;
+    transition:all .5s ease;
 }
 .coinback-wrp .fixed .made-coin{
     width: 100%;
@@ -2725,6 +2725,7 @@ letter-spacing: -.06rem;}
 }
 .coinback-wrp .fixed .card-body{
     display: none;
+    transition:all .5s ease;
 }
 
 .brand-info{
@@ -2938,6 +2939,9 @@ letter-spacing: -.06rem;}
 }
 .brand-select .select-list.focused{
     pointer-events: none;
+}
+.brand-select.select-add .select-list.focused input[type="checkbox"] + label{
+    border: 3px solid #53cee6;
 }
 
 /* KON적립[코인백] */
