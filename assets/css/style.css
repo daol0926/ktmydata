@@ -579,7 +579,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-home .container-header,
 .my-datas .container-header,
 .my-coinback .container-header,
-.my-sch .container-header {position: sticky;top:3rem;left:0;z-index: 10;padding: 0 0.775rem 0;background-color: #fff;/* margin-bottom: .775rem; */}
+.my-sch .container-header {position: sticky;top:3rem;left:0;z-index: 10;padding: 0 0.775rem 0;background-color: #fff;margin-bottom: .775rem;}
 .btn-notification {position: absolute;top:50%;right:1.5rem;transform: translateY(-50%);}
 .btn-notification.dot:after {content:"";display:block;position: absolute;top:-0.25rem;right:0;width:0.5625rem;height:0.5625rem;background-color:#53cee6;border:0.09375rem solid #fff;;border-radius: 100%;}
 
@@ -1007,9 +1007,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     background-image: url(../images/common/ico-dateswiper-arrow.png);
     background-size: 6px 10px;
     width: 1.5rem;
-    height: 3rem;
+    height: 5.75rem;
     left: 0;
-    top: 50%;
+    top: 30%;
     background-color: #fff;
     }
 .dateSwiper .swiper-button-next,
@@ -1570,6 +1570,7 @@ z-index: 1;}
     background-color: #fff;
     z-index: 4;
     width: 100vw;
+    margin-top: -.775rem;
 }
 .fixed-cal + section{
     margin-top: 19rem !important;
