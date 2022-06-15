@@ -3019,17 +3019,34 @@ letter-spacing: -.06rem;}
 /* event list > event box */
 .event-list-wrp .event-box{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     background-color: #dae1fe;
     position: relative;
-    padding:.75rem 1.5rem;
+    padding: .75rem 3.5rem .75rem 1.5rem;
     border-radius: .3rem;
     color:#111;
 }
 .event-list-wrp .event-box .event-txt{
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     word-break: keep-all;
+}
+.event-list-wrp .event-box .event-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-list-wrp .event-box .event-img img{
+    display: inline-flex;
+    max-width: 100%;
+    max-height: 5rem;
+}
+.event-list-wrp .event-box .event-end,
+.event-list-wrp .event-box .event-d-day{
+    text-align: right;
+    position: absolute;
+    right: .75rem;
+    top: .75rem;
 }
 .event-list-wrp .event-box .event-title{
     font-size: 1.15rem;
@@ -3053,7 +3070,7 @@ letter-spacing: -.06rem;}
 }
 .event-list-wrp .event-box .event-end,
 .event-list-wrp .event-box .event-d-day{
-    text-align: right;
+    /* text-align: right; */
 }
 .event-list-wrp .event-box.bg-violet{
     background-color: #f1e7ff;
