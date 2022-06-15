@@ -2936,6 +2936,9 @@ letter-spacing: -.06rem;}
 .brand-select.select-complete .select-list{
     display: none;
 }
+.brand-select .select-list.focused{
+    pointer-events: none;
+}
 
 /* KON적립[코인백] */
 .coin-d-day .btn-xs{margin-right: .5rem;height:1.3rem;line-height: 1.3rem;padding:0;padding-left:.8rem;padding-right:.8rem;}
