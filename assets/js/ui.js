@@ -539,7 +539,7 @@ function dataCalPic() {
 			showAnim: "slideDown",
 			closeText: '닫기',
 			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
-			minDate:0,//오늘 이전 날짜 선택불가
+			//minDate:0,//오늘 이전 날짜 선택불가
 		})
 		.on( "change", function() {
 		to.datepicker( "option", "minDate", getDate(this) );//종료일의 minDate 지정
