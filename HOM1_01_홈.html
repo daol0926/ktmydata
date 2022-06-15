@@ -235,7 +235,7 @@
 				<h2>내 카드 실적 한눈에 보기</h2>
 			</header>
 
-			<div class="swiper-container">
+			<div class="swiper-container cardPerformance">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<!-- 실적1 -->
@@ -805,10 +805,15 @@
 	//결합하고 또 추가 할인 차트
 	chart2('.budget .chart');
 
-
 	//공지팝업
 	passInnerBanner();
 	layerPopupWrp();
+
+	var $dragWrap = $('.swiper-container');
+	$dragWrap.on('touchmove',function(event){
+		event.preventDefault();
+		event.stopPropagation();
+	});
 </script>
 </body>
 </html>
