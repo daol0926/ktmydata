@@ -3853,7 +3853,10 @@ letter-spacing: -.06rem;}
 .btn-switch input:checked + .slider {background-color: #53cee6;}
 .btn-switch input:checked + .slider:before {left: 1.4375rem;}
 
-.btn-pass-home{background-color: #ff3a4b;border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;}
+.btn-pass-home{border-radius: 50%;box-shadow: 0 0 10px rgba(0,0,0,0.3);color:#fff;display: flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;
+    background: rgb(153,153,153);
+    background: linear-gradient(140deg, rgba(153,153,153,1) 0%, rgba(69,69,69,1) 55%, rgba(17,17,17,1) 100%);
+}
 
 .btn-txt-only>div{position:relative;}
 .btn-txt-only>div::after{content: '';display: block;width: 1px;height:.8rem;position:absolute;right:0;top:.25rem;background-color: #888;}
