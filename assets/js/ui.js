@@ -399,7 +399,7 @@ function scrollUI() {
 	$('.terms-ui').bind('scroll', function() {
 		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
 			//alert('aaaaa');
-			$(".btn-light-secondary").text("동의");
+			$(".btn-light-secondary").text("동의").attr("onclick","modalFullClose(this)");
 		} else {
 			$(".btn-light-secondary").text("아래로 내려보기");
 		}
@@ -407,7 +407,7 @@ function scrollUI() {
 	$('.modal.agree-c-blue').bind('scroll', function() {
 		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
 			//alert('aaaaa');
-			$(".btn-light-secondary").text("동의");
+			$(".btn-light-secondary").text("동의").attr("onclick","modalFullClose(this)");
 		} else {
 			$(".btn-light-secondary").text("아래로 내려보기");
 		}
