@@ -414,7 +414,7 @@ function scrollUI() {
 	});
 }
 
-//kon적립 스크롤 따라 show hide
+//KON 적립 스크롤 따라 show hide
 function konScroll() {
 	$(window).scroll(function() {
 		if($(this).scrollTop()) {
