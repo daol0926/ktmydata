@@ -2311,11 +2311,11 @@ letter-spacing: -.06rem;}
 .agree-c-blue .form-check input[type="checkbox"]:checked + label:before{
     background-color: #5bcade;
 }
-.agree-c-blue .terms-cont .inner{
+.agree-c-blue .terms-ui .inner{
     height: calc(100vh - 11rem);
     padding-bottom: 5.25rem;
 }
-.agree-c-blue .terms-cont .inner.inner-min{
+.agree-c-blue .terms-ui .inner.inner-min{
     height:calc(100vh - 15rem);
 }
 .agree-c-blue .modal-container-header{
@@ -2352,7 +2352,7 @@ letter-spacing: -.06rem;}
     text-align: justify;
     padding-left: .5rem;
 }
-.agree-c-blue .terms-cont .inner .inner-txt:last-child{
+.agree-c-blue .terms-ui .inner .inner-txt:last-child{
     border-bottom: 0;
     /* margin-bottom: 4rem; */
 }
@@ -2383,7 +2383,7 @@ letter-spacing: -.06rem;}
 .agree-c-blue .inner-txt table td{
     word-break: break-all;
 }
-.agree-c-blue .terms-cont .inner .inner-txt:last-child .inner-txt-desc{
+.agree-c-blue .terms-ui .inner .inner-txt:last-child .inner-txt-desc{
     padding-bottom:4rem;
 }
 .agree-c-blue .inner-txt-desc ul,
