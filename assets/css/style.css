@@ -3595,6 +3595,53 @@ letter-spacing: -.06rem;}
     border-radius: 0 !important;
 }
 
+/* 핀크럭스 이벤트 영역 */
+.add-dc-wrp{
+    font-family: 'S-CoreDream-5Medium', sans-serif;
+    color:#666;
+    font-size: 0.85rem;
+}
+.add-dc-wrp>ul>li{
+    display: flex;
+    align-items: center;
+    border:1px solid #e4e4e4;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0;
+    margin-bottom:0.75rem;
+}
+.add-dc-wrp>ul>li:last-child{
+    margin-bottom: 0;
+}
+.add-dc-wrp [class*=code-ico-]{
+    width: auto;
+    height: 3rem;
+    border-radius: 0;
+}
+.add-dc-wrp [class*=dc-]{
+    display: flex;
+    margin:.5rem 0;
+}
+.add-dc-wrp .dc-ico{
+    align-items: center;
+    justify-content: center;
+    margin:0;
+}
+.add-dc-wrp .dc-title{
+    font-family: 'S-CoreDream-6Bold', sans-serif;
+    color:#111;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.add-dc-wrp .dc-save{
+    display: flex;
+    align-items: center;
+}
+.add-dc-wrp .dc-save [class*=code-ico-]{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.2rem 0 0.1rem;
+}
+
 /* icon list - img ico */
 .ico {display:inline-block;background:url(../images/common/icon_spr.png) no-repeat 0 0 / 12.5rem auto;text-indent:-9999em;}
 .ico-back {width:0.5625rem;height:1rem;background-position:0 0;}
