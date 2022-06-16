@@ -1483,6 +1483,9 @@ z-index: 1;}
     color:#333;
     pointer-events: fill;
 }
+.dateSwiper .swiper-wrapper div.active{
+    color:#5ccbdf;
+}
 /*
 .dateSwiper .swiper-wrapper div.colordot::after{
     content: '';
