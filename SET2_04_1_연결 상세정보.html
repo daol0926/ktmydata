@@ -23,7 +23,7 @@
 	<main id="container" class="connect-detail">
 		<section class="assets-confirm">
 			<div class="assets">
-				<article class="box box-c-white">
+				<article class="box pa1 pt1_5">
 					<h2><span class="bank-name"><i class="code-ico-F1AAAN0000"></i>KT</span></h2>
 					<div class="info">
 						<dl>
@@ -72,18 +72,18 @@
 		<h2 class="title">자산연결 해제</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
-	<section class="modal-container agree-c-blue">
+	<section class="modal-container agree-c-blue terms-test">
 		<header class="modal-container-header text-center">
-			<h2 class="title">(기관명)<br />자산연결을 해제하시겠습니까?</h2>
+			<h2 class="title"><span class="c-blue">(기관명)</span><br />자산연결을 해제하시겠습니까?</h2>
 			<p class="title-desc">연결 해제 시, 고객님의 자산정보를<br />더 이상 가져오지 않으며,<br />기존에 수집된 정보는 즉시 삭제됩니다.</p>
 		</header>
 		
-		<div class="terms-cont">
+		<div class="terms-cont mt2">
 			<section class="assets-confirm detail inner-wrp">
 				<!-- 통신사 -->
 				<div class="assets">
-					<article class="box">
-						<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>기관명(통신)</span>
+					<article class="box pa1 pt1_5">
+						<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>KT</span>
 						<ul>
 							<li>
 								<div class="flex">
@@ -147,6 +147,7 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	modalClose();
+	scrollChk('.modal');
 </script>
 </body>
 </html>
