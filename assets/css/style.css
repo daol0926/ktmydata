@@ -64,7 +64,7 @@ main {z-index: 1;height: 100%;}
 .terms-cont {position:relative;height: 100%;}
 .terms-cont .inner {overflow: hidden;overflow-y: auto;position: absolute;top:0;bottom:0;width:100%;}
 
-.terms-test{width:100%;height:calc(100% - 3.5rem);overflow:auto;box-sizing: border-box;}
+.terms-ui{width:100%;height: calc(100vh - 3.5rem);overflow:auto;box-sizing: border-box;padding: 1rem 1rem 5rem;}
 
 .btn-area.fixed-bottom {display:flex;align-items: center;justify-content: center;position:fixed;bottom: 0;left:0;width:100%;/* height:5.25rem; *//* padding:0 1.25rem; */border-top:1px solid #e4e4e4;background-color:#fff;-webkit-box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1);box-shadow: 0px -0.25rem 0.8125rem 0px rgba(0,0,0,0.1);z-index: 1;}
 .btn-area.fixed-bottom button + button {margin:0;}
@@ -318,7 +318,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .schedule .header-title {display:flex;align-items: center;}
 .schedule .header-title .ico {margin-right:0.1875rem;}
 .schedule .header-title em {font-weight:500;color:#888;}
-.schedule .bg-box {position: relative;background-color:#f9faff;}
+.schedule .bg-box {position: relative;background-color:#fff;}
 .schedule .ico-card {width:3rem;height:3rem;border-radius: 100%;background-color:#d9f9ff;background-position:center;background-size:1.875rem auto;}
 .todo {margin-left:0.875rem;}
 .todo em {display: block;margin-bottom:.5rem;font-size:0.875rem;font-weight:500;color:#111;}

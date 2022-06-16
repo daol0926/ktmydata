@@ -395,15 +395,23 @@ function scrollDown(that){
 }
 
 //스크롤 추가 20220614
-function scrollTest() {
-	$('.terms-test').bind('scroll', function() {
+function scrollUI() {
+	$('.terms-ui').bind('scroll', function() {
 		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
 			//alert('aaaaa');
 			$(".btn-light-secondary").text("동의");
 		} else {
 			$(".btn-light-secondary").text("아래로 내려보기");
 		}
-	})
+	});
+	$('.modal.agree-c-blue').bind('scroll', function() {
+		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
+			//alert('aaaaa');
+			$(".btn-light-secondary").text("동의");
+		} else {
+			$(".btn-light-secondary").text("아래로 내려보기");
+		}
+	});
 }
 
 //kon적립 스크롤 따라 show hide
