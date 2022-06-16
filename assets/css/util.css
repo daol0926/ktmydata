@@ -159,9 +159,17 @@ div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li{
     flex: 0 0 auto;
     width: 33.333333%;
 }
+.col-5{
+    flex: 0 0 auto;
+    width: 41.66665%;
+}
 .col-6{
     flex: 0 0 auto;
     width: 50%;
+}
+.col-7{
+    flex: 0 0 auto;
+    width: 58.333331%;
 }
 .col-8{
     flex: 0 0 auto;

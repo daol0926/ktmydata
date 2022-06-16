@@ -569,7 +569,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .event-banner .event01 {height:10.625rem;background:#636b78 url(../images/home/bn_evt01.png) no-repeat right bottom / auto 10.625rem;border-radius: 0.25rem;}
 
 .scroll-wrap {position: relative;margin-right: -1.25rem}
-.scroll-wrap:after {content:"";display:block;position:absolute;top:0;right:0;z-index:2;width:1.875rem;height:100%;background: url(../images/common/shadow_white.png) no-repeat left center / 1.875rem auto;}
+.scroll-wrap:after {content:"";display:block;position:absolute;top:0;right:0;z-index:2;width:1.875rem;height:100%;background: url(../images/common/shadow_white.png) no-repeat left center /100% 100%;}
 .scroll-wrap .scroll-inner {overflow-y: hidden;overflow-x: auto;scroll-behavior: smooth;position: relative;}
 .scroll-wrap ul {display: flex;flex-wrap: nowrap;width: auto;white-space: nowrap;}
 .scroll-wrap ul:after {content:"";display:block;padding-left:1.5rem;}
@@ -591,7 +591,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 [class^='my-'] .lnb .current a {color:#5ccadf;font-weight: 700;border-bottom:2px solid #5ccadf;}
 [class^='my-'] section {padding:0 0.775rem;}
 [class^='my-'] section + section {margin-top: 1.5rem;}
-[class^='my-'] section header {margin-bottom: .625rem;}
+[class^='my-'] section header {margin-bottom: .625rem;padding-top: 0.625rem;}
 [class^='my-'] section h2 {font-size:1.25rem;font-weight:700;line-height: 1.75rem;margin-left: 1rem;}
 [class^='my-'] section h2 em {font-size:1.0625rem;font-weight:500;color:#888;}
 
@@ -706,6 +706,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-status .card-header .assets-total.won::after{font-size: 1rem;}
 .my-assets .hidden-txt {display:none;margin-top: 0.5rem;font-size:1.0625rem;color:#cecece;min-width: 7rem;}
 .my-assets .assets-list {position: relative;;padding-top:1.875rem;}
+.my-assets .assets-list h3.header-title{font-size:0.9375rem;margin-bottom: 1rem;font-weight: 500;}
 .my-assets .assets-list .scroll-inner {padding-bottom:1rem;}
 .my-assets .assets-list:after {position: relative;;padding-top:1.875rem;}
 .my-assets .assets-list ul {display: flex;flex-wrap: nowrap;width: auto;}
@@ -3049,24 +3050,29 @@ letter-spacing: -.06rem;}
     top: .75rem;
 }
 .event-list-wrp .event-box .event-title{
-    font-size: 1.15rem;
-    margin:.5rem 0;
+    font-size: 1rem;
+    margin: 0 0 .5rem;
     font-weight: 500;
 }
 .event-list-wrp .event-box .event-desc{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    height:2rem;
+    height: 1.8rem;
     overflow: hidden;
-    font-size: .85rem;
+    font-size: .77rem;
     line-height: 1.15;
     margin:.5rem 0;
+}
+.event-list-wrp .event-box .btn-xs{
+    height:1.2rem;
+    line-height: 1.2rem;
+    padding:0 0.85rem;
 }
 .event-list-wrp .event-box .event-date{
     color:#888;
     font-size: .75rem;
-    margin:.5rem 0;
+    margin: .5rem 0 0;
 }
 .event-list-wrp .event-box .event-end,
 .event-list-wrp .event-box .event-d-day{
