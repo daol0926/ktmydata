@@ -202,3 +202,14 @@ function calPic() {
 		$(this).parents().find('body').removeClass('scroll-y-hidden');
 	});
 }
+
+//스크롤 따라 date swipe 영역 조정
+function schScroll() {
+	$(window).scroll(function() {
+		if($(this).scrollTop()) {
+			$('.date-select').parent().addClass('fixed');
+		} else {
+			$('.date-select').parent().removeClass('fixed');
+		}
+	})
+}

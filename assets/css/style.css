@@ -1579,15 +1579,15 @@ z-index: 1;}
     right: -1rem;
 }
 
-.fixed-cal{
+.fixed-cal.fixed{
     position: fixed;
     background-color: #fff;
     z-index: 4;
     width: 100vw;
     margin-top: -.775rem;
 }
-.fixed-cal + section{
-    margin-top: 19rem !important;
+.fixed-cal.fixed + section{
+    /* margin-top: 19rem !important; */
 }
 
 /* datepicker - 자산관리 이력정보 */

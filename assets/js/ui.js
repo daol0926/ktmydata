@@ -389,7 +389,7 @@ function scrollDown(that){
 	divScroll.stop(true).animate({ scrollTop: divScrollTop+divHeight },200,function(){
 		divScroll.scroll(function(){   
 			console.log($(this)[0].scrollHeight +" / "+ Math.round($(this).scrollTop()))
-			if ($(this)[0].scrollHeight - Math.round($(this).scrollTop()) <= $(this).outerHeight()){
+			if ($(this)[0].scrollHeight - Math.round($(this).scrollTop()-100) <= $(this).outerHeight()){
 				$(that).text("동의").attr("onclick","modalFullClose(this)");
 			}         
 		});
