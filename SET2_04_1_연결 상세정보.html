@@ -72,9 +72,11 @@
 		<h2 class="title">자산연결 해제</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
-	<section class="modal-container agree-c-blue terms-ui">
+	<section class="modal-container terms-ui">
 		<header class="modal-container-header text-center">
-			<h2 class="title"><span class="c-blue">(기관명)</span><br />자산연결을 해제하시겠습니까?</h2>
+			<h2 class="title">
+				<span class="c-blue">(기관명)</span><br />자산연결을 해제하시겠습니까?
+			</h2>
 			<p class="title-desc">연결 해제 시, 고객님의 자산정보를<br />더 이상 가져오지 않으며,<br />기존에 수집된 정보는 즉시 삭제됩니다.</p>
 		</header>
 		
@@ -105,7 +107,7 @@
 						</ul>
 					</article>
 				</div>
-				<div class="modal-notification">
+				<div class="modal-notification mt1">
 					연결해제 시 금융사에서 개인(신용)정보를 더 이상 가져오지 않으며, 이미 수집된 개인(신용)정보는 모두 삭제 됩니다.
 				</div>
 				<!--//modal-notification -->
@@ -148,6 +150,7 @@
 <script>
 	modalClose();
 	scrollChk('.modal');
+	alertDimmed();
 </script>
 </body>
 </html>

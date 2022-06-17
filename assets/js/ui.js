@@ -239,7 +239,7 @@ function cateSticky(){
     $(document).on('click','.cate-wrap button', function() {
 		var target = $(this).attr('data-target'),
 			offsetTop = $(target).offset().top - (headerGab+cateh);
-		//menuItems.addClass("current").not(this).removeClass("current");
+		menuItems.addClass("current").not(this).removeClass("current");
 		$('html, body').stop().animate({
 			scrollTop: offsetTop
 		}, 400, "easeInOutExpo");
@@ -276,7 +276,7 @@ function cateSticky(){
 			// 	lastId = id;
 			// 	menuItems.removeClass("current");
 			// 	$("[data-target='#"+id+"']").addClass("current");
-			// }
+			//}
 		}
 	});
 }
@@ -644,5 +644,15 @@ function coinbackSortList() {
 	});
 	$('#regularNo').click(function(){
 		$('.sort-txt').text('사용');
+	});
+}
+
+/* modal dimmed */
+function alertDimmed() {
+	$('.modal.full .btn').click(function(){
+		if($('.modal.alert').hasClass('open')){
+			$('.modal.full').addClass('dimmed');
+		} else {
+		}
 	});
 }
