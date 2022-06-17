@@ -2066,9 +2066,9 @@ position: relative;}
 }
 
 /* 카드상세정보 */
-.mya-detail-info [class*=bill-ico-]{
-    position: unset;
-    margin:0 .5rem 0 0;
+.mya-detail-info [class*=detail-ico] img{
+    width: 2.375rem;
+    margin-right:0.625rem;
 }
 .mya-detail-info.type-gray{
     margin-top:1.5rem;
