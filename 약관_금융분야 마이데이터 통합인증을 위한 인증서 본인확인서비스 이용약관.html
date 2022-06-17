@@ -30,7 +30,7 @@
 <!-- //wrapper -->
 
 <!-- bottom-sheet full size -->
-<div class="modal bottom-sheet full agree-c-blue">
+<div class="modal bottom-sheet full agree-c-blue open">
 	<header class="modal-header">
 		<h2 class="title">정보수집 동의</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
@@ -38,10 +38,10 @@
 	<section class="modal-container">
 		<header class="modal-container-header">
 			<div class="summary-txt">정보수집에 동의하시면 인증이 진행됩니다. <span class="pagination"><strong>3</strong><em>5</em></span></div>
-			<h2 class="title">상세 정보 전송 요구서 이용동의 </h2>
+			<h2 class="title">금융분야 마이데이터 통합인증을 위한 인증서 본인확인서비스 이용약관</h2>
 		</header>
 		
-		<div class="terms-cont">
+		<div class="terms-ui pt3">
 			<div class="inner">
 				<h3 class="inner-title">제1조 (목적)</h3>
 				<div class="inner-txt">이 약관은 "금융분야 마이데이터 통합인증을 위한 인증서 본인확인서비스‘(이하 ’본인확인서비스‘)를 제공하기 위해 인증기관인 한국전자인증 주식회사, 한국정보인증 주식회사, 주식회사 코스콤, 사단법인 금융결제원 (이하 이들을 각칭하여 ‘인증기관")과 신용정보주체(이하 ‘가입자")간에 ‘본인확인서비스’ 이용에 관한 권리와 의무, 기타 제반 사항을 정함을 목적으로 합니다.
@@ -58,9 +58,6 @@
 						<li>⑥ '신용정보제공 이용자등'이란 「신용정보법」 제22조의9 제3항제1호에 따라 대통령령으로 정한 자로, 고객과의 금융 거래 등 상거래를 위하여 본인의 영업과 관련하여 얻거나 만들어 낸 신용정보를 타인에게 제공하거나 타인으로부터 신용 정보를 제공받아 본인의 영업에 이용하는 자와 그 밖에 이에 준하는 자를 말합니다. </li>
 						<li>⑦ '인증지원기관'이란 '금융분야 마이데이터 통합인증'의 인 증기준규격 관리, 인증기관 자격요건 확인관리, 인증절차 적합 성 확인, 업무규약 등 통합인증 관리체계 수립 및 운영을 담당 하는 금융보안원을 말합니다. </li>
 						<li>⑧ '본인확인기관'이란 정보통신망 이⑤ "인증서"란 전자서명생성정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고 이를 증명하는 전자적 정보로서 전자서명기술(PKI)을 기반으로 ‘인증기관’이 발급하고 본인확인이 가능하여야 하며, "금융분야 마이데이터 통합인증"에 사용이 허용된 인증서를 말합니다.</li>
-						<li>⑥ "신용정보제공·이용자등"이란 「신용정보법」제22조의9제3항제1호에 따라 대통령령으로 정한 자로, 고객과의 금융거래 등 상거래를 위하여 본인의 영업과 관련하여 얻거나 만들어 낸 신용정보를 타인에게 제공하거나 타인으로부터 신용정보를 제공받아 본인의 영업에 이용하는 자와 그 밖에 이에 준하는 자를 말합니다.</li>
-						<li>⑦ "인증지원기관"이란 "금융분야 마이데이터 통합인증"의 인증기준규격 관리, 인증기관 자격요건 확인관리, 인증절차 적합성 확인, 업무규약 등 통합인증 관리체계 수립 및 운영을 담당하는 금융보안원을 말합니다.</li>
-						<li>⑧ "본인확인기관"이란 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 "본인확인서비스" 관련 법령에 따라 주민등록번호를 수집·이용하고, "사이트"에서 주민등록번호를 사용하지 아니하고 본인을 확인할 수 있도록 해주는 방법(이하"대체수단")을 개발·제공·관리하는 업무를 담당하는 사업자를 말합니다.</li>
 						<li>⑨ "전송요구 보조·지원 기관"이란 「신용정보법」상 신용정보주체의 전송요구권의 행사 및 전송요구의 철회 등을 보조·지원하는 업무를 수행하는 종합신용정보집중기관인 한국신용정보원을 말합니다.</li>
 						<li>⑩ "대체수단"이란 "중복가입확인정보" 및 "연계정보"를 포함하여, 주민등록정보를 사용하지 아니하고 본인여부를 식별 및 확인할 수 있는 수단을 말합니다.</li>
 						<li>⑪ "중복가입확인정보(Duplication Information, DI)"란 "가입자"가 "사이트"에 가입하거나 "사이트"에서 특정 서비스 이용, 구매 등 어떤 행동을 할 때, 해당 "가입자"의 기 가입/이용 여부를 확인하기 위하여 생성되는 정보를 말합니다.</li>
@@ -193,8 +190,8 @@
 
 		<div class="btn-area fixed-bottom">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>
-			<!-- <button type="button" class="btn btn-light-secondary" disabled>다음</button> -->
+			<!--<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>-->
+			<button type="button" class="btn btn-light-secondary">동의</button>
 		</div>
 
 	</section>
@@ -204,7 +201,7 @@
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
-	scrollChk('.modal');
+	//scrollChk('.modal');
 	modal('.alert');
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 

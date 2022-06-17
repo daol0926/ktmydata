@@ -366,7 +366,7 @@ function dimmedClose(){
 }
 //스크롤 유무 체크
 function scrollChk(obj){
-	var divScroll = $(".terms-cont .inner");
+	var divScroll = $(".terms-ui");
 	var divHeight = divScroll.height();
 	if( divScroll.hasScrollBar() ){
 		divScroll.scrollTop(0);
@@ -374,14 +374,16 @@ function scrollChk(obj){
 	}
 	divScroll.scroll(function(){  
 		console.log($(this)[0].scrollHeight +" / "+ Math.round($(this).scrollTop())) 
-		if ($(this)[0].scrollHeight - Math.round($(this).scrollTop()) <= $(this).outerHeight()){
+		if ($(this)[0].scrollHeight - Math.round($(this).scrollTop())-100 <= $(this).outerHeight()){
 			$(obj+" .modal-container .btn-light-secondary").text("동의").attr("onclick","modalFullClose(this)");
-		}         
+		} else {
+			//$(obj+" .modal-container .btn-light-secondary").text("아래로 내려보기");
+		}        
 	});
 }
 //스크롤 이동 호출
 function scrollDown(that){
-	var divScroll = $(".terms-cont .inner");
+	var divScroll = $(".terms-ui");
 	var divHeight = divScroll.height();
 	var divScrollTop = divScroll.scrollTop();
 	divScroll.stop(true).animate({ scrollTop: divScrollTop+divHeight },200,function(){
@@ -401,15 +403,7 @@ function scrollUI() {
 			//alert('aaaaa');
 			$(".btn-light-secondary").text("동의").attr("onclick","modalFullClose(this)");
 		} else {
-			$(".btn-light-secondary").text("아래로 내려보기");
-		}
-	});
-	$('.modal.agree-c-blue').bind('scroll', function() {
-		if($(this).scrollTop() + $(this).innerHeight()>=$(this)[0].scrollHeight) {
-			//alert('aaaaa');
-			$(".btn-light-secondary").text("동의").attr("onclick","modalFullClose(this)");
-		} else {
-			$(".btn-light-secondary").text("아래로 내려보기");
+			$(".btn-light-secondary").text("아래로 내려보기").attr("onclick","scrollDown(this)");
 		}
 	});
 }

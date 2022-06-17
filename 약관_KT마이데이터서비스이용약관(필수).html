@@ -30,9 +30,9 @@
 <!-- //wrapper -->
 
 <!-- bottom-sheet full size -->
-<div class="modal bottom-sheet full agree-c-blue">
+<div class="modal bottom-sheet full agree-c-blue open">
 	<header class="modal-header">
-		<h2 class="title">[필수] KT 마이데이터 서비스<br />이용약관</h2>
+		<h2 class="title">[필수] KT 마이데이터 서비스 이용약관</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
 	<section class="modal-container">
@@ -329,8 +329,8 @@
 
 		<div class="btn-area fixed-bottom">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>
-			<!-- <button type="button" class="btn btn-light-secondary" disabled>다음</button> -->
+			<!--<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>-->
+			<button type="button" class="btn btn-light-secondary">동의</button>
 		</div>
 
 	</section>
@@ -343,7 +343,7 @@
 	modal('.alert');
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
-	scrollUI();
+	//scrollChk('.modal');
 </script>
 
 </body>
