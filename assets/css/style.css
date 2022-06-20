@@ -207,6 +207,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm {margin-top: -1rem;padding: 0 .75rem;}
 .assets-confirm .cate-wrap .fixed {left:1.5rem;right:1.5rem;width:auto;}
 .assets-confirm .cate-wrap .inner {padding:1rem 0;}
+.assets-confirm .cate-wrap .inner.fixed{left:0;right:unset;padding:1rem 1.5rem;z-index: 2;width:100%;overflow-x: auto;}
 .assets-confirm .assets {padding: 1.875rem 0 0;}
 .assets-confirm .assets + .assets {border-top:0;}
 .assets-confirm .assets h2 {display:block;}
@@ -1586,8 +1587,9 @@ z-index: 1;}
     width: 100vw;
     margin-top: -.775rem;
 }
-.fixed-cal.fixed + section{
-    /* margin-top: 19rem !important; */
+.fixed-cal{
+    padding-bottom: .775rem;
+    margin-bottom: 0;
 }
 
 /* datepicker - 자산관리 이력정보 */

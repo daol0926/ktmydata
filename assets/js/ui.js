@@ -236,17 +236,16 @@ function cateSticky(){
 			var item = $($(this).attr('data-target'));
 			if (item.length) { return item; }
 		});
-    $(document).on('click','.cate-wrap button', function() {
+    $(".inner>ul>li").on('click','.cate-wrap button', function() {
 		var target = $(this).attr('data-target'),
 			offsetTop = $(target).offset().top - (headerGab+cateh);
 		menuItems.addClass("current").not(this).removeClass("current");
-		$('html, body').stop().animate({
-			scrollTop: offsetTop
-		}, 400, "easeInOutExpo");
+		
 		
 		return false;
 		e.preventDefault();
 	});
+
 	$(window).scroll(function(){
 		var cateTop = $(".cate-wrap").offset().top, scrollTop = $(this).scrollTop(),
 			headerGab = $("#header").height(), cateh =  $(".cate-wrap").outerHeight(),
@@ -258,13 +257,13 @@ function cateSticky(){
 		} else {
 			$(".cate-wrap .inner").removeClass("fixed").removeAttr("style");
 		}
-        var cur = scrollItems.map(function(){
-            if ($(this).offset().top - (headerGab+cateh) <= scrollTop)
-                return this;
-        });
+		var cur = scrollItems.map(function(){
+			if ($(this).offset().top - (headerGab+cateh) <= scrollTop)
+				return this;
+		});
 
-        cur = cur[cur.length-1];
-        var id = cur && cur.length ? "#"+cur[0].id : firstAssets;
+		cur = cur[cur.length-1];
+		var id = cur && cur.length ? "#"+cur[0].id : firstAssets;
 		if (scrollTop >= $(document).height() - $(window).height()){
 			
 			menuItems.removeClass("current");
