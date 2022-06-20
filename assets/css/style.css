@@ -4005,6 +4005,18 @@ letter-spacing: -.06rem;}
 .btn-txt-only>div:last-child::after{display: none;}
 
 
+/* img rotate */
+.rotate-circle{
+    animation: rotate_circle 2.5s linear infinite;
+    transform-origin: 50% 50%;
+}
+ 
+@keyframes rotate_circle{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
 @media only screen and (max-width:319px){
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{

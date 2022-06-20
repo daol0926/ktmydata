@@ -100,9 +100,6 @@ a {color:#888;}
 
 .pos-r {position:relative !important;}
 
-.floar-l {float:left;}
-.floar-r {float:right;}
-
 .align-l {text-align:left !important;}
 .align-c {text-align:center !important;}
 .align-r {text-align:right !important;}
@@ -111,37 +108,12 @@ a {color:#888;}
 .valign-m {vertical-align:middle !important;}
 .valign-b {vertical-align:bottom !important;}
 
-.pd-t1 {padding-top:1px !important;}
-.pd-t2 {padding-top:2px !important;}
-.pd-t8 {padding-top:8px !important;}
-.pd-t10 {padding-top:10px !important;}
-.pd-t14 {padding-top:14px !important;}
-.pd-t40 {padding-top:40px !important;}
-.pd-b0 {padding-bottom:0 !important;}
-.pd-b10 {padding-bottom:10px !important;}
-.pd-b20 {padding-bottom:20px !important;}
-
-.mg-t4 {margin-top:4px !important;}
-.mg-t6 {margin-top:6px !important;}
-.mg-t10 {margin-top:10px !important;}
-.mg-t23 {margin-top:23px !important;}
-.mg-t25 {margin-top:25px !important;}
-.mg-t60 {margin-top:60px !important;}
-.mg-t100 {margin-top:100px !important;}
-
 .mg-b5 {margin-bottom:0.3125rem !important;}
 .mg-b6 {margin-bottom:0.375rem !important;}
 .mg-b7 {margin-bottom:0.4375rem !important;}
 .mg-b10 {margin-bottom:0.625rem !important;}
 .mg-b15 {margin-bottom:0.9375rem !important;}
 .mg-b90 {margin-bottom:90px !important;}
-
-.mg-l2 {margin-left:2px !important;}
-.mg-l4 {margin-left:4px !important;}
-.mg-l5 {margin-left:5px !important;}
-.mg-l6 {margin-left:6px !important;}
-.mg-l10 {margin-left:10px !important;}
-.mg-l20 {margin-left:20px !important;}
 
 .wAuto {width:auto !important;}
 .w68 {width:68px !important;}
@@ -159,20 +131,8 @@ a {color:#888;}
 
 .fw100 {font-weight:100 !important;}
 
-/* Grid */
-
-.col1  {width:8.33333333%;}
-.col2  {width:16.66666667%;}
-.col3  {width:25%;}
-.col4  {width:33.33333333%;}
-.col5  {width:41.66666667%;}
-.col6  {width:50%;}
-.col7  {width:58.33333333%;}
-.col8  {width:66.66666667%;}
-.col9  {width:75%;}
-.col10 {width:83.33333333%;}
-.col11 {width:91.66666667%;}
-.col12 {width:100%;}
+.swiper-slide a,
+.swiper-slide img{width: 100%;}
 
 /**
  * Swiper 4.5.0
