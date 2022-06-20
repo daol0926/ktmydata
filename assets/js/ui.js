@@ -240,7 +240,9 @@ function cateSticky(){
 		var target = $(this).attr('data-target'),
 			offsetTop = $(target).offset().top - (headerGab+cateh);
 		menuItems.addClass("current").not(this).removeClass("current");
-		
+		$('html, body').stop().animate({
+			scrollTop: offsetTop
+		}, 400, "easeInOutExpo");
 		
 		return false;
 		e.preventDefault();
@@ -370,6 +372,8 @@ function scrollChk(obj){
 	if( divScroll.hasScrollBar() ){
 		divScroll.scrollTop(0);
 		$(obj+" .modal-container .btn-light-secondary").text("아래로 내려보기").attr("onclick","scrollDown(this)");
+	} else {
+		$(obj+" .modal-container .btn-light-secondary").text("동의").attr("onclick","scrollDown(this)");
 	}
 	divScroll.scroll(function(){  
 		console.log($(this)[0].scrollHeight +" / "+ Math.round($(this).scrollTop())) 
