@@ -106,7 +106,7 @@ main {z-index: 1;height: 100%;}
 .certify-wrap .cert-bas em {background-position:-4.4375rem 0;}
 .certify-wrap .cert-fin em {background-position:-7.375rem 0;}
 .certify-wrap .cert-payco em {background-position:-4.4375rem -3.125rem;}
-.certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.png) no-repeat center/auto 70% #efefef;}
+.certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.svg) no-repeat center/auto 70% #efefef;}
 .certify-wrap .cert-naver em {background:url(../images/bank/ico_bank08.png) no-repeat center/auto 70% #efefef;}
 
 article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
@@ -3762,7 +3762,7 @@ letter-spacing: -.06rem;}
 .ico-kt{background-image:url(../images/common/ico-kt.png);}
 .ico-lego{background-image:url(../images/common/ico-lego.png);}
 .bill-ico-naver,
-.ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.png);}
+.ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.svg);}
 .ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
 .ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
 .ico-nike{background-image:url(../images/common/ico-nike.png);}
@@ -3799,164 +3799,164 @@ letter-spacing: -.06rem;}
 
 
 /* icon list - 통신 */
-.code-ico-F1AAAN0000{background-image:url(../images/icon/F1AAAN0000.png);}
-.code-ico-F1AAGI0000{background-image:url(../images/icon/F1AAGI0000.png);}
-.code-ico-F1AAAU0000{background-image:url(../images/icon/F1AAAU0000.png);}
-.code-ico-F1AAFT0000{background-image:url(../images/icon/F1AAFT0000.png);}
+.code-ico-F1AAAN0000{background-image:url(../images/icon/F1AAAN0000.svg);}
+.code-ico-F1AAGI0000{background-image:url(../images/icon/F1AAGI0000.svg);}
+.code-ico-F1AAAU0000{background-image:url(../images/icon/F1AAAU0000.svg);}
+.code-ico-F1AAFT0000{background-image:url(../images/icon/F1AAFT0000.svg);}
 
 /* icon list - 카드 */
-.code-ico-D1AAFQ0000{background-image:url(../images/icon/D1AAFQ0000.png);}
-.code-ico-D2AAOD0000{background-image:url(../images/icon/D2AAOD0000.png);}
-.code-ico-D1AAIM0000{background-image:url(../images/icon/D1AAIM0000.png);}
-.code-ico-D1AAMW0000{background-image:url(../images/icon/D1AAMW0000.png);}
-.code-ico-D1AAHS0000{background-image:url(../images/icon/D1AAHS0000.png);}
-.code-ico-D1AADO0000{background-image:url(../images/icon/D1AADO0000.png);}
-.code-ico-D1AAII0000{background-image:url(../images/icon/D1AAII0000.png);}
-.code-ico-D1AAEV0000{background-image:url(../images/icon/D1AAEV0000.png);}
-.code-ico-D1AAPA0000{background-image:url(../images/icon/D1AAPA0000.png);}
-.code-ico-D1AAHX0000{background-image:url(../images/icon/D1AAHX0000.png);}
-.code-ico-D1AAEX0000{background-image:url(../images/icon/D1AAEX0000.png);}
-.code-ico-D1AAQE0000{background-image:url(../images/icon/D1AAQE0000.png);}
-.code-ico-D1AAAH0000{background-image:url(../images/icon/D1AAAH0000.png);}
-.code-ico-D1AAKA0000{background-image:url(../images/icon/D1AAKA0000.png);}
-.code-ico-D1AAHP0000{background-image:url(../images/icon/D1AAHP0000.png);}
-.code-ico-D1AAIP0000{background-image:url(../images/icon/D1AAIP0000.png);}
-.code-ico-D1AAHJ0000{background-image:url(../images/icon/D1AAHJ0000.png);}
-.code-ico-D1AAPF0000{background-image:url(../images/icon/D1AAPF0000.png);}
-.code-ico-D1AABJ0000{background-image:url(../images/icon/D1AABJ0000.png);}
-.code-ico-D2AAPG0000{background-image:url(../images/icon/D2AAPG0000.png);}
-.code-ico-D1AAFO0000{background-image:url(../images/icon/D1AAFO0000.png);}
-.code-ico-D1AAEQ0000{background-image:url(../images/icon/D1AAEQ0000.png);}
-.code-ico-D1AAAF0000{background-image:url(../images/icon/D1AAAF0000.png);}
-.code-ico-D1AAJB0000{background-image:url(../images/icon/D1AAJB0000.png);}
-.code-ico-D1AABG0000{background-image:url(../images/icon/D1AABG0000.png);}
-.code-ico-D1AAAK0000{background-image:url(../images/icon/D1AAAK0000.png);}
+.code-ico-D1AAFQ0000{background-image:url(../images/icon/D1AAFQ0000.svg);}
+.code-ico-D2AAOD0000{background-image:url(../images/icon/D2AAOD0000.svg);}
+.code-ico-D1AAIM0000{background-image:url(../images/icon/D1AAIM0000.svg);}
+.code-ico-D1AAMW0000{background-image:url(../images/icon/D1AAMW0000.svg);}
+.code-ico-D1AAHS0000{background-image:url(../images/icon/D1AAHS0000.svg);}
+.code-ico-D1AADO0000{background-image:url(../images/icon/D1AADO0000.svg);}
+.code-ico-D1AAII0000{background-image:url(../images/icon/D1AAII0000.svg);}
+.code-ico-D1AAEV0000{background-image:url(../images/icon/D1AAEV0000.svg);}
+.code-ico-D1AAPA0000{background-image:url(../images/icon/D1AAPA0000.svg);}
+.code-ico-D1AAHX0000{background-image:url(../images/icon/D1AAHX0000.svg);}
+.code-ico-D1AAEX0000{background-image:url(../images/icon/D1AAEX0000.svg);}
+.code-ico-D1AAQE0000{background-image:url(../images/icon/D1AAQE0000.svg);}
+.code-ico-D1AAAH0000{background-image:url(../images/icon/D1AAAH0000.svg);}
+.code-ico-D1AAKA0000{background-image:url(../images/icon/D1AAKA0000.svg);}
+.code-ico-D1AAHP0000{background-image:url(../images/icon/D1AAHP0000.svg);}
+.code-ico-D1AAIP0000{background-image:url(../images/icon/D1AAIP0000.svg);}
+.code-ico-D1AAHJ0000{background-image:url(../images/icon/D1AAHJ0000.svg);}
+.code-ico-D1AAPF0000{background-image:url(../images/icon/D1AAPF0000.svg);}
+.code-ico-D1AABJ0000{background-image:url(../images/icon/D1AABJ0000.svg);}
+.code-ico-D2AAPG0000{background-image:url(../images/icon/D2AAPG0000.svg);}
+.code-ico-D1AAFO0000{background-image:url(../images/icon/D1AAFO0000.svg);}
+.code-ico-D1AAEQ0000{background-image:url(../images/icon/D1AAEQ0000.svg);}
+.code-ico-D1AAAF0000{background-image:url(../images/icon/D1AAAF0000.svg);}
+.code-ico-D1AAJB0000{background-image:url(../images/icon/D1AAJB0000.svg);}
+.code-ico-D1AABG0000{background-image:url(../images/icon/D1AABG0000.svg);}
+.code-ico-D1AAAK0000{background-image:url(../images/icon/D1AAAK0000.svg);}
 
 /* icon list - 은행 */
-.code-ico-A1AAJB0000{background-image:url(../images/icon/A1AAJB0000.png);}
-.code-ico-A1AAIM0000{background-image:url(../images/icon/A1AAIM0000.png);}
-.code-ico-A1AAMW0000{background-image:url(../images/icon/A1AAMW0000.png);}
-.code-ico-A4AAAZ0000{background-image:url(../images/icon/A4AAAZ0000.png);}
-.code-ico-A1AAHS0000{background-image:url(../images/icon/A1AAHS0000.png);}
-.code-ico-A1AAII0000{background-image:url(../images/icon/A1AAII0000.png);}
-.code-ico-A3AALD0000{background-image:url(../images/icon/A3AALD0000.png);}
-.code-ico-A4AAPA0000{background-image:url(../images/icon/A4AAPA0000.png);}
-.code-ico-A1AAHX0000{background-image:url(../images/icon/A1AAHX0000.png);}
-.code-ico-A3AAKT0000{background-image:url(../images/icon/A3AAKT0000.png);}
-.code-ico-A1AAQE0000{background-image:url(../images/icon/A1AAQE0000.png);}
-.code-ico-A1AAEM0000{background-image:url(../images/icon/A1AAEM0000.png);}
-.code-ico-A1AAKA0000{background-image:url(../images/icon/A1AAKA0000.png);}
-.code-ico-A3AAKU0000{background-image:url(../images/icon/A3AAKU0000.png);}
-.code-ico-A1AAHP0000{background-image:url(../images/icon/A1AAHP0000.png);}
-.code-ico-A1AAIP0000{background-image:url(../images/icon/A1AAIP0000.png);}
-.code-ico-A1AAHJ0000{background-image:url(../images/icon/A1AAHJ0000.png);}
-.code-ico-A1AAPF0000{background-image:url(../images/icon/A1AAPF0000.png);}
-.code-ico-A1AAES0000{background-image:url(../images/icon/A1AAES0000.png);}
-.code-ico-A3AAKB0000{background-image:url(../images/icon/A3AAKB0000.png);}
-.code-ico-A3AAJY0000{background-image:url(../images/icon/A3AAJY0000.png);}
-.code-ico-A1AAEQ0000{background-image:url(../images/icon/A1AAEQ0000.png);}
-.code-ico-A1AAEO0000{background-image:url(../images/icon/A1AAEO0000.png);}
-.code-ico-A3AAMC0000{background-image:url(../images/icon/A3AAMC0000.png);}
-.code-ico-A1AABG0000{background-image:url(../images/icon/A1AABG0000.png);}
-.code-ico-A3AALX0000{background-image:url(../images/icon/A3AALX0000.png);}
-.code-ico-A3AAJZ0000{background-image:url(../images/icon/A3AAJZ0000.png);}
-.code-ico-A1AAAK0000{background-image:url(../images/icon/A1AAAK0000.png);}
+.code-ico-A1AAJB0000{background-image:url(../images/icon/A1AAJB0000.svg);}
+.code-ico-A1AAIM0000{background-image:url(../images/icon/A1AAIM0000.svg);}
+.code-ico-A1AAMW0000{background-image:url(../images/icon/A1AAMW0000.svg);}
+.code-ico-A4AAAZ0000{background-image:url(../images/icon/A4AAAZ0000.svg);}
+.code-ico-A1AAHS0000{background-image:url(../images/icon/A1AAHS0000.svg);}
+.code-ico-A1AAII0000{background-image:url(../images/icon/A1AAII0000.svg);}
+.code-ico-A3AALD0000{background-image:url(../images/icon/A3AALD0000.svg);}
+.code-ico-A4AAPA0000{background-image:url(../images/icon/A4AAPA0000.svg);}
+.code-ico-A1AAHX0000{background-image:url(../images/icon/A1AAHX0000.svg);}
+.code-ico-A3AAKT0000{background-image:url(../images/icon/A3AAKT0000.svg);}
+.code-ico-A1AAQE0000{background-image:url(../images/icon/A1AAQE0000.svg);}
+.code-ico-A1AAEM0000{background-image:url(../images/icon/A1AAEM0000.svg);}
+.code-ico-A1AAKA0000{background-image:url(../images/icon/A1AAKA0000.svg);}
+.code-ico-A3AAKU0000{background-image:url(../images/icon/A3AAKU0000.svg);}
+.code-ico-A1AAHP0000{background-image:url(../images/icon/A1AAHP0000.svg);}
+.code-ico-A1AAIP0000{background-image:url(../images/icon/A1AAIP0000.svg);}
+.code-ico-A1AAHJ0000{background-image:url(../images/icon/A1AAHJ0000.svg);}
+.code-ico-A1AAPF0000{background-image:url(../images/icon/A1AAPF0000.svg);}
+.code-ico-A1AAES0000{background-image:url(../images/icon/A1AAES0000.svg);}
+.code-ico-A3AAKB0000{background-image:url(../images/icon/A3AAKB0000.svg);}
+.code-ico-A3AAJY0000{background-image:url(../images/icon/A3AAJY0000.svg);}
+.code-ico-A1AAEQ0000{background-image:url(../images/icon/A1AAEQ0000.svg);}
+.code-ico-A1AAEO0000{background-image:url(../images/icon/A1AAEO0000.svg);}
+.code-ico-A3AAMC0000{background-image:url(../images/icon/A3AAMC0000.svg);}
+.code-ico-A1AABG0000{background-image:url(../images/icon/A1AABG0000.svg);}
+.code-ico-A3AALX0000{background-image:url(../images/icon/A3AALX0000.svg);}
+.code-ico-A3AAJZ0000{background-image:url(../images/icon/A3AAJZ0000.svg);}
+.code-ico-A1AAAK0000{background-image:url(../images/icon/A1AAAK0000.svg);}
 
 /* icon list - 보험 :: 허브라이프생명,AIG생명 코드 없음 */
-.code-ico-B1AAJH0000{background-image:url(../images/icon/B1AAJH0000.png);}
-.code-ico-B1AAAI0000{background-image:url(../images/icon/B1AAAI0000.png);}
-.code-ico-B1AABF0000{background-image:url(../images/icon/B1AABF0000.png);}
-.code-ico-B2AAOC0000{background-image:url(../images/icon/B2AAOC0000.png);}
-.code-ico-B1AAEU0000{background-image:url(../images/icon/B1AAEU0000.png);}
-.code-ico-B1AAAY0000{background-image:url(../images/icon/B1AAAY0000.png);}
-.code-ico-B2AAAT0000{background-image:url(../images/icon/B2AAAT0000.png);}
-.code-ico-B2AACR0000{background-image:url(../images/icon/B2AACR0000.png);}
-.code-ico-B1AADN0000{background-image:url(../images/icon/B1AADN0000.png);}
-.code-ico-B1AAHE0000{background-image:url(../images/icon/B1AAHE0000.png);}
-.code-ico-B1AAAR0000{background-image:url(../images/icon/B1AAAR0000.png);}
-.code-ico-B2AAEW0000{background-image:url(../images/icon/B2AAEW0000.png);}
-.code-ico-B1AAAS0000{background-image:url(../images/icon/B1AAAS0000.png);}
-.code-ico-B1AADM0000{background-image:url(../images/icon/B1AADM0000.png);}
-.code-ico-B2AAIF0000{background-image:url(../images/icon/B2AAIF0000.png);}
-.code-ico-B1AAJM0000{background-image:url(../images/icon/B1AAJM0000.png);}
-.code-ico-B2AABT0000{background-image:url(../images/icon/B2AABT0000.png);}
-.code-ico-B1AAQI0000{background-image:url(../images/icon/B1AAQI0000.png);}
-.code-ico-B2AADH0000{background-image:url(../images/icon/B2AADH0000.png);}
-.code-ico-B2AAAL0000{background-image:url(../images/icon/B2AAAL0000.png);}
-.code-ico-B1AAAO0000{background-image:url(../images/icon/B1AAAO0000.png);}
-.code-ico-B2AANY0000{background-image:url(../images/icon/B2AANY0000.png);}
-.code-ico-B1AAFP0000{background-image:url(../images/icon/B1AAFP0000.png);}
-.code-ico-B1AAIX0000{background-image:url(../images/icon/B1AAIX0000.png);}
-.code-ico-B1AAKD0000{background-image:url(../images/icon/B1AAKD0000.png);}
-.code-ico-B1AAET0000{background-image:url(../images/icon/B1AAET0000.png);}
-.code-ico-B2AAEN0000{background-image:url(../images/icon/B2AAEN0000.png);}
-.code-ico-B1AANL0000{background-image:url(../images/icon/B1AANL0000.png);}
-.code-ico-B1AABD0000{background-image:url(../images/icon/B1AABD0000.png);}
-.code-ico-B1AANZ0000{background-image:url(../images/icon/B1AANZ0000.png);}
-.code-ico-B2AALR0000{background-image:url(../images/icon/B2AALR0000.png);}
-.code-ico-B1AAMU0000{background-image:url(../images/icon/B1AAMU0000.png);}
-.code-ico-B2AAGZ0000{background-image:url(../images/icon/B2AAGZ0000.png);}
+.code-ico-B1AAJH0000{background-image:url(../images/icon/B1AAJH0000.svg);}
+.code-ico-B1AAAI0000{background-image:url(../images/icon/B1AAAI0000.svg);}
+.code-ico-B1AABF0000{background-image:url(../images/icon/B1AABF0000.svg);}
+.code-ico-B2AAOC0000{background-image:url(../images/icon/B2AAOC0000.svg);}
+.code-ico-B1AAEU0000{background-image:url(../images/icon/B1AAEU0000.svg);}
+.code-ico-B1AAAY0000{background-image:url(../images/icon/B1AAAY0000.svg);}
+.code-ico-B2AAAT0000{background-image:url(../images/icon/B2AAAT0000.svg);}
+.code-ico-B2AACR0000{background-image:url(../images/icon/B2AACR0000.svg);}
+.code-ico-B1AADN0000{background-image:url(../images/icon/B1AADN0000.svg);}
+.code-ico-B1AAHE0000{background-image:url(../images/icon/B1AAHE0000.svg);}
+.code-ico-B1AAAR0000{background-image:url(../images/icon/B1AAAR0000.svg);}
+.code-ico-B2AAEW0000{background-image:url(../images/icon/B2AAEW0000.svg);}
+.code-ico-B1AAAS0000{background-image:url(../images/icon/B1AAAS0000.svg);}
+.code-ico-B1AADM0000{background-image:url(../images/icon/B1AADM0000.svg);}
+.code-ico-B2AAIF0000{background-image:url(../images/icon/B2AAIF0000.svg);}
+.code-ico-B1AAJM0000{background-image:url(../images/icon/B1AAJM0000.svg);}
+.code-ico-B2AABT0000{background-image:url(../images/icon/B2AABT0000.svg);}
+.code-ico-B1AAQI0000{background-image:url(../images/icon/B1AAQI0000.svg);}
+.code-ico-B2AADH0000{background-image:url(../images/icon/B2AADH0000.svg);}
+.code-ico-B2AAAL0000{background-image:url(../images/icon/B2AAAL0000.svg);}
+.code-ico-B1AAAO0000{background-image:url(../images/icon/B1AAAO0000.svg);}
+.code-ico-B2AANY0000{background-image:url(../images/icon/B2AANY0000.svg);}
+.code-ico-B1AAFP0000{background-image:url(../images/icon/B1AAFP0000.svg);}
+.code-ico-B1AAIX0000{background-image:url(../images/icon/B1AAIX0000.svg);}
+.code-ico-B1AAKD0000{background-image:url(../images/icon/B1AAKD0000.svg);}
+.code-ico-B1AAET0000{background-image:url(../images/icon/B1AAET0000.svg);}
+.code-ico-B2AAEN0000{background-image:url(../images/icon/B2AAEN0000.svg);}
+.code-ico-B1AANL0000{background-image:url(../images/icon/B1AANL0000.svg);}
+.code-ico-B1AABD0000{background-image:url(../images/icon/B1AABD0000.svg);}
+.code-ico-B1AANZ0000{background-image:url(../images/icon/B1AANZ0000.svg);}
+.code-ico-B2AALR0000{background-image:url(../images/icon/B2AALR0000.svg);}
+.code-ico-B1AAMU0000{background-image:url(../images/icon/B1AAMU0000.svg);}
+.code-ico-B2AAGZ0000{background-image:url(../images/icon/B2AAGZ0000.svg);}
 
 /* icon list - 증권 */
-.code-ico-C1AACS0000{background-image:url(../images/icon/C1AACS0000.png);}
-.code-ico-C1AAKO0000{background-image:url(../images/icon/C1AAKO0000.png);}
-.code-ico-C1AARV0000{background-image:url(../images/icon/C1AARV0000.png);}
-.code-ico-C1AACZ0000{background-image:url(../images/icon/C1AACZ0000.png);}
-.code-ico-C1AACU0000{background-image:url(../images/icon/C1AACU0000.png);}
-.code-ico-C1AAEY0000{background-image:url(../images/icon/C1AAEY0000.png);}
-.code-ico-C1AADF0000{background-image:url(../images/icon/C1AADF0000.png);}
-.code-ico-C1AADC0000{background-image:url(../images/icon/C1AADC0000.png);}
-.code-ico-C1AAGU0000{background-image:url(../images/icon/C1AAGU0000.png);}
-.code-ico-C1AABR0000{background-image:url(../images/icon/C1AABR0000.png);}
-.code-ico-C1AAHW0000{background-image:url(../images/icon/C1AAHW0000.png);}
-.code-ico-C1AAKN0000{background-image:url(../images/icon/C1AAKN0000.png);}
-.code-ico-C1AACT0000{background-image:url(../images/icon/C1AACT0000.png);}
-.code-ico-C1AABU0000{background-image:url(../images/icon/C1AABU0000.png);}
-.code-ico-C1AADA0000{background-image:url(../images/icon/C1AADA0000.png);}
-.code-ico-C1AACQ0000{background-image:url(../images/icon/C1AACQ0000.png);}
+.code-ico-C1AACS0000{background-image:url(../images/icon/C1AACS0000.svg);}
+.code-ico-C1AAKO0000{background-image:url(../images/icon/C1AAKO0000.svg);}
+.code-ico-C1AARV0000{background-image:url(../images/icon/C1AARV0000.svg);}
+.code-ico-C1AACZ0000{background-image:url(../images/icon/C1AACZ0000.svg);}
+.code-ico-C1AACU0000{background-image:url(../images/icon/C1AACU0000.svg);}
+.code-ico-C1AAEY0000{background-image:url(../images/icon/C1AAEY0000.svg);}
+.code-ico-C1AADF0000{background-image:url(../images/icon/C1AADF0000.svg);}
+.code-ico-C1AADC0000{background-image:url(../images/icon/C1AADC0000.svg);}
+.code-ico-C1AAGU0000{background-image:url(../images/icon/C1AAGU0000.svg);}
+.code-ico-C1AABR0000{background-image:url(../images/icon/C1AABR0000.svg);}
+.code-ico-C1AAHW0000{background-image:url(../images/icon/C1AAHW0000.svg);}
+.code-ico-C1AAKN0000{background-image:url(../images/icon/C1AAKN0000.svg);}
+.code-ico-C1AACT0000{background-image:url(../images/icon/C1AACT0000.svg);}
+.code-ico-C1AABU0000{background-image:url(../images/icon/C1AABU0000.svg);}
+.code-ico-C1AADA0000{background-image:url(../images/icon/C1AADA0000.svg);}
+.code-ico-C1AACQ0000{background-image:url(../images/icon/C1AACQ0000.svg);}
 
 /* icon list - 페이머니 */
-.code-ico-E1AAJA0000{background-image:url(../images/icon/E1AAJA0000.png);}
-.code-ico-E1AAHY0000{background-image:url(../images/icon/E1AAHY0000.png);}
-.code-ico-E1AABK0000{background-image:url(../images/icon/E1AABK0000.png);}
-.code-ico-E1AAQK0000{background-image:url(../images/icon/E1AAQK0000.png);}
-.code-ico-E1AAGK0000{background-image:url(../images/icon/E1AAGK0000.png);}
-.code-ico-E1AAPC0000{background-image:url(../images/icon/E1AAPC0000.png);}
-.code-ico-E1AAIA0000{background-image:url(../images/icon/E1AAIA0000.png);}
-.code-ico-E1AABZ0000{background-image:url(../images/icon/E1AABZ0000.png);}
-.code-ico-E1AAPN0000{background-image:url(../images/icon/E1AAPN0000.png);}
-.code-ico-E1AADV0000{background-image:url(../images/icon/E1AADV0000.png);}
-.code-ico-E1AAAX0000{background-image:url(../images/icon/E1AAAX0000.png);}
-.code-ico-E1AAIE0000{background-image:url(../images/icon/E1AAIE0000.png);}
-.code-ico-E1AAJI0000{background-image:url(../images/icon/E1AAJI0000.png);}
-.code-ico-E1AABE0000{background-image:url(../images/icon/E1AABE0000.png);}
-.code-ico-E1AAPM0000{background-image:url(../images/icon/E1AAPM0000.png);}
+.code-ico-E1AAJA0000{background-image:url(../images/icon/E1AAJA0000.svg);}
+.code-ico-E1AAHY0000{background-image:url(../images/icon/E1AAHY0000.svg);}
+.code-ico-E1AABK0000{background-image:url(../images/icon/E1AABK0000.svg);}
+.code-ico-E1AAQK0000{background-image:url(../images/icon/E1AAQK0000.svg);}
+.code-ico-E1AAGK0000{background-image:url(../images/icon/E1AAGK0000.svg);}
+.code-ico-E1AAPC0000{background-image:url(../images/icon/E1AAPC0000.svg);}
+.code-ico-E1AAIA0000{background-image:url(../images/icon/E1AAIA0000.svg);}
+.code-ico-E1AABZ0000{background-image:url(../images/icon/E1AABZ0000.svg);}
+.code-ico-E1AAPN0000{background-image:url(../images/icon/E1AAPN0000.svg);}
+.code-ico-E1AADV0000{background-image:url(../images/icon/E1AADV0000.svg);}
+.code-ico-E1AAAX0000{background-image:url(../images/icon/E1AAAX0000.svg);}
+.code-ico-E1AAIE0000{background-image:url(../images/icon/E1AAIE0000.svg);}
+.code-ico-E1AAJI0000{background-image:url(../images/icon/E1AAJI0000.svg);}
+.code-ico-E1AABE0000{background-image:url(../images/icon/E1AABE0000.svg);}
+.code-ico-E1AAPM0000{background-image:url(../images/icon/E1AAPM0000.svg);}
 
 /* icon list - 캐피탈 */
-.code-ico-D3AAHB0000{background-image:url(../images/icon/D3AAHB0000.png);}
-.code-ico-D3AAEF0000{background-image:url(../images/icon/D3AAEF0000.png);}
-.code-ico-D3AADO0000{background-image:url(../images/icon/D3AADO0000.png);}
-.code-ico-D3AAQO0000{background-image:url(../images/icon/D3AAQO0000.png);}
-.code-ico-D3AAPX0000{background-image:url(../images/icon/D3AAPX0000.png);}
-.code-ico-D3AAEK0000{background-image:url(../images/icon/D3AAEK0000.png);}
-.code-ico-D3AAEV0000{background-image:url(../images/icon/D3AAEV0000.png);}
-.code-ico-D3AAEX0000{background-image:url(../images/icon/D3AAEX0000.png);}
-.code-ico-D3AAMM0000{background-image:url(../images/icon/D3AAMM0000.png);}
-.code-ico-D3AAAH0000{background-image:url(../images/icon/D3AAAH0000.png);}
-.code-ico-D3AABC0000{background-image:url(../images/icon/D3AABC0000.png);}
-.code-ico-D3AABJ0000{background-image:url(../images/icon/D3AABJ0000.png);}
-.code-ico-D3AAGE0000{background-image:url(../images/icon/D3AAGE0000.png);}
-.code-ico-D3AADE0000{background-image:url(../images/icon/D3AADE0000.png);}
-.code-ico-D3AAOA0000{background-image:url(../images/icon/D3AAOA0000.png);}
-.code-ico-D3AAJX0000{background-image:url(../images/icon/D3AAJX0000.png);}
-.code-ico-D3AAMG0000{background-image:url(../images/icon/D3AAMG0000.png);}
-.code-ico-D3AAHH0000{background-image:url(../images/icon/D3AAHH0000.png);}
-.code-ico-D3AAAF0000{background-image:url(../images/icon/D3AAAF0000.png);}
-.code-ico-D3AADZ0000{background-image:url(../images/icon/D3AADZ0000.png);}
-.code-ico-D3AAOB0000{background-image:url(../images/icon/D3AAOB0000.png);}
+.code-ico-D3AAHB0000{background-image:url(../images/icon/D3AAHB0000.svg);}
+.code-ico-D3AAEF0000{background-image:url(../images/icon/D3AAEF0000.svg);}
+.code-ico-D3AADO0000{background-image:url(../images/icon/D3AADO0000.svg);}
+.code-ico-D3AAQO0000{background-image:url(../images/icon/D3AAQO0000.svg);}
+.code-ico-D3AAPX0000{background-image:url(../images/icon/D3AAPX0000.svg);}
+.code-ico-D3AAEK0000{background-image:url(../images/icon/D3AAEK0000.svg);}
+.code-ico-D3AAEV0000{background-image:url(../images/icon/D3AAEV0000.svg);}
+.code-ico-D3AAEX0000{background-image:url(../images/icon/D3AAEX0000.svg);}
+.code-ico-D3AAMM0000{background-image:url(../images/icon/D3AAMM0000.svg);}
+.code-ico-D3AAAH0000{background-image:url(../images/icon/D3AAAH0000.svg);}
+.code-ico-D3AABC0000{background-image:url(../images/icon/D3AABC0000.svg);}
+.code-ico-D3AABJ0000{background-image:url(../images/icon/D3AABJ0000.svg);}
+.code-ico-D3AAGE0000{background-image:url(../images/icon/D3AAGE0000.svg);}
+.code-ico-D3AADE0000{background-image:url(../images/icon/D3AADE0000.svg);}
+.code-ico-D3AAOA0000{background-image:url(../images/icon/D3AAOA0000.svg);}
+.code-ico-D3AAJX0000{background-image:url(../images/icon/D3AAJX0000.svg);}
+.code-ico-D3AAMG0000{background-image:url(../images/icon/D3AAMG0000.svg);}
+.code-ico-D3AAHH0000{background-image:url(../images/icon/D3AAHH0000.svg);}
+.code-ico-D3AAAF0000{background-image:url(../images/icon/D3AAAF0000.svg);}
+.code-ico-D3AADZ0000{background-image:url(../images/icon/D3AADZ0000.svg);}
+.code-ico-D3AAOB0000{background-image:url(../images/icon/D3AAOB0000.svg);}
 
 /* icon list - 보증보험 */
-.code-ico-B4AADL0000{background-image:url(../images/icon/B4AADL0000.png);}
+.code-ico-B4AADL0000{background-image:url(../images/icon/B4AADL0000.svg);}
 
 /* after, button custom */
 .won:after {content:" 원";}
