@@ -1617,7 +1617,7 @@ z-index: 1;}
 
 /* data-info-wrp */
 .data-info-wrp{
-    padding:1.25rem 0;
+    padding: .625rem 0;
 }
 .data-info-wrp .date-select{
     display: flex;
@@ -1627,9 +1627,9 @@ z-index: 1;}
     width: 100%;
     font-size: .85rem;
     margin: 0;
-	background-color: transparent;
+    background-color: transparent;
     box-shadow: none;
-    padding: 0 0 1.25rem !important;
+    padding: 0 0 .625rem !important;
 }
 .calendar-wrp{
     width: calc(100% - 3rem);
@@ -1671,7 +1671,7 @@ z-index: 1;}
     width: 100%;
     border-radius: 0;
 }
-#ui-datepicker-div{    
+#ui-datepicker-div{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -1681,7 +1681,7 @@ z-index: 1;}
     top: unset !important;
     border-radius: 1rem 1rem 0 0;
     left: 0 !important;
-    height: 40rem;
+    height: fit-content;
 }
 .picker-bg-bk{
     display: block;
@@ -1740,17 +1740,25 @@ margin-bottom: 0;}
     background-color: #fff;
     border-radius: .5rem;
     padding:1.25rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: .625rem;
 }
 .data-info-wrp .data-info-box .info-list-title{
     margin-top: 1.25rem;
     padding-top: 1.25rem;
     border-top: 1px solid #e4e4e4;
+    font-weight: 500;
 }
+.data-info-wrp .data-info-box .data-info-list:first-child dt.info-list-title{
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+}
+/*
 .data-info-wrp .data-info-box .data-info-list dt.info-list-title{
     padding-top: 0;
     border-top: 0;
 }
+*/
 .data-info-wrp .data-info-box .info-list-desc{
     display: flex;
     align-items: center;
