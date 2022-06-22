@@ -1661,6 +1661,11 @@ z-index: 1;}
     box-shadow: none;
     padding: 0 0 .625rem !important;
 }
+.data-info-wrp.cal-only-wrp .data-info-box .data-info-list:first-child dt.info-list-title {
+    border-top: 0;
+    padding-top: 0;
+}
+
 .calendar-wrp{
     width: calc(100% - 3rem);
 }
@@ -1772,8 +1777,8 @@ margin-bottom: 0;}
 }
 .data-info-wrp .data-info-box .data-info-list:first-child dt.info-list-title{
     margin-top: 0;
-    border-top: 0;
-    padding-top: 0;
+    /* border-top: 0; */
+    /* padding-top: 0; */
 }
 /*
 .data-info-wrp .data-info-box .data-info-list dt.info-list-title{
@@ -1807,7 +1812,7 @@ margin-bottom: 0;}
     color:#888;
 }
 .data-info-wrp.data-bill-wrp .data-header{
-    /* padding-bottom: 1.25rem; */
+    padding-bottom: .625rem;
     /* border-bottom: 1px solid #ccc; */
 }
 .data-info-wrp.data-bill-wrp .data-info-box{
@@ -1846,6 +1851,7 @@ margin-bottom: 0;}
 }
 .data-info-wrp.data-bill-wrp .data-info-box .data-info-list .info-list-desc>span:last-child{
     text-align: right;
+    word-break: keep-all;
 }
 
 /* sch */
