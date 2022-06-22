@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body class="bg-gray">
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="bg-white title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>이력정보</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<section>
+			<div class="data-info-wrp cal-only-wrp">
+				<div class="date-select">
+					<div class="calendar-wrp row align-items-center">
+						<div class="calendar-date">
+							<input type="text" name="dateStart" id="dateStart" value="2022-06-01" autocomplete="off" readonly>
+						</div>
+						<span class="calendar-date-mid">&nbsp;~&nbsp;</span>
+						<div class="calendar-date">
+							<input type="text" name="dateEnd" id="dateEnd" value="2022-06-30" autocomplete="off" readonly>
+						</div>
+					</div>
+					<button type="button" class="btn btn-light-secondary btn-xs btn-round">조회</button>
+				</div> <!--//date-select -->
+
+				<div class="desc-wrp center">
+					이력정보가 없습니다.
+				</div>
+			</div> <!--//data-info-wrp -->
+		</section>	
+		<div class="picker-bg-bk"></div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//자산 accordion
+	accordion();
+	//알람 리스트
+	alarmTrash();
+	//date picker
+	dataCalPic();
+</script>
+</body>
+</html>

@@ -630,11 +630,16 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .card.bill-info .card-body {padding: 0 0 0.875rem;}
 .bill-list .list-title {margin-bottom:0.25rem;}
-.dataON:before,.internet:before,.tv:before{/* background: url(../images/common/icon_spr.png) no-repeat; */content:'';display:inline-block;}
-.dataON:before {/* background-position:-4.3125rem -6.1875rem; */background-color: #fdf0f7;background-image: url(../images/common/ico-dataon.png);}
-.internet:before {content:'';background-position:-7.0625rem -6.1875rem;background-color: #e3efff;background-image: url(../images/common/ico-wifi.png);}
-.tv:before {content:'';background-position:-9.8125rem -6.1875rem;background-color: #f4f0fd;background-image: url(../images/common/ico-tv.png);}
-.data-5g:before {content:'';background-position:-4.375rem -8.9375rem;background: #fdf0f7;background-image: url(../images/common/ico-mobile.png);}
+.dataON:before,
+.internet:before,
+.tv:before,
+.data-5g:before,
+.internet-tv:before,
+.homeTel:before{/* background: url(../images/common/icon_spr.png) no-repeat; */content:'';display:inline-block;background-repeat: no-repeat;background-size: contain;}
+.dataON:before {/* background-position:-4.3125rem -6.1875rem; */background: #fdf0f7 url(../images/common/ico-dataon.png);}
+.internet:before {content:'';background-position:-7.0625rem -6.1875rem;background: #e3efff url(../images/common/ico-wifi.png);}
+.tv:before {content:'';background-position:-9.8125rem -6.1875rem;background: #f4f0fd url(../images/common/ico-tv.png);}
+.data-5g:before {content:'';/* background-position:-4.375rem -8.9375rem; */background: #fdf0f7 url(../images/common/ico-mobile.png);}
 .internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
 .homeTel:before {content:'';background-image:url(../images/common/ico-phone.png);}
 
@@ -813,7 +818,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .history .dtl li em {margin-top:.5rem;font-size:.75rem;color:#666;}
 .history .dtl li [class*=align-]>em:first-child{margin-top: 0.1rem;}
 .history .dtl li.cancel {color:#666;}
-.history .dtl li.cancel .won {text-decoration:line-through}
+.history .dtl li.cancel .cash {text-decoration:line-through}
 .history .date-srch-desc{font-size: .75rem;text-align: center;font-weight: 500;}
 .history .date-srch-desc p{padding-bottom: 1rem;}
 
@@ -1059,6 +1064,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     padding: 2rem 0;
     color:#888;
     word-break: keep-all;
+}
+.desc-wrp.center{
+    height:calc(100vh - 5rem);
 }
 .desc-wrp .desc-title{
     font-size: 1.2rem;
@@ -1598,6 +1606,25 @@ z-index: 1;}
     margin-bottom: 0;
 }
 
+/* 생활비서 구글 팝업 버튼 추가 */
+.googleNoticeWrap{
+    font-size: 0.875rem;
+    position:fixed;
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    bottom:4rem;
+    color:#fff;
+    text-align: center;
+}
+.googleNoticeBody{
+    background-color: rgb(0 0 0 / 0.7);
+    border-radius: 30px;
+    width:80%;
+    margin:0 auto;
+    padding:0.3rem;
+}
+
 /* datepicker - 자산관리 이력정보 */
 .calendar-date .ui-datepicker{
     display: none !important;
@@ -1643,26 +1670,18 @@ z-index: 1;}
     width: calc(50% - 1rem);
     position: relative;
     /* background: #fff; */
-    height: 2rem;
+    height: 1.5rem;
 }
 .calendar-wrp input[type="text"]{
     padding: .5rem;
-    height: unset;
-    width: calc(100% - 1rem);
+    width:
+    calc(100% - .5rem);
+    height: 100%;
     font-size: .85rem;
     position: relative;
     background: transparent;
     border: 0;
-}
-.calendar-wrp .calendar-date::before{
-    content: '';
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    right: 0;
-    /* top: 0; */
-    background: #eee url(../images/common/ico-calender.png) no-repeat center/contain;
+    background: url(../images/common/ico-calender.png) no-repeat center right .25rem/1.1rem auto;
 }
 .calendar-wrp .select-complete{
     position: fixed;
@@ -1937,6 +1956,17 @@ position: relative;}
 .card.bill-info .bill-list li>dl dt{
     position: relative;
     flex-basis: 55%;
+}
+.card.bill-info .bill-list li>dl dt i::before{
+    display: block;
+    position: absolute;
+    top: -0.3rem;
+    left: -3rem;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
 }
 .card.bill-info .bill-list li>dl dd{
     flex-basis: 45%;
