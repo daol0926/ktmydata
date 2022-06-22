@@ -298,6 +298,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .card.pattern .card-header {display:block;position:relative;padding:1.75rem 0 0;margin-bottom:1.125rem;font-size:0.875rem;font-weight:500;line-height: 1.625rem;border-radius: 0;}
 .pattern .card-header > div {height:5.4375rem;}
+.pattern .card-header .default{position:relative;}
+.pattern .card-header .default [class*=ico-mbti-]{top:0;}
 .pattern .card-header strong {display:block;padding-top:0.125rem;margin-bottom:0.125rem;font-size:1.125rem;font-weight:700;}
 .pattern .card-header .character {display:block;position:absolute;top:1rem;right:-0.3125rem;width:6.25rem;height:6.25rem;background-repeat:no-repeat;background-size:100% auto;}
 .pattern .card-header p {max-width:11.625rem;line-height:1.125rem;word-break: keep-all;}
@@ -2236,6 +2238,9 @@ letter-spacing: -.06rem;}
 .tab-wrp .mya-detail-info .price-up{
     color:#ff0000;
 }
+.tab-wrp .mya-detail-info .price-up .per::before{
+    content: '+';
+}
 .tab-wrp .mya-detail-info .price-up::before{
     content: '▲';
 }
@@ -2244,6 +2249,9 @@ letter-spacing: -.06rem;}
 }
 .tab-wrp .mya-detail-info .price-down::before{
     content: '▼';
+}
+.tab-wrp .mya-detail-info .price-down .per::before{
+    content: '-';
 }
 .tab-wrp .day-schedule-wrp{
     padding:0;
