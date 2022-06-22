@@ -217,7 +217,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .assets.fail .box {display:flex;justify-content: space-between;align-items: center;}
 .assets-confirm .assets.fail .fail-msg {font-size:0.8125rem;color:#ff0e0e;}
 .assets-confirm .assets.fail .bank-name {margin-bottom: 0;}
-.assets-confirm .box {padding: .625rem .5rem;border-radius:.625rem;background-color:#f5f5f5;}
+.assets-confirm .box {padding: 1.25rem;border-radius:.625rem;background-color:#f5f5f5;}
 .assets-confirm .box + .box {margin-top:.625rem;}
 .assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
 .assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;border-radius: 0;background-color: transparent;position: absolute;z-index: 1;left: 0.325rem;}
@@ -233,6 +233,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm.request-complete > header {padding: 4.125rem 0 2.875rem;}
 .assets-confirm.detail .box dd {font-size:.75rem;color:#7e7e7e;}
 .assets-confirm.detail li {padding: 0 0.125rem;}
+.assets-confirm .form-check input[type="checkbox"]:checked + label:before{background-color:#53cee6;}
 
 .assets-mgmt .assets-confirm {margin-top: 0;}
 .assets-mgmt .container-header {display:flex;align-items: center;height:2.8125rem;padding:0 1.5rem;background-color:#5a7fe2;}
