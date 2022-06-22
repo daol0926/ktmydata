@@ -800,8 +800,11 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .list-cate button {display:flex;align-items: center;justify-content: center;min-width: 4.6875rem;height: 2.25rem;padding: 0 2.3rem;font-size: 0.8125rem;color:#444;font-weight:500;border-radius:2rem;border:1px solid #e4e4e4;background-color:#fff;}
 .list-cate button.current {background-color:#5ccadf;border-color:#5ccadf;color:#fff;font-weight: 700;}
 
-.dtl-history .list-cate button{padding:0 1rem;max-width:4.875rem;font-size: 0.7312rem;}
-.dtl-history .list-cate ul li{margin-right:0.5rem;}
+.dtl-history .list-cate button,
+.list-cate.min button{padding:0 1rem;max-width:4.875rem;font-size: 0.7312rem;}
+.list-cate.min button{max-width: max-content;}
+.dtl-history .list-cate ul li,
+.list-cate.min ul li{margin-right:0.5rem;}
 
 .history > ul {position:relative;}
 .history > ul > li {position:relative; padding: 0 0.9375rem 1.625rem;}
