@@ -1640,6 +1640,8 @@ z-index: 1;}
     justify-content: space-between;
     width: calc(50% - 1rem);
     position: relative;
+    /* background: #fff; */
+    height: 2rem;
 }
 .calendar-wrp input[type="text"]{
     padding: .5rem;
@@ -3601,7 +3603,7 @@ letter-spacing: -.06rem;}
     padding:.5rem;
     position: relative;
 }
-.pass-coinback-wrp .ico.ico-coinback{
+.pass-coinback-wrp [class*=ico-mbti-]{
     /* background-color: #ccc; */
     border-radius: 50%;
     width: 3rem;
