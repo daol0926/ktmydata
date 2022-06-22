@@ -3730,9 +3730,10 @@ letter-spacing: -.06rem;}
     margin-bottom: 0;
 }
 .add-dc-wrp [class*=code-ico-]{
-    width: auto;
-    height: 3rem;
+    width: 4.5rem;
+    height: fit-content;
     border-radius: 0;
+    image-rendering: -webkit-optimize-contrast;
 }
 .add-dc-wrp [class*=dc-]{
     display: flex;
@@ -3742,6 +3743,8 @@ letter-spacing: -.06rem;}
     align-items: center;
     justify-content: center;
     margin:0;
+    box-sizing: border-box;
+    padding: 0 1rem;
 }
 .add-dc-wrp .dc-title{
     font-family: 'S-CoreDream-6Bold', sans-serif;
