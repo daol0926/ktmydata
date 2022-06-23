@@ -529,7 +529,7 @@ function descInfo(){
 function dataCalPic() {
 	$('.picker-bg-bk, .btn-cal-close').hide();
 	$('#dateStart, #dateEnd').click(function(){
-		$(this).parents().find('body').addClass('scroll-y-hidden');
+		//$(this).parents().find('body').addClass('scroll-y-hidden');
 		$('#ui-datepicker-div').addClass('bg-white financial-wrp');
 	});
     var dateFormat = "yy/mm/dd",
