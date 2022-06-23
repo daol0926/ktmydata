@@ -3565,13 +3565,23 @@ letter-spacing: -.06rem;}
 .desc-empty .btn.btn-xs{height:1.5rem;line-height: 1.5rem;}
 .desc-empty .highlights{font-weight: 600;}
 
-.desc-msg .desc-txt{line-height: 1.4;}
-.desc-msg .form-check .desc-txt{display: none;}
-.desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.58rem;left: 8.5rem;}
 .desc-msg .form-check input[type="checkbox"] + label{display: inline-flex;align-items: center;}
 .desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;}
-.desc-msg .form-check .focused + .desc-txt{display:block;top: 2rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
 .desc-msg.bd-top{border-top: 1px solid #e4e4e4;padding-top: 1rem;margin-top: 1rem;}
+
+.tooltip-wrp .ico-desc-info{position: relative;z-index: 5;}
+.tooltip-wrp .desc-txt,
+.desc-msg .desc-txt{line-height: 1.4;}
+.tooltip-wrp .desc-txt,
+.desc-msg .form-check .desc-txt{display: none;}
+.tooltip-wrp .focused + .desc-txt,
+.desc-msg .form-check .focused + .desc-txt{display:block;top: 2rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
+.tooltip-wrp .desc-txt::before,
+.desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.58rem;left: 8.5rem;}
+
+.tooltip-wrp .focused + .desc-txt{left: -9.8rem;top: 1.7rem;z-index: 6;width: calc(100vw - 5rem);}
+
+.my-assets-list .tooltip-wrp{position:absolute;left: 8.5rem;}
 
 .inner-iframe{
     position: relative;
