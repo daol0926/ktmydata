@@ -3579,7 +3579,7 @@ letter-spacing: -.06rem;}
 .tooltip-wrp .desc-txt::before,
 .desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width:1rem;height:.6rem;top: -0.58rem;left: 8.5rem;}
 
-.tooltip-wrp .focused + .desc-txt{left: -9.8rem;top: 1.7rem;z-index: 6;width: calc(100vw - 5rem);}
+.tooltip-wrp .focused + .desc-txt{left: -9.8rem;top: 1.7rem;z-index: 6;width: calc(100vw - 5rem);max-width: max-content;}
 
 .my-assets-list .tooltip-wrp{position:absolute;left: 8.5rem;}
 
