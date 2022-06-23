@@ -3666,7 +3666,7 @@ letter-spacing: -.06rem;}
     /*border:2px solid #ccc;*/
     border-radius: 1rem;
     padding:.5rem 1rem;
-    background: #53cee6;
+    background: #53cee6 url(../images/common/pass-bg.png) no-repeat center right/contain;
     color: #fff;
     box-shadow: .1rem .1rem .1rem rgba(0,0,0,0.05);
 }
