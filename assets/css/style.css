@@ -3578,10 +3578,11 @@ letter-spacing: -.06rem;}
 .desc-msg .form-check .focused + .desc-txt{display:block;top: 2rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
 .tooltip-wrp .desc-txt::before,
 .desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width: 14px;height:.6rem;top: -0.6rem;left: 8.5rem;}
+.tooltip-wrp .desc-txt::before{left:unset;right: 27.5%;}
 
-.tooltip-wrp .focused + .desc-txt{left: -9.8rem;top: 1.7rem;z-index: 6;width: calc(100vw - 5rem);max-width: max-content;}
+.tooltip-wrp .focused + .desc-txt{top: 3.5rem;z-index: 6;width: calc(100vw - 7rem);max-width: max-content;right: 0;}
 
-.my-assets-list .tooltip-wrp{position:absolute;left: 8.5rem;}
+.my-assets-list .tooltip-wrp{/* position:absolute; *//* left: 8.5rem; */margin-right: .5rem;}
 
 .inner-iframe{
     position: relative;
@@ -3867,6 +3868,7 @@ letter-spacing: -.06rem;}
 .brand-select .select-list .ico.ico-plus, .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
 .select-list .ico.ico-plus{background-color:#fff;background-image: url(../images/common/ico-plus.png);}
 .ico-desc-info{display:inline-block;width:1rem;height:1rem;border-radius: 50%;border:1px solid #53cee6;background:url(../images/common/ico-desc-info.png) no-repeat center/auto 80%;margin-left:.25rem;;}
+.ico-desc-info.que{background-image: url(../images/common/ico-desc-info2.png);}
 
 /* icon list - code ico */
 .code-ico{
