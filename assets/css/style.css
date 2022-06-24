@@ -3694,7 +3694,7 @@ letter-spacing: -.06rem;}
     width: fit-content;
     font-size: .74rem;
     /* border-right: 1px solid #ccc; */
-    padding: 0 .8rem 0 2.25rem;
+    padding: 0 .8rem 0 2.4rem;
     display: flex;
     flex-flow: column;
     position: relative;
@@ -3708,6 +3708,7 @@ letter-spacing: -.06rem;}
 .pass-coinback-wrp [class*=code-ico-]{
     position: absolute;
     left: 0;
+    top: calc(50% - 1.075rem);
 }
 .pass-coinback-wrp em{
     /* color: #53cee6; */
@@ -3886,7 +3887,7 @@ letter-spacing: -.06rem;}
     height: 2rem;
 }
 /* icon list - 공통 */
-.code-ico-bell{background-image:url(../images/common/ico-bell.png);border-radius: 0;background-color: transparent;}
+.code-ico-bell{background-image:url(../images/common/ico-bell.png);border-radius: 0;background-color: transparent;width: 2.15rem;height: 2.15rem;}
 .code-ico-card{background-image:url(../images/icon/ico-card.png);border-radius: 0;}
 .code-ico-card-min{background-image:url(../images/icon/ico-card-min.png);border-radius: 0;}
 .code-ico-coin{background-image:url(../images/icon/ico-coin.png);border-radius: 0;background-color: transparent;}
