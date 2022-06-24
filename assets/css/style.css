@@ -3678,17 +3678,17 @@ letter-spacing: -.06rem;}
     /* background-color: #ccc; */
     border-radius: 50%;
     width: 3rem;
-    height: calc(100% - 1rem);
+    height: calc(100% - .95rem);
     /* background-image: none; */ /* 추후 아이콘 추가 */
     /* position: unset; */
-    top: .5rem;
+    top: .35rem;
 }
 .pass-coinback-wrp ul{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     /* width: calc(100% - 2rem); */
-    margin: .5rem 0 0 -.5rem;
+    margin: .75rem 0 0 -.5rem;
 }
 .pass-coinback-wrp ul>li{
     width: fit-content;
@@ -3709,6 +3709,10 @@ letter-spacing: -.06rem;}
     position: absolute;
     left: 0;
     top: calc(50% - 1.075rem);
+}
+.pass-coinback-wrp .code-ico-coin2 + span,
+.pass-coinback-wrp .code-ico-coin2 + span + span{
+    margin-left:-.2rem;
 }
 .pass-coinback-wrp em{
     /* color: #53cee6; */
