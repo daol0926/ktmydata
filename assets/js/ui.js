@@ -520,8 +520,8 @@ function addBrand(){
 
 /* desc info */
 function descInfo(){
-	$('.ico-desc-info').click(function(){
-		$(this).toggleClass('focused');
+	$('.tooltip-wrp .ico-desc-info').click(function(){
+		$(this).parent().toggleClass('focused');
 	});
 }
 

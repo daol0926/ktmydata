@@ -743,6 +743,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assetsDtl .tit .assets-name i {width:2.375rem;height:2.375rem;margin-right:0.5rem;}
 .my-assetsDtl .tit .assets-name .label {margin-right:0.1875rem;font-weight: 500;}
 .my-assetsDtl .tit .won:after {font-weight: 500;}
+.my-assetsDtl .tit .tooltip-wrp + .won{margin-left:.5rem;}
 .my-assetsDtl .tit button {position: absolute;top:50%;right: 0;padding:.75rem .5rem;transform: translateY(-50%) rotate(0);transition: all .2s;/* border: 1px solid red; */width: 100%;text-align: right;}
 .my-assetsDtl .tit button.fold {/* transform: translateY(-50%) rotate(-180deg); */}
 .my-assetsDtl .dtl {display:none;padding:0 0.9375rem;margin-bottom:1.25rem;/* background-color:#f5f5f5; */border-radius: 0.25rem;position: relative;border: 1px solid #e4e4e4;}
@@ -3569,20 +3570,12 @@ letter-spacing: -.06rem;}
 .desc-msg .form-check input[type="checkbox"]:checked + label{color:#5bcade;}
 .desc-msg.bd-top{border-top: 1px solid #e4e4e4;padding-top: 1rem;margin-top: 1rem;}
 
-.tooltip-wrp .ico-desc-info{position: relative;z-index: 5;}
-.tooltip-wrp .desc-txt,
-.desc-msg .desc-txt{line-height: 1.4;}
-.tooltip-wrp .desc-txt,
-.desc-msg .form-check .desc-txt{display: none;}
-.tooltip-wrp .focused + .desc-txt,
-.desc-msg .form-check .focused + .desc-txt{display:block;top: 2rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0 1rem rgba(0,0,0,0.15);opacity: .85;width: 100%;}
-.tooltip-wrp .desc-txt::before,
-.desc-msg .form-check .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width: 14px;height:.6rem;top: -0.6rem;left: 8.5rem;}
-.tooltip-wrp .desc-txt::before{left:unset;right: 27.5%;}
-
-.tooltip-wrp .focused + .desc-txt{top: 3.5rem;z-index: 6;width: calc(100vw - 7rem);max-width: max-content;right: 0;}
-
-.my-assets-list .tooltip-wrp{/* position:absolute; *//* left: 8.5rem; */margin-right: .5rem;}
+.tooltip-wrp{position:relative;}
+.tooltip-wrp .ico-desc-info{position: relative;z-index: 6;}
+.tooltip-wrp.focused .ico-desc-info::after{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width: 14px;height:.6rem;top: 1.05rem;left: .2rem;z-index: 7;}
+.tooltip-wrp .desc-txt{line-height: 1.4;display: none;}
+.tooltip-wrp.focused .desc-txt{display:block;top: 1.58rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 15%);opacity: .85;max-width: max-content;margin-left: -9.5rem;width: calc(100vw - 5rem);}
+.my-assets-list .tooltip-wrp .desc-txt{right: -5rem;margin-left: 0;z-index: 6;}
 
 .inner-iframe{
     position: relative;
@@ -3679,7 +3672,7 @@ letter-spacing: -.06rem;}
     /* background-color: #ccc; */
     border-radius: 50%;
     width: 3rem;
-    height: 4rem;
+    height: calc(100% - 1rem);
     /* background-image: none; */ /* 추후 아이콘 추가 */
     /* position: unset; */
     top: .5rem;
@@ -3693,9 +3686,9 @@ letter-spacing: -.06rem;}
 }
 .pass-coinback-wrp ul>li{
     width: fit-content;
-    font-size: .9rem;
+    font-size: .74rem;
     /* border-right: 1px solid #ccc; */
-    padding: 0 1rem 0 2.25rem;
+    padding: 0 .8rem 0 2.25rem;
     display: flex;
     flex-flow: column;
     position: relative;
@@ -3712,11 +3705,12 @@ letter-spacing: -.06rem;}
 }
 .pass-coinback-wrp em{
     /* color: #53cee6; */
-    font-weight: 600;
+    font-weight: 500;
     /* text-decoration: underline; */
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* text-decoration: underline; */
     border-bottom: 1px solid #fff;
+    margin-right: .1rem;
 }
 
 .underline{
