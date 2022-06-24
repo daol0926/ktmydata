@@ -236,7 +236,7 @@ function cateSticky(){
 			var item = $($(this).attr('data-target'));
 			if (item.length) { return item; }
 		});
-    $(".inner>ul>li").on('click','.cate-wrap button', function() {
+    $(document).on('click','.cate-wrap button', function() {
 		var target = $(this).attr('data-target'),
 			offsetTop = $(target).offset().top - (headerGab+cateh);
 		menuItems.addClass("current").not(this).removeClass("current");
