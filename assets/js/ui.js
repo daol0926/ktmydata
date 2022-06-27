@@ -335,6 +335,7 @@ function modal(obj){
 //모달 팝업 닫기
 function modalClose(that){
 	$("body").removeClass("dimmed");
+	$("body").removeClass("none-click-dimmed");
 	var type = typeof(that);
 	if ( type == "object" ) $(that).parents(".modal").removeClass("open");
 	else  $(that).removeClass("open");
@@ -362,9 +363,11 @@ function dimmedClose(){
 		if ( $eTarget.hasClass('dimmed') ) {
 			modalClose('.modal.open');
 			$("body").removeClass("dimmed");
+			$("body").removeClass("none-click-dimmed");
 		}
 	});
 }
+
 //스크롤 유무 체크
 function scrollChk(obj){
 	var divScroll = $(".terms-ui");
@@ -656,6 +659,15 @@ function alertDimmed() {
 		if($('.modal.alert').hasClass('open')){
 			$('.modal.full').addClass('dimmed');
 		} else {
+		}
+	});
+}
+
+function dimmedNoneClick(){
+	$('.btn.dimmed-disabled').on('click', function(e) {
+		console.log("dd2")
+		if ( $('.modal').hasClass('none-click') ) {
+			$("body").addClass("none-click-dimmed");
 		}
 	});
 }

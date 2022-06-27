@@ -22,7 +22,7 @@
 
 		<div class="btn-area" style="display: flex;justify-content: center;">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.confirm')" style="margin:0 .5rem;">Confirm</button>
+			<button type="button" class="btn btn-light-secondary btn-sm dimmed-disabled" onclick="modal('.confirm')" style="margin:0 .5rem;">Confirm</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.alert')" style="margin:0 .5rem;">Alert</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.modal2')" style="margin:0 .5rem;">Bottom Sheet</button>
 		</div>
@@ -33,7 +33,7 @@
 
 <!-- modal popup -->
 <!-- confirm -->
-<div class="modal confirm">
+<div class="modal confirm none-click">
 	<header class="modal-header">
 		<h2 class="title">정보수집 동의</h2>
 		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
@@ -203,6 +203,7 @@
 	modal('.alert');
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+	dimmedNoneClick();
 </script>
 
 </body>
