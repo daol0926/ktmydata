@@ -642,7 +642,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .dataON:before {/* background-position:-4.3125rem -6.1875rem; */background: #fdf0f7 url(../images/common/ico-dataon.png);}
 .internet:before {content:'';background-position:-7.0625rem -6.1875rem;background: #e3efff url(../images/common/ico-wifi.png);}
 .tv:before {content:'';background-position:-9.8125rem -6.1875rem;background: #f4f0fd url(../images/common/ico-tv.png);}
-.data-5g:before {content:'';/* background-position:-4.375rem -8.9375rem; */background: #fdf0f7 url(../images/common/ico-mobile.png);}
+.data-5g:before {content:'';/* background-position:-4.375rem -8.9375rem; */background: #fdf0f7 url(../images/common/ico-dataon.png);}
 .internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
 .homeTel:before {content:'';background-image:url(../images/common/ico-phone.png);}
 
@@ -1972,7 +1972,8 @@ position: relative;}
     position: relative;
     flex-basis: 55%;
 }
-.card.bill-info .bill-list li>dl dt i::before{
+.card.bill-info .bill-list li>dl dt i::before,
+.card.bill-info .bill-list li>dl dt [class*=code-ico-]{
     display: block;
     position: absolute;
     top: -0.3rem;
@@ -3902,6 +3903,7 @@ letter-spacing: -.06rem;}
 .code-ico-coin{background-image:url(../images/icon/ico-coin.png);border-radius: 0;background-color: transparent;}
 .code-ico-coin2{background-image:url(../images/common/ico-kon-pass.png);border-radius: 0;background-color: transparent;}
 .code-ico-asset{background-image:url(../images/icon/ico-asset.png);border-radius: 0;}
+.code-ico-all{background-image:url(../images/icon/ico-all.png);}
 .code-ico-brand-save{background-image:url(../images/icon/ico-brand-save.png);border-radius: 0;width:1.1rem;height:1.1rem;}
 .code-ico-event-save{background-image:url(../images/icon/ico-event-save.png);border-radius: 0;width:1.1rem;height:1.1rem;}
 
