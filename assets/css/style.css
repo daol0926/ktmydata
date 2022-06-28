@@ -825,8 +825,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .history .dtl li [class*=align-]>em:first-child{margin-top: 0.1rem;}
 .history .dtl li.cancel {color:#666;}
 .history .dtl li.cancel .cash {text-decoration:line-through}
-.history .date-srch-desc{font-size: .75rem;text-align: center;font-weight: 500;}
-.history .date-srch-desc p{padding-bottom: 1rem;}
+
+.date-srch-desc{font-size: .75rem;text-align: center;font-weight: 500;}
+.date-srch-desc p{padding-bottom: 1rem;}
+.date-srch-desc.empty{margin-top: 1rem;text-align: center;}
 
 .pay-dtl.modal {padding-bottom:2.375rem;}
 .pay-dtl .modal-header .title {padding-bottom:.625rem;margin-bottom:0;font-size:1.125rem;}
