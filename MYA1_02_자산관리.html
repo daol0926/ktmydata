@@ -606,7 +606,7 @@
 						</ul>
 						<div class="row align-items-center text-center btn-txt-only pt1 pb1_5">
 							<div class="col-6">
-								<button type="button" class="btn-more"><i class="ico ico-setting"></i>연결 자산관리</button>
+								<button type="button" class="btn-more" onclick="modal('.connect-asset')"><i class="ico ico-setting"></i>연결 자산관리</button>
 							</div>
 							<div class="col-6">
 								<button type="button" class="btn-more">이력정보</button>
@@ -705,6 +705,24 @@
 
 	</section>
 </div>
+
+<!-- alert -->
+<div class="modal alert connect-asset">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<p>
+				연결된 자산이 없어요.
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// alert -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
