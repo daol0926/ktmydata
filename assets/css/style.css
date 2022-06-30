@@ -3804,6 +3804,7 @@ letter-spacing: -.06rem;}
     margin:0;
     box-sizing: border-box;
     padding: 0 1rem;
+    max-width: 10rem;
 }
 .add-dc-wrp .dc-title{
     font-family: 'S-CoreDream-6Bold', sans-serif;
