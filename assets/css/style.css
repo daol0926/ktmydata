@@ -3782,8 +3782,9 @@ letter-spacing: -.06rem;}
     align-items: center;
     border:1px solid #e4e4e4;
     border-radius: 0.25rem;
-    padding: 0.75rem 0;
+    padding: .7812rem 0;
     margin-bottom:0.75rem;
+    letter-spacing: -.01rem;
 }
 .add-dc-wrp>ul>li:last-child{
     margin-bottom: 0;
@@ -3796,7 +3797,7 @@ letter-spacing: -.06rem;}
 }
 .add-dc-wrp [class*=dc-]{
     display: flex;
-    margin:.5rem 0;
+    margin: 0 0 0.25rem;
 }
 .add-dc-wrp .dc-ico{
     align-items: center;
@@ -3804,13 +3805,15 @@ letter-spacing: -.06rem;}
     margin:0;
     box-sizing: border-box;
     padding: 0 1rem;
-    max-width: 10rem;
+    max-width: 9rem;
 }
 .add-dc-wrp .dc-title{
     font-family: 'S-CoreDream-6Bold', sans-serif;
     color:#111;
     font-size: 1.2rem;
     font-weight: 600;
+    margin: .5rem 0;
+    letter-spacing: -.12rem;
 }
 .add-dc-wrp .dc-desc{
     line-height: 1.2;
@@ -3819,10 +3822,12 @@ letter-spacing: -.06rem;}
 .add-dc-wrp .dc-save{
     display: flex;
     align-items: center;
+    color: #111;
+    font-weight: 600;
 }
 .add-dc-wrp .dc-save [class*=code-ico-]{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     margin: 0 0.2rem 0 0.1rem;
     image-rendering: auto;
 }
