@@ -106,7 +106,7 @@ main {z-index: 1;height: 100%;}
 .certify-wrap .cert-bas em {background-position:-4.4375rem 0;}
 .certify-wrap .cert-fin em {background-position:-7.375rem 0;}
 .certify-wrap .cert-payco em {background-position:-4.4375rem -3.125rem;}
-.certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.svg) no-repeat center/auto 70% #efefef;}
+.certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.png) no-repeat center/auto 70% #efefef;}
 .certify-wrap .cert-naver em {background:url(../images/bank/ico_bank08.png) no-repeat center/auto 70% #efefef;}
 
 article.certify-box .certify {border-top:0;line-height:1;text-align: left;}

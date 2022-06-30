@@ -36,7 +36,7 @@ input[readonly] {background-color:#f7f7f7;}
 input:disabled {background-color:#f7f7f7;}
 select {height:2.8125rem;padding:0 0 0 1rem;border:1px solid #dadbdd;font-size:0.8125rem;color:#222;font-weight:400;vertical-align:middle;}
 select option {color:#999;}
-button {overflow:visible; /*outline:none;*/ font-weight:500; background:none;cursor:pointer; border:0px;line-height: 0;}
+button {overflow:visible;outline:none;font-weight:500; background:none;cursor:pointer; border:0px;line-height: 0;}
 button::-moz-focus-inner {padding:0px;}
 ::-ms-clear { display: none !important; width : 0;  height: 0;}
 ::-ms-reveal {display: none;}
