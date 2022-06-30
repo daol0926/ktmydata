@@ -3589,7 +3589,7 @@ letter-spacing: -.06rem;}
 .tooltip-wrp .desc-txt{line-height: 1.4;display: none;}
 .tooltip-wrp.focused .ico-desc-info::after,
 .my-assets-list .tooltip-wrp .desc-txt::before{content: '';display:inline-block;position:absolute;background:url(../images/common/bg-tooltip.png) no-repeat center/contain;width: 14px;height:.6rem;top: 1.05rem;z-index: 7;left: 0.5rem;}
-.tooltip-wrp.focused .desc-txt{display:block;top: 1.58rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 15%);opacity: .85;max-width: max-content;margin-left: -9.5rem;width: calc(100vw - 5rem);}
+.tooltip-wrp.focused .desc-txt{display:block;top: 1.58rem;position: absolute;background: #fff;border: 1px solid #888;border-radius: .5rem;padding: .5rem;box-shadow: 0 0.2rem 0.8rem rgb(0 0 0 / 15%);opacity: .85;max-width: max-content;margin-left: -9.5rem;width: calc(100vw - 5rem);font-weight: 300;}
 .tooltip-wrp .desc-txt.desc-left{margin-left: -5.5rem;}
 
 .my-assets-list .tooltip-wrp .ico-desc-info{position: relative;z-index: 6;}
