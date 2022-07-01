@@ -2055,9 +2055,16 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .card.bill-info.before-none .bill-list > ul > li::before{
     content: unset;
 }
+.card.bill-info .bill-list.etc > ul{
+    height: 15.8rem;
+    overflow-y: auto;
+}
 .card.bill-info .bill-list > ul > li{
     padding-left: 0;
     padding-bottom: 0;
+}
+.card.bill-info .bill-list > ul > li:last-child dl{
+    border-bottom: 0;
 }
 .card.bill-info .bill-list .accordion>li{
     border-bottom: 1px solid #eee;
