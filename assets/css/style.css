@@ -506,7 +506,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .budget .chart span {display:block;position: relative;}
 .budget .chart .chart-txt {margin-bottom: 0.1rem;line-height: 1.1;}
 .budget .chart .chart-cate {margin-top:0.25rem;font-size:0.875rem;font-weight:500;color:#111;word-break: keep-all;}
-.budget .chart .ico-mobility {position: relative;width: 2.875rem;height: 1.2375rem;margin-top:0.375rem;background-size: 100% auto;background-position: center;}
+.day-schedule .history .budget .ico.ico-mobility,
+.budget .chart .ico-mobility {position: relative;width: 2.875rem !important;height: 1.2375rem !important;margin-top:0.375rem;background-size: 100% auto !important;background-position: center;border-radius: 0 !important;}
 .budget .index-area {padding-left:1rem;}
 .budget .chart-index {width:10rem;margin:0 0 0.5rem;}
 .budget .chart-index li:before {display:none;}
@@ -553,8 +554,6 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-status .card-header .won:after {font-weight: 500;}
 .my-status .assets-list .assets-name:before {display:block;margin: 0 auto;margin-bottom:0.5625rem;}
 .my-status .my-assets .assets-list li + li {margin-left:1.125rem;}
-
-
 
 .my-schedule.card .card-body {padding-bottom:0;}
 .my-schedule li {height: 4.75rem;font-size:0.875rem;}
@@ -806,14 +805,20 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .dtl-history .list-cate button,
 .list-cate.min button{padding:0 1rem;max-width:4.875rem;font-size: 0.7312rem;}
 .list-cate.min button{max-width: max-content;}
-.dtl-history .list-cate ul li,
-.list-cate.min ul li{margin-right:0.5rem;}
+.dtl-history .list-cate ul li{margin-right:0.5rem;}
+.list-cate.min ul li{margin-right:0.2rem;}
+.list-cate.min ul li:last-child{margin-right: 0;}
 
 .history > ul {position:relative;}
 .history > ul > li {position:relative; padding: 0 0.9375rem 1.625rem;}
 .history > ul > li:before {display:block; content:""; position:absolute; top:0.1875rem; left:0; width:0.375rem; height:0.375rem; border-radius:50%; background:#111;/* z-index:3; */}
 .history > ul > li:after {display:block; content:""; width:0.125rem; background:#f0f0f0; height:100%; position:absolute; top:0.625rem; left:0.125rem;/* z-index:2; */}
 .history > ul > li:last-child:after {display:none;}
+.history > ul > li.budget-wrp{padding-left: 0;}
+.day-schedule .history > ul > li.budget-wrp::before,
+.day-schedule .history > ul > li.budget-wrp li::after{display:none;}
+.day-schedule .history > ul > li.budget-wrp::after{height: 2.45rem;bottom: -.185rem;/* background: red; */top: unset;}
+.history > ul > li.budget-wrp .budget{padding:0;}
 .history .date {display:block;margin-bottom:0.75rem;font-size:.75rem;color:#111;font-weight: 500;}
 .history .dtl {padding:0 0.9375rem;border-radius: 0.25rem;background-color:#f5f5f5;}
 .history .dtl + .dtl{margin-top: 1rem;}
@@ -1157,6 +1162,9 @@ position: relative;}
     border-radius: .5rem;
     margin-bottom: 1rem;
 }
+.day-schedule .history .dtl.weekly-report{
+    padding:1rem;
+}
 .day-schedule .history .dtl.btn-area{
     background-color: transparent;
     padding: 0;
@@ -1193,6 +1201,10 @@ position: relative;}
     background-color: #fff;
     background-size: 60% auto;
     background-position: center;
+}
+.day-schedule .history .ico.ico-fold{
+    width: 0.5625rem;
+    height: 0.375rem;
 }
 .day-schedule .history .ico-img{
     width: 3rem;
@@ -3566,6 +3578,9 @@ letter-spacing: -.06rem;}
 
 .wrp-full{
     margin:0 -.775rem;
+}
+.tip .wrp-full.card{
+    padding:0.775rem;
 }
 
 .donut-chart + .btn-area{
