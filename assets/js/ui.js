@@ -526,6 +526,9 @@ function descInfo(){
 	$('.tooltip-wrp .ico-desc-info').click(function(){
 		$(this).parent().toggleClass('focused');
 	});
+	$('.tooltip-wrp .desc-txt').click(function(){
+		$(this).parent().removeClass('focused');
+	});
 }
 
 /* data picker - 자산관리 이력정보 */
