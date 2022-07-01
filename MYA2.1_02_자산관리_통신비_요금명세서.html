@@ -552,6 +552,108 @@
 				</div>
 			</div>
 			<!--//통합 요금 청구내역 -->
+
+			<!-- tab -->
+			<section class="tab-wrp paDefault bg-white pt1">
+				<!-- tab menu -->
+				<ul class="tab-menu">
+					<li class="focused">
+						<a>요금납부</a>
+					</li>
+					<li>
+						<a>소액결제</a>
+					</li>
+				</ul>
+				<!--//tab menu -->
+
+				<!-- tab cont -->
+				<div class="tab-cont focused">
+					<div class="history">
+						<ul>
+							<li>
+								<span class="date">2022.02.26 (토)</span>
+								<ul class="dtl">
+									<li>
+										<span class="align-l">
+											<strong>SKT 통신비</strong>
+										</span>
+										<span class="align-r">
+											<span class="won">34,700</span>
+											<em class="plan">자동납부</em>
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="date">2022.01.26 (수)</span>
+								<ul class="dtl">
+									<li>
+										<span class="align-l">
+											<strong>SKT 통신비</strong>
+										</span>
+										<span class="align-r">
+											<span class="won">34,700</span>
+											<em class="plan">자동납부</em>
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="date">2021.12.26 (일)</span>
+								<ul class="dtl">
+									<li>
+										<span class="align-l">
+											<strong>SKT 통신비</strong>
+										</span>
+										<span class="align-r">
+											<span class="won">34,700</span>
+											<em class="plan">자동납부</em>
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li><span class="date">마지막 내역입니다.</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-cont">
+					<div class="history">
+						<ul>
+							<li>
+								<span class="date">2022.02.26 (토)</span>
+								<ul class="dtl">
+									<li>
+										<span class="align-l">
+											<strong>페이레터(주)</strong>
+										</span>
+										<span class="align-r">
+											<span class="won">11,000</span>
+											<em class="plan">스트리밍 플러스</em>
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="date">2022.01.26 (수)</span>
+								<ul class="dtl">
+									<li>
+										<span class="align-l">
+											<strong>페이레터(주)</strong>
+										</span>
+										<span class="align-r">
+											<span class="won">11,000</span>
+											<em class="plan">스트리밍 플러스</em>
+										</span>
+									</li>
+								</ul>
+							</li>
+							<li><span class="date">마지막 내역입니다.</span></li>
+						</ul>
+					</div>
+				</div>
+				<!--//tab cont -->
+			</section>
+			<!--//tab -->
 		</section>	
 	</main>
 	<!-- //container -->
@@ -628,14 +730,10 @@
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
-	//약정정보 배너 Swiper
-	thumbSwiper('.recomm','auto',4,10)
-	//특별혜택 배너 Swiper
-	bannerSwiper('.special-banner', 1.1, 15);
-	//제공혜택 배너 Swiper
-	thumbSwiper('.benefit-info','auto',0,10)
 	//자산 accordion
 	accordion();
+	//tab
+	tabMenu();
 </script>
 </body>
 </html>
