@@ -162,7 +162,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .connect-assets {margin-top:-1rem;background-color:#fff;border-radius: 1rem 1rem 0 0;}
 .cate-wrap {position:sticky;top:-1.5rem;left:0;z-index:20;}
 .cate-wrap .inner {padding: 1rem .75rem 0;border-bottom:1px solid #e4e4e4;background-color:#fff;}
-.cate-wrap .fixed {position:fixed;left:0;z-index:1;width:100%;padding:1rem 1.5rem 1rem;background-color:#fff;}
+.cate-wrap .fixed {position:fixed;left:0;z-index:1;width:100%;padding:1rem 1.5rem 1rem;background-color:#fff;overflow-x: auto;}
 .cate-wrap ul {display:flex;flex-wrap: wrap;margin:0 -.125rem;}
 .cate-wrap ul li {padding:.1875rem .125rem;}
 .cate-wrap button {display:flex;align-items: center;height:1.9375rem;padding:0 .75rem;font-size:0.8125rem;color:#888;font-weight:500;border-radius:1rem;background-color:#e4e4e4;}
@@ -1962,6 +1962,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     }
 .cate-wrap .inner{
     border-bottom: 0;
+    overflow-x: scroll;
 }
 .cate-wrap ul{
     flex-wrap:unset;width: 100%;margin: 0 auto;}
