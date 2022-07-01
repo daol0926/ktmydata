@@ -46,18 +46,11 @@
 				<div class="card-header mb0">
 					<!-- 소비 MBTI 유형분석 전 -->
 					<div class="default">
-						<p>가성비가 모예요?<br />FLEX 끝판왕</p>
 						<strong>홍길*님,</strong>
+						<p>카드 연결하시고 나도 모르는<br />나를 발견해 보세요!</p>						
 						<span class="ico-mbti-default"></span>
 					</div>
-					<!--// 소비 MBTI 유형분석 전 -->
-					<!-- 소비 MBTI 유형분석 후 -->
-					<!-- <div class="MBTI">
-						<p>가성비가 모예요?<br>FLEX 끝판왕</p>
-						<strong>홍길*님,</strong>
-						<span class="character" style="background-image:url(./assets/images/home/img_character2.png)"></span>
-					</div> -->
-					<!--// 소비 MBTI 유형분석 후 -->					
+					<!--// 소비 MBTI 유형분석 전 -->				
 				</div>
 				<div class="card-body">	
 					<div class="flex column">
@@ -71,8 +64,13 @@
 								<p class="won"><em>127,700</em></p>
 							</dd>
 							<dd>
-								<span class="desc-title">할인금액</span>
-								<p class="won c-gray">-36,818</p>
+								<span class="desc-title">결제수단</span>
+								<p>국민 111***************</p>
+							</dd>
+							<dd>
+								<div class="description-wrp">
+									<i></i>결제수단 연결하시고 할인금액을 조회해 보세요!
+								</div>
 							</dd>
 						</dl>
 						<dl class="home-info coin">
@@ -81,11 +79,12 @@
 								<button type="button" class="btn btn-light-secondary btn-xs btn-round">내 카드 연결하기</button>
 							</dt>
 							<dd>
-								<p class="kon"><em>1,127,700</em></p>
+								<p class="kon">0</p>								
 							</dd>
 							<dd>
-								<span class="desc-title">통신비 할인</span>
-								<p class="won c-gray">-20,000</p>
+								<div class="description-wrp">
+									<i></i>카드 연결 후 KON 적립하시면 통신비 할인 혜택을!
+								</div>
 							</dd>
 						</dl>
 						<!--
@@ -106,9 +105,11 @@
 			<div class="card schedule">
 				<div class="card-header">
 					<h3 class="header-title"><i class="ico ico-bell3"></i> Today 일정 (3건)</h3>
+					<button type="button" class="btn btn-light-secondary btn-xs btn-round">내 자산 연결하기</button>
 				</div>
 				<div class="card-body">
-					<div class="bg-box line-gray">
+					<!-- 일정 있을 때 -->
+					<div class="bg-box line-gray" style="display: none;">
 						<span class="ico code-ico-card"></span>
 						<div class="todo">
 							<em>신한카드 결제일이에요</em>
@@ -116,9 +117,9 @@
 						</div>
 						<i class="ico ico-arrow-right"></i>
 					</div>
+					<!--// 일정 있을 때 -->
 					<!-- 등록된 일정이 없을 때 -->
-					<!-- 등록된 일정이 없을 때 -->
-					<div class="bg-box nodata" style="display: none;">
+					<div class="bg-box nodata">
 						자산을 연결하시면<br />스케쥴을 관리해 드려요!
 					</div>
 					<!--// 등록된 일정이 없을 때 -->
@@ -211,18 +212,20 @@
 					
 					<div class="mission-list">
 						<!-- 적립 브랜드 없을 때 -->
-						<div class="desc-empty" style="display: none;">
+						<div class="desc-empty">
 							<p class="text-center">
 								<strong>이번 주 코인 적립 가능 브랜드가 없네요.</strong>
 								이벤트 참여를 통해서도 코인 적립이 가능 하답니다.<br />
 								지금 바로 이벤트 참여하시고 코인 두둑히 쟁여두세요!
 							</p>
 							<div class="btn-area text-center">
-								<button type="button" class="btn btn-light-secondary btn-xs btn-round">참여하기</button>
+								<button type="button" class="btn btn-light-secondary btn-sm btn-full">참여하기</button>
 							</div>
 						</div>
 						<!--//적립 브랜드 없을 때 -->
-						<div class="scroll-wrap">
+						
+						<!-- 적립 브랜드 있을 때 -->
+						<div class="scroll-wrap" style="display: none;">
 							<div class="scroll-inner">
 								<ul>
 									<li>
@@ -259,9 +262,10 @@
 							</div>
 						</div> <!--//scroll-wrap -->
 
-						<div class="mt1">
+						<div class="mt1" style="display: none;">
 							<button type="button" class="btn btn-light-secondary btn-sm btn-full">KON 적립하기</button>
 						</div>
+						<!--// 적립 브랜드 있을 때 -->
 					</div>
 
 				</div>
@@ -281,19 +285,19 @@
 							<div class="card-header">
 								<h3 class="header-title">
 									<span class="assets-name"><i class="code-ico-card-min"></i></span>
-									<strong>KT 현대카드M Edition3</strong>
+									<strong>KT 제휴카드를 연결해 보세요</strong>
 								</h3>
 							</div>
 							<div class="card-body">
 								<div class="graph-wrap half">
 									<h4 class="title">카드 실적별 통신비 할인</h4>
 									<div class="msg-area mb0">
-										<p class="msg">통신비 할인을 위한 카드 실적은<br />개인별 결제일에 따라 다를 수 있어요!</p>
+										<p class="msg">KT제휴 카드를 연결하시면 통신비<br />할인을 위한 카드 실적을 알려드려요!</p>
 									</div>
-									<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
+									<h4 class="title"></h4>
 									<div class="gauge-area mt2_5">
 										<span class="gauge-bg">
-											<span class="consum"><span class="won">0</span></span>
+											<span class="consum txt-only">내 카드 사용 실적별 할인 금액을 확인해보세요</span>
 											<span class="gauge"></span>
 										</span>
 									</div>
@@ -304,30 +308,16 @@
 								</div>
 								
 								<div class="recent-history">
-									<!--
-									<div class="total">
-										<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
-										<div class="amount">
-											<span class="won">1,123,000</span>
+									<div class="row">
+										<div class="img-area">
+											<img src="assets/images/icon/code-ico-card.png" class="code-ico-card" />
+										</div>
+										<div class="txt-area">
+											<strong>KT 현대카드M Edition3<br />(통신할인형2.0)</strong>
+											최대 20,000원 통신비 할인 제공
 										</div>
 									</div>
-									-->
-									<div class="title-area">
-										<h4 class="list-title">최근 거래 내역</h4>
-										<a href="#" class="btn-txt">더보기 &gt;</a>
-									</div>
-									<ul>
-										<li>
-											<span class="date">3.18</span>
-											<span class="tit">우아한 형제들 우아한 형제들우아한 형제들</span>
-											<span class="won">64,000</span>
-										</li>
-										<li>
-											<span class="date">3.17</span>
-											<span class="tit">쿠팡 (쿠페이) </span>
-											<span class="won">123,640,000</span>
-										</li>
-									</ul>
+									<button class="btn btn-light-secondary btn-sm btn-full">제휴 카드 연결하고 통신비 할인 받기</button>
 								</div>
 							</div>
 						</div>
@@ -591,25 +581,14 @@
 					</ol>
 				</div>
 			</div>
-			<div class="card similar-age">
-				<div class="card-header">
-					<h3 class="header-title">
-						요즘 제일 핫하다는 바로 그 요금제는?
-					</h3>
-				</div>
-				<div class="card-body">
-					<ol>
-						<li>
-							<span class="prod-name">슈퍼플랜 베이직</span>
-							<!-- <span class="prod-price">월 90,000 원 ~</span> -->
-						</li>
-						<li>
-							<span class="prod-name">슈퍼플랜 스페셜</span>
-						</li>
-						<li>
-							<span class="prod-name">슈퍼플랜 베이직 초이스</span>
-						</li>
-					</ol>
+
+			<div class="card emptycard pb2_5">
+				<div class="bg-box nodata">
+					<p>
+						<em>나와 비슷한 소비 규모</em>의 사람들에게<br />
+						<em>요즘 제일 핫한 요금제</em>가 궁금하시다면?!
+					</p>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">자산 연결하고 요금제 추천 받기</button>
 				</div>
 			</div>
 
@@ -670,21 +649,26 @@
 				<!-- 예산설정 없음 -->
 				<div class="card-header assets-none">
 					<div class="tit-area">
+						<h3 class="header-title text-center"><em>자산을 연결</em>하시면, 꼼꼼한 지출 관리를 돕는<br /><em>한달 목표예산을 설정</em>하실 수 있어요!</h3>
+						<!--
 						<h3 class="header-title">한달 목표 예산을 설정해 볼까요?<br />슬기로운 지출 관리를 도와드려요!</h3>
 						<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표 예산 설정하기</button>
 						<i class="ico"></i>
+						-->
 					</div>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">카드 연결하고 목표 예산 설정하기</button>
 				</div>
 				<!--//예산설정 없음 -->
 
 
-				<div class="card-header">
+				<!-- 예산설정 -->
+				<div class="card-header" style="display:none;">
 					<div class="tit-area">
 						<h3 class="header-title">한달 예산이 이만큼 남았어요</h3>
 						<strong class="won">1,300,000</strong>
 					</div>
 					<!-- 목표 예산 초과 시 -->
-					<div class="tit-area" style="display:none;">
+					<div class="tit-area">
 						<h3 class="header-title">목표 예산이 초과되었어요.<br />예산을 다시 설정해 보시는 건 어때요?</h3>
 						<div class="row">
 							<strong class="purpose-set-wrp won">
@@ -696,7 +680,7 @@
 					</div>
 					<!--// 목표 예산 초과 시 -->
 				</div>
-				<div class="card-body">
+				<div class="card-body" style="display:none;">
 
 					<div class="donut-chart">
 						<!-- [D] data에 값을 넣어주세요 -->
@@ -742,8 +726,8 @@
 					<div class="btn-area">
 						<button type="button" class="btn-txt">주간소비 리포트가 궁금하세요?</button>
 					</div>
-					
 				</div>
+				<!--//예산설정 -->
 			</div>
 		</section>
 
@@ -856,7 +840,7 @@
 	bannerSwiper('.event-banner', 1, 16);
 
 	//실적 달성 그래프1
-	perGraph('.Edition3 .gauge-area',452000,1000000);
+	perGraph('.Edition3 .gauge-area',400000,1000000);
 	//실적 달성 그래프2
 	perGraph('.Edition2 .gauge-area',500000,1000000);
 	//실적 달성 그래프3
