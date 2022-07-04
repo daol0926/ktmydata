@@ -222,6 +222,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
 .assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;border-radius: 0;background-color: transparent;position: absolute;z-index: 1;left: 0.325rem;}
 .assets-confirm .box .bank-name::before{content: '';border-radius: 50%;background-color: #fff;width: 1.875rem;height: 1.875rem;display: block;position: absolute;z-index: 0;left: 0;}
+.assets-confirm.detail .box .bank-name{padding-left: 0;}
+.assets-confirm.detail .box .bank-name::before{display: none;}
 .assets-confirm .box ul {padding:0 1.25rem;border-radius:.625rem;background-color:#fff;}
 .assets-confirm .box li {padding: 0.3125rem 0.125rem;}
 .assets-confirm .box li .flex {align-items: center;justify-content: space-between;width:100%;padding:.625rem 0;}
