@@ -3989,8 +3989,8 @@ letter-spacing: -.06rem;}
 .code-ico-asset{background-image:url(../images/icon/ico-asset.png);border-radius: 0;}
 .code-ico-all{background-image:url(../images/icon/ico-all.png);}
 .code-ico-mobile{background-image:url(../images/icon/ico-mobile.png);}
-.code-ico-brand-save{background-image:url(../images/icon/ico-brand-save.png);border-radius: 0;width:1.1rem;height:1.1rem;}
-.code-ico-event-save{background-image:url(../images/icon/ico-event-save.png);border-radius: 0;width:1.1rem;height:1.1rem;}
+.code-ico-brand-save{background-image:url(../images/icon/ico-brand-save.png);border-radius: 0;width:1.1rem;height:1.1rem;background-color: transparent;}
+.code-ico-event-save{background-image:url(../images/icon/ico-event-save.png);border-radius: 0;width:1.1rem;height:1.1rem;background-color: transparent;}
 
 
 /* icon list - 통신 */
