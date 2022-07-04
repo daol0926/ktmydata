@@ -166,7 +166,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .cate-wrap ul {display:flex;flex-wrap: wrap;margin:0 -.125rem;}
 .cate-wrap ul li {padding:.1875rem .125rem;}
 .cate-wrap button {display:flex;align-items: center;height:1.9375rem;padding:0 .75rem;font-size:0.8125rem;color:#888;font-weight:500;border-radius:1rem;background-color:#e4e4e4;}
-.cate-wrap button.current {background-color:#111;color:#fff;}
+.cate-wrap button.focused
+/*.cate-wrap button.current*/ {background-color:#111;color:#fff;}
 .cate-wrap button:disabled{background-color:#e4e4e4;color:#888;pointer-events: none;cursor: pointer;}
 
 .assets {padding: 1.5rem;}
