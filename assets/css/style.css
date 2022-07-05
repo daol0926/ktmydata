@@ -2506,9 +2506,13 @@ letter-spacing: -.06rem;}
     padding-top: 1.25rem;
     font-size: 1rem;
 }
+.agree-c-blue .terms-ui h2.title{
+    font-size: 1.2rem;
+}
 .agree-c-blue .highlights{
     font-size: 1rem;
     font-weight: 600;
+    letter-spacing: -.05rem;
 }
 .agree-c-blue .inner-txt{
     border-bottom: 1px solid #e4e4e4;
