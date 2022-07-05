@@ -1063,10 +1063,13 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     padding: .2rem;
     border: 2px solid transparent;
 }
+.dateSwiper .swiper-slide.active,
 .dateSwiper .swiper-slide.todayHighlight{
     background-color: #5ccbdf;
     border-radius: 1.5rem;
 }
+.dateSwiper .swiper-slide.active a,
+.dateSwiper .swiper-slide.active .num,
 .dateSwiper .swiper-slide.todayHighlight a,
 .dateSwiper .swiper-slide.todayHighlight .num{
     color:#fff !important;
@@ -2502,12 +2505,14 @@ letter-spacing: -.06rem;}
     display: block;
 }
 .agree-c-blue .inner-title{
-    margin-bottom:1.2rem;
+    margin-bottom: 1rem;
     padding-top: 1.25rem;
     font-size: 1rem;
+    line-height: 1.25;
 }
 .agree-c-blue .terms-ui h2.title{
     font-size: 1.2rem;
+    word-break: keep-all;
 }
 .agree-c-blue .highlights{
     font-size: 1rem;
@@ -3760,10 +3765,12 @@ letter-spacing: -.06rem;}
     background: #53cee6 url(../images/common/pass-bg.png) no-repeat center right/contain;
     color: #fff;
     box-shadow: .1rem .1rem .1rem rgba(0,0,0,0.05);
+    box-sizing: border-box;
 }
 .pass-coinback-wrp>div{
-    padding:.5rem;
+    padding: .14rem .25rem;
     position: relative;
+    box-sizing: border-box;
 }
 .pass-coinback-wrp [class*=ico-mbti-]{
     /* background-color: #ccc; */

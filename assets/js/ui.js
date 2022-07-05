@@ -667,10 +667,7 @@ function alertDimmed() {
 }
 
 function dimmedNoneClick(){
-	$('.btn.dimmed-disabled').on('click', function(e) {
-		console.log("dd2")
-		if ( $('.modal').hasClass('none-click') ) {
-			$("body").addClass("none-click-dimmed");
-		}
-	});
+	if ( $('.modal').hasClass('none-click') ) {
+		$("body").addClass("none-click-dimmed");
+	}
 }
