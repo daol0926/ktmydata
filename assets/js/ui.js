@@ -667,7 +667,22 @@ function alertDimmed() {
 }
 
 function dimmedNoneClick(){
-	if ( $('.modal').hasClass('none-click') ) {
-		$("body").addClass("none-click-dimmed");
-	}
+	$('.btn.dimmed-disabled').on('click', function(e) {
+		//console.log("dd2")
+		if ( $('.modal').hasClass('none-click') ) {
+			$("body").addClass("none-click-dimmed");
+		}
+	});
+	$('.modal.open .btn').click(function(){
+		$('body').removeClass('none-click-dimmed');
+	});
+
+	//function bodyDimmed(){
+	//	if ( $('.modal').hasClass('none-click') ) {
+	//		$("body").addClass("none-click-dimmed");
+	//	}
+	//}
+	//if ( $('.modal').hasClass('none-click') ) {
+	//	setTimeout(bodyDimmed, 2000);
+	//}
 }

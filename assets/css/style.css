@@ -922,7 +922,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .full .modal-container-header .title {margin-top:1rem;}
 .full .modal-container-header .title-desc{margin-top:1rem;color:#666;line-height:1.3;}
 
-.modal.none-click.open{pointer-events: fill !important;}
+.modal.open{pointer-events: fill !important;}
 .modal.alert {width:100%;max-width:18.375rem;top:50%;left:50%;transform: translate(-50%,-100vh);padding:0 0 1.375rem;border-radius: 0.75rem;}
 .modal.alert.open {transform: translate(-50%,-50%);}
 .modal.alert .modal-header {padding:1.75rem 1.25rem;}
@@ -3786,7 +3786,7 @@ letter-spacing: -.06rem;}
     flex-flow: row wrap;
     align-items: center;
     /* width: calc(100% - 2rem); */
-    margin: .75rem 0 0 -.5rem;
+    margin: .5rem 0 0 -.5rem;
 }
 .pass-coinback-wrp ul>li{
     width: fit-content;
