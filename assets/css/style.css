@@ -2500,7 +2500,7 @@ letter-spacing: -.06rem;}
     margin-top: 1rem;
 }
 .agree-c-blue .inner-wrp-title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 1.2rem 0;
     display: block;
 }
@@ -2540,7 +2540,7 @@ letter-spacing: -.06rem;}
     padding-bottom: 1rem;
 }
 .agree-c-blue .inner-txt dl{
-    margin-bottom:1.1rem;
+    margin: 1.1rem 0;
 }
 .agree-c-blue .inner-txt dl:last-child{
     margin-bottom: 0;
@@ -2553,7 +2553,7 @@ letter-spacing: -.06rem;}
     margin-top:1rem;
 }
 .agree-c-blue .inner-txt ol>li{
-    margin-bottom:.5rem;
+    margin: .5rem 0;
 }
 .agree-c-blue .inner-txt table th,
 .agree-c-blue .inner-txt table td{
