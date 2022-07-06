@@ -2493,6 +2493,7 @@ letter-spacing: -.06rem;}
     height: 4rem;
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
 }
 .agree-c-blue .modal-container-header + .terms-ui .title + .inner,
 .agree-c-blue .modal-container-header + .terms-ui .title + .inner{
@@ -2509,6 +2510,7 @@ letter-spacing: -.06rem;}
     padding-top: 1.25rem;
     font-size: 1rem;
     line-height: 1.25;
+    font-weight: 600;
 }
 .agree-c-blue .terms-ui h2.title{
     font-size: 1.2rem;
