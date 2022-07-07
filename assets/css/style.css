@@ -2986,6 +2986,7 @@ letter-spacing: -.06rem;}
 }
 .brand-select{
     padding: 0.775rem;
+    text-align: center;
 }
 .brand-select .title{
     margin-bottom: 1rem;
