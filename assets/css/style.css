@@ -3150,6 +3150,8 @@ letter-spacing: -.06rem;}
     display: flex;
 }
 /*.brand-select.select-add .select-list.form-check.focused input[type="checkbox"] + label::before,*/
+.brand-select.select-complete .select-list.form-check.focused input[type="checkbox"] + label::before,
+.brand-select.select-complete .select-list.form-check.focused input[type="checkbox"] + label::after,
 .brand-select.select-complete .select-list.form-check.focused input[type="checkbox"]:checked + label::before,
 .brand-select.select-complete .select-list.form-check.focused input[type="checkbox"]:checked + label::after{
     opacity: 0;
