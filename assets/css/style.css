@@ -2955,9 +2955,10 @@ letter-spacing: -.06rem;}
     color:#777;
 }
 .brand-info p>strong{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-bottom: 1.25rem;
     color:#111;
+    /* letter-spacing: -.13rem; */
 }
 .brand-info .brand-info-list{
     padding: 1.25rem 1rem;
