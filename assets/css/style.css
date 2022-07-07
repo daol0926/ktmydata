@@ -3920,6 +3920,33 @@ letter-spacing: -.06rem;}
     image-rendering: auto;
 }
 
+/* 서비스 진입점 */
+.mydata-svc-info .modal-container{
+    padding:.5rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.mydata-svc-info .title{
+    margin-bottom: .5rem;
+}
+.mydata-svc-info .title-desc{
+    line-height: 1.25;
+    font-size: 1.1rem;
+    letter-spacing: -.12rem;
+}
+.mydata-svc-info .title-desc img{
+    display: block;
+    margin:2rem auto;
+    max-width: 80%;
+}
+.mydata-svc-info .title-desc .highlights{
+    font-weight: 400;
+    font-size: inherit;
+}
+.mydata-svc-info .info-ico-gift{
+    max-width: 70%;
+}
+
 /* icon list - img ico */
 .ico {display:inline-block;background:url(../images/common/icon_spr.png) no-repeat 0 0 / 12.5rem auto;text-indent:-9999em;}
 .ico-back {width:0.5625rem;height:1rem;background-position:0 0;}
