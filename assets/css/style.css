@@ -197,6 +197,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .cate-wrap button.focused
 /*.cate-wrap button.current*/ {background-color: #53cee6;color:#fff;border-color: #53cee6;}
 .cate-wrap button:disabled{color:#888;pointer-events: none;cursor: pointer;}
+.cate-wrap.cate-select ul>li{padding:0;}
+.cate-wrap.cate-select ul>li:last-child{padding-right: 0;}
+.cate-wrap.cate-select button{display: none;margin:0.1875rem 0.125rem;}
+.cate-wrap.cate-select button.focused{display: flex;}
 
 .assets {padding: 1.5rem;}
 .assets + .assets {border-top:.5rem solid #e4e4e4;}
@@ -1376,6 +1380,15 @@ line-height: 1.35;letter-spacing: -.06rem;}
 }
 .my-sch .day-schedule .history li{
     padding-right: 0;
+}
+.my-sch .day-schedule .history li.schedule-none::before{
+    display: none;
+}
+.my-sch .day-schedule .history li.schedule-none .empty-msg{
+    text-align: center;
+    font-size: 0.875rem;
+    color:#666;
+    padding: 3rem 0;
 }
 
 .btn-area.fixed-bottom.bn-img{
@@ -3478,7 +3491,9 @@ letter-spacing: -.06rem;}
     display: block;
     padding:1rem;
     color:#888;
-    margin-bottom: 1rem;
+}
+.credit-list.card .credit-before .assets-name + .btn{
+    margin-top: 1rem;
 }
 .credit-list.card .credit-before .btn-light{
     border-radius: .25rem;
