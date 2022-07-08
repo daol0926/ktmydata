@@ -4073,7 +4073,7 @@ letter-spacing: -.06rem;}
 .brand-select .select-list .ico.ico-plus, .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
 .select-list .ico.ico-plus{background-color:#fff;background-image: url(../images/common/ico-plus.png);}
 .ico-desc-info{display:inline-block;width:1rem;height:1rem;border-radius: 50%;border:1px solid #53cee6;background:url(../images/common/ico-desc-info.png) no-repeat center/auto 80%;margin-left:.25rem;;}
-.ico-desc-info.que{background-image: url(../images/common/ico-desc-info2.png);}
+.ico-desc-info.que{/* background-image: url(../images/common/ico-desc-info2.png); */}
 
 /* icon list - code ico */
 .code-ico{
