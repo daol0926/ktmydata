@@ -3921,30 +3921,53 @@ letter-spacing: -.06rem;}
 }
 
 /* 서비스 진입점 */
+.mydata-svc-info .modal-header{
+    border-bottom:1px solid #e4e4e4;
+    margin:0 -1.5rem 1rem;
+    box-sizing: border-box;
+    padding: 0.6875rem 1.5rem 0.3125rem;
+}
+.mydata-svc-info .modal-header .btn-close{
+    right: .5rem;
+    top: 0.45rem;
+}
 .mydata-svc-info .modal-container{
-    padding:.5rem;
+    /* padding: 0; */
     box-sizing: border-box;
     overflow-y: auto;
 }
 .mydata-svc-info .title{
     margin-bottom: .5rem;
+    font-size: 1.25rem;
 }
 .mydata-svc-info .title-desc{
     line-height: 1.25;
-    font-size: 1.1rem;
-    letter-spacing: -.12rem;
+    font-size: 1rem;
+    letter-spacing: -.03rem;
 }
 .mydata-svc-info .title-desc img{
     display: block;
     margin:2rem auto;
-    max-width: 80%;
+    max-width: 83%;
 }
 .mydata-svc-info .title-desc .highlights{
-    font-weight: 400;
+    font-weight: 500;
     font-size: inherit;
+    text-align: center;
+    height: 0.9rem;
+    line-height: .3;
+    width: fit-content;
+    padding: 0;
+    /* margin: 1rem auto 0; */
+    display: inline-block;
 }
-.mydata-svc-info .info-ico-gift{
-    max-width: 70%;
+.mydata-svc-info .title-desc .info-ico-gift{
+    max-width: 58%;
+    margin: 1rem auto 0;
+}
+.mydata-svc-info .title-desc .info-ico-cash{
+    max-width: 65%;
+    margin: 0 auto;
 }
 
 /* icon list - img ico */
