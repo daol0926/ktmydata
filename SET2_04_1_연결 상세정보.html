@@ -72,48 +72,48 @@
 		<h2 class="title">자산연결 해제</h2>
 		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
-	<section class="modal-container terms-ui">
+	<section class="modal-container terms-ui terms-asset"> <!-- 2022 07 08 terms-asset 클래스 추가 -->
 		<header class="modal-container-header text-center">
 			<h2 class="title">
-				<span class="c-blue">(기관명)</span><br />자산연결을 해제하시겠습니까?
+				<span class="c-blue">(기관명)</span> 자산연결을 해제하시겠습니까?
 			</h2>
 			<p class="title-desc">연결 해제 시, 고객님의 자산정보를<br />더 이상 가져오지 않으며,<br />기존에 수집된 정보는 즉시 삭제됩니다.</p>
 		</header>
 		
-		<div class="terms-ui mt2">
-			<section class="assets-confirm detail inner-wrp">
-				<!-- 통신사 -->
-				<div class="assets">
-					<article class="box pa1 pt1_5">
-						<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>KT</span>
-						<ul>
-							<li>
-								<div class="flex">
-									<div>휴대폰</div>
-									<div class="flex-desc">01090***829</div>
-								</div>
-							</li>
-							<li>
-								<div class="flex">
-									<div>인터넷</div>
-									<div class="flex-desc">14407468979</div>
-								</div>
-							</li>
-							<li class="ass-info">
-								<div class="flex">
-									기본정보, 납입 내역
-								</div>
-							</li>
-						</ul>
-					</article>
-				</div>
-				<div class="modal-notification mt1">
-					연결해제 시 금융사에서 개인(신용)정보를 더 이상 가져오지 않으며, 이미 수집된 개인(신용)정보는 모두 삭제 됩니다.
-				</div>
-				<!--//modal-notification -->
-			</section>
-			<!--//inner-wrp -->
-		</div>
+		<!-- 2022 07 08 상단 terms-ui 삭제 -->
+		<section class="assets-confirm detail inner-wrp">
+			<!-- 통신사 -->
+			<div class="assets">
+				<article class="box pa1 pt1_5">
+					<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>KT</span>
+					<ul>
+						<li>
+							<div class="flex">
+								<div>휴대폰</div>
+								<div class="flex-desc">01090***829</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex">
+								<div>인터넷</div>
+								<div class="flex-desc">14407468979</div>
+							</div>
+						</li>
+						<li class="ass-info">
+							<div class="flex">
+								기본정보, 납입 내역
+							</div>
+						</li>
+					</ul>
+				</article>
+			</div>
+			<div class="txt-guide mt1"> <!-- 2022 07 08 modal-notification > txt-guide 로 클래스 변경 -->
+				연결해제 시 금융사에서 개인(신용)정보를 더 이상 가져오지 않으며, 이미 수집된 개인(신용)정보는 모두 삭제 됩니다.
+			</div>
+			<!--//txt-guide -->
+		</section>
+		<!--//inner-wrp -->
+		<!--// 2022 07 08 상단 terms-ui 삭제 -->
 
 		<div class="btn-area fixed-bottom">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
