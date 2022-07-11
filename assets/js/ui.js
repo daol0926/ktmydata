@@ -12,12 +12,12 @@ $(function () {
 		});
 		function switchCheck(){
 			if (checkbox.is( ":checked")){
-				assetsTotal.css('display', 'inline-block');
+				assetsTotal.css('display', 'inline-flex');
 				hiddenTxt.hide();
 				checkbox.attr( "checked", "checked");
 			} else {
 				assetsTotal.hide();
-				hiddenTxt.css('display', 'inline-block');
+				hiddenTxt.css('display', 'inline-flex');
 				checkbox.removeAttr( "checked");
 			}
 		}

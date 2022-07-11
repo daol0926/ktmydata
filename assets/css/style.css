@@ -115,7 +115,7 @@ main {z-index: 1;height: 100%;}
 .form-row-in strong {display:flex;align-items: center;position:relative;margin-bottom:.625rem;font-size:0.875rem;font-weight:500;}
 .form-row-in strong em {font-size:0.75rem;color:#444;}
 .form-row-in strong em:before {content:"";display:inline-block;width:1px;height:.75rem;margin:0 0.375rem;background-color: #d4d4d4;vertical-align: middle;}
-.form-row .description {margin-bottom:1rem;font-size:0.75rem;color:#888;}
+.form-row .description {margin-bottom:1rem;font-size:0.75rem;color:#888;line-height: 1.34;text-align: justify;}
 .form-check .btn-dtl {position:absolute;top:50%;right:0;padding:.75rem 0.3125rem .75rem .75rem;transform: translateY(-50%);}
 .form-check .sub {display:block;width:100%;}
 .form-check .sub li {position:relative;padding: 1.0625rem 0 1.0625rem 2.875rem; font-size: 0.875rem;}
@@ -222,10 +222,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .request-complete {padding:0 1.5rem;}
 .request-complete > header {padding: 1.5rem 0 2rem;font-size:0.9375rem;font-weight:400;line-height:1.375rem;background-color:transparent;text-align: center;}
-.request-complete > header:before {content:"";display:block;width:4.25rem;height:3.1875rem;margin:0 auto;margin-bottom:1.875rem;background: url(../images/common/icon_spr.png) no-repeat 0 -3.4375rem / 12.5rem auto;}
+.request-complete > header:before {content:"";display:block;width:4.25rem;height:3.1875rem;margin:0 auto;margin-bottom:1.875rem;background: url(../images/common/ico-chk.png) no-repeat center/contain;}
 .request-complete > header strong {display:block;font-size:1.0625rem;font-weight:700;}
 .request-complete > header strong + p {margin-top:1rem;}
-.request-complete > header em {color:#5a7fe2;}
+.request-complete > header em {color: #53cee6;}
 .request-list {margin-bottom:3rem;}
 .request-list header {padding:1rem 0;border-bottom:1px solid #e4e4e4;}
 .request-list .title {font-size:0.9375rem;font-weight:700;}
@@ -253,7 +253,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .box {padding: 1.75rem 1.25rem;border-radius:.625rem;background-color:#f5f5f5;border: 0;}
 .assets-confirm .box + .box {margin-top:.625rem;}
 .assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
-.assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;border-radius: 0;background-color: transparent;position: absolute;z-index: 1;left: 0.325rem;}
+.assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;/* border-radius: 0; *//* background-color: transparent; */position: absolute;z-index: 1;left: 0.325rem;background-size: auto 60%;}
 .assets-confirm .box .bank-name::before{content: '';border-radius: 50%;background-color: #fff;width: 1.875rem;height: 1.875rem;display: block;position: absolute;z-index: 0;left: 0;}
 .assets-confirm.detail .box .bank-name{padding-left: 0;}
 .terms-ui .assets-confirm.detail .box .bank-name{padding-left: 2.5rem;}
@@ -614,7 +614,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 [class^='my-'] section.my-status {margin-top: .75rem;}
 .my-status header {display: flex;align-items: center;justify-content: space-between;margin-bottom:1rem;}
-.my-status .card .card-header .header-title {font-size:0.9375rem;font-weight:500;}
+.my-status .card .card-header .header-title {font-size:0.9375rem;font-weight:500;display: flex;align-items: center;}
 .my-status .card .card-header.assets-none .tit-area{width: 100%;}
 .my-status .card .card-header.assets-none .tit-area + .btn{margin-top: 1.15rem;margin-bottom: 0.5rem;}
 .my-status .card .card-header.assets-none .header-title{color:#888;line-height:1.35;}
@@ -787,8 +787,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .my-assets .card-header {border-bottom:1px solid #e4e4e4;border-radius: 0;}
 .my-assets .card-header button {margin-left:0.375rem;}
-.my-status .card-header .assets-total.won {display: inline-block;font-size: 1.2rem;}
+.my-status .card-header .assets-total.won {display: inline-block;font-weight: normal;font-size: .875rem;align-items: center;margin-right: 0.45rem;}
 .my-status .card-header .assets-total.won::after{font-size: 1rem;}
+.my-status .card-header .assets-total.won>em{font-size: 1.35rem;font-weight: 500;margin-right: 0.35rem;}
 .my-assets .hidden-txt {display:none;margin-top: 0.5rem;font-size:1.0625rem;color:#cecece;min-width: 7rem;}
 .my-assets .assets-list {position: relative;;padding-top:1.875rem;}
 .my-assets .assets-list h3.header-title{font-size:0.9375rem;margin-bottom: 1rem;font-weight: 500;}
@@ -824,6 +825,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assetsDtl .dtl .bank-num{font-size: 0.8125rem;color:#888;}
 .my-assetsDtl .dtl .won:after {font-weight:500;}
 .my-assetsDtl .dtl .per{position:absolute;right: 0.775rem;top: calc(50% - .35rem);font-size: 0.8rem;}
+.my-assetsDtl .tit .tooltip-wrp .ico-desc-info{
+    transform: scale(0.9);
+}
 .assets-name i {display:flex;align-items: center;justify-content: center;margin:0;border-radius:100%;}
 .assets-name i:before {content:"";display:inline-block;width: 70%;height: 50%;background: url(../images/common/ico-card.png) no-repeat center/auto 100%;vertical-align: middle;}
 .assets-name i.code-ico-card-min::before{background-image:url(../images/icon/ico-card-min.png);background-size: contain;border-radius: 0;}
@@ -1227,7 +1231,7 @@ position: relative;}
     width: 100%;
 }
 .my-status .card-header .won{
-    min-width: 7rem;
+    /* min-width: 7rem; */
 }
 
 /* day-schedule */
@@ -2112,7 +2116,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     content: unset;
 }
 .card.bill-info .bill-list.etc > ul{
-    height: 15.8rem;
+    max-height: 15.8rem;
     overflow-y: auto;
 }
 .card.bill-info .bill-list > ul > li{
@@ -4088,6 +4092,9 @@ letter-spacing: -.06rem;}
 .ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
 .brand-select .select-list .ico.ico-plus, .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
 .select-list .ico.ico-plus{background-color:#fff;background-image: url(../images/common/ico-plus.png);}
+.my-coinback .ico-desc-info{
+    background-position-x: 52%;
+}
 .ico-desc-info{display:inline-block;width:1rem;height:1rem;border-radius: 50%;border:1px solid #53cee6;background:url(../images/common/ico-desc-info.png) no-repeat center/auto 80%;margin-left:.25rem;;}
 .ico-desc-info.que{/* background-image: url(../images/common/ico-desc-info2.png); */}
 
@@ -4305,7 +4312,7 @@ letter-spacing: -.06rem;}
 .btn-light-gray{color:#111;background-color: #f2f3f7;}
 .btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */}
 .btn-dark{background-color: #444;color:#fff;}
-.btn-gray{background-color: #dadada;color:#fff;}
+.btn-gray{background-color: #bcbcbc;color:#fff;}
 
 .btn-txt {font-size:.75rem;color:#111;/* border-bottom:1px solid #111; */line-height:1;text-decoration: none;}
 .btn-txt.c-gray{border-color:#666;}
