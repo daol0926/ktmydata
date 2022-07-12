@@ -121,7 +121,7 @@ main {z-index: 1;height: 100%;}
 .form-check .sub li {position:relative;padding: 1.0625rem 0 1.0625rem 2.875rem; font-size: 0.875rem;}
 .form-check .sub li:before {content:"";display:inline-block;width:0.1875rem;height:0.1875rem;margin:0 0.25rem 0 -1rem;border-radius:0.1rem;background-color:#888;vertical-align: middle;}
 .form-radio-wrap.type-chk{display:flex;flex-flow:column;background-color: transparent;}
-.form-radio-wrap.type-chk .form-radio-btn input[type="radio"] + label{justify-content: space-between;background-color: transparent;font-size: 1rem;}
+.form-radio-wrap.type-chk .form-radio-btn input[type="radio"] + label{justify-content: space-between;background-color: transparent;font-size: 1rem;border: 0;}
 .form-radio-wrap.type-chk .form-radio-btn input[type="radio"]:checked + label{border:0;font-weight: 500;}
 .form-radio-wrap.type-chk .form-radio-btn input[type="radio"]:checked + label::after{content:'';display:inline-block;background:url(../images/common/ico-form-chk.png) no-repeat center/100% auto;width: 1.5rem;height: 1.5rem;}
 
@@ -2963,7 +2963,7 @@ letter-spacing: -.06rem;}
     padding-bottom: 0;
 }
 .coinback-wrp .card.made-coin{
-    margin: 0 0.775rem 1.5rem;
+    margin: 1.5rem 0.775rem 1.5rem;
     padding-top: 1.25rem;
 }
 .coinback-wrp .card.made-coin .row-title{
@@ -3265,7 +3265,7 @@ letter-spacing: -.06rem;}
 .payment-list-wrp .payment-list .payment-list-box .ico[class*=bill-ico-]{position: unset;}
 .payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::before{content: '[';}
 .payment-list-wrp .payment-list .payment-list-box .list-title .list-cate::after{content: ']';}
-.payment-list-wrp .payment-list .payment-list-box .btn-area{margin-top: 0;font-size: .6875rem;color:#777;text-align: left;padding-left: .5rem;}
+.payment-list-wrp .payment-list .payment-list-box .btn-area{margin-top: 0;font-size: .875rem;color:#777;text-align: right;padding-left: .5rem;}
 .payment-list-wrp .payment-list .payment-list-box .btn-area [class*=save-]>em{position: relative;padding-left:1.5rem;display: inline-flex;align-items: center;justify-content: center;}
 .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon::after{position:absolute;left:0;top: calc(50% - .55rem);}
 .payment-list-wrp .payment-list-empty{display: flex;align-items: center;justify-content: center;height:5rem;color:#777;font-size: .8rem;}
