@@ -615,6 +615,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 [class^='my-'] section.my-status {margin-top: .75rem;}
 .my-status header {display: flex;align-items: center;justify-content: space-between;margin-bottom:1rem;}
 .my-status .card .card-header .header-title {font-size:0.9375rem;font-weight:500;display: flex;align-items: center;}
+.my-status .card .card-header .header-title.text-center{justify-content: center;}
 .my-status .card .card-header.assets-none .tit-area{width: 100%;}
 .my-status .card .card-header.assets-none .tit-area + .btn{margin-top: 1.15rem;margin-bottom: 0.5rem;}
 .my-status .card .card-header.assets-none .header-title{color:#888;line-height:1.35;}
