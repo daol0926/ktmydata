@@ -3137,6 +3137,7 @@ letter-spacing: -.06rem;}
     font-size: inherit;
     border-radius: .5rem;
 }
+.brand-select .select-list.form-check .off-selector{position:absolute;/* background-color:red; */width: 4rem;height: 1.5rem;bottom: 2.5rem;left:1rem;}
 .brand-select .select-list.form-check input[type="checkbox"]:checked + label,
 .brand-select .select-list.focused input[type="checkbox"]:checked + label,
 .brand-select.select-complete .select-list.focused input[type="checkbox"] + label{
