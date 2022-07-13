@@ -986,7 +986,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .modal.confirm .modal-header {padding:1.75rem 1.25rem;}
 .modal.confirm .modal-header .title {margin:0;font-size:1.1875rem;text-align: center;}
 .modal.confirm .modal-container {padding:0 1.25rem 1.625rem;}
-.modal.confirm .btn-area {display:flex;justify-content: center;}
+.modal.confirm .btn-area {display:flex;justify-content: center;margin-top: 0;}
 .modal.confirm .btn-area.width-full{padding:0 1rem;}
 .modal.confirm .btn-area.width-full .btn{width:100%;}
 .modal.confirm .btn-area .btn + .btn {margin-left:0.5rem;}
