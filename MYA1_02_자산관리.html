@@ -380,7 +380,7 @@
 						<span class="desc-txt">모든 자산을<br /><em>한꺼번에 관리할 수 있어요!</em></span>
 						<!--// 20220713 UX Writing -->
 					</div>					
-					<button type="button" class="btn btn-light-secondary btn-sm btn-full">지금 바로 정리하러 가기</button>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full" style="display: none;">지금 바로 정리하러 가기</button>
 					<!--//자산 추가 전 -->
 				</div>
 			</div>
@@ -666,11 +666,11 @@
 								</div>
 							</li>
 						</ul>
-						<div class="row align-items-center text-center btn-txt-only pt1 pb1_5">
-							<div class="col-6">
+						<div class="btn-txt-only"> <!-- 20220713 btn-txt-only 클래스 제외 일괄 삭제 -->
+							<div> <!-- class="col-6" 삭제 -->
 								<button type="button" class="btn-more" onclick="modal('.connect-asset')"><i class="ico ico-setting"></i>연결 자산관리</button>
 							</div>
-							<div class="col-6">
+							<div> <!-- class="col-6" 삭제 -->
 								<button type="button" class="btn-more">이력정보</button>
 							</div>
 						</div>

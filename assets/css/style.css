@@ -312,6 +312,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .service-wrap .cont b {font-weight:500;}
 .service-wrap.height-fit{height:auto;}
 
+.service-wrap.cancel-info{height:100%;padding-bottom: 0;padding-top: 6rem;}
+
 .service-wrap.cancel-complete {flex-direction: row; align-items: flex-start}
 .service-wrap.cancel-complete header {padding-top:8.25rem;}
 .service-wrap.cancel-complete header:before {content:"";display:block;width:4.25rem;height:3.25rem;margin:0 auto;margin-bottom:1.875rem;background: url(../images/common/ico-chk.png) no-repeat center/contain;}
@@ -319,6 +321,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 /* 타이틀+버튼이 같이 있는 경우 간격 조정 */
 .service-wrap.wrap-title{padding-bottom: 15rem;}
+.service-wrap.wrap-title.pb0 .cont{flex: unset;}
 
 .connecting {display:flex;flex-wrap: wrap;justify-content: center; align-items: center;align-content: center;position:fixed;top:0;left:0;right:0;bottom:0;line-height:1.375rem;font-size:1.125rem;text-align: center;}
 .splash {display:block;width:100%;margin-bottom:5rem;}
@@ -4351,6 +4354,21 @@ letter-spacing: -.06rem;}
 .btn-txt-only>div::after{content: '';display: block;width: 1px;height:.8rem;position:absolute;right:0;top:.25rem;background-color: #888;}
 .btn-txt-only>div:last-child::after{display: none;}
 
+.accordion + .btn-txt-only{
+    padding:1rem 0 1.5rem;
+    flex-flow:row wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.accordion + .btn-txt-only>div{
+    width: 49%;
+}
+.accordion + .btn-txt-only>div button{
+    height: 1rem;
+}
 
 /* img rotate */
 .rotate-circle{
