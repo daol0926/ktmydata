@@ -149,6 +149,7 @@ function calPic() {
 		//showButtonPanel: true,
 		//showAnim: "slideDown",
 		//closeText: '닫기',
+		showOtherMonths: true , /* 20220713 이전/다음달 표시 위해 추가 */
 		todayHighlight : true ,
 		dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
 		monthNamesShort: [ "01월", "02월", "03월", "04월", "05월", "06월", "07월", "08월", "09월", "10월", "11월", "12월" ], // 220525 수정 : 월 name 변경 (년도 name 변경은 없음)

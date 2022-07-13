@@ -1562,6 +1562,11 @@ z-index: 1;}
     position: relative;
     width: 13vw;
 }
+/* 20220713 추가 */
+.ui-datepicker-calendar tbody td.ui-datepicker-other-month>span{
+    color:#e4e4e4;
+}
+/* //20220713 추가 */
 .ui-datepicker-calendar tbody td span,
 .ui-datepicker-calendar tbody td a{
     display: block;
