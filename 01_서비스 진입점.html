@@ -27,7 +27,6 @@
 		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
 	<section class="modal-container agree-c-blue">
-
 		<h2 class="title">통신비 할인 꿀TIP 01.</h2>
 		<div class="title-desc">
 			마이데이터에 카드 연결하고 제휴 브랜드 이용하면<br /><span class="highlights">통신비 할인을 위한 KON을 적립해 드려요!</span>
@@ -48,16 +47,38 @@
 
 		<div class="btn-area fixed-bottom">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-			<button type="button" class="btn btn-light-secondary" id="btnNext" disabled>숨은 통신비 찾으러 가기</button>
+			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="modal('.alert-large')">숨은 통신비 찾으러 가기</button>
 		</div>
-
 	</section>
 </div>
+
+<!-- 20220714 코드 추가 -->
+<!-- alert -->
+<div class="modal alert alert-large">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<span class="modal-title">타이틀</span>
+			<p>
+				설명
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<!-- 20220713 btn-sm 클래스 추가 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// alert -->
+<!--//20220714 코드 추가 -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	modal('.mydata-svc-info');
+	alertDimmed();
 </script>
 
 </body>

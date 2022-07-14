@@ -543,7 +543,7 @@ function dataCalPic() {
 		.datepicker({
 			//showMonthAfterYear: true,//연도-월 순서
 			//changeMonth: true,//월 변경 필요시 살리기
-			dateFormat:"yy-mm-dd",
+			dateFormat:"yy.mm.dd",
 			firstDay: 1,
 			monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
 			//showButtonPanel: true,
@@ -556,7 +556,7 @@ function dataCalPic() {
 		to.datepicker( "option", "minDate", getDate(this) );//종료일의 minDate 지정
 		}),
 		to = $( "#dateEnd" ).datepicker({ //종료일 선택
-			dateFormat:"yy-mm-dd",
+			dateFormat:"yy.mm.dd",
 			monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
 			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
 			minDate:'+1D' //내일부터 선택가능(+1D/+1M/+1Y..ND, NM, NY)
