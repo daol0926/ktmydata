@@ -551,6 +551,7 @@ function dataCalPic() {
 			closeText: '닫기',
 			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
 			//minDate:0,//오늘 이전 날짜 선택불가
+			maxDate: 0
 		})
 		.on( "change", function() {
 		to.datepicker( "option", "minDate", getDate(this) );//종료일의 minDate 지정
@@ -559,7 +560,8 @@ function dataCalPic() {
 			dateFormat:"yy.mm.dd",
 			monthNames: [ "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" ],
 			dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
-			minDate:'+1D' //내일부터 선택가능(+1D/+1M/+1Y..ND, NM, NY)
+			minDate:'+1D', //내일부터 선택가능(+1D/+1M/+1Y..ND, NM, NY)
+			maxDate:0
 		})
 		.on( "change", function() {
 		from.datepicker( "option", "maxDate", getDate(this) );//시작일의 maxDate 지정
