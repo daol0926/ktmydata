@@ -3768,7 +3768,7 @@ letter-spacing: -.06rem;}
     width: 100%;
     padding-bottom: 0;
     overflow: hidden;
-    height: 25rem;
+    height: 21.4rem;
 }
 .inner-iframe iframe{
     position: absolute;
@@ -3977,7 +3977,7 @@ letter-spacing: -.06rem;}
 .add-dc-wrp .dc-title{
     font-family: 'S-CoreDream-6Bold', sans-serif;
     color:#111;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 600;
     margin: .5rem 0;
     letter-spacing: -.12rem;
