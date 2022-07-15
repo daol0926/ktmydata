@@ -34,57 +34,59 @@
 		</div>
 
 		<section>
-			<div class="event-banner">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<!-- 20220713 UX Writing -->
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">통신비 할인 꿀TIP</h2>
-								<p>브랜드 KON 쌓고, 미션에 참여하면<br />통신비를 더 할인받을 수 있어요.</p>
-							</div>
-							<img src="assets/images/home/slide1.gif" />
+			<!-- 20220715 swiper 코드 변경 -->
+			<div class="event-banner swiper-container btnSwiper">
+				<div class="swiper-wrapper">
+					<!-- 20220713 UX Writing -->
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">통신비 할인 꿀TIP</h2>
+							<p>브랜드 KON 쌓고, 미션에 참여하면<br />통신비를 더 할인받을 수 있어요.</p>
 						</div>
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">내 생활 비서</h2>
-								<p>내 금융 생활 스케줄을 꼼꼼하게 챙겨줘요.</p>
-							</div>
-							<img src="assets/images/home/slide2.gif" />
-						</div>
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">통신비 제휴카드 실적 보기!</h2>
-								<p>내 카드 실적 보고,<br />통신비 할인 금액도 확인하세요!</p>
-							</div>
-							<img src="assets/images/home/slide3.gif" />
-						</div>
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">내 자산 한 번에 다 보기</h2>
-								<p>통신비, 계좌, 카드내역 등 내 자산을<br />한 번에 볼 수 있어요!</p>
-							</div>
-							<img src="assets/images/home/slide4.gif" />
-						</div>
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">요금제 추천</h2>
-								<p>내 또래, 나와 비슷하게 쓰는 사람들은<br />어떤 요금제를 쓸까요?</p>
-							</div>
-							<img src="assets/images/home/slide5.gif" />
-						</div>
-						<div class="swiper-slide">
-							<div class="swiper-txt text-center">
-								<h2 class="title">소비습관 지킴이</h2>
-								<p>현명한 소비 생활,<br />똑소리 나게 관리해 주면 어렵지 않아요!</p>
-							</div>
-							<img src="assets/images/home/slide6.gif" />
-						</div>
-						<!--//20220713 UX Writing -->
+						<img src="assets/images/home/slide1.gif" />
 					</div>
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">내 생활 비서</h2>
+							<p>내 금융 생활 스케줄을 꼼꼼하게 챙겨줘요.</p>
+						</div>
+						<img src="assets/images/home/slide2.gif" />
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">통신비 제휴카드 실적 보기!</h2>
+							<p>내 카드 실적 보고,<br />통신비 할인 금액도 확인하세요!</p>
+						</div>
+						<img src="assets/images/home/slide3.gif" />
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">내 자산 한 번에 다 보기</h2>
+							<p>통신비, 계좌, 카드내역 등 내 자산을<br />한 번에 볼 수 있어요!</p>
+						</div>
+						<img src="assets/images/home/slide4.gif" />
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">요금제 추천</h2>
+							<p>내 또래, 나와 비슷하게 쓰는 사람들은<br />어떤 요금제를 쓸까요?</p>
+						</div>
+						<img src="assets/images/home/slide5.gif" />
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-txt text-center">
+							<h2 class="title">소비습관 지킴이</h2>
+							<p>현명한 소비 생활,<br />똑소리 나게 관리해 주면 어렵지 않아요!</p>
+						</div>
+						<img src="assets/images/home/slide6.gif" />
+					</div>
+					<!--//20220713 UX Writing -->
 				</div>
 				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
+			<!--//20220715 swiper 코드 변경 -->
 		</section>
 
 		<div class="btn-area fixed-bottom btn-full">
@@ -103,7 +105,7 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//이벤트 Swiper
-	bannerSwiper('.event-banner', 1, 16);
+	buttonSwiper('.event-banner');
 </script>
 </body>
 </html>

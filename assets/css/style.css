@@ -253,7 +253,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .box {padding: 1.75rem 1.25rem;border-radius:.625rem;background-color:#f5f5f5;border: 0;}
 .assets-confirm .box + .box {margin-top:.625rem;}
 .assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
-.assets-confirm .box [class*=code-ico-]{width: 1.275rem;height: 1.275rem;margin-right:.5rem;/* border-radius: 0; *//* background-color: transparent; */position: absolute;z-index: 1;left: 0.325rem;background-size: auto 60%;}
+.assets-confirm .box [class*=code-ico-]{width: 1.875rem;height: 1.875rem;margin-right:.5rem;/* border-radius: 0; *//* background-color: transparent; */position: absolute;z-index: 1;left: 0;background-size: auto 50%;}
 .assets-confirm .box .bank-name::before{content: '';border-radius: 50%;background-color: #fff;width: 1.875rem;height: 1.875rem;display: block;position: absolute;z-index: 0;left: 0;}
 .assets-confirm.detail .box .bank-name{padding-left: 0;}
 .terms-ui .assets-confirm.detail .box .bank-name{padding-left: 2.5rem;}
@@ -425,7 +425,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .performance .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
 .msg-area {display:inline-block;position: relative;height: 3.5625rem;margin-bottom:3.625rem;padding:0 6.25rem 0 0;}
 .msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width: 6.25rem;height:6.25rem;background: url(../images/icon/mbti/mbti-default.png) no-repeat center/contain;}
-.msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;width: 12.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;}
+.msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;width: 14.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;margin-right: -1rem;}
 .msg:after {content:"";display:block;position:absolute;bottom: .5rem;right: -.2rem;width: 0.9rem;height:0.6875rem;background: url(../images/common/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;transform: rotate(-29deg);}
 
 .consum {display: inline-flex;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;align-items: center;justify-content: center;}
@@ -649,6 +649,16 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .event-banner dl {font-size:0.8125rem;font-weight:400;color:#fff;line-height:1.4;}
 .event-banner dt {margin-bottom:0.875rem;font-size:1.25rem;font-weight: 700;}
 .event-banner .event01 {height:10.625rem;background:#636b78 url(../images/home/bn_evt01.png) no-repeat right bottom / auto 10.625rem;border-radius: 0.25rem;}
+.event-banner.swiper-container{height:100%;display:flex;align-items: center;}
+.event-banner.btnSwiper .swiper-button-next, 
+.event-banner.btnSwiper  .swiper-button-next.swiper-button-disabled{
+    right:.5rem;
+}
+
+.event-banner.btnSwiper .swiper-button-prev,
+.event-banner.btnSwiper .swiper-button-prev.swiper-button-disabled{
+    left:.5rem;
+}
 
 .scroll-wrap {position: relative;margin-right: -1.25rem}
 .scroll-wrap:after {content:"";display:block;position:absolute;top:0;right:0;z-index:2;width:1.875rem;height:100%;background: url(../images/common/shadow_white.png) no-repeat left center /100% 100%;}
@@ -791,7 +801,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .my-assets .card-header {border-bottom:1px solid #e4e4e4;border-radius: 0;}
 .my-assets .card-header button {margin-left:0.375rem;}
-.my-status .card-header .assets-total.won {display: inline-block;font-weight: normal;font-size: .875rem;align-items: center;margin-right: 0.45rem;justify-content: center;line-height: 0;margin-top: 0.5rem;}
+.my-status .card-header .assets-total.won {display: inline-block;font-weight: normal;font-size: .875rem;align-items: center;margin-right: 0.45rem;justify-content: center;line-height: 0;margin-top: 0.5rem;height: 1.35rem;}
 .my-status .card-header .assets-total.won::after{font-size: 1rem;}
 .my-status .card-header .ico-refresh2{margin-top:.5rem;}
 .my-status .card-header .assets-total.won>em{font-size: 1.35rem;font-weight: 500;margin-right: 0.35rem;}
@@ -3034,10 +3044,30 @@ letter-spacing: -.06rem;}
     /* letter-spacing: -.13rem; */
 }
 .brand-info .brand-info-list{
-    padding: 1.25rem 1rem;
+    /* padding: 1.25rem 1rem; */
     justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
 }
-.brand-info .brand-info-list>div{
+.brand-info::before{
+    content: '';
+    display: block;
+    background-color: #f2f3f7;
+    width: calc(100% + 2rem);
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    margin-top: 10.075rem;
+}
+.brand-info .brand-info-list .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.brand-info .brand-info-list [class*=col-]{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3048,7 +3078,7 @@ letter-spacing: -.06rem;}
     background-color: #fff;
     border:1px solid #53cee6;
     border-radius: .25rem;
-    margin:0 .25rem -4rem;
+    margin: 0 .25rem;
     font-size: .85rem;
 }
 .brand-info .brand-info-list .ico[class*=ico-]{
@@ -3292,7 +3322,7 @@ letter-spacing: -.06rem;}
 .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon::after{position:absolute;left:0;top: calc(50% - .55rem);}
 .payment-list-wrp .payment-list-empty{display: flex;align-items: center;justify-content: center;height:5rem;color:#777;font-size: .8rem;}
 
-.event-list-wrp{margin-top: -1.5rem;padding: 1.25rem 0 1.25rem;}
+.event-list-wrp{margin-top: -1.5rem;padding: 1.25rem 0 1.25rem;position: relative;}
 .event-list-wrp .event-list-num{
     margin:0 1.5rem 1rem;
     display: block;
@@ -3600,7 +3630,7 @@ letter-spacing: -.06rem;}
     display: block;
     margin:0 auto;
     image-rendering: -webkit-optimize-contrast;
-    max-width: 100%;
+    max-width: 75%;
 }
 .join-before .swiper-pagination{
     margin:1.25rem auto;
@@ -3797,6 +3827,12 @@ letter-spacing: -.06rem;}
 }
 .pass-bn-wrp .pass-bn-area{
     height:calc(100% - 1.5rem);
+}
+.pass-bn-wrp .pass-bn-area .swiper-slide{
+    width:20rem;
+}
+.pass-bn-wrp .pass-bn-area .swiper-slide img{
+    max-width: 100%;
 }
 .pass-bn-wrp .pass-bn-area .swiper-pagination{
     margin-top: -2.5rem;
@@ -4384,6 +4420,73 @@ letter-spacing: -.06rem;}
     animation: rotate_circle 2.5s linear infinite;
     transform-origin: 50% 50%;
 }
+
+
+/* button swiper */
+.btnSwiper{
+    position: relative;
+}
+.btnSwiper .swiper-button-next, 
+.btnSwiper .swiper-button-prev,
+.btnSwiper .swiper-container-rtl .swiper-button-prev,
+.btnSwiper .swiper-button-next.swiper-button-disabled, 
+.btnSwiper .swiper-button-prev.swiper-button-disabled{
+    background-image:
+    url(../images/common/ico-dateswiper-arrow.png);
+    width: .8rem;
+    background-size: contain;
+    left: 0;
+}
+.btnSwiper .swiper-button-next,
+.btnSwiper .swiper-button-next.swiper-button-disabled{
+    transform: rotate(180deg);
+    left: unset;
+    right: 0;
+}
+.card.contract-info .btnSwiper.gallery-thumbs{
+    margin-right:1.25rem;
+    padding:0;
+}
+.btnSwiper.gallery-thumbs .swiper-slide img{
+    max-width: calc(100% - 2.5rem);
+    display:block;
+    margin:0 auto;
+}
+
+.btnSwiper.cate-wrap{
+    padding: 0 1rem;
+    margin-top: 3.5rem;
+    margin-bottom: -1.15rem;
+    margin: 3.5rem .5rem -1.15rem;
+}
+
+.save-brand-list ul.swiper-slide{
+    display: flex;
+    width: 100% !important;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.my-status .my-assets .btnSwiper.assets-list li + li{
+    margin-left: 0;
+}
+.my-assets .btnSwiper.assets-list{
+    width: calc(100% + 1.5rem);
+    padding: 1.25rem .75rem;
+    margin-left: -.75rem;
+}
+.my-assets .btnSwiper.assets-list li span{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: c;
+}
+.my-assets .btnSwiper.assets-list li span>i{
+    margin: .5rem auto;
+}
+
+
  
 @keyframes rotate_circle{
 	100% {

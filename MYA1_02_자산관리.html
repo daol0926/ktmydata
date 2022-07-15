@@ -162,18 +162,8 @@
 					<div class="recomm">
 						<h4>홍길*님, 이건 어떠세요?</h4>
 						<div class="banner-area">
-							<!--
-							<div class="swiper-container gallery-container gallery-thumbs tag-btn">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><button type="button">#알뜰한 폰</button></div>
-									<div class="swiper-slide"><button type="button">#요금제 변경</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-								</div>
-							</div>
-							-->
-							<div class="swiper-container gallery-container gallery-thumbs">
+							<!-- 20220715 btnSwiper로 코드 변경 -->
+							<div class="swiper-container gallery-container gallery-thumbs btnSwiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
@@ -181,7 +171,10 @@
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
 							</div>
+							<!--//20220715 btnSwiper로 코드 변경 -->
 						</div>
 					</div> <!--//recomm -->
 				</div>
@@ -356,24 +349,26 @@
 				<div class="card-body">
 					<div class="assets-list pt1"> <!-- 20220711 pt1 클래스 추가 -->
 						<h3 class="header-title">나의 연결기관</h3>
-						<div class="scroll-wrap">
-							<div class="scroll-inner">
-								<ul>
-									<!-- 20220711 strong에 gun 클래스 추가 -->
-									<li><span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><strong class="gun">2</strong></span></li>
-									<li><span class="assets-name"><i class="bank"></i><span class="label">은행</span><strong class="gun">4</strong></span></li>
-									<li><span class="assets-name"><i class="capital"></i><span class="label">대출</span><strong class="gun">1</strong></span></li>
-									<li><span class="assets-name"><i class="securities"></i><span class="label">증권</span><strong class="gun">2</strong></span></li>
-									<li><span class="assets-name"><i class="insurance"></i><span class="label">보험</span><strong class="gun">1</strong></span></li>
-									<li><span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><strong class="gun">1</strong></span></li>
-									<li><span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><strong class="gun">1</strong></span></li>
-									<!--// 20220711 strong에 gun 클래스 추가 -->
-								</ul>
+						<!-- 20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
+						<div class="card-body swiper-container btnSwiper assets-list">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><strong class="gun">3</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="bank"></i><span class="label">은행</span><strong class="gun">4</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="securities"></i><span class="label">증권</span><strong class="gun">2</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><strong class="gun">1</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="capital"></i><span class="label">대출</span><strong class="gun">1</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="insurance"></i><span class="label">보험</span><strong class="gun">1</strong></span></li>
+								<li class="swiper-slide"><span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><strong class="gun">1</strong></span></li>
+							</ul>	
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+			
+							<div class="btn-area">
+								<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
 							</div>
 						</div>
+						<!--//20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
 					</div>
-	
-					<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
 					<!-- 자산 추가 전 -->
 					<div class="desc-wrp" style="display: none;">
 						<!-- 20220713 UX Writing -->
@@ -807,13 +802,15 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//약정정보 배너 Swiper
-	thumbSwiper('.recomm', 1, 16);
+	buttonSwiper('.gallery-thumbs');
 	//제공혜택 배너 Swiper
 	thumbSwiper('.benefit-info','auto',0,10);
 	//자산 accordion
 	accordionAssets();
 	//이벤트 Swiper
-	bannerSwiper('.event-banner-top', 1, 16);
+	buttonSwiper('.event-banner-top');
+	//총 자산카테고리 
+	cateSwiper('.assets-list', 4);
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	//desc info(tooltip)

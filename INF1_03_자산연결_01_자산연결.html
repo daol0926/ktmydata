@@ -51,20 +51,22 @@
 			</header>
 
 			<article class="connect-assets">
-				<header class="cate-wrap">
-					<div class="inner">
-						<ul>
-							<li><button type="button" data-target="#telecom" class="current"><em>통신</em></button></li>
-							<li><button type="button" data-target="#card"><em>카드</em></button></li>
-							<li><button type="button" data-target="#bank"><em>은행</em></button></li>
-							<li><button type="button" data-target="#insurance"><em>보험</em></button></li>
-							<li><button type="button" data-target="#securities"><em>증권</em></button></li>
-							<li><button type="button" data-target="#paymoney"><em>페이머니</em></button></li>
-							<li><button type="button" data-target="#capital"><em>캐피탈</em></button></li>
-							<li><button type="button" data-target="#guarantee"><em>보증보험</em></button></li>
-						</ul>
-					</div>
+				<!-- 20220715 btnSwiper 추가 -->
+				<header class="cate-wrap swiper-container btnSwiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><button type="button" data-target="#telecom" class="current"><em>통신</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#card"><em>카드</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#bank"><em>은행</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#insurance"><em>보험</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#securities"><em>증권</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#paymoney"><em>페이머니</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#capital"><em>캐피탈</em></button></li>
+						<li class="swiper-slide"><button type="button" data-target="#guarantee"><em>보증보험</em></button></li>
+					</ul>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</header>
+				<!--//20220715 btnSwiper 추가 -->
 				<!-- 통신사 -->
 				<div class="assets" id="telecom">
 					<h2><strong>통신</strong> <button type="button" class="select-all" onclick="selectAll('telecom')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
@@ -562,6 +564,8 @@
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
-
+<script>
+	cateSwiper('.cate-wrap', 5);
+</script>
 </body>
 </html>

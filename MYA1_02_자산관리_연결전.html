@@ -117,18 +117,8 @@
 					<div class="recomm">
 						<h4>홍길*님, 이건 어떠세요?</h4>
 						<div class="banner-area">
-							<!--
-							<div class="swiper-container gallery-container gallery-thumbs tag-btn">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><button type="button">#알뜰한 폰</button></div>
-									<div class="swiper-slide"><button type="button">#요금제 변경</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-									<div class="swiper-slide"><button type="button">#아이폰 사전예약</button></div>
-								</div>
-							</div>
-							-->
-							<div class="swiper-container gallery-container gallery-thumbs">
+							<!-- 20220715 btnSwiper로 코드 변경 -->
+							<div class="swiper-container gallery-container gallery-thumbs btnSwiper">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
@@ -136,7 +126,10 @@
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
 							</div>
+							<!--//20220715 btnSwiper로 코드 변경 -->
 						</div>
 					</div> <!--//recomm -->
 				</div>
@@ -194,22 +187,24 @@
 		</section>
 
 		<div class="image-banner mt1">
-			<div class="event-banner-top">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
-						</div>
-						<div class="swiper-slide">
-							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
-						</div>
-						<div class="swiper-slide">
-							<a href="#"><img src="./assets/images/banner/bn6.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
-						</div>
+			<!-- 20220715 swiper 코드 수정 -->
+			<div class="event-banner-top swiper-container btnSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn6.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
+			<!--//20220715 swiper 코드 수정 -->
 		</div>
 
 		<!--
@@ -680,13 +675,11 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//약정정보 배너 Swiper
-	thumbSwiper('.recomm', 1, 16);
-	//제공혜택 배너 Swiper
-	thumbSwiper('.benefit-info','auto',0,10);
+	buttonSwiper('.gallery-thumbs');
 	//자산 accordion
 	accordionAssets();
 	//이벤트 Swiper
-	bannerSwiper('.event-banner-top', 1, 16);
+	buttonSwiper('.event-banner-top');
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	//desc info(tooltip)

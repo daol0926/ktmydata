@@ -129,6 +129,30 @@ function bannerSwiper(obj, slidesView, space){
 	});
 }
 
+//button type Swiper
+function buttonSwiper(obj){
+	var swiper = new Swiper(obj + ".swiper-container", {
+        navigation: {
+        	nextEl: ".swiper-button-next",
+        	prevEl: ".swiper-button-prev",
+        },
+		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+    });
+}
+
+//button type Swiper
+function cateSwiper(obj, slidesView){
+	var swiper = new Swiper(obj + ".swiper-container", {
+		slidesPerView: slidesView,
+        freeMode: true,
+        navigation: {
+        	nextEl: ".swiper-button-next",
+        	prevEl: ".swiper-button-prev",
+        },
+		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+    });
+}
+
 //내 카드 실적 한눈에 보기 그래프
 function perGraph(obj,myPer,total){
 	var percent = myPer/total*100;
@@ -586,9 +610,14 @@ function dataCalPic() {
 /* pass inner banner */
 function passInnerBanner() {
 	var swiper = new Swiper(".pass-bn-area", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+        //pagination: {
+        // el: ".swiper-pagination",
+        //},
     });
 }
 

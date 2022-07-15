@@ -181,20 +181,56 @@
 							<strong>선택한 브랜드를 구매하고<br />통신비를 아끼세요!</strong>
 							<!--//20220713 UX Writing -->
 						</p>
-						<div class="row brand-info-list">
-							<div class="col-3">
-								<i class="ico code-ico-D1AAFQ0000"></i>
-								<span>BC카드</span>
-							</div>
-							<div class="col-3">
-								<i class="ico code-ico-D1AAEX0000"></i>
-								<span>신한카드</span>
-							</div>
-							<div class="col-3">
-								<i class="ico code-ico-D1AAEV0000"></i>
-								<span>삼성카드</span>
-							</div>
+						<!-- 20220715 swiper 코드 변경 -->
+						<div class="row brand-info-list btnSwiper swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="col-3">
+										<i class="ico code-ico-D1AAFQ0000"></i>
+										<span>BC카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEX0000"></i>
+										<span>신한카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEV0000"></i>
+										<span>삼성카드</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-3">
+										<i class="ico code-ico-D1AAFQ0000"></i>
+										<span>BC카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEX0000"></i>
+										<span>신한카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEV0000"></i>
+										<span>삼성카드</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="col-3">
+										<i class="ico code-ico-D1AAFQ0000"></i>
+										<span>BC카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEX0000"></i>
+										<span>신한카드</span>
+									</div>
+									<div class="col-3">
+										<i class="ico code-ico-D1AAEV0000"></i>
+										<span>삼성카드</span>
+									</div>
+								</div>
+							</div> <!--//swiper-wrapper -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
+						<!-- 20220715 swiper 코드 변경 -->
 					</div> <!--//brand-info -->
 					<!-- 등록 카드 있을 때 -->
 
@@ -580,6 +616,8 @@
 	descInfo();
 	//코인백 적립 총 내역 show hide
 	konScroll();
+	//선택 브랜드 swiper
+	buttonSwiper('.brand-info-list');
 </script>
 </body>
 </html>
