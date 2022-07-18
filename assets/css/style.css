@@ -47,7 +47,8 @@ main {z-index: 1;height: 100%;}
 .agree-area .form-check + .form-check {border-top:1px solid #e4e4e4;}
 .agree-area .check-all {font-weight: 700;}
 .agree-area .check-all input[type="checkbox"] + label {font-size: 1.1rem;font-weight: 700;/* color: #0fbcdd; */}
-.txt-guide {padding: 0.85rem;margin-top:2rem;font-size:0.75rem;color:#666;line-height:1.0625rem;border-radius: 0.43rem;background-color: #f2f3f7;}
+.txt-guide {padding: 0.85rem;margin-top:2rem;font-size:0.75rem;color:#666;line-height:1.0625rem;border-radius: 0.43rem;background-color: #f2f3f7;letter-spacing: -.028rem;}
+.txt-guide b{font-weight: 500;}
 .txt-guide strong {display:block;margin-bottom:.625rem;font-size:0.875rem;color:#111;}
 .txt-guide ul {margin-bottom:.625rem;}
 .txt-guide li {padding-left:.5rem;text-indent: .5rem;}
@@ -56,6 +57,7 @@ main {z-index: 1;height: 100%;}
 .txt-guide a.btn-more{display: flex;align-items: center;justify-content: flex-end;}
 .txt-guide a.btn-arrow{text-decoration: none;}
 .txt-guide a.btn-arrow::after{content:">";margin-left: .5rem;}
+.txt-guide.para{word-break: keep-all;}
 .guide-area h3 {margin-bottom:0.375rem;font-size:0.9375rem;}
 .guide-area a {font-size:0.75rem;font-weight:500;}
 .guide-area .radio-list {margin-top:1.375rem;}
@@ -129,7 +131,7 @@ main {z-index: 1;height: 100%;}
 .certify-wrap article {margin-bottom:1.25rem;border-radius:.625rem;border:1px solid #e4e4e4;}
 .certify-wrap article header,.certify-wrap article .article-header {padding:1.5rem 1.25rem 1.25rem;font-size:0.8125rem;font-weight:300;}
 .certify-wrap article .title {margin-bottom:0.875rem;font-size:.9375rem;font-weight:700;}
-.certify-wrap article button {display:flex;align-items: center;width:100%;padding:1rem 1.5rem;font-size:0.875rem;border-top:1px solid #e4e4e4;}
+.certify-wrap article button {display:flex;align-items: center;width:100%;padding:1rem 1.5rem;font-size:0.875rem;border-top:1px solid #e4e4e4;color: #111;}
 .certify-wrap article button em {display:block;width:2.8125rem;height:2.8125rem;margin-right:1rem;border-radius:2rem;background-color:#efefef;}
 .certify-wrap .cert-bas em {background-position:-4.4375rem 0;}
 .certify-wrap .cert-fin em {background-position:-7.375rem 0;}
@@ -4480,7 +4482,7 @@ letter-spacing: -.06rem;}
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: c;
+    align-items: center;
 }
 .my-assets .btnSwiper.assets-list li span>i{
     margin: .5rem auto;
