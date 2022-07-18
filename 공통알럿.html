@@ -21,6 +21,7 @@
 	<main id="container">
 		<div class="btn-area" style="display: flex;flex-flow:row wrap;justify-content: center;height:7rem;">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm loading-now-btn" style="margin:0 .5rem;">로딩중</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.inspection')" style="margin:0 .5rem;">마이데이터 정기점검</button>
 			<button type="button" class="btn btn-light-secondary btn-sm dimmed-disabled" onclick="modal('.none-click')" style="margin:0 .5rem;">Dimmed none click</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.alert')" style="margin:0 .5rem;">Alert</button>
@@ -32,6 +33,14 @@
 <!-- //wrapper -->
 
 <!-- modal popup -->
+
+<!-- confirm -->
+<div class="loading-now">
+	<section class="modal-container">
+		<img src="./assets/images/common/splash/splash.gif" alt="">
+	</section>
+</div>
+<!--// confirm -->
 
 <!-- confirm -->
 <div class="modal confirm inspection">
@@ -227,6 +236,7 @@
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	dimmedNoneClick();
+	loadingPage();
 </script>
 
 </body>

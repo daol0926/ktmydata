@@ -356,10 +356,17 @@ function modal(obj){
 	//document 클릭 시 모달 창 닫기
 	dimmedClose();
 }
+//로딩페이지 호출
+function loadingPage(){
+	$('.loading-now-btn').click(function(){
+		$('.loading-now').toggleClass('open');
+	});
+}
 //모달 팝업 닫기
 function modalClose(that){
 	$("body").removeClass("dimmed");
 	$("body").removeClass("none-click-dimmed");
+	$("body").removeClass("dimmed-transparent");
 	var type = typeof(that);
 	if ( type == "object" ) $(that).parents(".modal").removeClass("open");
 	else  $(that).removeClass("open");

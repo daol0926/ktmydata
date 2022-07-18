@@ -435,6 +435,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .msg:after {content:"";display:block;position:absolute;bottom: .5rem;right: -.2rem;width: 0.9rem;height:0.6875rem;background: url(../images/common/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;transform: rotate(-29deg);}
 
 .consum {display: inline-flex;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;align-items: center;justify-content: center;}
+.bg-white .consum{background-color: #fff;border:1px solid #0fbcde;color:#666;}
+.bg-white .consum::after{background-image: url(../images/common/bg-consum.png);background-size: contain;background-position: center;top: unset;bottom: -.35rem;}
 .consum.txt-only{margin-left: -30%;}
 .consum.txt-only::after{left: 40%;}
 .consum:after {content:"";display:block;position:absolute;bottom:-0.25rem;left:0.75rem;width:.5rem;height:0.3125rem;background: url(../images/common/icon_spr.png) no-repeat -3.1875rem -2.5625rem / 12.5rem auto;}
@@ -513,7 +515,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .recent-history .row .img-area{width:5.5rem;margin-right: .5rem;}
 .recent-history [class*=code-ico-]{max-width: 100%;height:auto;}
 .recent-history .row .txt-area{font-size: 0.875rem;line-height: 1.1;}
-.recent-history .row .txt-area strong{display: block;font-size: 1rem;line-height: 1.15;margin-bottom: .25rem;}
+.recent-history .row .txt-area strong{display: block;font-size: .9rem;line-height: 1.15;margin-bottom: .25rem;font-weight: 500;}
 .recent-history .row + .btn{margin-top: 1.5rem;}
 
 .made-coin .card-header .header-title {line-height:1.5rem;}
@@ -1011,6 +1013,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .modal .modal-msg mark {display:inline-block;margin-bottom:1rem;font-size: 0.9375rem;color:#111;font-weight:500;background-color:#ffec4b;}
 .modal .modal-msg strong {display:block;color:#111;font-weight:500;}
 .modal .btn-close {position: absolute;top:0.1875rem;right:-0.6875rem;padding:0.625rem;}
+
+.loading-now{display: none;}
+.loading-now.open{display: flex;/* background: red; */position: fixed;top: 0;height: 100%;align-items: center;justify-content: center;pointer-events: none;z-index: 999;}
+.loading-now img{max-width: 30%;display:block;margin:0 auto;}
 
 /* popup */
 .dimmed {overflow: hidden;}
@@ -1972,15 +1978,15 @@ margin-bottom: 0;}
     margin-bottom: 0;
 }
 .data-info-wrp .data-info-box .info-list-desc.list-dot{
-    margin:.7rem 0;    
-    justify-content: flex-start;    
-    /* font-family: 'georgia', sans-serif; */    
-    font-weight: 300;    
-    font-size: 1rem;
+    margin:.7rem 0;
+    justify-content: flex-start;
+    /* font-family: 'georgia', sans-serif; */
+    font-weight: 300;
+    font-size: .875rem;
 }
 .data-info-wrp .data-info-box .info-list-desc strong{
     font-weight: 600;
-    color:#53cee6;
+    color: #111;
     font-size: 1rem;
 }
 .data-info-wrp .data-info-box .info-list-desc.list-dot::before{
@@ -3022,6 +3028,26 @@ letter-spacing: -.06rem;}
     display: none;
     transition:all .5s ease;
 }
+.coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area{
+    font-size: 0.6875rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area>span{
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon{
+    /* background-image: none; */
+    /* width: inherit; */
+    /* height: inherit; */
+    margin: 0;
+    margin-right: .25rem;
+}
 
 .brand-info{
     background-color: #fff;
@@ -3060,7 +3086,7 @@ letter-spacing: -.06rem;}
     content: '';
     display: block;
     background-color: #f2f3f7;
-    width: calc(100% + 2rem);
+    width: 100%;
     height: 4rem;
     position: absolute;
     left: 0;
@@ -4491,8 +4517,6 @@ letter-spacing: -.06rem;}
 .my-assets .btnSwiper.assets-list li span>i{
     margin: .5rem auto;
 }
-
-
  
 @keyframes rotate_circle{
 	100% {
