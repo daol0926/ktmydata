@@ -506,6 +506,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .recent-history .amount {margin-bottom:1.5rem;font-size:1.25rem;font-weight:700;text-align: right;}
 .recent-history .amount .won:after {font-weight:500;}
 .recent-history .title-area {display: flex;align-items: center;justify-content: space-between;padding-bottom:0.875rem;border-bottom:1px solid #e4e4e4;}
+.recent-history .title-area .btn-more{text-align: right;}
 .recent-history ul {padding:0 .625rem;}
 .recent-history li {display: flex;align-items: center;justify-content: space-between;padding:1.75rem 0 0;color:#444;font-size:0.8125rem;font-weight:400;}
 .recent-history li .date {width:2.875rem;color:#888;}
@@ -4464,7 +4465,7 @@ letter-spacing: -.06rem;}
 .btnSwiper .swiper-button-next.swiper-button-disabled, 
 .btnSwiper .swiper-button-prev.swiper-button-disabled{
     background-image:
-    url(../images/common/ico-dateswiper-arrow.png);
+    url(../images/common/ico-dateswiper-arrow-blue.png);
     width: .8rem;
     background-size: contain;
     left: 0;
@@ -4474,6 +4475,40 @@ letter-spacing: -.06rem;}
     transform: rotate(180deg);
     left: unset;
     right: 0;
+}
+.btnSwiper.arrow-bg .swiper-button-prev,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled,
+.btnSwiper.arrow-bg .swiper-button-next,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
+    width: 2rem;
+    height: 2rem;
+    background-size: .8rem;
+}
+
+.btnSwiper.arrow-bg .swiper-button-prev,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled{
+    left:.5rem;
+}
+.btnSwiper.arrow-bg .swiper-button-next,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
+}
+.btnSwiper.arrow-bg .swiper-button-next::before, 
+.btnSwiper.arrow-bg .swiper-button-prev::before,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev::before,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled::before, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled::before{
+    content: '';
+    display: inline-block;
+    background-color: #a7eefc;
+    opacity: .4;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    /* top: .35rem; */
+    left: 0.1rem;
 }
 .card.contract-info .btnSwiper.gallery-thumbs{
     margin-right:1.25rem;
