@@ -140,7 +140,7 @@ function buttonSwiper(obj){
     });
 }
 
-//button type Swiper
+//category type Swiper
 function cateSwiper(obj, slidesView){
 	var swiper = new Swiper(obj + ".swiper-container", {
 		slidesPerView: slidesView,
