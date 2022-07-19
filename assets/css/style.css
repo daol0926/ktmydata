@@ -4464,8 +4464,7 @@ letter-spacing: -.06rem;}
 .btnSwiper .swiper-container-rtl .swiper-button-prev,
 .btnSwiper .swiper-button-next.swiper-button-disabled, 
 .btnSwiper .swiper-button-prev.swiper-button-disabled{
-    background-image:
-    url(../images/common/ico-dateswiper-arrow-blue.png);
+    background-image:url(../images/common/ico-dateswiper-arrow-blue.png);
     width: .8rem;
     background-size: contain;
     left: 0;
@@ -4484,6 +4483,40 @@ letter-spacing: -.06rem;}
     max-width: calc(100% - 2.5rem);
     display:block;
     margin:0 auto;
+}
+.btnSwiper.arrow-bg .swiper-button-prev,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled,
+.btnSwiper.arrow-bg .swiper-button-next,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
+    width: 2rem;
+    height: 2rem;
+    background-size: .8rem;
+}
+
+.btnSwiper.arrow-bg .swiper-button-prev,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled{
+    left:0;
+}
+.btnSwiper.arrow-bg .swiper-button-next,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
+}
+.btnSwiper.arrow-bg .swiper-button-next::before, 
+.btnSwiper.arrow-bg .swiper-button-prev::before,
+.btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev::before,
+.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled::before, 
+.btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled::before{
+    content: '';
+    display: inline-block;
+    background-color: #a7eefc;
+    opacity: .4;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    /* top: .35rem; */
+    left: 0.1rem;
 }
 
 .btnSwiper.cate-wrap{
