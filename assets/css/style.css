@@ -1354,7 +1354,10 @@ position: relative;}
 .day-schedule .history .dtl-title{
     font-size: 1rem;
     font-weight: 500;
-line-height: 1.35;letter-spacing: -.06rem;}
+    line-height: 1.35;
+    letter-spacing: -.06rem;
+    word-break: keep-all;
+    }
 .day-schedule .history .dtl-title>b{
     color:#111;
 }
