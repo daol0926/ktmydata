@@ -413,6 +413,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .coin-back .bg-box.type-white ul>li .cate{background-color: #e4e4e4;border-radius: 1rem;padding-left:1rem;padding-right:1rem;}
 .coin-back .bg-box.type-white ul>li .kon{font-size: .9rem;}
 .coin-back .bg-box.type-white ul>li .kon::after{/* font-weight: normal; */}
+.mission-list ul{display: flex;align-items: center;justify-content: center;}
 
 .performance .card .card-header {padding-bottom:1.25rem;border-bottom:1px solid #e4e4e4;border-radius: 0;}
 .performance .card .header-title {display:flex;align-items: center;}
