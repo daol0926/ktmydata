@@ -619,7 +619,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .top3 .similar-age,
 .top3 .similar-property {padding: 0 2.5rem 1rem;}
-.top3 [class*=similar-] + [class*=similar-]{margin-top: -2.5rem;}
+.top3 [class*=similar-] + [class*=similar-]{margin-top: -1rem;}
 .top3 .similar-age .card-header {padding:1.75rem 0 1.125rem;}
 .top3 .prod-name {display:flex;align-items: center;/* justify-content: center; *//* width:100%; *//* height:4.375rem; */font-size: 0.925rem;font-weight:500;color:#444;line-height: 1.125rem;}
 .top3 .prod-price {display:block;width:100%;font-size:.75rem;color:#444;}
@@ -3041,6 +3041,7 @@ letter-spacing: -.06rem;}
     justify-content: center;
     padding: 0;
     margin: 0;
+    max-width: 6.5rem;
 }
 .coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon{
     /* background-image: none; */
