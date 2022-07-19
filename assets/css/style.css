@@ -3044,6 +3044,7 @@ letter-spacing: -.06rem;}
     padding: 0;
     margin: 0;
     max-width: 6.5rem;
+    position: relative;
 }
 .coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon{
     /* background-image: none; */
@@ -3095,6 +3096,13 @@ letter-spacing: -.06rem;}
     position: absolute;
     left: 0;
     margin-top: 10.075rem;
+}
+.brand-info.brand-select-complete p span{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+.brand-info.brand-select-complete::before{
+    margin-top: 13.8rem;
 }
 .brand-info .brand-info-list .swiper-wrapper{
     /* overflow: hidden; */
@@ -3358,7 +3366,7 @@ letter-spacing: -.06rem;}
 .payment-list-wrp .payment-list .payment-list-box .btn-area .kon{display:inline-flex;align-items: center;}
 .payment-list-wrp .payment-list .payment-list-box .btn-area .kon::after{content: '';}
 .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon{display: inline-block;background: url(../images/icon/ico-coin.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;margin: 0 .25rem;}
-.payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon::after{position:absolute;left:0;top: calc(50% - .55rem);}
+.payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon::after{position:absolute;left:0;top: calc(50% - .55rem);display: none;}
 .payment-list-wrp .payment-list-empty{display: flex;align-items: center;justify-content: center;height:5rem;color:#777;font-size: .8rem;}
 
 .event-list-wrp{margin-top: -1.5rem;padding: 1.25rem 0 1.25rem;position: relative;}
@@ -4033,9 +4041,9 @@ letter-spacing: -.06rem;}
 }
 .add-dc-wrp [class*=code-ico-]{
     width: 4.5rem;
-    height: fit-content;
     border-radius: 0;
     image-rendering: -webkit-optimize-contrast;
+    height: auto;
 }
 .add-dc-wrp [class*=dc-]{
     display: flex;
@@ -4572,7 +4580,7 @@ letter-spacing: -.06rem;}
 }
 
 @media only screen and (max-width:480px){
-	.select-list {justify-content: space-between;}
+	.select-list {/* justify-content: space-between; */}
 	.assets ul {justify-content: space-between;}
     .connect-container .assets ul{justify-content: flex-start;}
 }	

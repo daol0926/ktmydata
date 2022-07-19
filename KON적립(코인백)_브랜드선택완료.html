@@ -147,7 +147,7 @@
 			<!-- tab cont -->
 			<div class="tab-cont focused pb5">
 				<div class="brand-save-wrp">
-					<div class="brand-info">
+					<div class="brand-info brand-select-complete">
 						<div class="row align-items-center pb1 justify-content-center">
 							<span class="btn btn-xs btn-light-secondary btn-round">D - 7</span>
 							<span class="desc-txt ml_5">이번주 브랜드 선택 2022.03.13 까지</span>
@@ -156,10 +156,15 @@
 							<strong>마이데이터에서 카드 쓰고,<br />통신비를 아끼세요!</strong> <!-- 20220713 UX Writing -->
 							<span>마이데이터에 등록한 카드로<br />브랜드를 구매하면 KON이 쌓여요!</span> <!-- 20220713 UX Writing -->
 						</p>
-						<div class="row brand-info-list">
-							<div class="col-3">
-								<i class="ico code-ico-A1AAIP0000"></i>
-								<span>신한 카드</span>
+
+						<div class="row brand-info-list btnSwiper swiper-container arrow-bg">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="col-3">
+										<i class="ico code-ico-A1AAIP0000"></i>
+										<span>신한 카드</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div> <!--//brand-info -->
@@ -217,6 +222,7 @@
 								</label>
 								<!--20220713 브랜드 할인율 선택 시 alert 호출 -->
 								<span class="off-selector" onclick="modal('.brand-alert')"></span>
+								<span class="off-selector selector-top" onclick="modal('.brand-alert')"></span>
 								<!--//20220713 브랜드 할인율 선택 시 alert 호출 -->
 							</div>
 							<div class="col-6 select-list form-check">
