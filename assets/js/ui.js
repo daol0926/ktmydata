@@ -450,8 +450,10 @@ function konScroll() {
 	$(window).scroll(function() {
 		if($(this).scrollTop()) {
 			$('.made-coin').parent().addClass('fixed');
+			$('.tab-menu').addClass('fixed');
 		} else {
 			$('.made-coin').parent().removeClass('fixed');
+			$('.tab-menu').removeClass('fixed');
 		}
 	})
 }
