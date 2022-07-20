@@ -132,11 +132,32 @@ function bannerSwiper(obj, slidesView, space){
 //button type Swiper
 function buttonSwiper(obj){
 	var swiper = new Swiper(obj + ".swiper-container", {
+		autoHeight : true,
         navigation: {
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
         },
 		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+        pagination: {
+			el: obj+" .swiper-pagination",
+		},
+    });
+}
+
+//auto banner type Swiper
+function autoSwiper(obj){
+	var swiper = new Swiper(obj + ".swiper-container", {
+        navigation: {
+        	nextEl: ".swiper-button-next",
+        	prevEl: ".swiper-button-prev",
+        },
+		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+        pagination: {
+			el: obj+" .swiper-pagination",
+		},
+		autoplay: {
+			delay: 3000,
+		},
     });
 }
 

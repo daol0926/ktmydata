@@ -128,7 +128,7 @@
 
 		<div class="image-banner pb1_5">
 			<!-- 20220715 swiper 수정 -->
-			<div class="event-banner-top event-banner swiper-container btnSwiper">
+			<div class="event-banner-top event-banner swiper-container btnSwiper arrow-bg">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
@@ -139,10 +139,23 @@
 					<div class="swiper-slide">
 						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
 					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-      			<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
+				<div class="swiper-btn-wrp">
+					<div class="swiper-btn-box">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>						
+					</div>
+				</div>
 			</div>
 			<!--//20220715 swiper 수정 -->
 		</div>
@@ -279,7 +292,7 @@
 			</header>
 
 			<!-- 20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
-			<div class="swiper-container cardPerformance btnSwiper">
+			<div class="swiper-container cardPerformance btnSwiper arrow-bg">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<!-- 실적1 -->
@@ -340,21 +353,22 @@
 						<!--// 실적1 -->
 					</div>
 					<div class="swiper-slide">
-						<!-- 실적2 -->
-						<div class="card Edition2">
+						<!-- 실적1 -->
+						<div class="card Edition3">
 							<div class="card-header">
 								<h3 class="header-title">
-									<span class="assets-name"><i class="credit-card"></i></span>
+									<span class="assets-name"><i class="code-ico-card-min"></i></span>
 									<strong>KT 현대카드M Edition3</strong>
 								</h3>
 							</div>
 							<div class="card-body">
-								<div class="graph-wrap">
+								<div class="graph-wrap half">
 									<h4 class="title">카드 실적별 통신비 할인</h4>
-									<div class="msg-area">
-										<p class="msg">통신비 할인을 위한 카드 실적은 개인별 결제일에 따라 다를 수 있어요!</p>
+									<div class="msg-area mb0">
+										<p class="msg">카드 실적은 결제일에 따라 다를 수 있어요!</p>
 									</div>
-									<div class="gauge-area">
+									<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
+									<div class="gauge-area mt2_5">
 										<span class="gauge-bg">
 											<span class="consum"><span class="won">0</span></span>
 											<span class="gauge"></span>
@@ -367,12 +381,14 @@
 								</div>
 								
 								<div class="recent-history">
+									<!--
 									<div class="total">
 										<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
 										<div class="amount">
 											<span class="won">1,123,000</span>
 										</div>
 									</div>
+									-->
 									<div class="title-area">
 										<h4 class="list-title">최근 거래 내역</h4>
 										<a href="#" class="btn-more">더보기 &gt;</a>
@@ -392,24 +408,25 @@
 								</div>
 							</div>
 						</div>
-						<!--// 실적2 -->
+						<!--// 실적1 -->
 					</div>
 					<div class="swiper-slide">
-						<!-- 실적3 -->
-						<div class="card Edition1">
+						<!-- 실적1 -->
+						<div class="card Edition3">
 							<div class="card-header">
 								<h3 class="header-title">
-									<span class="assets-name"><i class="credit-card"></i></span>
+									<span class="assets-name"><i class="code-ico-card-min"></i></span>
 									<strong>KT 현대카드M Edition3</strong>
 								</h3>
 							</div>
 							<div class="card-body">
-								<div class="graph-wrap">
+								<div class="graph-wrap half">
 									<h4 class="title">카드 실적별 통신비 할인</h4>
-									<div class="msg-area">
-										<p class="msg">통신비 할인을 위한 카드 실적은 개인별 결제일에 따라 다를 수 있어요!</p>
+									<div class="msg-area mb0">
+										<p class="msg">카드 실적은 결제일에 따라 다를 수 있어요!</p>
 									</div>
-									<div class="gauge-area">
+									<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
+									<div class="gauge-area mt2_5">
 										<span class="gauge-bg">
 											<span class="consum"><span class="won">0</span></span>
 											<span class="gauge"></span>
@@ -422,12 +439,14 @@
 								</div>
 								
 								<div class="recent-history">
+									<!--
 									<div class="total">
 										<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
 										<div class="amount">
 											<span class="won">1,123,000</span>
 										</div>
 									</div>
+									-->
 									<div class="title-area">
 										<h4 class="list-title">최근 거래 내역</h4>
 										<a href="#" class="btn-more">더보기 &gt;</a>
@@ -447,13 +466,18 @@
 								</div>
 							</div>
 						</div>
-						<!--// 실적3 -->
+						<!--// 실적1 -->
 					</div>
 				</div>
-				<div class="swiper-button-next"></div>
-      			<div class="swiper-button-prev"></div>
+				<div class="swiper-btn-wrp">
+					<div class="swiper-btn-box">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>
+						
+					</div>
+				</div>
 			</div>
-			<div class="swiper-pagination"></div>
 			<!--//20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->	
 		</section>
 
@@ -665,10 +689,9 @@
 					</ul>	
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
-	
-					<div class="btn-area">
-						<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
-					</div>
+				</div>
+				<div class="btn-area">
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
 				</div>
 				<!--//20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
 			</div>
@@ -772,7 +795,7 @@
 			</header>
 
 			<!-- 20220715 btnSwiper 교체 -->
-			<div class="event-banner event-list-wrp btnSwiper swiper-container">
+			<div class="event-banner event-list-wrp btnSwiper swiper-container arrow-bg">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="event-box">
@@ -820,9 +843,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+				<div class="swiper-btn-wrp">
+					<div class="swiper-btn-box">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>						
+					</div>
+				</div>
 			</div>
 			<!--// 20220715 btnSwiper 교체 -->
 		</section>
@@ -841,7 +868,6 @@
 					<div class="swiper-slide">Slide 2</div>
 					<div class="swiper-slide">Slide 3</div>
 				</div>
-				<div class="swiper-pagination"></div>
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
@@ -877,9 +903,9 @@
 	//총 자산금액 하단 배너
 	buttonSwiper('.event-banner-top');
 	//총 자산카테고리 
-	cateSwiper('.assets-list', 4);
+	cateSwiper('.assets-list', 3);
 	//이벤트 Swiper2
-	buttonSwiper('.event-banner');
+	autoSwiper('.event-banner');
 	//콘적립 Swiper
 	buttonSwiper('.save-brand-list');
 

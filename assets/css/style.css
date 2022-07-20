@@ -196,8 +196,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .cate-wrap ul {display:flex;flex-wrap: wrap;margin:0 -.125rem;}
 .cate-wrap ul li {padding:.1875rem .125rem;}
 .cate-wrap button {display:flex;align-items: center;height: 2.2rem;padding:0 .75rem;font-size:0.8125rem;color:#888;font-weight:500;border-radius: 1.1rem;background-color:#e4e4e4;}
-.cate-wrap button.focused
-/*.cate-wrap button.current*/ {background-color: #53cee6;color:#fff;border-color: #53cee6;}
+.cate-wrap button.current{background-color: #53cee6;color:#fff;border-color: #53cee6;}
 .cate-wrap button:disabled{color:#888;pointer-events: none;cursor: pointer;}
 .cate-wrap.cate-select ul>li{padding:0;}
 .cate-wrap.cate-select ul>li:last-child{padding-right: 0;}
@@ -822,7 +821,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assets .assets-list .scroll-inner {padding-bottom:1rem;}
 .my-assets .assets-list:after {position: relative;;padding-top:1.875rem;}
 .my-assets .assets-list ul {display: flex;flex-wrap: nowrap;width: auto;}
-.my-assets .assets-list li {white-space: nowrap;text-align: center;}
+.my-assets .assets-list li {white-space: nowrap;text-align: center;margin-right: -2rem;}
 .my-assets .assets-list li + li {margin-left:1.5rem;}
 .my-assets .assets-list li span {margin:0;font-size: .75rem;color:#888;}
 .my-assets .assets-list li strong {display:block;margin-top:0.25rem;font-size: 0.9375rem;color:#444;}
@@ -1047,9 +1046,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 #footer li strong {margin-right:10px;font-weight:700;}
 #footer li .copy {font-weight:700;}
 
-.swiper-pagination {position:static !important;width:100% !important;padding:.5rem 0;text-align: center;}
+.swiper-pagination {width: 100%;padding:.5rem 0;text-align: center;height: 1rem;bottom: 0;}
 .swiper-pagination .swiper-pagination-bullet {position:static !important;opacity: 1 !important;width:0.4375rem;height:0.4375rem;margin:0 0.125rem;background-color:#aaa;transform: scale(1) !important;}
-.swiper-pagination .swiper-pagination-bullet-active {background-color:#111;}
+.swiper-pagination .swiper-pagination-bullet-active {background-color: #53cee6;}
 
 
 /* dateSwiper */
@@ -1398,6 +1397,17 @@ position: relative;}
 }
 .day-schedule .history .dtl .inner-title>b{
     color:#111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:100%;
+    position: relative;
+}
+.day-schedule .history .dtl .inner-title>b::after{
+    content: '>';
+    position: absolute;
+    right: 0;
+    background: #fff;
 }
 .day-schedule .history .dtl .ico-area{
     /* flex:0 0 25%; */
@@ -3402,6 +3412,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .payment-list-wrp .payment-list .payment-list-box .btn-area .ico-kon::after{position:absolute;left:0;top: calc(50% - .55rem);display: none;}
 .payment-list-wrp .payment-list-empty{display: flex;align-items: center;justify-content: center;height:5rem;color:#777;font-size: .875rem;}
 
+.payment-list-wrp.coinback-list-wrp{padding-top: 0;}
+
 .event-list-wrp{margin-top: -1.5rem;padding: 1.25rem 0 1.25rem;position: relative;}
 .event-list-wrp .event-list-num{
     margin:0 1.5rem 1rem;
@@ -3441,7 +3453,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .event-list-wrp .event-box .event-img img{
     display: inline-flex;
-    max-width: 100%;
+    max-width: 75%;
     max-height: 5rem;
 }
 .event-list-wrp .event-box .event-end,
@@ -3656,13 +3668,15 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border:1px solid #ccc;
     border-width: 1px 0;
     margin-bottom: -1px;
-    padding:1rem 0;
+    padding: 1rem 0 1rem 3rem;
+    position: relative;
 }
 .payment-list-wrp.coinback-list-wrp .payment-list .payment-list-box:last-child{
     border-bottom: 0;
 }
 .payment-list-wrp.coinback-list-wrp .payment-list .payment-list-box .btn-xs{
-    margin-right:.5rem;
+    position: absolute;
+    left: 0;
 }
 .payment-list-wrp.coinback-list-wrp .payment-list .payment-list-box .plus::before{
     content: '+';
@@ -3886,7 +3900,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 100%;
     padding-bottom: 0;
     overflow: hidden;
-    height: 21.4rem;
+    height: 21.5rem;
 }
 .inner-iframe iframe{
     position: absolute;
@@ -4536,11 +4550,13 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .card.contract-info .btnSwiper.gallery-thumbs{
     margin-right:1.25rem;
     padding:0;
+    margin-bottom: 0;
 }
 .btnSwiper.gallery-thumbs .swiper-slide img{
-    max-width: calc(100% - 2.5rem);
-    display:block;
-    margin:0 auto;
+    max-width: 100%;
+    display:
+    block;
+    margin: 0 auto;
 }
 .btnSwiper.arrow-bg .swiper-button-prev,
 .btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
@@ -4549,16 +4565,18 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
     width: 2rem;
     height: 2rem;
-    background-size: .8rem;
+    background-size: .7rem;
+    bottom: 0;
+    top: unset;
+    left: unset;
+    right: unset;
+    position: unset;
 }
 
 .btnSwiper.arrow-bg .swiper-button-prev,
 .btnSwiper.arrow-bg .swiper-container-rtl .swiper-button-prev, 
 .btnSwiper.arrow-bg .swiper-button-prev.swiper-button-disabled{
-    left:0;
-}
-.btnSwiper.arrow-bg .swiper-button-next,
-.btnSwiper.arrow-bg .swiper-button-next.swiper-button-disabled{
+    /* left: 0; */
 }
 .btnSwiper.arrow-bg .swiper-button-next::before, 
 .btnSwiper.arrow-bg .swiper-button-prev::before,
@@ -4572,9 +4590,37 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    position: absolute;
+    position: unset;
     /* top: .35rem; */
-    left: 0.1rem;
+    /* left: 0.1rem; */
+}
+
+.btnSwiper.arrow-bg .swiper-btn-wrp{
+    position:
+    absolute;
+    /* background: red; */
+    width: 100%;
+    bottom: -.5rem;
+    height: 2rem;
+}
+.btnSwiper.arrow-bg .swiper-btn-wrp .swiper-btn-box{
+    position: relative;
+    /* background-color: #0d40ff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+}
+
+.btnSwiper.arrow-bg .swiper-wrapper{
+    margin-bottom: 2.5rem;
+}
+.btnSwiper.arrow-bg .swiper-pagination{
+    /* bottom: 1rem; */
+    width: fit-content;
+    position: unset;
+    height: 2.5rem;
+    padding: 0 .5rem;
 }
 
 .btnSwiper.cate-wrap{
@@ -4582,6 +4628,22 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     margin-top: 3.5rem;
     margin-bottom: -1.15rem;
     margin: 3.5rem .5rem -1.15rem;
+}
+
+.btnSwiper.assets-list::before{
+    content: '';
+    position:absolute;
+    right: -1px;
+    background: rgb(255,255,255);
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(0,0,0,0) 100%);
+    width: 2rem;
+    height: 100%;
+    z-index: 2;
+    padding-top: 0;
+}
+.btnSwiper.assets-list + .btn-area{
+    margin-top: 0;
+    padding-bottom: 1.5rem;
 }
 
 .save-brand-list ul.swiper-slide{
@@ -4593,7 +4655,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 
 .my-status .my-assets .btnSwiper.assets-list li + li{
-    margin-left: 0;
+    /* margin-right: 0; */
 }
 .my-assets .btnSwiper.assets-list{
     width: calc(100% + 1.5rem);
@@ -4631,7 +4693,6 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 
 @media only screen and (max-width:480px){
-	.select-list {/* justify-content: space-between; */}
 	.assets ul {justify-content: space-between;}
     .connect-container .assets ul{justify-content: flex-start;}
 }	

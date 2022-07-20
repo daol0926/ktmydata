@@ -163,7 +163,7 @@
 						<h4>홍길*님, 이건 어떠세요?</h4>
 						<div class="banner-area">
 							<!-- 20220715 btnSwiper로 코드 변경 -->
-							<div class="swiper-container gallery-container gallery-thumbs btnSwiper">
+							<div class="swiper-container gallery-container gallery-thumbs btnSwiper arrow-bg">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
@@ -171,8 +171,13 @@
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
 								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
+								<div class="swiper-btn-wrp">
+									<div class="swiper-btn-box">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-next"></div>						
+									</div>
+								</div>
 							</div>
 							<!--//20220715 btnSwiper로 코드 변경 -->
 						</div>
@@ -362,10 +367,9 @@
 							</ul>	
 							<div class="swiper-button-next"></div>
 							<div class="swiper-button-prev"></div>
-			
-							<div class="btn-area">
-								<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
-							</div>
+						</div>
+						<div class="btn-area">
+							<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
 						</div>
 						<!--//20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
 					</div>
@@ -722,6 +726,10 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="aside-bottom-right">
+			<button type="button" class="btn-pass-home">PASS홈</button>
+		</div>
 	</main>
 	<!-- //container -->
 </div>
@@ -810,7 +818,7 @@
 	//이벤트 Swiper
 	buttonSwiper('.event-banner-top');
 	//총 자산카테고리 
-	cateSwiper('.assets-list', 4);
+	cateSwiper('.assets-list', 3);
 	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
 	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	//desc info(tooltip)
