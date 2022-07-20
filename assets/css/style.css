@@ -2330,14 +2330,26 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 100%;
     font-weight: 600;
     font-size: 1.3rem;
-margin-top: .7rem;}
+    margin-top: .7rem;
+}
 .mya-detail-info .detail-txt{
     display: flex;
     flex-flow: column;
+    max-width: 100%;
+    height: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .mya-detail-info .detail-txt .txt-tit{
     font-weight: 600;
-letter-spacing: -.06rem;}
+    letter-spacing: -.06rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
 .mya-detail-info .detail-txt .txt-tit-num{
     color:#777;
     font-size: .85rem;
@@ -2366,6 +2378,9 @@ letter-spacing: -.06rem;}
 }
 .mya-detail-info.type-gray .detail-li-loop .detail-li-tit{
     color:#999;
+}
+.mya-detail-info.type-gray .detail-txt{
+    height: unset;
 }
 
 
