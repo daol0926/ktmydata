@@ -702,15 +702,18 @@
 		<!-- 공지팝업 -->		
 		<div class="pass-bn-wrp layerPopup">
 			<!-- Swiper -->
-			<div class="swiper pass-bn-area">
+			<!-- 20220715 swiper > btnSwiper로 교체 -->
+			<div class="pass-bn-area btnSwiper swiper-container">
 				<div class="swiper-wrapper">
-				<div class="swiper-slide">Slide 1</div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
 				</div>
-				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 			<!--//Swiper -->
+			<!--//20220715 swiper > btnSwiper로 교체 -->
 			<div class="btn-area">
 				<span id="check" class="btnTodayHide">
 					<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
@@ -741,7 +744,7 @@
 	//총 자산금액 하단 배너
 	buttonSwiper('.event-banner-top');
 	//총 자산카테고리 
-	cateSwiper('.assets-list', 4);
+	cateSwiper('.assets-list', 3);
 	//이벤트 Swiper2
 	buttonSwiper('.event-banner');
 	//콘적립 Swiper
@@ -761,12 +764,6 @@
 	//공지팝업
 	passInnerBanner();
 	layerPopupWrp();
-
-	var $dragWrap = $('.swiper-container');
-	$dragWrap.on('touchmove',function(event){
-		event.preventDefault();
-		event.stopPropagation();
-	});
 </script>
 </body>
 </html>
