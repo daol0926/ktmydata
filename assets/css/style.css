@@ -1022,7 +1022,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .loading-now{display: none;}
 .loading-now.open{display: flex;/* background: red; */position: fixed;top: 0;height: 100%;align-items: center;justify-content: center;pointer-events: none;z-index: 999;}
-.loading-now img{max-width: 17.415%;display:block;margin:0 auto;}
+.loading-now img{max-width: 17.415%;display:block;margin:0 auto;min-width: 4.625rem;}
 
 /* popup */
 .dimmed {overflow: hidden;}
