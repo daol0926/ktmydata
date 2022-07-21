@@ -162,21 +162,10 @@
 					<div class="recomm">
 						<h4>홍길*님, 이건 어떠세요?</h4>
 						<div class="banner-area">
-							<!-- 20220715 btnSwiper로 코드 변경 -->
-							<div class="swiper-container gallery-container gallery-thumbs btnSwiper arrow-bg">
+							<!-- 20220721 btnSwiper로 코드 변경 -->
+							<div class="gallery-container gallery-thumbs">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
-									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#요금제 변경"></div>
-									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
-									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
-									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#아이폰 사전예약"></div>
-								</div>
-								<div class="swiper-btn-wrp">
-									<div class="swiper-btn-box">
-										<div class="swiper-button-prev"></div>
-										<div class="swiper-pagination"></div>
-										<div class="swiper-button-next"></div>						
-									</div>
 								</div>
 							</div>
 							<!--//20220715 btnSwiper로 코드 변경 -->
@@ -238,7 +227,8 @@
 
 		<div class="image-banner mt1">
 			<div class="event-banner-top">
-				<div class="swiper-container">
+				<!-- 20220721 swiper 교체 -->
+				<div class="event-bn swiper-container btnSwiper arrow-bg">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
@@ -250,8 +240,15 @@
 							<a href="#"><img src="./assets/images/banner/bn6.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
 						</div>
 					</div>
+					<div class="swiper-btn-wrp">
+						<div class="swiper-btn-box">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>						
+						</div>
+					</div>
 				</div>
-				<div class="swiper-pagination"></div>
+				<!--//20220721 swiper 교체 -->
 			</div>
 		</div>
 
@@ -810,7 +807,7 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//약정정보 배너 Swiper
-	buttonSwiper('.gallery-thumbs');
+	buttonSwiper('.event-bn');
 	//제공혜택 배너 Swiper
 	thumbSwiper('.benefit-info','auto',0,10);
 	//자산 accordion
