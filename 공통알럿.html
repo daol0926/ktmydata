@@ -22,6 +22,7 @@
 		<div class="btn-area" style="display: flex;flex-flow:row wrap;justify-content: center;height:7rem;">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
 			<button type="button" class="btn btn-light-secondary btn-sm loading-now-btn" style="margin:0 .5rem;">로딩중</button>
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.charge-none')" style="margin:0 .5rem;">선불카드 미제공</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.inspection')" style="margin:0 .5rem;">마이데이터 정기점검</button>
 			<button type="button" class="btn btn-light-secondary btn-sm dimmed-disabled" onclick="modal('.none-click')" style="margin:0 .5rem;">Dimmed none click</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.alert')" style="margin:0 .5rem;">Alert</button>
@@ -41,6 +42,24 @@
 	</section>
 </div>
 <!--// confirm -->
+
+<!-- alert -->
+<div class="modal alert charge-none">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<p>
+				카드사의 선불카드 정보는 수집하지 않아요.<br />기관별 연결하기를 통한 선불카드 연결 시<br />정보를 확인할 수 없어요.
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--//alert -->
 
 <!-- confirm -->
 <div class="modal confirm inspection">
