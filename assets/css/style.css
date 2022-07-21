@@ -1472,16 +1472,19 @@ position: relative;}
 .coin-list>div{
     flex-flow: row;
     overflow-x: auto;
+    width: 100%;
+    justify-content: space-between;
 }
 .coin-list .list-box{
     border: 1px solid #e4e4e4;
     border-radius: 5px;
-    width: 4rem;
-    height: 4rem;
+    width: 30%;
+    height: 5.25rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: .5rem;
+    /* margin-right: .5rem; */
+    /* max-width: 5rem; */
 }
 .coin-list .btn{
     /* position:
@@ -1489,6 +1492,7 @@ position: relative;}
     /* right: .5rem; */
     margin: .5rem auto;
     width: 100%;
+    border-radius: .5rem;
 }
 
 /* weekly-report */
@@ -4740,6 +4744,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+.my-assets .btnSwiper.assets-list li span.label{
+    margin: .2rem 0;
 }
 .my-assets .btnSwiper.assets-list li span>i{
     margin: .5rem auto;
