@@ -190,15 +190,15 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .check-label input:checked + .box:after {content:"";position:absolute;top:-.5rem;right:-.5rem;width:1.125rem;height:1.25rem;background:url(../images/common/icon_spr.png) no-repeat -2rem -1.25rem / 12.5rem auto;}
 
 .connect-assets {margin-top:-1rem;background-color:#fff;border-radius: 1rem 1rem 0 0;}
-.cate-wrap {position:sticky;top:-1.5rem;left:0;z-index:20;}
-.cate-wrap .inner {padding: 1rem .75rem 0;border-bottom:1px solid #e4e4e4;background-color:#fff;}
-.cate-wrap .fixed {position:fixed;left:0;z-index:1;width:100%;padding:1rem 1.5rem 1rem;background-color:#fff;overflow-x: hidden;}
+.cate-wrap {position:sticky;/* top:-1.5rem; *//* left:0; *//* z-index:20; */}
+.cate-wrap .inner {padding: 0 1rem;border-bottom: 0;background-color:#fff;overflow: hidden;}
+.cate-wrap .fixed {position:fixed;left: .75rem;z-index:1;width: calc(100% - 1.5rem);padding: .5rem 1rem;background-color:#fff;overflow-x: hidden;}
 .cate-wrap ul {display:flex;flex-wrap: wrap;margin:0 -.125rem;}
-.cate-wrap ul li {padding:.1875rem .125rem;}
+.cate-wrap ul li {padding:.1875rem .125rem;width: fit-content;}
 .cate-wrap button {display:flex;align-items: center;height: 2.2rem;padding:0 .75rem;font-size:0.8125rem;color:#888;font-weight:500;border-radius: 1.1rem;background-color:#e4e4e4;}
 .cate-wrap button.current{background-color: #53cee6;color:#fff;border-color: #53cee6;}
 .cate-wrap button:disabled{color:#888;pointer-events: none;cursor: pointer;}
-.cate-wrap.cate-select ul>li{padding:0;}
+.cate-wrap.cate-select ul>li{padding:0;width: fit-content;}
 .cate-wrap.cate-select ul>li:last-child{padding-right: 0;}
 .cate-wrap.cate-select button{display: none;margin:0.1875rem 0.125rem;}
 .cate-wrap.cate-select button.focused{display: flex;}
@@ -241,9 +241,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .request-list .state.fail {color:#ff0e0e;}
 
 .assets-confirm {margin-top: -1rem;padding: 0 .75rem;}
-.assets-confirm .cate-wrap .fixed {left: 0;right: 0;width:auto;}
+.assets-confirm .cate-wrap .fixed {left: 0;right: 0;width:auto;height: 2.5rem;}
+.assets-confirm .cate-wrap .swiper-wrapper.fixed{width:98%;}
 .assets-confirm .cate-wrap .inner {padding:1rem 0;}
-.assets-confirm .cate-wrap .inner.fixed{left:0;right:unset;padding:1rem 1.5rem;z-index: 2;width:100%;overflow-x: auto;}
+.assets-confirm .cate-wrap .inner.fixed{left:0;right:unset;padding:1rem 1.5rem;z-index: 2;width:100%;overflow-x: auto;height: 4.5rem;}
 .assets-confirm .assets {padding: 1.875rem 0 0;}
 .assets-confirm .assets + .assets {border-top:0;}
 .assets-confirm .assets h2 {display:block;}
@@ -1434,7 +1435,8 @@ position: relative;}
 .my-sch .day-schedule .history li{
     padding-right: 0;
 }
-.my-sch .day-schedule .history li.schedule-none::before{
+.my-sch .day-schedule .history li.schedule-none::before,
+.my-sch .day-schedule .history li.schedule-none::after{
     display: none;
 }
 .my-sch .day-schedule .history li.schedule-none .empty-msg{
@@ -1442,6 +1444,10 @@ position: relative;}
     font-size: 0.875rem;
     color:#666;
     padding: 3rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .btn-area.fixed-bottom.bn-img{
@@ -2069,23 +2075,22 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     padding:30px 25px;
 }
 
-/* sch cate-wrap */
 .cate-wrap{
     position: unset;
     padding: 0.25rem .75rem;
-    margin: .5rem auto;
-    overflow-x: auto;
-    }
-.cate-wrap .inner{
-    border-bottom: 0;
-    overflow-x: scroll;
+    margin: 1.5rem auto -.25rem;
+    overflow-x: hidden;
+}
+.cate-wrap.cate-select{
+    margin-top: 0;
+    padding: 0;
 }
 .cate-wrap ul{
     flex-wrap:
     unset;
     width: 100%;
     margin: 0 auto;
-    height: 2rem;
+    height: 2.5rem;
     align-items: center;
     }
 .cate-wrap button{
@@ -4666,10 +4671,18 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 
 .btnSwiper.cate-wrap{
-    padding: 0 1rem .5rem;
+    padding: 0;
     margin: 3.5rem auto -1.15rem;
 }
-
+.btnSwiper.cate-wrap.fixed{
+    position: fixed;
+}
+.btnSwiper.cate-wrap .swiper-wrapper{
+    padding:0 1rem;
+    height:2.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
 .btnSwiper.assets-list::before{
     content: '';
     position:absolute;
