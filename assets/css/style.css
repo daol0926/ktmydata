@@ -4116,12 +4116,19 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     max-width: 9rem;
 }
 .add-dc-wrp .dc-title{
+    display: inline-block;
     font-family: 'S-CoreDream-6Bold', sans-serif;
-    color:#111;
+    color: #111;
     font-size: 1.05rem;
     font-weight: 600;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     letter-spacing: -.12rem;
+    width: 100%;
+    height: 1.05rem;
+    line-height: 1.05rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
 }
 .add-dc-wrp .dc-desc{
     line-height: 1.2;
@@ -4504,8 +4511,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 3.5rem;
     height: 3.5rem;font-size:0;color:#fff;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    background: url(../images/common/aside-pass.png) no-repeat center/auto #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    background: url(../images/common/aside-pass.png) no-repeat center/2.6rem #fff;
 }
 
 .btn-txt-only>div{position:relative;}
