@@ -290,7 +290,7 @@ function cateSticky(){
 		}, 400, "easeInOutExpo");
 		
 		return false;
-		e.preventDefault();
+		//e.preventDefault();
 	});
 
 	$(window).scroll(function(){
@@ -300,9 +300,9 @@ function cateSticky(){
 			lastAssets = $(".cate-wrap li:last-child button").attr('data-target');
 		if(scrollTop >= (cateTop-headerGab)){
 			$(".cate-wrap").css("height",cateh);
-			$(".cate-wrap .inner").css("top",headerGab).addClass("fixed");
+			$(".cate-wrap .swiper-wrapper").css("top",headerGab).addClass("fixed");
 		} else {
-			$(".cate-wrap .inner").removeClass("fixed").removeAttr("style");
+			$(".cate-wrap .swiper-wrapper").removeClass("fixed").removeAttr("style");
 		}
 		var cur = scrollItems.map(function(){
 			if ($(this).offset().top - (headerGab+cateh) <= scrollTop)
