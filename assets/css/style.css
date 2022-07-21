@@ -3060,12 +3060,17 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: space-between;
     margin-top: .5rem;
 }
+.other-account-wrp .account-box.account-correct .account-info .txt-area>ul>li .desc.txt-min{
+    font-size: 0.7rem;
+}
 .other-account-wrp .account-box.account-correct .btn-area{
     display: none;
 }
 .other-account-wrp .account-box.account-correct .btn-txt{
     color:#888;
     border-color:#888;
+    font-size: .8rem;
+    text-decoration: underline;
 }
 #header + .coinback-wrp{
     padding-bottom: 0;
