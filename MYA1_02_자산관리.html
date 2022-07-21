@@ -163,9 +163,16 @@
 						<h4>홍길*님, 이건 어떠세요?</h4>
 						<div class="banner-area">
 							<!-- 20220721 btnSwiper로 코드 변경 -->
-							<div class="gallery-container gallery-thumbs">
+							<div class="swiper-container btnSwiper arrow-bg gallery-container gallery-thumbs">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide"><img src="./assets/images/home/@banner01.png" alt="#알뜰한 폰"></div>
+								</div>
+								<div class="swiper-btn-wrp">
+									<div class="swiper-btn-box">
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-pagination"></div>
+										<div class="swiper-button-next"></div>						
+									</div>
 								</div>
 							</div>
 							<!--//20220715 btnSwiper로 코드 변경 -->
@@ -807,6 +814,7 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	//약정정보 배너 Swiper
+	autoSwiper('.gallery-thumbs');
 	autoSwiper('.event-bn');
 	//제공혜택 배너 Swiper
 	thumbSwiper('.benefit-info','auto',0,10);

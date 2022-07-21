@@ -132,6 +132,7 @@ function bannerSwiper(obj, slidesView, space){
 //button type Swiper
 function buttonSwiper(obj){
 	var swiper = new Swiper(obj + ".swiper-container", {
+		watchOverflow : true, //슬라이드 1개인 경우 prev, next, bullet 비노출, false시에는 노출
 		autoHeight : true,
         navigation: {
         	nextEl: ".swiper-button-next",
@@ -147,6 +148,7 @@ function buttonSwiper(obj){
 //auto banner type Swiper
 function autoSwiper(obj){
 	var swiper = new Swiper(obj + ".swiper-container", {
+		watchOverflow : true, //슬라이드 1개인 경우 prev, next, bullet 비노출, false시에는 노출
 		autoHeight : true,
         navigation: {
         	nextEl: ".swiper-button-next",
