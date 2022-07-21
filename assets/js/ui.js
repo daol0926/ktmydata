@@ -147,6 +147,7 @@ function buttonSwiper(obj){
 //auto banner type Swiper
 function autoSwiper(obj){
 	var swiper = new Swiper(obj + ".swiper-container", {
+		autoHeight : true,
         navigation: {
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
