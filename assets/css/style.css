@@ -244,7 +244,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .cate-wrap .fixed {left: 0;right: 0;width:auto;height: 2.5rem;}
 .assets-confirm .cate-wrap .swiper-wrapper.fixed{width:98%;}
 .assets-confirm .cate-wrap .inner {padding:1rem 0;}
-.assets-confirm .cate-wrap .inner.fixed{left:0;right:unset;padding:1rem 1.5rem;z-index: 2;width:100%;overflow-x: auto;height: 4.5rem;}
+.assets-confirm .cate-wrap .inner.fixed{left:0;right:unset;padding:1rem 1.5rem;z-index: 2;width:100%;overflow-x: hidden;height: 4.5rem;}
 .assets-confirm .assets {padding: 1.875rem 0 0;}
 .assets-confirm .assets + .assets {border-top:0;}
 .assets-confirm .assets h2 {display:block;}
