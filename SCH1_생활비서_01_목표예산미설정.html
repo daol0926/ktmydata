@@ -83,55 +83,45 @@
 		</div>
 		<!--//fixed-cal -->
 
-		<div class="dtl-history bg-white day-schedule pb0">
-			<div class="history">
-				<ul>
-					<!-- 한달 예산 설정 별도 클래스 추가 : budget-wrp -->
-					<li class="budget-wrp schedule-none"> <!-- 20220708 일정 없는 경우 schedule-none 클래스 추가 -->
-						<!-- 목표예산 미설정 -->
-						<!-- my-status -->
-						<section class="my-status budget">
-							<div class="card my-assets">
-								<div class="card-header">
-									<div class="tit-area">
-										<h3 class="header-title">한달 목표 예산을 짜볼까요?<br />지출을 꼼꼼하게 관리해 줄게요!</h3> <!-- 20220713 UX Writing -->
-										<div class="row">
-											<strong class="won">0</strong>
-											<button type="button" class="btn btn-gray btn-xs btn-round">설정완료</button>
-										</div>
-									</div>
-								</div>
-								<div class="card-body">
-									<div class="donut-chart">
-										<div class="chart" data-internet="25" data-tv="15" data-mobile="60">
-											<span class="chart-txt">지난 주의<br />최대 지출 영역</span>
-											<span class="chart-cate">모빌리티</span>
-											<i class="ico ico-mobility"></i>
-										</div>
-										<ul class="chart-index">
-											<li><em>총 목표 예산</em><strong class="won">2,500,000</strong></li>
-											<li><em>오늘까지의 지출</em><strong class="won">1,200,000</strong></li>
-											<li><em>하루 권장 예산</em><strong class="won">86,655</strong></li>
-										</ul>
-									</div>		
-									<div class="btn-area text-right">
-										<button type="button" class="btn-txt undline-none">주간소비 리포트 <i class="ico ico-fold"></i></button>
-									</div>				
-								</div>
-							</div>
-						</section>
-						<!--//my-status -->
-						<!--//목표예산 미설정 -->
-						<!-- 20220708 일정 없는 경우 상태 메세지 추가 -->
-						<span class="empty-msg">
-							등록된 일정이 없습니다.
-						</span>
-						<!--//20220708 일정 없는 경우 상태 메세지 추가 -->
-					</li>
-				</ul>
+		<!-- 목표예산 미설정 -->
+		<!-- my-status -->
+		<section class="my-status budget">
+			<div class="card my-assets">
+				<div class="card-header">
+					<div class="tit-area">
+						<h3 class="header-title">한달 목표 예산을 짜볼까요?<br />지출을 꼼꼼하게 관리해 줄게요!</h3> <!-- 20220713 UX Writing -->
+						<div class="row">
+							<strong class="won">0</strong>
+							<button type="button" class="btn btn-gray btn-xs btn-round">설정완료</button>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="donut-chart">
+						<div class="chart" data-internet="25" data-tv="15" data-mobile="60">
+							<span class="chart-txt">지난 주의<br />최대 지출 영역</span>
+							<span class="chart-cate">모빌리티</span>
+							<i class="ico ico-mobility"></i>
+						</div>
+						<ul class="chart-index">
+							<li><em>총 목표 예산</em><strong class="won">2,500,000</strong></li>
+							<li><em>오늘까지의 지출</em><strong class="won">1,200,000</strong></li>
+							<li><em>하루 권장 예산</em><strong class="won">86,655</strong></li>
+						</ul>
+					</div>		
+					<div class="btn-area text-right">
+						<button type="button" class="btn-txt undline-none">주간소비 리포트 <i class="ico ico-fold"></i></button>
+					</div>				
+				</div>
 			</div>
-			<!--//history -->
+		</section>
+		<!--//my-status -->
+		<!--//목표예산 미설정 -->
+		<!-- 20220708 일정 없는 경우 상태 메세지 추가 -->
+		<div class="empty-msg">
+			등록된 일정이 없습니다.
 		</div>
+		<!--//20220708 일정 없는 경우 상태 메세지 추가 -->
 
 		<div class="btn-area">
 			<img src="assets/images/banner/bn1.png" />
