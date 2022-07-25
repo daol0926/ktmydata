@@ -1405,8 +1405,10 @@ position: relative;}
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width:100%;
+    width: fit-content;
     position: relative;
+    box-sizing: border-box;
+    padding-right: 1rem;
 }
 .day-schedule .history .dtl .inner-title>b::after{
     content: '>';
