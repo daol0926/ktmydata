@@ -4707,7 +4707,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     /* bottom: 1rem; */
     width: fit-content;
     position: unset;
-    height: 3rem;
+    height: 2.6rem;
     padding: 0 .5rem;
 }
 
@@ -4728,8 +4728,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     content: '';
     position:absolute;
     right: -1px;
+    background:url(../images/common/shadow_white.png) no-repeat center right/contain;
+    /*
     background: rgb(255,255,255);
     background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(0,0,0,0) 100%);
+    */
     width: 2rem;
     height: 100%;
     z-index: 2;
