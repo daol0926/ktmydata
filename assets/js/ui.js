@@ -142,6 +142,8 @@ function buttonSwiper(obj){
         pagination: {
 			el: obj+" .swiper-pagination",
 		},
+		observer: true, //20220725 추가
+  		observeParents: true, //20220725 추가
     });
 }
 
@@ -173,8 +175,6 @@ function cateSwiper(obj, slidesView){
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
         },
-		observer: true, //20220725 추가
-  		observeParents: true, //20220725 추가
 		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
     });
 }

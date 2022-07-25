@@ -3768,12 +3768,14 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .join-before .swiper-slide img{
     display: block;
-    margin:0 auto;
+    margin:0 auto 2.5rem;
     image-rendering: -webkit-optimize-contrast;
     max-width: 75%;
 }
-.join-before .swiper-pagination{
+.join-before .swiper-pagination,
+.join-before .swiper-container-horizontal>.swiper-pagination-bullets{
     margin:1.25rem auto;
+    bottom: 0;
 }
 .join-before .swiper-pagination .swiper-pagination-bullet{
     background-color:#d0dde0;
@@ -3789,6 +3791,21 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .join-before .swiper-txt .title{
     margin-bottom:1rem;
+}
+.join-before .event-banner.btnSwiper .swiper-slide p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:2rem;
+    font-size: 1rem;
+}
+.join-before .event-banner.btnSwiper .swiper-button-prev,
+.join-before .event-banner.btnSwiper .swiper-button-next, 
+.join-before .event-banner.btnSwiper .swiper-button-prev.swiper-button-disabled,
+.join-before .event-banner.btnSwiper .swiper-button-next.swiper-button-disabled{
+    width: 1rem;
+    top: 61%;
+    filter: grayscale(100%);
 }
 
 /* assets-none */
@@ -4615,6 +4632,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     left: unset;
     right: 0;
 }
+
 .card.contract-info .btnSwiper.gallery-thumbs{
     margin-right:1.25rem;
     padding:0;
