@@ -474,13 +474,15 @@ function scrollUI() {
 //KON 적립 스크롤 따라 show hide
 function konScroll() {
 	$(window).scroll(function() {
-		if($(this).scrollTop()) {
+		var height = $(document).scrollTop();
+
+		if(height > 0){ 
 			$('.made-coin').parent().addClass('fixed');
 			$('.tab-menu').addClass('fixed');
-		} else {
+		}else if(height == 0){ 
 			$('.made-coin').parent().removeClass('fixed');
 			$('.tab-menu').removeClass('fixed');
-		}
+		} 
 	})
 }
 

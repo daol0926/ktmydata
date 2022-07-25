@@ -933,11 +933,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .history .dtl li {display:flex;align-items: flex-start; justify-content: space-between;padding:1.25rem 0;font-size:0.875rem;font-weight:400;color:#111;}
 .history .dtl li + li {border-top:1px solid #e4e4e4;}
 .history .dtl li span > * {display:block;}
-.history .dtl li strong {font-weight:400;}
+.history .dtl li strong {font-weight:400;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .history .dtl li em {margin-top:.5rem;font-size:.75rem;color:#666;}
 .history .dtl li [class*=align-]>em:first-child{margin-top: 0.1rem;}
 .history .dtl li.cancel {color:#666;}
 .history .dtl li.cancel .cash {text-decoration:line-through}
+.history .dtl li .align-l{max-width:80%;}
 
 .date-srch-desc{font-size: .75rem;text-align: center;font-weight: 500;}
 .date-srch-desc::before,
@@ -2201,8 +2202,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     overflow-y: auto;
 }
 .card.bill-info .bill-list > ul > li{
-    padding-left: 0;
-    padding-bottom: 0;
+    padding: 0;
 }
 .card.bill-info .bill-list > ul > li:last-child dl{
     border-bottom: 0;
