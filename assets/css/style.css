@@ -524,6 +524,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .recent-history .row .txt-area strong{display: block;font-size: .9rem;line-height: 1.15;margin-bottom: .25rem;font-weight: 500;}
 .recent-history .row + .btn{margin-top: 1.5rem;}
 
+.card.made-coin .card-header{padding-top: 0;}
 .made-coin .card-header .header-title {line-height:1.5rem;}
 .made-coin.card .card-body {position: relative;padding-top:1.8rem;}
 .made-coin .desc {width:100%;margin:1.25rem 0 2rem;font-size:0.8125rem;color:#888;font-weight:400;line-height: 1.3125rem;}
