@@ -2674,6 +2674,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     line-height: 1.25;
     font-weight: 600;
 }
+.agree-c-blue .inner-txt + .inner-txt{
+    padding-top: 1.2rem;
+}
 .agree-c-blue .terms-ui h2.title{
     font-size: 1.2rem;
     word-break: keep-all;
@@ -2759,6 +2762,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .agree-c-blue .inner-txt ul.li-num>li{
     padding-left: 0 !important;
     margin-bottom: .5rem !important;
+    color:#9e9e9e;
 }
 .agree-c-blue .inner-txt ul.li-num>li::before{
     content: '' !important;
