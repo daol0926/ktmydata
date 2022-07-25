@@ -2763,6 +2763,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .agree-c-blue .inner-txt ul.li-num>li::before{
     content: '' !important;
 }
+.agree-c-blue .inner-txt ul.li-num>li>ol{
+    margin-left: .5rem;
+}
 .agree-c-blue .inner-txt-desc ul>li{
     margin-left: 0;
     padding-left:.8rem;
