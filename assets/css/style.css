@@ -86,6 +86,7 @@ main>.btn-area{margin-top: 0;}
     color: #888;
     font-size: 0.875rem;
     font-weight: 300;
+    margin-left: .5rem;
 }
 .terms-asset .assets-confirm .box ul{
     padding: 1rem;
@@ -264,6 +265,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .box ul {padding:0 1.25rem;border-radius:.625rem;background-color:#fff;}
 .assets-confirm .box li {padding: 0.3125rem 0.125rem;}
 .assets-confirm .box li .flex {align-items: center;justify-content: space-between;width:100%;padding:.625rem 0;}
+.assets-confirm .box li .flex>div{text-align: justify;}
 .assets-confirm .box li + li {border-top:1px solid #e4e4e4;}
 .assets-confirm .box dl {margin:0;font-size:.75rem;font-weight:400;}
 .assets-confirm .box dt {margin-bottom:.5rem;font-size:.875rem;color:#111;font-weight:400;text-align: left;}
@@ -2888,6 +2890,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     /* display: -webkit-box; */
     /* -webkit-line-clamp: 2; */
     -webkit-box-orient: vertical;
+    padding-right: 4rem;
 }
 .alarm-wrp .dtl li span > .won{
     display: inline-block;
