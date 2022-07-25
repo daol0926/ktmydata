@@ -237,7 +237,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .request-list .title .fail {color:#ff0e0e;}
 .request-list li {display:flex;justify-content: space-between;align-items: center;margin-top:1rem;}
 .bank-name {display:flex;align-items: center;font-size:0.875rem;text-align: justify;letter-spacing: -0.03rem;}
-.bank-name img {width:1.4375rem;margin-right:.625rem;}
+.bank-name img {width:1.4375rem;margin-right:.625rem;max-height: 2.5rem;}
 .request-list .state {display:flex;align-items: center;font-size:0.8125rem;}
 .request-list .state.success {color:#00c76c;}
 .request-list .success:after {content:"";display:block;width:1rem;height:0.6875rem;margin-left:.625rem;background: url(../images/common/icon_spr.png) no-repeat -2rem -2.625rem / 12.5rem auto;}
@@ -2198,7 +2198,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     content: unset;
 }
 .card.bill-info .bill-list.etc > ul{
-    max-height: 15.8rem;
+    max-height: 12.25rem;
     overflow-y: auto;
 }
 .card.bill-info .bill-list > ul > li{
@@ -2387,6 +2387,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 100%;
     display: inline-block;
     overflow: hidden;
+}
+.inner-tab-cont .mya-detail-info .detail-txt .txt-tit{
+    letter-spacing: 0;
 }
 .mya-detail-info .detail-txt .txt-tit-num{
     color:#777;
