@@ -4552,6 +4552,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-square{border-radius: 0;}
 
 .btn-xs.btn-w-fixed{width: 6.7rem;}
+.my-home .btn-xs.btn-w-fixed{transform: scale(1.1);}
 
 .btn-red{background-color:#fd0e0e;}
 .btn-light {background-color:#e4e4e4;color:#888;}
