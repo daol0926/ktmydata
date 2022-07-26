@@ -735,13 +735,15 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .tv:before,
 .data-5g:before,
 .internet-tv:before,
-.homeTel:before{/* background: url(../images/common/icon_spr.png) no-repeat; */content:'';display:inline-block;background-repeat: no-repeat;background-size: contain;}
+.homeTel:before,
+.asset-etc:before{/* background: url(../images/common/icon_spr.png) no-repeat; */content:'';display:inline-block;background-repeat: no-repeat;background-size: contain;}
 .dataON:before {/* background-position:-4.3125rem -6.1875rem; */background: #fdf0f7 url(../images/common/ico-dataon.png);}
 .internet:before {content:'';background-position:-7.0625rem -6.1875rem;background: #e3efff url(../images/common/ico-wifi.png);}
 .tv:before {content:'';background-position:-9.8125rem -6.1875rem;background: #f4f0fd url(../images/common/ico-tv.png);}
 .data-5g:before {content:'';/* background-position:-4.375rem -8.9375rem; */background: #fdf0f7 url(../images/common/ico-dataon.png);}
 .internet-tv:before {content:'';background-position:-7.0625rem -8.9375rem;}
 .homeTel:before {content:'';background-image:url(../images/common/ico-phone.png);}
+.asset-etc:before{background-image:url(../images/icon/ico-all.png);} /* 기타 아이콘 임시 추가 */
 
 .card .list li em {display:block;color:#888;}
 .card .list li dl {display:flex;flex-flow: row wrap;align-items: center;justify-content: space-between;}
