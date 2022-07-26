@@ -4549,12 +4549,12 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .per::after{content: " %";}
 
 .btn {display:block;width:100%;height:3.375rem;line-height:3.375rem;border-radius: 0.5rem;color:#fff;font-size: 0.9375rem;font-weight:500;text-align:center;}
-.btn-sm {width:7.6875rem;height:2.5rem;line-height:2.5rem;font-size:0.8125rem;border-radius: 0.25rem;font-weight: normal;}
+.btn-sm {width:7.6875rem;height:2.5rem;line-height:2.5rem;font-size:0.8125rem;border-radius: 0.25rem;font-weight: 600;}
 .btn-xs {display:inline-block;width:auto;height: 1.5rem;line-height: 1.5rem;padding:0 0.5625rem;font-size:0.6875rem;border-radius: 0.25rem;}
-.btn-full {width:100%;font-size: 0.875rem;}
+.btn-full {width:100%;font-size: 0.925rem;}
 .btn-square{border-radius: 0;}
 
-.btn-xs.btn-w-fixed{width: 6.7rem;}
+.btn-xs.btn-w-fixed{width: 6.7rem;font-weight: 6;}
 .my-home .btn-xs.btn-w-fixed{transform: scale(1.1);}
 
 .btn-red{background-color:#fd0e0e;}
