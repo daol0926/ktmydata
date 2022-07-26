@@ -984,7 +984,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .datepicker-open #container::before {content:"";display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);z-index:10;}
 
 .modal {overflow:hidden;position:fixed;z-index:11;max-height:100%;will-change: transform;transition: transform .3s ease;padding:1.25rem 1.5rem 5.25rem;background-color:#fff;border-radius: 1rem 1rem 0 0;}
-.modal.full {display:flex;flex-direction: column;width:100%;height:100vh;padding-top:0;border-radius: 0;}
+.modal.full {display:flex;flex-direction: column;width:100%;height: 100vmax;padding-top:0;border-radius: 0;}
 .modal.bottom-sheet {bottom:0;left:0;right:0;transform: translateY(100vh);}
 .modal.bottom-sheet.open {transform: translateY(0);}
 .modal-header {position:relative;padding:0.6875rem 0 0.3125rem;}
@@ -3130,7 +3130,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: flex-end;
 }
 .coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area>span{
-    width: 84%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3972,10 +3972,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 .inner-iframe{
     position: relative;
-    width: 100%;
+    width: calc(100% + 1.55rem);
     padding-bottom: 0;
     overflow: hidden;
     height: 21.5rem;
+    margin-left: -0.775rem;
 }
 .inner-iframe iframe{
     position: absolute;
