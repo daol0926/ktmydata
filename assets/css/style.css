@@ -23,6 +23,7 @@ main>.btn-area{margin-top: 0;}
 .logo {display:block;width: 9rem;height:1.3125rem;background:url(../images/common/logo.png) no-repeat 0 0/auto 100%;text-indent: -9999em;}
 .container-header {padding: .625rem .75rem .6875rem;}
 .container-header .title {font-size:1.25rem;font-weight:700;}
+.container-header .summary-txt{margin:-0.3125rem -0.75rem 0;}
 
 .highlights{background-color: #ceeff5;color:#111;padding: 0 0.1rem;line-height: 1.5;}
 
@@ -258,7 +259,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .assets-confirm .box {padding: 1.75rem 1.25rem;border-radius:.625rem;background-color:#f5f5f5;border: 0;}
 .assets-confirm .box + .box {margin-top:.625rem;}
 .assets-confirm .box .bank-name{margin-bottom:.875rem;font-size:1rem;font-weight:500;padding-left: 2.5rem;position: relative;}
-.assets-confirm .box [class*=code-ico-]{width: 1.875rem;height: 1.875rem;margin-right:.5rem;/* border-radius: 0; *//* background-color: transparent; */position: absolute;/* z-index: 1; */left: 0;background-size: auto 50%;}
+.assets-confirm .box [class*=code-ico-]{width: 1.875rem;height: 1.875rem;margin-right:.5rem;/* border-radius: 0; *//* background-color: transparent; */position: absolute;/* z-index: 1; */left: 0;background-size: 61%;}
 .assets-confirm .box .bank-name::before{content: '';border-radius: 50%;background-color: #fff;width: 1.875rem;height: 1.875rem;display: block;position: absolute;z-index: 0;left: 0;}
 .assets-confirm.detail .box .bank-name{padding-left: 0;}
 .terms-ui .assets-confirm.detail .box .bank-name{padding-left: 2.5rem;}
