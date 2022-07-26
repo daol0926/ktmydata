@@ -549,7 +549,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .save-weekly{font-size: 0.9rem;border-left:1px solid #ccc;padding-left:1rem;}
 
 .mission-list li + li {margin-left:.5rem;}
-.mission-list li .mission {width:6.1875rem;/* height:8rem; */padding: 0.625rem;font-size:.75rem;color:#666;font-weight:500;border:1px solid #e4e4e4;border-radius: 0.25rem;/* text-align: center; */}
+.mission-list li .mission {width: 100%;/* height:8rem; */padding: 0.625rem 0.5rem;font-size:.75rem;color:#666;font-weight:500;border:1px solid #e4e4e4;border-radius: 0.25rem;/* text-align: center; */}
 .mission-list li .mission strong {display:block;margin-top:0.3125rem;font-size: 0.7125rem;color:#111;font-weight:700;}
 .mission-list li .mission strong:after {font-weight:500;}
 .mission-list li .mission .img {display:flex;align-items: center;justify-content: center;width:4.8125rem;height:3.625rem;margin:0 auto;margin-bottom:.5rem;}
@@ -557,7 +557,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .mission-list li .mission .title,
 .mission-list li .mission .per{display: block;font-size: .85rem;}
 .mission-list li .mission .title{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.mission-list li .mission .kon{background: url(../images/icon/ico-coin.png) no-repeat left center/1rem 1rem;padding-left:1.3rem;color:#666;font-weight: normal;line-height: 1rem;}
+.mission-list li .mission .kon{background: url(../images/icon/ico-coin.png) no-repeat left center/1rem 1rem;padding-left:1.3rem;color:#666;font-weight: normal;line-height: 1rem;margin-left: -0.2rem;}
 .mission-list li .mission .kon::after{content: '';}
 .tip .made-coin .btn {margin-top:1.125rem;}
 
@@ -4778,12 +4778,15 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     padding-bottom: 1.5rem;
 }
 
-.save-brand-list ul.swiper-slide{
+.save-brand-list ul{
     display: flex;
     width: 100% !important;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 0;
+}
+.save-brand-list ul li{
+    width: 33%;
 }
 
 .my-status .my-assets .btnSwiper.assets-list li + li{
