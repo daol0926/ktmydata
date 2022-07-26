@@ -556,6 +556,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .mission-list li .mission p{color:#111;line-height: 1.2;}
 .mission-list li .mission .title,
 .mission-list li .mission .per{display: block;font-size: .85rem;}
+.mission-list li .mission .title{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .mission-list li .mission .kon{background: url(../images/icon/ico-coin.png) no-repeat left center/1rem 1rem;padding-left:1.3rem;color:#666;font-weight: normal;line-height: 1rem;}
 .mission-list li .mission .kon::after{content: '';}
 .tip .made-coin .btn {margin-top:1.125rem;}
