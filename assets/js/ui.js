@@ -473,17 +473,15 @@ function scrollUI() {
 
 //KON 적립 스크롤 따라 show hide
 function konScroll() {
-	$(window).scroll(function() {
-		var height = $(document).scrollTop();
-
-		if(height > 0){ 
+	$(window).scroll(function(){ 
+		if ($(window).scrollTop() >= 100) { 
 			$('.made-coin').parent().addClass('fixed');
 			$('.tab-menu').addClass('fixed');
-		}else if(height == 0){ 
+		} else { 
 			$('.made-coin').parent().removeClass('fixed');
 			$('.tab-menu').removeClass('fixed');
 		} 
-	})
+	});
 }
 
 function seqInit(){ 

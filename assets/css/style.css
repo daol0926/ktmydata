@@ -47,7 +47,7 @@ main>.btn-area{margin-top: 0;}
 .agree-area {width: 100%;}
 .agree-area .form-check {padding:1.0625rem 0;}
 .agree-area .form-check + .form-check {border-top:1px solid #e4e4e4;}
-.agree-area .check-all {font-weight: 700;}
+.agree-area .check-all {font-weight: 700;color:#5bcade;}
 .agree-area .check-all input[type="checkbox"] + label {font-size: 1.1rem;font-weight: 700;/* color: #0fbcdd; */}
 .txt-guide {padding: 0.85rem;margin-top:2rem;font-size:0.75rem;color:#666;line-height:1.0625rem;border-radius: 0.43rem;background-color: #f2f3f7;letter-spacing: -.028rem;}
 .txt-guide b{font-weight: 500;}
@@ -606,7 +606,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .top3 .card + .card {margin:0;border-radius: 0;}
 .top3 .card .card-header .header-title {font-size:1.125rem;line-height:1.3125rem;}
 .top3 .card .card-body {padding-bottom:0;}
-.top3 .tag {width:100%;padding:.5rem 0 0;font-size: 0.75rem;color: #666;font-weight: 400;}
+.top3 .tag {width:100%;padding:.5rem 0 0;font-size: 0.85rem;color: #666;font-weight: 400;}
 [class*='similar-'] ol {display:flex;justify-content: space-between;flex-flow: column;margin-top: -.5rem;}
 [class*='similar-'] li {flex:1;display:flex;/* flex-direction: column; *//* align-items: center; *//* justify-content: center; *//* flex-wrap: wrap; */position: relative;/* min-height:6.1875rem; *//* background-color:#f2f3f7; *//* border-radius: 0.25rem; */text-align: center;border-bottom: 1px solid #e4e4e4;padding:0 0 1rem;margin-bottom: 1rem;/* flex-flow: column; */}
 /*[class*='similar-'] li + li {margin-left:.5rem;}
@@ -688,7 +688,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-home .container-header,
 .my-datas .container-header,
 .my-coinback .container-header,
-.my-sch .container-header {position: sticky;top:3rem;left:0;z-index: 10;padding: 0 0.775rem 0;background-color: #fff;margin-bottom: .775rem;}
+.my-sch .container-header {position: sticky;top:3rem;left:0;z-index: 12;padding: 0 0.775rem 0;background-color: #fff;margin-bottom: .775rem;}
 .btn-notification {position: absolute;top:50%;right:1.5rem;transform: translateY(-50%);}
 .btn-notification.dot:after {content:"";display:block;position: absolute;top:-0.25rem;right:0;width:0.5625rem;height:0.5625rem;background-color:#53cee6;border:0.09375rem solid #fff;;border-radius: 100%;}
 
@@ -1373,6 +1373,10 @@ position: relative;}
     line-height: 1.35;
     letter-spacing: -.06rem;
     word-break: keep-all;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     }
 .day-schedule .history .dtl-title>b{
     color:#111;
@@ -1417,6 +1421,7 @@ position: relative;}
     position: relative;
     box-sizing: border-box;
     padding-right: 1rem;
+    max-width: 100%;
 }
 .day-schedule .history .dtl .inner-title>b::after{
     content: '>';
@@ -1453,7 +1458,8 @@ position: relative;}
 .my-sch .day-schedule .history li.schedule-none::after{
     display: none;
 }
-.my-sch .empty-msg{
+.my-sch .empty-msg,
+#noMydDtaList{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1714,6 +1720,7 @@ z-index: 1;}
 .picker-btn-area{
     position: relative;
     z-index: 11;
+    height:1.016rem;
 }
 
 /* date picker - 생활비서 */
@@ -3714,10 +3721,12 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     padding: 0;
 }
 
+/*
 .my-sch #header,
 .my-sch .container-header{
     z-index: 9999;
 }
+*/
 
 .payment-list-wrp.coinback-list-wrp .payment-list .payment-list-box{
     border:1px solid #ccc;

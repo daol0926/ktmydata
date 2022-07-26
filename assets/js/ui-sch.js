@@ -206,8 +206,8 @@ function calPic() {
 
 //스크롤 따라 date swipe 영역 조정
 function schScroll() {
-	$(window).scroll(function() {
-		if($(this).scrollTop()) {
+	$(window).scroll(function(){ 
+		if ($(window).scrollTop() >= 100) { 
 			$('.date-select').parent().addClass('fixed');
 		} else {
 			$('.date-select').parent().removeClass('fixed');
