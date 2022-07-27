@@ -2917,13 +2917,14 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .alarm-wrp .dtl-title-desc{
     margin-top:.5rem;
     font-size: .85rem;
-    max-height: .85rem;
+    max-height: 2.1rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* display: -webkit-box; */
-    /* -webkit-line-clamp: 2; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     padding-right: 4rem;
+    line-height: 1.15rem;
 }
 .alarm-wrp .dtl li span > .won{
     display: inline-block;
