@@ -1504,7 +1504,7 @@ position: relative;}
 }
 .coin-list .list-box{
     border: 1px solid #e4e4e4;
-    border-radius: 5px;
+    border-radius: .6rem;
     width: 30%;
     height: 5.25rem;
     display: inline-flex;
