@@ -334,9 +334,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .splash {display:block;width:100%;margin-bottom:5rem;}
 .splash img {width:4.625rem;}
 .connecting.none-page{flex-flow: column;}
-.connecting.none-page p{font-size: .875rem;line-height: 1.2rem;}
-.connecting.none-page .title{font-size: 1.2rem;}
-.connecting.none-page .title + p{margin-top: 1rem;}
+.connecting.none-page p{font-size: .875rem;line-height: 1.4rem;}
+.connecting.none-page p em{color:#0fbcde;display: block;font-size: .875rem;margin-bottom:.7rem;}
+.connecting.none-page p em.em-title{font-weight: 600;font-size: 1rem;margin-bottom: 0;}
+.connecting.none-page .title{font-size: 1.3rem;background: url(../images/common/ico-error.png) no-repeat center bottom 41px/auto 45%;padding-top: 9rem;}
+.connecting.none-page.chk-system .title{background-image: url(../images/common/ico-system.png);background-size: auto 42%;}
+.connecting.none-page .title + p{margin-top: 1rem;font-size: 1rem;color: #999;box-sizing: border-box;padding: 0 3rem;word-break: keep-all;}
 
 .card.home-summary .card-header {display:block;position:relative;height:9.6875rem;padding:1.25rem 0 1.875rem;margin-bottom:1.125rem;font-size:0.9375rem;font-weight:500;line-height: 1.625rem;border-bottom:1px solid #e4e4e4;border-radius: 0;}
 .home-summary .card-header strong {display:block;margin-bottom:0.375rem;font-size:1.25rem;font-weight:700;}
@@ -4010,7 +4013,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: space-between;
     width:20rem;
     height:20rem;
-    background-color: #ccc;
+    background-color: #fff;
     position: fixed;
     top: calc(50vh - 10rem);
     left:
@@ -4018,15 +4021,26 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     position: fixed;
     overflow: hidden;
     z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .pass-bn-wrp .pass-bn-area{
     height:calc(100% - 1.5rem);
+}
+.pass-bn-wrp .pass-bn-area [class*=swiper-button-],
+.pass-bn-wrp .pass-bn-area [class*=swiper-button-].swiper-button-disabled{
+    height: 100%;
+    top: 1rem;
+    width: 1.2rem;
 }
 .pass-bn-wrp .pass-bn-area .swiper-slide{
     width:20rem;
 }
 .pass-bn-wrp .pass-bn-area .swiper-slide img{
-    max-width: 100%;
+    /*
+    max-width: calc(20rem - 2rem);
+    margin-left: 1rem;
+    */
+    max-width: 20rem;
 }
 .pass-bn-wrp .pass-bn-area .swiper-pagination{
     margin-top: -2.5rem;
