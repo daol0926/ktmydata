@@ -2621,7 +2621,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .tab-wrp .tab-menu.tab-line.fixed{
     margin-top: 0;
     padding: 0;
-    top: 11.1rem;
+    top: 10.8rem;
 }
 .tab-wrp .tab-menu.tab-line>li{
     border:0;
@@ -3141,6 +3141,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .coinback-wrp .fixed .made-coin{
     width: 100%;
     margin: 0;
+    padding-top: 1rem;
 }
 .coinback-wrp .fixed .card-body{
     display: none;
