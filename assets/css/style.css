@@ -549,7 +549,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
 .made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.05rem;}
 .made-coin .save-all em{color:#0fbcdd;}
-.made-coin .save-weekly{font-size: 0.9rem;border-left:1px solid #ccc;padding-left:1rem;}
+.made-coin .save-weekly{font-size: 0.9rem;border-left:1px solid #ccc;padding-left:.5rem;letter-spacing: -.04rem;}
 
 .mission-list li + li {margin-left:.5rem;}
 .mission-list li .mission {width: 100%;/* height:8rem; */padding: 0.625rem 0.5rem;font-size:.75rem;color:#666;font-weight:500;border:1px solid #e4e4e4;border-radius: 0.25rem;/* text-align: center; */}
