@@ -355,7 +355,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .card.pattern .card-header {display:block;position:relative;padding:1.75rem 0 0;margin-bottom:1.125rem;font-size:0.875rem;font-weight:500;line-height: 1.625rem;border-radius: 0;}
 .pattern .card-header > div {height:5.4375rem;}
 .pattern .card-header .default{position:relative;}
-.pattern .card-header .default [class*=ico-mbti-]{top: -.25rem;width: 5.5rem;height: 5.5rem;}
+.pattern .card-header .default [class*=ico-mbti-]{top: -1rem;right: 0;}
 .pattern .card-header strong {display:block;padding-top:0.125rem;margin-bottom:0.125rem;font-size:1.125rem;font-weight:700;}
 .pattern .card-header .character {display:block;position:absolute;top:1rem;right:-0.3125rem;width:6.25rem;height:6.25rem;background-repeat:no-repeat;background-size:100% auto;}
 .pattern .card-header p {max-width:11.625rem;line-height:1.125rem;word-break: keep-all;}
@@ -3147,7 +3147,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: flex-end;
 }
 .coinback-wrp .payment-list-wrp .payment-list .payment-list-box .btn-area>span{
-    width: 85%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4067,23 +4067,41 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 
 /* mbti */
-[class*=ico-mbti-]{display:block;background:url(../images/icon/mbti/mbti-default.png) no-repeat center/auto 100%;width: 5.5rem;height: 5.5rem;position:absolute;right:0;top: -2rem;}
-.my-sch [class*=ico-mbti-]{top: 2rem;width: 4rem;height: 4rem;right: 1.5rem;}
+[class*=ICO-MBTI-],
+[class*=ico-mbti-]{display:block;background:url(../images/icon/mbti/mbti-default.png) no-repeat center/auto 100%;width: 6.5rem;height: 6.5rem;position:absolute;right: -1rem;top: -2rem;}
+.my-sch [class*=ICO-MBTI-],
+.my-sch [class*=ico-mbti-]{top: 1.5rem;width: 5rem;height: 5.2rem;right: 0.5rem;}
+.ICO-MBTI-ENFJ,
 .ico-mbti-enfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.ICO_MBTI-ENFP,
 .ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfp.png);}
+.ICO-MBTI-ENTJ,
 .ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-entj.png);}
+.ICO-MBTI-ENTP,
 .ico-mbti-entp{background-image:url(../images/icon/mbti/mbti-entp.png);}
+.ICO-MBTI-ESFJ,
 .ico-mbti-esfj{background-image:url(../images/icon/mbti/mbti-esfj.png);}
+.ICO-MBTI-ESFP,
 .ico-mbti-esfp{background-image:url(../images/icon/mbti/mbti-esfp.png);}
+.ICO-MBTI-ESTJ,
 .ico-mbti-estj{background-image:url(../images/icon/mbti/mbti-estj.png);}
+.ICO-MBTI-ESTP,
 .ico-mbti-estp{background-image:url(../images/icon/mbti/mbti-estp.png);}
+.ICO-MBTI-INFJ,
 .ico-mbti-infj{background-image:url(../images/icon/mbti/mbti-infj.png);}
+.ICO-MBTI-INFP,
 .ico-mbti-infp{background-image:url(../images/icon/mbti/mbti-infp.png);}
+.ICO-MBTI-INFJ,
 .ico-mbti-intj{background-image:url(../images/icon/mbti/mbti-intj.png);}
+.ICO-MBTI-INTP,
 .ico-mbti-intp{background-image:url(../images/icon/mbti/mbti-intp.png);}
+.ICO-MBTI-ISFJ,
 .ico-mbti-isfj{background-image:url(../images/icon/mbti/mbti-isfj.png);}
+.ICO-MBTI-ISFP,
 .ico-mbti-isfp{background-image:url(../images/icon/mbti/mbti-isfp.png);}
+.ICO-MBTI-ISTJ,
 .ico-mbti-istj{background-image:url(../images/icon/mbti/mbti-istj.png);}
+.ICO-MBTI-ISTP,
 .ico-mbti-istp{background-image:url(../images/icon/mbti/mbti-istp.png);}
 
 /* pass webview */
