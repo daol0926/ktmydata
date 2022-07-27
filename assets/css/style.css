@@ -1078,8 +1078,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     width: calc(100% - 1.5rem);
     margin-left: 0;
     background: #fff;
-    padding: 1.5rem 0.775rem !important;
-    margin: 1.5rem 0.775rem 0;
+    padding: 1rem 0.775rem !important;
+    margin: 1rem 0.775rem 0;
     }
 .select-month{
     font-size: 1.3rem;
@@ -1196,6 +1196,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
     display: flex;
     align-items: center;
     justify-content: center;
+    height:2.5rem;
 }
 .date-select .btn.btn-light-secondary.white .ico{
     margin-right:.5rem;
@@ -1358,7 +1359,7 @@ position: relative;}
     background-color: #fff;
     width: 100%;
     border-radius: .5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 .day-schedule .history .dtl li{
     flex-flow: column;
@@ -1367,7 +1368,7 @@ position: relative;}
     border-top: 0;
 }
 .day-schedule .history .dtl-inner li{
-    padding: 1.5rem 1rem 0 1rem !important;
+    padding: 1rem 1rem 0 1rem !important;
     color:#666;
 }
 .day-schedule .history .dtl-title{
@@ -1514,6 +1515,9 @@ position: relative;}
     margin: .5rem auto;
     width: 100%;
     border-radius: .5rem;
+}
+.my-sch .coin-list .btn{
+    margin: 1rem auto 0;
 }
 
 /* weekly-report */
@@ -3781,6 +3785,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .purpose-set-wrp.reset-purpose input[type=text]{
     display: inline-block;height:1.5rem;width: 5rem;margin-top:-.5rem;margin-bottom:-.5rem;border: 0;border-bottom: 1px solid #ccc;
+    outline:0;
 }
 
 /* join-before */
@@ -4062,6 +4067,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 /* mbti */
 [class*=ico-mbti-]{display:block;background:url(../images/icon/mbti/mbti-default.png) no-repeat center/auto 100%;width: 5.5rem;height: 5.5rem;position:absolute;right:0;top: -2rem;}
+.my-sch [class*=ico-mbti-]{top: 2rem;width: 4rem;height: 4rem;right: 1.5rem;}
 .ico-mbti-enfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
 .ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfp.png);}
 .ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-entj.png);}
