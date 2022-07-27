@@ -138,7 +138,7 @@ function buttonSwiper(obj){
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
         },
-		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+		allowTouchMove : true, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
         pagination: {
 			el: obj+" .swiper-pagination",
 		},
@@ -156,7 +156,7 @@ function autoSwiper(obj){
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
         },
-		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+		allowTouchMove : true, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
         pagination: {
 			el: obj+" .swiper-pagination",
 		},
@@ -175,7 +175,7 @@ function cateSwiper(obj, slidesView){
         	nextEl: ".swiper-button-next",
         	prevEl: ".swiper-button-prev",
         },
-		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+		allowTouchMove : true, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
     });
 }
 
@@ -649,7 +649,7 @@ function passInnerBanner() {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
-		allowTouchMove : false, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
+		allowTouchMove : true, // false-버튼으로만 슬라이드 조작이 가능, true시에는 주석처리 가능
         //pagination: {
         // el: ".swiper-pagination",
         //},
