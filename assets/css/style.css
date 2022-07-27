@@ -936,7 +936,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .history > ul > li:last-child:after {display:none;}
 .history > ul > li.budget-wrp{padding-left: 0;}
 .day-schedule .history > ul > li.budget-wrp::before{display:none;}
-.day-schedule .history > ul > li.budget-wrp::after{height: 2.45rem;bottom: -.185rem;/* background: red; */top: unset;}
+.day-schedule .history > ul > li.budget-wrp::after{height: 2.45rem;bottom: -.185rem;/* background: red; */top: -2px;}
 .history > ul > li.budget-wrp .budget{padding:0;margin-left: .25rem;}
 .history .date {display:block;margin-bottom:0.75rem;font-size:.75rem;color:#111;font-weight: 500;}
 .history .date.today{color:#5ccbdf;font-size:.875rem;}
