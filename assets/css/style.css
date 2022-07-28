@@ -141,6 +141,7 @@ main>.btn-area{margin-top: 0;}
 .certify-wrap .cert-payco em {background-position:-4.4375rem -3.125rem;}
 .certify-wrap .cert-sh em {background:url(../images/bank/ico_bank10.png) no-repeat center/auto 70% #efefef;}
 .certify-wrap .cert-naver em {background:url(../images/bank/ico_bank08.png) no-repeat center/auto 70% #efefef;}
+.certify-wrap .cert-pass em {background:url(../images/icon/ico-pass.png) no-repeat center/auto 70% #fff2f3;}
 
 article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .certify {display:flex;align-items: center;position:relative;width:100%;padding:1rem 1.5rem;font-size:0.875rem;border-top:1px solid #e4e4e4;}
@@ -355,7 +356,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .card.pattern .card-header {display:block;position:relative;padding:1.75rem 0 0;margin-bottom:1.125rem;font-size:0.875rem;font-weight:500;line-height: 1.625rem;border-radius: 0;}
 .pattern .card-header > div {height:5.4375rem;}
 .pattern .card-header .default{position:relative;}
-.pattern .card-header .default [class*=ico-mbti-]{top: -0.1rem;right: 0;width: 7rem;height: 8rem;transform: scale(1.4);}
+.pattern .card-header .default [class*=ico-mbti-]{top: -0.1rem;right: 0;width: 7.5rem;height: 8rem;transform: scale(1.4);background-position-y: -.3rem;}
 .pattern .card-header strong {display:block;padding-top:0.125rem;margin-bottom:0.125rem;font-size:1.125rem;font-weight:700;}
 .pattern .card-header .character {display:block;position:absolute;top:1rem;right:-0.3125rem;width:6.25rem;height:6.25rem;background-repeat:no-repeat;background-size:100% auto;}
 .pattern .card-header p {max-width:11.625rem;line-height:1.125rem;word-break: keep-all;}
@@ -433,6 +434,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .performance .card .header-title .assets-name i {background: none;}
 .performance .card-img {height:2.4375rem;}
 .performance .graph-wrap {position: relative;min-width:17rem;padding:0;text-align: center;}
+.performance .graph-wrap .msg{margin-left: -.5rem;}
 .performance .title {padding:1.875rem 0 0;margin-bottom:1rem;font-size:0.9375rem;text-align: left;}
 .performance .graph-wrap ul {display:flex;justify-content: space-between;margin-top:0.125rem;color:#666;font-size:.75rem;line-height: 1.3;}
 .performance .graph-wrap li {/* flex:1; */display:flex;/* justify-content: flex-end; */position: relative;padding-top:.625rem;text-align: right;}
@@ -445,7 +447,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 /*
 .msg-area:after {content:"";display:block;position: absolute;bottom:0;right:0;width: 5.5rem;height: 5.5rem;background: url(../images/icon/mbti/mbti-default.png) no-repeat center/contain;}
 */
-.msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;width: 14.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;margin-right: -1rem;}
+.msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;min-width:10rem;max-width: 14.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;margin-right: -1rem;}
 .msg:after {content:"";display:block;position:absolute;bottom: .5rem;right: -.2rem;width: 0.9rem;height:0.6875rem;background: url(../images/common/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;transform: rotate(-29deg);}
 
 .consum {display: inline-flex;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;align-items: center;justify-content: center;}
@@ -561,12 +563,12 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .mission-list li .mission {width: 100%;/* height:8rem; */padding: 0.625rem 0.5rem;font-size:.75rem;color:#666;font-weight:500;border:1px solid #e4e4e4;border-radius: 0.25rem;/* text-align: center; */}
 .mission-list li .mission strong {display:block;margin-top:0.3125rem;font-size: 0.7125rem;color:#111;font-weight:700;}
 .mission-list li .mission strong:after {font-weight:500;}
-.mission-list li .mission .img {display:flex;align-items: center;justify-content: center;width:4.8125rem;height:3.625rem;margin:0 auto;margin-bottom:.5rem;}
+.mission-list li .mission .img {display:flex;align-items: center;justify-content: center;max-width:4.8125rem;height:3.625rem;margin:0 auto;margin-bottom:.5rem;}
 .mission-list li .mission p{color:#111;line-height: 1.2;}
 .mission-list li .mission .title,
 .mission-list li .mission .per{display: block;font-size: .85rem;}
 .mission-list li .mission .title{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-.mission-list li .mission .kon{background: url(../images/icon/ico-coin.png) no-repeat left center/1rem 1rem;padding-left:1.3rem;color:#666;font-weight: normal;line-height: 1rem;margin-left: -0.3rem;}
+.mission-list li .mission .kon{background: url(../images/icon/ico-coin.png) no-repeat left center/1rem 1rem;padding-left:1.3rem;color:#666;font-weight: normal;line-height: 1rem;margin-left: -0.3rem;margin-right:-0.65rem;font-size: 0.65rem;}
 .mission-list li .mission .kon::after{content: '';}
 .tip .made-coin .btn {margin-top:1.125rem;}
 
@@ -712,6 +714,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 [class^='my-'] section header {margin-bottom: .625rem;padding-top: 0.625rem;}
 [class^='my-'] section h2 {font-size:1.25rem;font-weight:700;line-height: 1.75rem;margin-left: 1rem;}
 [class^='my-'] section h2 em {font-size:1.0625rem;font-weight:500;color:#888;}
+[class^='my-'] section h2.title-min{font-size:1rem;word-break: keep-all;line-height: 1.25rem;margin-bottom:1rem;}
+[class^='my-'] section h2.title-min em{color:#53cee6;}
 
 .card {padding:0 1.25rem;border-radius: 0.25rem;background-color:#fff;}
 .card + .card {margin-top:0.9375rem;}
@@ -759,6 +763,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .card .list li em {display:block;color:#888;}
 .card .list li dl {display:flex;flex-flow: row wrap;align-items: center;justify-content: space-between;}
 .card .list li dt {flex-basis: 50%;font-weight:400;}
+.card .list li dt [class*=ico-]{width:2.75rem;height:2.75rem;background-position: center;background-size: contain;position: absolute;left:0;}
+.card .list li dt [class*=code-ico-]{background-size: auto 55%;background-color: #f2f3f7;}
 .card .list li dd {width:50%;font-weight:500;text-align: right;}
 .card .list li .won:after {font-weight: 400;}
 .card .contract-list > ul > li strong {display:inline-block;}
@@ -3063,6 +3069,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     padding:1rem;
     margin-bottom:1rem;
 }
+.other-account-wrp .account-box .btn-area{
+    margin-top: 0;
+}
 .other-account-wrp .account-box .account-info{
     padding-right:2rem;
     word-break: keep-all;
@@ -3702,7 +3711,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .credit-list.card .card-body .label{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 .credit-list.card .card-body .label::after{
     content: '점';
@@ -4402,6 +4411,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
 .ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
 .ico-calender{background:url(../images/common/ico-calender.png) no-repeat center/auto 100%;width:.85rem;height:.85rem;}
+.ico-credit-boost{background-image:url(../images/icon/ico-credit-boost.png);}
+.ico-credit-loan{background-image:url(../images/icon/ico-credit-loan.png);}
+.ico-mobile{background-image:url(../images/icon/ico-mobile.png);background-color: #e3e1ff;border-radius: 50%;background-size: auto 72% !important;}
+.ico-inquiry-normal{background-image:url(../images/icon/ico-inquiry-normal.png);}
+
 .brand-select .select-list .ico.ico-plus, .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
 .select-list .ico.ico-plus{background-color:#fff;background-image: url(../images/common/ico-plus.png);}
 .my-coinback .ico-desc-info{
@@ -4879,6 +4893,79 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .my-event .event-list-wrp .event-list-num{
     font-size: 0.9rem;
+}
+
+
+/* credit boost */
+.credit-boost.card .list li dt{
+    flex-basis: 90%;
+}
+.credit-boost.card .list li dd{
+    flex-basis: 10%;
+    width:auto;
+}
+.credit-boost.card .card-body{
+    padding: .75rem 0;
+}
+.credit-boost.card .ico-arrow-right{
+    width: .4rem;
+    height: .5rem;
+}
+
+/* credit-boost-cert */
+.credit-boost-cert .certify-wrap article button{
+    position: relative;
+}
+.credit-boost-cert .certify-wrap article button:first-child{
+    border-top: 0;
+}
+.credit-boost-cert .certify-wrap article .ico-arrow-right{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    background:url(../images/common/ico-arrow-right.png) no-repeat center/auto 100%;
+    width: .4rem;
+    height: .5rem;
+}
+
+/* credit-up */
+.credit-up .title-min{
+    margin-left: 0;
+}
+.credit-up .credit-up-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    height:calc(100vh - 10rem);
+}
+.credit-up .ico-cert-up{
+    display: block;
+    margin:0 auto;
+    width: 95%;
+    max-width: 17rem;
+}
+.credit-up .ico-cert-up + .cert-point-up{
+    margin-top: 3.5rem;
+}
+.credit-up .cert-point-up{
+    background-color: #e2f7fc;
+    color:#53cee6;
+    padding:.5rem .7rem;
+    border-radius: .25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.credit-up .cert-point-up::before{
+    content: '';
+    display: inline-block;
+    background:url(../images/icon/ico-arrow-up-blue.png) no-repeat center/contain;
+    width:.8rem;
+    height:.4rem;
+    margin-right: .25rem;
 }
  
 @keyframes rotate_circle{
