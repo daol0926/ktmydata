@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+
+	<!-- status bar background-color replace -->
+	<!-- Chrome, Firefox, Opera -->
+	<meta content='#53cee6' name='theme-color'/>
+	<!-- Windows Phone -->
+	<meta content='#53cee6' name='msapplication-navbutton-color'/>
+	<!-- iOS Safari -->
+	<meta content='#53cee6' name='apple-mobile-web-app-status-bar-style'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-home">
+	<!-- header -->
+	<header id="header">
+		<h1><span class="logo">마이데이터</span></h1>
+		<!-- [D] 새로운 공지 시 dot 클래스 추가 -->
+		<button type="button" class="btn-notification dot"><span class="ico ico-bell">Notification</span></button>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<div class="container-header">
+			<nav class="lnb">
+				<ul>
+					<li class="current"><a href="HOM1_01_한눈에(홈).html">한눈에</a></li>
+					<li><a href="KON적립(코인백).html">KON 적립</a></li>
+					<li><a href="SCH1_생활비서_01.html">생활비서</a></li>
+					<li><a href="MYA1_02_자산관리.html">자산관리</a></li>
+				</ul>
+			</nav>
+		</div>
+		<section>
+			<div class="card pattern">
+				<div class="card-header mb0">
+					<!-- 소비 MBTI 유형분석 전 -->
+					<div class="default">
+						<strong>홍길*님,</strong>
+						<p>카드를 등록하면 나에 대한<br />재밌는 데이터를 알 수 있어요!</p> <!-- 20220713 UX Writing -->
+						<span class="ico-mbti-default"></span>
+					</div>
+					<!--// 소비 MBTI 유형분석 전 -->				
+				</div>
+			</div>
+
+			<div class="card schedule">
+				<div class="card-header">
+					<h3 class="header-title"><i class="ico ico-bell3"></i> Today 일정 (3건)</h3>
+					<!-- 20220720 btn-w-fixed 클래스 추가 -->
+					<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-w-fixed">내 자산 연결하기</button>
+					<!--//20220720 btn-w-fixed 클래스 추가 -->
+				</div>
+				<div class="card-body">
+					<!-- 일정 있을 때 -->
+					<div class="bg-box line-gray" style="display: none;">
+						<span class="ico code-ico-card"></span>
+						<div class="todo">
+							<em>신한카드 결제일이에요</em>
+							<p>결제금액: <span class="won">2,000,000</span></p>
+						</div>
+						<i class="ico ico-arrow-right"></i>
+					</div>
+					<!--// 일정 있을 때 -->
+					<!-- 등록된 일정이 없을 때 -->
+					<div class="bg-box nodata">
+						자산을 연결하시면<br />스케쥴을 관리해 드려요!
+					</div>
+					<!--// 등록된 일정이 없을 때 -->
+				</div>
+			</div>
+		</section>
+
+		<div class="image-banner pb1_5">
+			<div class="event-banner-top">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn2.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="./assets/images/banner/bn6.png" alt="KT 슈퍼플랜 초이스 가입하면 밀리의 서재 정기구독이 공짜라고?!"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<section class="coin-back made-coin">
+			<header>
+				<!--
+				<h2>이번주 나의 코인백</h2>
+				-->
+				<h2>이번주 나의 KON 적립</h2>
+			</header>
+
+			<div class="card pt1">
+				<div class="performance">
+					<p class="desc mt0 pb1">
+						<strong class="highlights pl0 pr0">쓰기만 해도 KON 적립!</strong> 마이데이터 제휴 브랜드<br />이용하시고 <strong class="highlights pl0 pr0">통신비 할인 받으세요!</strong>
+					</p>
+					<!--
+					<p class="desc mt0 pb1">
+						오늘까지 <mark>500,000</mark>명이 코인백으로 <br>
+						총 <mark class="won">52,000,000</mark>의 통신비를 할인받고 있어요!
+					</p>
+					-->
+					<div class="graph-wrap">
+						<div class="gauge-area">
+							<span class="gauge-bg">
+								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
+								<span class="consum consum-full" style="left: 87%;"><em>K</em>15,200</span>
+								<span class="gauge" style="width: 80%"></span>
+							</span>
+						</div>
+						<ul>
+							<li><span class="">3천</span></li>
+							<li><span class="">5천</span></li>
+							<li><span class="">1만</span></li>
+							<li><span class="">2만</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<!--
+				<div class="card-header">
+					<h3 class="header-title"><strong>총 <span class="kon">125,000</span> 적립</strong></h3>
+					<button type="button" class="btn btn-light-secondary btn-xs btn-round">KON 적립하기</button>
+				</div>
+				-->
+				
+				<div class="card-body">
+
+					<div class="bg-box type-white">
+						<ul class="flex around">
+							<li>
+								<span class="cate">브랜드</span>
+								<strong class="kon">5,000</strong>
+							</li>
+							<!--
+							<li>
+								<span class="cate">PASS</span>
+								<strong class="won">5,000</strong>
+							</li>
+							-->
+							<li>
+								<span class="cate">미션</span>
+								<strong class="kon">0</strong>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="mission-list">
+						<!-- 적립 브랜드 없을 때 -->
+						<div class="desc-empty">
+							<p class="text-center">
+								<!-- 20220727 UX Writing -->
+								<strong>이번 주 KON 적립 가능 브랜드가 없네요.</strong>
+								이벤트 참여를 통해서도 KON 적립이 가능해요.<br />이벤트 참여하러 고고!
+								<!--//20220727 UX Writing -->
+							</p>
+							<div class="btn-area text-center">
+								<button type="button" class="btn btn-light-secondary btn-sm btn-full">참여하기</button>
+							</div>
+						</div>
+						<!--//적립 브랜드 없을 때 -->
+						
+						<!-- 적립 브랜드 있을 때 -->
+						<div class="scroll-wrap" style="display: none;">
+							<div class="scroll-inner">
+								<ul>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand1.png" alt=""></span>
+											<p>
+												<span class="title">쿠팡</span>
+												<span class="per">50</span>
+												<strong class="kon">최대 3,000</strong>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand2.png" alt=""></span>
+											<p>
+												<span class="title">올리브영</span>
+												<span class="per">30</span>
+												<strong class="kon">최대 5,000</strong>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand3.png" alt=""></span>
+											<p>
+												<span class="title">스타벅스</span>
+												<span class="per">30</span>
+												<strong class="kon">최대 3,000</strong>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div> <!--//scroll-wrap -->
+
+						<div class="mt1" style="display: none;">
+							<button type="button" class="btn btn-light-secondary btn-sm btn-full">KON 적립하기</button>
+						</div>
+						<!--// 적립 브랜드 있을 때 -->
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="performance">
+			<header>
+				<!-- 20220718 UX Writing -->
+				<h2>카드 얼마나 썼나 보기</h2>
+				<!--//20220718 UX Writing -->
+			</header>
+
+			<div class="cardPerformance">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<!-- 실적1 -->
+						<div class="card Edition3">
+							<div class="card-header">
+								<h3 class="header-title">
+									<span class="assets-name"><i class="code-ico-card-min"></i></span>
+									<strong>KT 제휴카드를 연결해 보세요</strong>
+								</h3>
+							</div>
+							<div class="card-body">
+								<div class="graph-wrap half">
+									<h4 class="title">카드 실적별 통신비 할인</h4>
+									<div class="msg-area mb0">
+										<p class="msg">KT제휴 카드를 연결하시면 통신비<br />할인을 위한 카드 실적을 알려드려요!</p>
+										<!-- 20220720 mbti ico 추가 -->
+										<i class="ico-mbti-default"></i>
+										<!--//20220720 mbti ico 추가 -->
+									</div>
+									<h4 class="title"></h4>
+									<div class="gauge-area mt2_5">
+										<span class="gauge-bg">
+											<span class="consum bg-white txt-only">내 카드 사용 실적별 할인 금액을 확인해보세요</span>
+											<span class="gauge"></span>
+										</span>
+									</div>
+									<ul>
+										<li>50만원 사용시<br>최대 15,000원 할인</li>
+										<li>100만원 사용시<br>최대 25,000원 할인</li>
+									</ul>
+								</div>
+								
+								<div class="recent-history">
+									<div class="row">
+										<div class="img-area">
+											<img src="assets/images/icon/code-ico-card.png" class="code-ico-card" />
+										</div>
+										<div class="txt-area">
+											<strong>KT 현대카드M Edition3<br />(통신할인형2.0)</strong>
+											최대 20,000원 통신비 할인 제공
+										</div>
+									</div>
+									<button class="btn btn-light-secondary btn-sm btn-full">제휴 카드 연결하고 통신비 할인 받기</button>
+								</div>
+							</div>
+						</div>
+						<!--// 실적1 -->
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<section class="tip">
+			<div class="card made-coin wrp-full">
+				<div class="card-header">
+					<!-- 20220727 통신비 추가 할인 > 통신비 할인 으로 변경 -->
+					<h2>통신비 할인 꿀TIP ★</h2>
+					<button type="button" class="btn-more">더보기 &gt;</button>
+					<!--
+					<h3 class="header-title">
+						<strong>어디서 코인백 쏟아지는 소리<br> 들리지 않나요?</strong>
+					</h3>
+					-->
+				</div>
+				<div class="card-body pt0">
+					<div class="inner-iframe">
+						<iframe src="homeEvent.html" id="eventList" frameborder="0" scrolling="auto" allowfullscreen="1"></iframe>
+					</div>
+					<!--//add-dc-wrp -->
+					
+					<!--
+					<div class="graph-wrap">
+						<div class="gauge-area">
+							<span class="gauge-bg">
+								<span class="consum" style="left: 40%;">￠</span>
+								<span class="gauge" style="width: 40%"></span>
+							</span>
+						</div>
+						<ul>
+							<li>3,000원</li>
+							<li>5,000원</li>
+							<li>10,000원</li>
+							<li>20,000원</li>
+						</ul>
+					</div>
+					<p class="desc">
+						오늘까지 <mark>500,000</mark>명이 코인백으로 <br>
+						총 <mark class="won">52,000,000</mark>의 통신비를 할인받고 있어요!
+					</p>
+					
+					<div class="mission-list">
+						<div class="scroll-wrap">
+							<div class="scroll-inner">
+								<ul>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand4.png" alt=""></span>
+											<p>CU <strong class="p">최대 3,000</strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand5.png" alt=""></span>
+											<p>K뱅크 <strong class="p">최대 3,000</strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand6.png" alt=""></span>
+											<p>스타벅스 <strong class="p">최대 3,000</strong></p>
+										</div>
+									</li>
+									<li>
+										<div class="mission">
+											<span class="img"><img src="assets/images/home/img_brand1.png" alt=""></span>
+											<p>쿠팡 <strong class="p">최대 3,000</strong></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">미션 전체보기</button>
+					-->
+				</div>
+			</div>
+		</section>
+
+		<section class="top3">
+			<div class="card similar-property">
+				<div class="card-header">
+					<h3 class="header-title">
+						왜 나만 몰랐지?<br>
+						또래들이 쓰는 요금제는 따로 있네요!
+					</h3>
+					<div class="tag"><span>#30대</span> <span>#남성</span></div>
+				</div>
+				<div class="card-body">
+					<ol>
+						<li>
+							<span class="prod-name">슈퍼플랜 베이직</span>
+						</li>
+						<li>
+							<span class="prod-name">슈퍼플랜 스페셜</span>
+						</li>
+						<li>
+							<span class="prod-name">슈퍼플랜 베이직 초이스</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="card emptycard pb2_5">
+				<div class="bg-box nodata">
+					<p> <!--20220713 UX Writing -->
+						<em>나와 비슷하게 쓰는</em> 분들이<br />
+						<em>많이 이용하는 요금제</em>는 바로! 
+						<!--20220713 UX Writing -->
+					</p>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">자산 연결하고 요금제 추천 받기</button>
+				</div>
+			</div>
+
+			<div class="image-banner">
+				<a href="#"><img src="./assets/images/banner/bn6.png" alt="숨은 통신비, 아직도 안 찾으셨어요? 통신비 미환급금 조회해 보세요!"></a>
+			</div>
+		</section>
+
+		<section class="my-status">
+			<header>
+				<h2><strong>연결한 자산 현황</strong></h2>
+				<button type="button" class="btn-more">더보기 &gt;</button>
+			</header>
+
+			<div class="card my-assets">
+				<div class="card-header">
+					<div class="tit-area">
+						<h3 class="header-title">총 자산 금액</h3>
+						<!-- 20220712 strong 안에 <em> 코드 및 c-blue 클래스 추가 -->
+						<strong class="assets-total won"><em class="c-blue">1,123,000</em>원</strong>
+						<!--//20220712 strong 안에 <em> 코드 및 c-blue 클래스 추가 -->
+						<span class="hidden-txt">금액 숨기기</span>
+					</div>
+
+					<label class="btn-switch">
+						<input type="checkbox" class="checkbox">
+						<span class="slider"></span>
+					</label>
+				</div>
+				<!-- 20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
+				<div class="card-body swiper-container btnSwiper assets-list">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><strong class="gun">3</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="bank"></i><span class="label">은행</span><strong class="gun">4</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="securities"></i><span class="label">증권</span><strong class="gun">2</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="paymoney"></i><span class="label">페이머니</span><strong class="gun">1</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="capital"></i><span class="label">대출</span><strong class="gun">1</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="insurance"></i><span class="label">보험</span><strong class="gun">1</strong></span></li>
+						<li class="swiper-slide"><span class="assets-name"><i class="guarantee"></i><span class="label">보증보험</span><strong class="gun">1</strong></span></li>
+					</ul>	
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<div class="btn-area">
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">+ 자산 추가</button>
+				</div>
+				<!--//20220715 scroll-wrap삭제 및 card-body + btnSwiper로 수정 -->
+			</div>
+		</section>
+
+		<section class="my-status budget">
+			<header>
+				<h2><strong>목표 예산 보기</strong></h2> <!-- 20220713 UX Writing -->
+			</header>
+
+			<div class="card my-assets">
+				<!-- 예산설정 없음 -->
+				<div class="card-header assets-none">
+					<div class="tit-area">
+						<h3 class="header-title text-center">
+							<!-- 20220712 span 코드 추가 -->
+							<span><em>자산을 연결</em>하시면, 꼼꼼한 지출 관리를 돕는<br /><em>한달 목표예산을 설정</em>하실 수 있어요!</span>
+							<!--//20220712 span 코드 추가 -->
+						</h3>
+						<!-- 20220713 UX Writing -->
+						<!--
+						<h3 class="header-title"><span><em>한달 목표 예산을 짜볼까요?</em><br />지출을 꼼꼼하게 관리해 줄게요!</h3>
+						<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표 예산 설정하기</button>
+						<i class="ico"></i>
+						-->
+					</div>
+					<button type="button" class="btn btn-light-secondary btn-sm btn-full">카드 연결하고 목표 예산 설정하기</button>
+				</div>
+				<!--//예산설정 없음 -->
+
+
+				<!-- 예산설정 -->
+				<div class="card-header" style="display:none;">
+					<div class="tit-area">
+						<h3 class="header-title">이번 달 남은 예산이에요.</h3> <!-- 20220713 UX Writing -->
+						<strong class="won">1,300,000</strong>
+					</div>
+					<!-- 목표 예산 초과 시 -->
+					<div class="tit-area">
+						<h3 class="header-title"><span>목표 예산이 초과되었어요.<br />예산을 다시 설정해 보시는 건 어때요?</span></h3>
+						<div class="row">
+							<strong class="purpose-set-wrp won">
+								<span class="before-won">0</span>
+								<input type="text" class="form-control" />
+							</strong>
+							<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표예산 재설정</button>
+						</div>
+					</div>
+					<!--// 목표 예산 초과 시 -->
+				</div>
+				<div class="card-body" style="display:none;">
+
+					<div class="donut-chart">
+						<!-- [D] data에 값을 넣어주세요 -->
+						<div class="chart-area">
+							<div class="chart" data-data1="30" data-data2="70">
+								<span class="chart-txt">지난 주의<br>최대 지출 영역</span>
+								<span class="chart-cate">모빌리티</span>
+								<i class="ico ico-mobility"></i>
+							</div>
+						</div>
+						
+						<div class="index-area pl0">
+							<ul class="chart-index">
+								<li><em>총 목표 예산</em><strong class="won">2,500,000</strong></li>
+								<li><em>오늘까지의 지출</em><strong class="won">1,200,000</strong></li>
+								<li><em>하루 권장 예산</em><strong class="won">86,655</strong></li>
+							</ul>
+						</div>
+						
+					</div>
+
+					<!-- 목표 예산 초과 시 -->
+					<div class="donut-chart" style="display:none;">
+						<!-- [D] data에 값을 넣어주세요 -->
+						<div class="chart-area">
+							<div class="chart" data-data1="30" data-data2="70">
+								<span class="chart-txt">지난 주의<br>최대 지출 영역</span>
+								<span class="chart-cate">지출 내역이<br />없습니다</span>
+							</div>
+						</div>
+						
+						<div class="index-area pl0">
+							<ul class="chart-index">
+								<li><em>총 목표 예산</em><strong class="won">0</strong></li>
+								<li><em>오늘까지의 지출</em><strong class="won">11,200,000</strong></li>
+								<li><em>하루 권장 예산</em><strong class="won">0</strong></li>
+							</ul>
+						</div>
+						
+					</div>
+					<!--//목표 예산 초과 시 -->
+		
+					<div class="btn-area">
+						<button type="button" class="btn-txt">주간소비 리포트가 궁금하세요?</button>
+					</div>
+				</div>
+				<!--//예산설정 -->
+			</div>
+		</section>
+
+		<section>
+			<header class="flex between">
+				<h2><strong>이벤트</strong></h2>
+				<button type="button" class="btn-more">더보기 &gt;</button>
+			</header>
+
+			<div class="event-banner event-list-wrp">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="event-box">
+								<div class="event-txt col-7">
+									<div class="event-title">이벤트 제목</div>
+									<div class="event-desc">이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 </div>
+									<div class="event-date">YYYY.MM.DD ~ YYYY.MM.DD</div>
+								</div>
+								<div class="event-img col-5">
+									<img src="assets/images/common/ico-event-img1.png" />
+								</div>
+								<div class="event-end col-2">
+									<div class="btn btn-xs btn-light-secondary btn-round">종료</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-box bg-violet">
+								<div class="event-txt col-7">
+									<div class="event-title">이벤트 제목</div>
+									<div class="event-desc">이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 </div>
+									<div class="event-date">YYYY.MM.DD ~ YYYY.MM.DD</div>
+								</div>
+								<div class="event-img col-5">
+									<img src="assets/images/common/ico-event-img2.png" />
+								</div>
+								<div class="event-d-day col-2">
+									<div class="btn btn-xs btn-light-secondary btn-round">D-3</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-box bg-lightpurple">
+								<div class="event-txt col-7">
+									<div class="event-title">이벤트 제목</div>
+									<div class="event-desc">이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 이벤트 내용 최대 두줄까지 노출 </div>
+									<div class="event-date">YYYY.MM.DD ~ YYYY.MM.DD</div>
+								</div>
+								<div class="event-img col-5">
+									<img src="assets/images/common/ico-event-img3.png" />
+								</div>
+								<div class="event-d-day col-2">
+									<div class="btn btn-xs btn-light-secondary btn-round">D-3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<div class="aside-bottom-right">
+			<button type="button" class="btn-pass-home">PASS홈</button>
+		</div>
+
+		<!-- 공지팝업 -->		
+		<div class="pass-bn-wrp layerPopup">
+			<!-- Swiper -->
+			<!-- 20220715 swiper > btnSwiper로 교체 -->
+			<div class="pass-bn-area btnSwiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!--//Swiper -->
+			<!--//20220715 swiper > btnSwiper로 교체 -->
+			<div class="btn-area">
+				<span id="check" class="btnTodayHide">
+					<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
+					<label for="chkday">오늘 하루동안 보지 않기</label>
+				</span>
+				<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
+			</div>
+			<!--
+			<div class="btn-area">
+				<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
+				<button type="button" class="btn-more btnClose">닫기</button>
+			</div>
+			-->
+		</div>
+		<!--//공지팝업 -->
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//실적 Swiper
+	buttonSwiper('.cardPerformance');
+	//총 자산금액 하단 배너
+	buttonSwiper('.event-banner-top');
+	//총 자산카테고리 
+	cateSwiper('.assets-list', 3);
+	//이벤트 Swiper2
+	buttonSwiper('.event-banner');
+	//콘적립 Swiper
+	buttonSwiper('.save-brand-list');
+
+	//실적 달성 그래프1
+	perGraph('.Edition3 .gauge-area',400000,1000000);
+	//실적 달성 그래프2
+	perGraph('.Edition2 .gauge-area',500000,1000000);
+	//실적 달성 그래프3
+	perGraph('.Edition1 .gauge-area',1100000,1000000);
+	
+	
+	//결합하고 또 추가 할인 차트
+	chart2('.budget .chart');
+
+	//공지팝업
+	passInnerBanner();
+	layerPopupWrp();
+</script>
+</body>
+</html>

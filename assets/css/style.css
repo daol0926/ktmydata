@@ -353,6 +353,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .home-summary li strong {display:block;font-size:0.875rem;color:#444;font-weight:700;}
 .home-summary li strong:after {font-weight:500;}
 
+.my-home .card.pattern{min-height: 10.5rem;}
 .card.pattern .card-header {display:block;position:relative;padding:1.75rem 0 0;margin-bottom:1.125rem;font-size:0.875rem;font-weight:500;line-height: 1.625rem;border-radius: 0;}
 .pattern .card-header > div {height:5.4375rem;}
 .pattern .card-header .default{position:relative;}
