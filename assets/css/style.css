@@ -4423,6 +4423,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-credit-loan{background-image:url(../images/icon/ico-credit-loan.png);}
 .ico-mobile{background-image:url(../images/icon/ico-mobile.png);background-color: #e3e1ff;border-radius: 50%;background-size: auto 72% !important;}
 .ico-inquiry-normal{background-image:url(../images/icon/ico-inquiry-normal.png);}
+.ico-find{background-image: url(../images/icon/ico-find.png);background-size:contain;background-position:center;width:.9rem;height:.9rem;}
 
 .brand-select .select-list .ico.ico-plus, .ico-plus{background-image: url(../images/common/ico-plus-white.png);background-size: 60% auto;background-color: #53cee6;border-radius: 50%;width: 2.5rem;height: 2.5rem;margin-bottom: .5rem;background-position: center;}
 .select-list .ico.ico-plus{background-color:#fff;background-image: url(../images/common/ico-plus.png);}
@@ -5063,6 +5064,67 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .kt-membership .membership-desc .membership-benefit .ico-txt-normal{
     background-color:#8e8e8e;
+}
+
+/* my-bs-district */
+.my-bs-district .card-header{
+    border-bottom: 1px solid #e4e4e4;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+.my-bs-district .card-header .header-title{
+    font-weight: 500;
+}
+.my-bs-district .card-header .btn-area{
+    margin-top: 0;
+}
+.my-bs-district .card-header .header-title [class*=ico]{
+    margin-right:.25rem;
+}
+.my-bs-district strong + .district-list-wrp{
+    margin-top: .5rem;
+}
+.my-bs-district .district-list-wrp{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -.25rem;
+    margin-right: -.25rem;
+    justify-content: space-between;
+}
+.my-bs-district .district-list-wrp [class*=district-list-]{
+    color:#666;
+    background:no-repeat bottom right/auto 80% #e1f6fa;
+    width:48.5%;
+    border-radius: .25rem;
+    padding:.5rem;
+    min-height: 5rem;
+    font-size: .9rem;
+    margin:.25rem 0;
+}
+.my-bs-district .district-list-wrp .district-list-user{
+    background-image:url(../images/icon/ico-district-user.png);
+    background-size: auto 70%;
+    background-position: right 5px bottom 5px;
+    width:31.5%;
+}
+.my-bs-district .district-list-wrp .district-list-news{
+    background-image:url(../images/icon/ico-district-news.png);
+    width:31.5%;
+}
+.my-bs-district .district-list-wrp .district-list-location{
+    background-image:url(../images/icon/ico-district-location.png);
+    width:31.5%;
+}
+.my-bs-district .district-list-wrp .district-list-chart{
+    background-image:url(../images/icon/ico-district-chart.png);
+}
+.my-bs-district .district-list-wrp .district-list-cal{
+    background-image:url(../images/icon/ico-district-cal.png);
+}
+.my-bs-district .district-list-wrp [class*=district-list-] .li-title{
+    display: inline-flex;
+    width:3rem;
+    word-break: keep-all;
 }
  
 @keyframes rotate_circle{
