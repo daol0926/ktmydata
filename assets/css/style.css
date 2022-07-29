@@ -678,7 +678,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .event-banner dl {font-size:0.8125rem;font-weight:400;color:#fff;line-height:1.4;}
 .event-banner dt {margin-bottom:0.875rem;font-size:1.25rem;font-weight: 700;}
 .event-banner .event01 {height:10.625rem;background:#636b78 url(../images/home/bn_evt01.png) no-repeat right bottom / auto 10.625rem;border-radius: 0.25rem;}
-.event-banner.swiper-container{height:100%;display:flex;align-items: center;}
+.event-banner.swiper-container{height:100%;display:flex;align-items: center;margin-bottom: -1rem;}
 .event-banner.btnSwiper .swiper-button-next, 
 .event-banner.btnSwiper  .swiper-button-next.swiper-button-disabled{
     right:.5rem;
@@ -711,7 +711,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 [class^='my-'] .lnb a {padding:0.3125rem 0 0.125rem;font-size:0.875rem;font-weight: 500;color: #888;text-decoration: none;}
 [class^='my-'] .lnb .current a {color:#5ccadf;font-weight: 700;border-bottom:2px solid #5ccadf;}
 [class^='my-'] section {padding:0 0.775rem;}
-[class^='my-'] section + section {margin-top: 1.5rem;}
+[class^='my-'] section + section {margin-top: 0.75rem;}
 [class^='my-'] section header {margin-bottom: .625rem;padding-top: 0.625rem;}
 [class^='my-'] section h2 {font-size:1.25rem;font-weight:700;line-height: 1.75rem;margin-left: 1rem;}
 [class^='my-'] section h2 em {font-size:1.0625rem;font-weight:500;color:#888;}
