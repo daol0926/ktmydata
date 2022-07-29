@@ -4897,6 +4897,15 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 
 /* credit boost */
+.credit-boost.card .list li{
+    padding: 0;
+}
+.credit-boost.card .list li dt{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 1.125rem 0 1.125rem 3.25rem;
+}
 .credit-boost.card .list li dt{
     flex-basis: 90%;
 }
