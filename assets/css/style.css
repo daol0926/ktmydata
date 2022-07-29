@@ -386,7 +386,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-body .flex.column .home-info dd p.c-gray{color:#888;font-size: .875rem;font-weight: 500;}
 .pattern .card-body .flex.column .home-info + .home-info{padding-top: 1rem;}
 .pattern .card-body .flex.column .home-info:last-child{padding-bottom: 0;}
-.pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{margin-top: 4rem;}
+.pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{/* margin-top: 4rem; */}
 
 .description-wrp{display:flex;align-items:center;justify-content:center;margin:.35rem auto 0;padding: 0.25rem 0.5rem;position:relative;font-size: 0.7125rem;background-color: #f5f5f5;border-radius: 0.85rem;color:#666;letter-spacing: -0.045rem;}
 .description-wrp i{display:inline-flex;align-items: center;justify-content: center;border-radius: 50%;border: 1px solid #666;color:#666;width:.9rem;height:.9rem;margin-right:.25rem;}
@@ -4635,7 +4635,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-square{border-radius: 0;}
 
 .btn-xs.btn-w-fixed{width: 6.7rem;font-weight: 600;}
-.my-home .home-info .btn-xs.btn-w-fixed{transform: scale(1.1);position: absolute;right: 2.5rem;margin-top: 6.9rem;}
+.my-home .home-info .btn-xs.btn-w-fixed{transform: scale(1.1);position: absolute;right: 2.5rem;/* margin-top: 6.9rem; */}
 
 .btn-red{background-color:#fd0e0e;}
 .btn-light {background-color:#e4e4e4;color:#888;}
