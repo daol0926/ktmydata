@@ -1466,6 +1466,11 @@ position: relative;}
     flex-flow: column;
     justify-content: center;
 }
+.day-schedule .history .dtl .title-area .dtl-title{
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+}
 .day-schedule .history .dtl .ico-area + .title-area{
     flex:0 0 75%;
     max-width: calc(100% - 4rem);
