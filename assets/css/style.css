@@ -2901,8 +2901,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     /* background-size: 60% auto; */
     /* background-position: center; */
     background-image: none;
-    max-height: 2.5rem;
-    max-width: 3rem;
+    max-height: 2rem;
+    max-width: 2rem;
     image-rendering: -webkit-optimize-contrast;
 }
 .alarm-wrp .ico.ico-card-clip{
@@ -2957,7 +2957,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     max-width: 4rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .alarm-wrp .dtl .ico-area.trash-area{
     background-color: #f2f3f7;
