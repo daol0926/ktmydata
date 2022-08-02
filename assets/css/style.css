@@ -2890,12 +2890,15 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     line-height: 2.2rem;
     border-radius: .5rem;
 }
-.alarm-wrp .ico[class*=ico-]{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-size: 60% auto;
-    background-position: center;
+.alarm-wrp img.ico{
+    height: auto;
+    /* border-radius: 50%; */
+    /* background-size: 60% auto; */
+    /* background-position: center; */
+    background-image: none;
+    max-height: 2.5rem;
+    max-width: 3rem;
+    image-rendering: -webkit-optimize-contrast;
 }
 .alarm-wrp .ico.ico-card-clip{
     background-size: 100% auto;
@@ -2947,6 +2950,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .alarm-wrp .dtl .ico-area{
     flex:0 0 25%;
     max-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .alarm-wrp .dtl .ico-area.trash-area{
     background-color: #f2f3f7;

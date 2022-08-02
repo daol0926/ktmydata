@@ -559,7 +559,7 @@ function alarmTrash(){
 				$(this).addClass('trash-list');
 				$('.trash-list>div').addClass('reverse');
 				$('.trash-list .ico-area').addClass('trash-area');
-				$('.trash-area').find('i').remove();
+				$('.trash-area').find('img.ico').remove(); //20220802 프론트 출력방식 맞춰 수정
 				$('.trash-area').find('.ico-trash').show();
 				$(this).find('.ico-trash').click(function(){
 					$(this).parents().find('.trash-list').hide('2000');
