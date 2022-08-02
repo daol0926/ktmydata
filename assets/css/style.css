@@ -5026,15 +5026,16 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .kt-membership .membership-desc{
     position: relative;
     box-sizing: border-box;
-    padding:1rem 0 1rem 5rem;
+    padding: 1rem 0 1rem 7rem;
 }
 .kt-membership .membership-desc .membership-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5rem;
+    width: 7rem;
     height:100%;
-    position:absolute;
+    position:
+    absolute;
     left: 0;
     top: 0;
 }
@@ -5076,6 +5077,65 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .kt-membership .membership-desc .membership-benefit .ico-txt-normal{
     background-color:#8e8e8e;
+}
+section.membership-barcode,
+.membership-barcode{
+    background-color: #31506f;
+    padding: .775rem;
+    margin-bottom: 1.5rem;
+}
+.membership-barcode .membership-desc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom:.75rem;
+    color:#fff;
+    font-size: 0.75rem;
+}
+.membership-barcode .membership-desc .grade::after{
+    content: ' /';
+    margin-right:.5rem;
+}
+.membership-barcode .barcode-wrp{
+    position: relative;
+}
+.membership-barcode .barcode-wrp::after{
+    content: '+';
+    position: absolute;
+    right:1.15rem;
+    font-size: 1rem;
+    transform: scale(1.2);
+}
+.barcode-wrp{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding:.75rem 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.barcode-wrp .barcode-img{
+    width: 100%;
+    height:3rem;
+}
+.barcode-wrp .barcode-img + .barcode-num{
+    margin-top: .5rem;
+    font-size: .75rem;
+}
+.modal.barcode-pop{
+    padding-bottom: 1.5rem;
+}
+.modal.barcode-pop .barcode-wrp{
+    padding:0;
+    margin-top: 1.5rem;
+}
+.modal.barcode-pop .barcode-wrp .barcode-img{
+    height: auto;
+}
+.modal.barcode-pop .modal-header .title{
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* my-bs-district */
