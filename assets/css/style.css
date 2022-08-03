@@ -4171,11 +4171,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .pass-coinback-wrp [class*=ico-mbti-]{
     /* background-color: #ccc; */
     border-radius: 50%;
-    width: 3rem;
-    height: calc(100% - .95rem);
+    width: 5rem;
+    height: 5rem;
     /* background-image: none; */ /* 추후 아이콘 추가 */
     /* position: unset; */
-    top: .35rem;
+    top: -.5rem;
 }
 .pass-coinback-wrp ul{
     display: flex;
