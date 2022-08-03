@@ -459,7 +459,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .consum.txt-only::after{left: 40%;}
 .consum:after {content:"";display:block;position:absolute;bottom:-0.25rem;left:0.75rem;width:.5rem;height:0.3125rem;background: url(../images/common/icon_spr.png) no-repeat -3.1875rem -2.5625rem / 12.5rem auto;}
 .consum.stop {left:80% !important;}
-.consum em{display:inline-flex;align-items:center;justify-content:center;background: url(../images/common/ico-coin2.png) no-repeat center/contain;width:1.1rem;height:1.1rem;text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);/* margin-right: .3rem; */font-size: .65rem;padding-right: .1rem;font-size: 0;}
+.consum em{display:inline-flex;align-items:center;justify-content:center;background: url(../images/icon/ico-coin2.png) no-repeat center/contain;width:1.1rem;height:1.1rem;text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);/* margin-right: .3rem; */font-size: .65rem;padding-right: .1rem;font-size: 0;}
 .consum em.kon::after{content: 'K';}
 .consum[style="left: 82%;"]:after {left:1.2rem;}
 .consum[style="left: 83%;"]:after {left:1.3rem;}
@@ -4407,8 +4407,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .bg-box .ico-arrow-right{position: absolute;right: 1rem;transform: scale(.75);}
 
 .ico-car{background-image:url(../images/common/ico-car.png);}
-.ico-card{background-image:url(../images/common/ico-card.png);}
-.ico-card-clip{background-image:url(../images/common/ico-card-clip.png);}
+.ico-card{background-image:url(../images/icon/ico-card.png);}
+.ico-card-clip{background-image:url(../images/icon/ico-card-clip.png);}
 .ico-cash{background-image:url(../images/common/ico-cash.png);}
 .ico-cj-onstyle{background-image:url(../images/common/ico-cj-onstyle.png);}
 .ico-thehyundai{background-image:url(../images/common/ico-thehyundai.png);}
@@ -4417,17 +4417,17 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-sh{background-image:url(../images/common/ico-sh.png);}
 .ico-bc{background-image:url(../images/common/ico-bc.png);}
 .ico-hd-card{background-image:url(../images/common/ico-hd-card.png);}
-.ico-coin{background-image:url(../images/common/ico-coin.png);}
+.ico-coin{background-image:url(../images/icon/ico-coin.png);}
 .ico-google{background-image:url(../images/common/ico-google.png);width: 27.5px;height: 28px;background-position: center;background-size: contain;}
 .ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
 .ico-iphone-se{background-image:url(../images/common/ico-iphone-se.png);}
 .ico-kt{background-image:url(../images/common/ico-kt.png);}
-.ico-lego{background-image:url(../images/common/ico-lego.png);}
+.ico-lego{background-image:url(../images/icon/ico-lego.png);}
 .bill-ico-naver,
 .ico-naver{background-image:url(../images/icon/06_paymoney/E1AAHY0000.svg);}
 .ico-mobility{background-image:url(../images/common/ico-mobility.png);width: 3.5rem;height: 3rem;}
 .ico-musinsa{background-image:url(../images/common/ico-musinsa.png);}
-.ico-nike{background-image:url(../images/common/ico-nike.png);}
+.ico-nike{background-image:url(../images/icon/ico-nike.png);}
 .ico-save-arrow{background-image:url(../images/common/ico-btn-arrow3.png);background-color: #85d7e7;border-radius: 50%;width: 18px;height: 18px;background-size: auto 50%;display: inline-flex;background-repeat: no-repeat;background-position: center;}
 .ico-trash{background-image: url(../images/common/ico-trash.png);width: 2rem;height: 2.5rem;display: inline-block;background-repeat: no-repeat;background-position: center;background-size: auto 100%;}
 .ico-min-arrow{background-image:url(../images/common/ico-btn-arrow2.png);background-size: contain;width: .5rem;height: .5rem;background-position: center;}
