@@ -24,6 +24,11 @@
 	<!-- header -->
 	<header id="header">
 		<h1><span class="logo">마이데이터</span></h1>
+		<!-- 20220803 바코드 버튼 추가 -->
+		<button class="barcode-area btn-barcode" onclick="location.href = 'KT멤버십_기본.html' ">
+			<img src="assets/images/icon/ico-barcode.png" class="ico-barcode" />
+		</button>
+		<!--//20220803 바코드 버튼 추가 -->
 		<!-- [D] 새로운 공지 시 dot 클래스 추가 -->
 		<button type="button" class="btn-notification dot" onclick="location.href = '알림목록.html' "><span class="ico ico-bell">Notification</span></button>
 	</header>
@@ -134,7 +139,7 @@
 						<span>홍길*님을 위한</span>
 						<h3 class="header-title">KT 멤버십 맞춤 혜택</h3>
 					</div>
-					<div class="barcode-area">
+					<div class="barcode-area" onclick="location.href = 'KT멤버십_기본.html' ">
 						<img src="assets/images/icon/ico-barcode.png" class="ico-barcode" />
 					</div>
 				</div>
@@ -319,7 +324,7 @@
 						<!-- 적립 브랜드 있을 때 -->
 
 						<div class="mt1">
-							<button type="button" class="btn btn-light-secondary btn-sm btn-full">KON 적립하기</button>
+							<button type="button" class="btn btn-light-secondary btn-sm btn-full" onclick="location.href = 'KON적립(코인백).html' ">KON 적립하기</button>
 						</div>
 					</div>
 
