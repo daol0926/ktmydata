@@ -474,7 +474,7 @@ function scrollUI() {
 //KON 적립 스크롤 따라 show hide
 function konScroll() {
 	$(window).scroll(function(){ 
-		if ($(window).scrollTop() >= 100) { 
+		if ($(window).scrollTop() >= 50) { 
 			$('.made-coin').parent().addClass('fixed');
 			$('.tab-menu').addClass('fixed');
 		} else { 
