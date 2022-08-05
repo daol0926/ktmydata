@@ -626,6 +626,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .top3 .card .card-header .header-title {font-size:1.125rem;line-height:1.3125rem;}
 .top3 .card .card-body {padding-bottom:0;}
 .top3 .tag {width:100%;padding:.5rem 0 0;font-size: 0.85rem;color: #666;font-weight: 400;}
+.top3 .tag>span{color:#53cee6;border:1px solid #53cee6;border-radius: .75rem;padding:0 .5rem;margin-right:.25rem;}
 [class*='similar-'] ol {display:flex;justify-content: space-between;flex-flow: column;margin-top: -.5rem;}
 [class*='similar-'] li {flex:1;display:flex;/* flex-direction: column; *//* align-items: center; *//* justify-content: center; *//* flex-wrap: wrap; */position: relative;/* min-height:6.1875rem; *//* background-color:#f2f3f7; *//* border-radius: 0.25rem; */text-align: center;border-bottom: 1px solid #e4e4e4;padding:0 0 1rem;margin-bottom: 1rem;/* flex-flow: column; */}
 /*[class*='similar-'] li + li {margin-left:.5rem;}
@@ -4256,7 +4257,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     position: absolute;
     left: 0;
     top: calc(50% - 1.075rem);
-    background-size: auto 80%;
+    background-size: auto 68%;
     background-color: #fff;
     border-radius: 50%;
 }
