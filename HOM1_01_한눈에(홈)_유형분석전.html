@@ -179,7 +179,8 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum consum-full" style="left: 87%;"><em>K</em>15,200</span>
+								<!-- 20220805 금액쪽 <i class="num">금액</i>로 변경 -->
+								<span class="consum consum-full" style="left: 0%;"><em>K</em><i class="num">15,200</i></span>
 								<span class="gauge" style="width: 80%"></span>
 							</span>
 						</div>
@@ -344,17 +345,26 @@
 		</section>
 
 		<section class="tip">
+			<!-- 20220805 헤더 위치 변경 -->
+			<header class="row justify-content-between">
+				<h2>통신비 할인 꿀TIP ★</h2>
+				<button type="button" class="btn-more">더보기 &gt;</button>
+			</header>
+			<!--//20220805 헤더 위치 변경 -->
 			<div class="card made-coin wrp-full">
+				<!-- 기존 헤더 주석 처리 -->
+				<!--
 				<div class="card-header">
-					<!-- 20220727 통신비 추가 할인 > 통신비 할인 으로 변경 -->
+					-- 20220727 통신비 추가 할인 > 통신비 할인 으로 변경 --
 					<h2>통신비 할인 꿀TIP ★</h2>
 					<button type="button" class="btn-more">더보기 &gt;</button>
-					<!--
+					--
 					<h3 class="header-title">
 						<strong>어디서 코인백 쏟아지는 소리<br> 들리지 않나요?</strong>
 					</h3>
-					-->
+					--
 				</div>
+				-->
 				<div class="card-body pt0">
 					<div class="inner-iframe">
 						<iframe src="homeEvent.html" id="eventList" frameborder="0" scrolling="auto" allowfullscreen="1"></iframe>
@@ -526,75 +536,6 @@
 					<button type="button" class="btn btn-light-secondary btn-sm btn-full">카드 연결하고 목표 예산 설정하기</button>
 				</div>
 				<!--//예산설정 없음 -->
-
-
-				<!-- 예산설정 -->
-				<div class="card-header" style="display:none;">
-					<div class="tit-area">
-						<h3 class="header-title">이번 달 남은 예산이에요.</h3> <!-- 20220713 UX Writing -->
-						<strong class="won">1,300,000</strong>
-					</div>
-					<!-- 목표 예산 초과 시 -->
-					<div class="tit-area">
-						<h3 class="header-title"><span>목표 예산이 초과되었어요.<br />예산을 다시 설정해 보시는 건 어때요?</span></h3>
-						<div class="row">
-							<strong class="purpose-set-wrp won">
-								<span class="before-won">0</span>
-								<input type="text" class="form-control" />
-							</strong>
-							<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">목표예산 재설정</button>
-						</div>
-					</div>
-					<!--// 목표 예산 초과 시 -->
-				</div>
-				<div class="card-body" style="display:none;">
-
-					<div class="donut-chart">
-						<!-- [D] data에 값을 넣어주세요 -->
-						<div class="chart-area">
-							<div class="chart" data-data1="30" data-data2="70">
-								<span class="chart-txt">지난 주의<br>최대 지출 영역</span>
-								<span class="chart-cate">모빌리티</span>
-								<i class="ico ico-mobility"></i>
-							</div>
-						</div>
-						
-						<div class="index-area pl0">
-							<ul class="chart-index">
-								<li><em>총 목표 예산</em><strong class="won">2,500,000</strong></li>
-								<li><em>오늘까지의 지출</em><strong class="won">1,200,000</strong></li>
-								<li><em>하루 권장 예산</em><strong class="won">86,655</strong></li>
-							</ul>
-						</div>
-						
-					</div>
-
-					<!-- 목표 예산 초과 시 -->
-					<div class="donut-chart" style="display:none;">
-						<!-- [D] data에 값을 넣어주세요 -->
-						<div class="chart-area">
-							<div class="chart" data-data1="30" data-data2="70">
-								<span class="chart-txt">지난 주의<br>최대 지출 영역</span>
-								<span class="chart-cate">지출 내역이<br />없습니다</span>
-							</div>
-						</div>
-						
-						<div class="index-area pl0">
-							<ul class="chart-index">
-								<li><em>총 목표 예산</em><strong class="won">0</strong></li>
-								<li><em>오늘까지의 지출</em><strong class="won">11,200,000</strong></li>
-								<li><em>하루 권장 예산</em><strong class="won">0</strong></li>
-							</ul>
-						</div>
-						
-					</div>
-					<!--//목표 예산 초과 시 -->
-		
-					<div class="btn-area">
-						<button type="button" class="btn-txt">주간소비 리포트가 궁금하세요?</button>
-					</div>
-				</div>
-				<!--//예산설정 -->
 			</div>
 		</section>
 

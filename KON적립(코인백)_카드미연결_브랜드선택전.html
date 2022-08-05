@@ -136,7 +136,7 @@
 
 			<!-- tab cont -->
 			<div class="tab-cont focused pb5">
-				<div class="brand-save-wrp">
+				<div class="brand-save-wrp bg-white"> <!-- 20220805 등록카드 없을 때+브랜드 선택 전이면 bg-white 추가 -->
 					<!-- 등록 카드 없을 때 -->
 					<div class="brand-info empty desc-empty">
 						<p class="pb1">
@@ -413,13 +413,8 @@
 						</ul>
 					</div>
 				</div>	
-				<div class="btn-area fixed-bottom">
-					<!-- [D] 버튼 활성화 시 disabled 삭제 -->
-					<button type="button" class="btn btn-light-secondary btn-square">선택완료 (1/3)</button>
-					<!-- <button type="button" class="btn btn-light-secondary" disabled>다음</button> -->
-				</div>
 			</div> <!--//tab cont -->
-			<div class="tab-cont bg-white pa1">
+			<div class="tab-cont bg-white save-iframe-wrp"> <!-- 20220805 pa1 > save-iframe-wrp로 클래스 수정 -->
 				<div class="list-cate">
 					<div class="inner">
 						<!-- [D] 버튼 활성화 시 current 클래스 추가 -->
@@ -541,6 +536,10 @@
 			<!--//tab cont -->
 		</section>
 		<!--//tab -->
+
+		<div class="aside-bottom-right">
+			<button type="button" class="btn-pass-home">PASS홈</button>
+		</div>
 	</main>
 	<!-- //container -->
 </div>
