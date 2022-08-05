@@ -30,8 +30,8 @@
 				<!-- 20220803 swiper 삭제 -->
 				<div class="inner"> 
 					<ul>
-						<li><button type="button" data-target="#telecom" class="focused current"><em>통신</em></button></li>
-						<li><button type="button" data-target="#card" class="focused"><em>카드</em></button></li>
+						<li><button type="button" data-target="#card" class="focused current"><em>카드</em></button></li>
+						<li><button type="button" data-target="#telecom" class="focused"><em>통신</em></button></li>						
 						<li><button type="button" data-target="#bank" disabled><em>은행</em></button></li>
 						<li><button type="button" data-target="#insurance" class="focused"><em>보험</em></button></li>
 						<li><button type="button" data-target="#securities" class="focused"><em>증권</em></button></li>
@@ -43,34 +43,16 @@
 				<!--//20220721 swiper로 교체 -->
 				<!--//20220803 swiper 삭제 -->
 			</header>
-			<!-- 통신사 -->
-			<div class="assets" id="telecom">
-				<h2><strong>통신</strong></h2>
-				<article class="box">
-					<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>메르세데스벤츠파이낸셜서비스코리아</span>
-					<ul>
-						<li>
-							<div class="flex">
-								<dl><dt>휴대폰</dt><dd>010-90**-*829</dd></dl>
-								<div class="form-check label-hide">
-									<input type="checkbox" id="telecom01" checked><label for="telecom01"></label>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="flex">
-								<dl><dt>인터넷</dt><dd>14407468979</dd></dl>
-								<div class="form-check label-hide">
-									<input type="checkbox" id="telecom02" checked><label for="telecom02"></label>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</article>
-			</div>
 			<!-- 카드 -->
 			<div class="assets" id="card">
-				<h2><strong>카드</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>카드</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllCard"><label for="agreeAllCard">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-D1AAAF0000"></i>KB국민카드</span>
 					<ul>
@@ -78,7 +60,7 @@
 							<div class="flex">
 								<dl><dt>KB국민 스타카드</dt><dd>010-90**-*829</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card01" checked><label for="card01">457973******6046</label>
+									<input type="checkbox" id="card01" name="checkedAgreeCard" checked><label for="card01">457973******6046</label>
 								</div>
 							</div>
 						</li>
@@ -86,13 +68,13 @@
 							<div class="flex">
 								<strong>포인트</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card02" checked><label for="card02"></label>
+									<input type="checkbox" id="card02" name="checkedAgreeCard" checked><label for="card02"></label>
 								</div>
 							</div>
 							<div class="flex">
 								<strong>청구·결제·리볼빙</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card03" checked><label for="card03"></label>
+									<input type="checkbox" id="card03" name="checkedAgreeCard" checked><label for="card03"></label>
 								</div>
 							</div>
 						</li>
@@ -105,7 +87,7 @@
 							<div class="flex">
 								<dl><dt>우리카드</dt><dd>010-90**-*829</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card01" checked><label for="card01">457973******6046</label>
+									<input type="checkbox" id="card01" name="checkedAgreeCard" checked><label for="card01">457973******6046</label>
 								</div>
 							</div>
 						</li>
@@ -113,13 +95,45 @@
 							<div class="flex">
 								<strong>포인트</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card02" checked><label for="card02"></label>
+									<input type="checkbox" id="card02" name="checkedAgreeCard" checked><label for="card02"></label>
 								</div>
 							</div>
 							<div class="flex">
 								<strong>청구·결제·리볼빙</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="card03" checked><label for="card03"></label>
+									<input type="checkbox" id="card03" name="checkedAgreeCard" checked><label for="card03"></label>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</article>
+			</div>
+			<!-- 통신사 -->
+			<div class="assets" id="telecom">
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>통신</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllTel"><label for="agreeAllTel">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<article class="box">
+					<span class="bank-name"><i class="code-ico-F1AAAN0000"></i>메르세데스벤츠파이낸셜서비스코리아</span>
+					<ul>
+						<li>
+							<div class="flex">
+								<dl><dt>휴대폰</dt><dd>010-90**-*829</dd></dl>
+								<div class="form-check label-hide">
+									<input type="checkbox" id="telecom01" name="checkedAgreeTel" checked><label for="telecom01"></label>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="flex">
+								<dl><dt>인터넷</dt><dd>14407468979</dd></dl>
+								<div class="form-check label-hide">
+									<input type="checkbox" id="telecom02" name="checkedAgreeTel" checked><label for="telecom02"></label>
 								</div>
 							</div>
 						</li>
@@ -128,7 +142,14 @@
 			</div>
 			<!-- 은행 -->
 			<div class="assets" id="bank">
-				<h2><strong>은행</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>은행</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllBank"><label for="agreeAllBank">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-A1AAEQ0000"></i>IBK기업은행</span>
 					<ul>
@@ -136,7 +157,7 @@
 							<div class="flex">
 								<dl><dt>(수신) 저축예금</dt><dd>1234567890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank01" checked><label for="bank01"></label>
+									<input type="checkbox" id="bank01" name="checkedAgreeBank" checked><label for="bank01"></label>
 								</div>
 							</div>
 						</li>
@@ -144,7 +165,7 @@
 							<div class="flex">
 								<dl><dt>(대출) 대출</dt><dd>1234567890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank02" checked><label for="bank02"></label>
+									<input type="checkbox" id="bank02" name="checkedAgreeBank" checked><label for="bank02"></label>
 								</div>
 							</div>
 						</li>
@@ -157,7 +178,7 @@
 							<div class="flex">
 								<dl><dt>(수신) 저축예금</dt><dd>1234567890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank01" checked><label for="bank01"></label>
+									<input type="checkbox" id="bank01" name="checkedAgreeBank" checked><label for="bank01"></label>
 								</div>
 							</div>
 						</li>
@@ -165,7 +186,7 @@
 							<div class="flex">
 								<dl><dt>(대출) 대출</dt><dd>1234567890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank02" checked><label for="bank02"></label>
+									<input type="checkbox" id="bank02" name="checkedAgreeBank" checked><label for="bank02"></label>
 								</div>
 							</div>
 						</li>
@@ -174,7 +195,14 @@
 			</div>
 			<!-- 보험 -->
 			<div class="assets" id="insurance">
-				<h2><strong>보험</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>보험</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllins"><label for="agreeAllins">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-B2AAAL0000"></i>현대해상</span>
 					<ul>
@@ -182,7 +210,7 @@
 							<div class="flex">
 								<dl><dt>보험상품명</dt><dd>증 1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="insurance01" checked><label for="insurance01"></label>
+									<input type="checkbox" id="insurance01" name="checkedAgreeIns" checked><label for="insurance01"></label>
 								</div>
 							</div>
 						</li>
@@ -190,7 +218,7 @@
 							<div class="flex">
 								<dl><dt>보험상품명</dt><dd>증 1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="insurance02" checked><label for="insurance02"></label>
+									<input type="checkbox" id="insurance02" name="checkedAgreeIns" checked><label for="insurance02"></label>
 								</div>
 							</div>
 						</li>
@@ -199,7 +227,14 @@
 			</div>
 			<!-- 증권 -->
 			<div class="assets" id="securities">
-				<h2><strong>증권</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>증권</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllAsset"><label for="agreeAllAsset">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-C1AADC0000"></i>유안타증권</span>
 					<ul>
@@ -207,7 +242,7 @@
 							<div class="flex">
 								<dl><dt>증권계좌명</dt><dd>1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank01" checked><label for="bank01"></label>
+									<input type="checkbox" id="bank01" name="checkedAgreeAsset" checked><label for="bank01"></label>
 								</div>
 							</div>
 						</li>
@@ -215,7 +250,7 @@
 							<div class="flex">
 								<dl><dt>증권계좌명</dt><dd>1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="bank02" checked><label for="bank02"></label>
+									<input type="checkbox" id="bank02" name="checkedAgreeAsset" checked><label for="bank02"></label>
 								</div>
 							</div>
 						</li>
@@ -224,7 +259,14 @@
 			</div>
 			<!-- 페이머니 -->
 			<div class="assets" id="paymoney">
-				<h2><strong>페이머니</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>페이머니</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllPay"><label for="agreeAllPay">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-E1AAHY0000"></i>네이버페이</span>
 					<ul>
@@ -232,19 +274,19 @@
 							<div class="flex">
 								<strong>계정명(마스킹처리)</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="paymoney01" checked><label for="paymoney01"></label>
+									<input type="checkbox" id="paymoney01" name="checkedAgreePay" checked><label for="paymoney01"></label>
 								</div>
 							</div>
 							<div class="flex">
 								<strong>페이머니</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="paymoney02" checked><label for="paymoney02"></label>
+									<input type="checkbox" id="paymoney02" name="checkedAgreePay" checked><label for="paymoney02"></label>
 								</div>
 							</div>
 							<div class="flex">
 								<strong>네이버 포인트</strong>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="paymoney03" checked><label for="paymoney03"></label>
+									<input type="checkbox" id="paymoney03" name="checkedAgreePay" checked><label for="paymoney03"></label>
 								</div>
 							</div>
 						</li>
@@ -253,7 +295,14 @@
 			</div>
 			<!-- 캐피탈 -->
 			<div class="assets" id="capital">
-				<h2><strong>캐피탈</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>캐피탈</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllCap"><label for="agreeAllCap">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-D3AAMM0000"></i>우리금융캐피탈</span>
 					<ul>
@@ -261,7 +310,7 @@
 							<div class="flex">
 								<dl><dt>상품명</dt><dd>1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="capital01" checked><label for="capital01"></label>
+									<input type="checkbox" id="capital01" name="checkedAgreeCap" checked><label for="capital01"></label>
 								</div>
 							</div>
 						</li>
@@ -270,7 +319,14 @@
 			</div>
 			<!-- 보증보험 -->
 			<div class="assets" id="guarantee">
-				<h2><strong>보증보험</strong></h2>
+				<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+				<div class="assets-title-wrp">
+					<h2><strong>보증보험</strong></h2>
+					<div class="form-check check-all">
+						<input type="checkbox" id="agreeAllCert"><label for="agreeAllCert">전체동의</label>
+					</div>
+				</div>
+				<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
 				<article class="box">
 					<span class="bank-name"><i class="code-ico-B4AADL0000"></i>보증보험</span>
 					<ul>
@@ -278,7 +334,7 @@
 							<div class="flex">
 								<dl><dt>상품명</dt><dd>1234-567-0890</dd></dl>
 								<div class="form-check label-hide">
-									<input type="checkbox" id="guarantee01" checked><label for="guarantee01"></label>
+									<input type="checkbox" id="guarantee01" name="checkedAgreeCert" checked><label for="guarantee01"></label>
 								</div>
 							</div>
 						</li>
@@ -310,6 +366,15 @@
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
 	cateSticky();
+	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
+	agreeAll("#agreeAllTel",'checkedAgreeTel','btnNext','checked');
+	agreeAll("#agreeAllCard",'checkedAgreeCard','btnNext','checked');
+	agreeAll("#agreeAllBank",'checkedAgreeBank','btnNext','checked');
+	agreeAll("#agreeAllins",'checkedAgreeIns','btnNext','checked');
+	agreeAll("#agreeAllAsset",'checkedAgreeAsset','btnNext','checked');
+	agreeAll("#agreeAllPay",'checkedAgreePay','btnNext','checked');
+	agreeAll("#agreeAllCap",'checkedAgreeCap','btnNext','checked');
+	agreeAll("#agreeAllCert",'checkedAgreeCert','btnNext','checked');
 </script>
 </body>
 </html>

@@ -5273,6 +5273,19 @@ section.membership-barcode,
     width:3rem;
     word-break: keep-all;
 }
+
+.assets-title-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:0.9375rem;
+}
+.assets-title-wrp h2{
+    margin-bottom: 0;
+}
+.assets-title-wrp .form-check label{
+    margin-right:.25rem;
+}
  
 @keyframes rotate_circle{
 	100% {
