@@ -710,7 +710,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-coinback .container-header,
 .my-sch .container-header {position: sticky;top:3rem;left:0;z-index: 10;padding: 0 0.775rem 0;background-color: #fff;margin-bottom: .775rem;}
 .btn-notification {position: absolute;top:50%;right:1.5rem;transform: translateY(-50%);}
-.btn-notification.dot:after {content:"";display:block;position: absolute;top:-0.25rem;right:0;width:0.5625rem;height:0.5625rem;background-color:#53cee6;border:0.09375rem solid #fff;;border-radius: 100%;}
+.btn-notification.dot:after {content:"";display:block;position: absolute;top:-0.25rem;right:0;width:0.5625rem;height:0.5625rem;background-color:#fe4f4f;border:0.09375rem solid #fff;;border-radius: 100%;}
 .btn-barcode{position: absolute;right:3.5rem;}
 
 [class^='my-'] .lnb {height: 1.7rem;padding:0;}
@@ -3090,8 +3090,12 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     height: auto;
 }
 .alarm-wrp.alarm-none .none-msg{
-    margin-top:1rem;
+    display:flex;
+    align-items:flex-end;
     font-size: 1.1rem;
+    background:url(../images/icon/ico-notice.png) no-repeat center top;
+    background-size:auto 5rem;
+    height:7.5rem;
 }
 
 /* lnb-full */
@@ -4439,7 +4443,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
 .ico-asset {width:3.3125rem;height:3.3125rem;background-position:-3.3125rem -17.1875rem;}
 .ico-dc {width:3.3125rem;height:3.3125rem;background-position:-6.75rem -17.1875rem;}
-.ico-bell {width:1.125rem;height:1.1875rem;background-position:-6.0625rem -12.375rem;}
+.ico-bell {width:1.125rem;height:1.1875rem;background-image:url(../images/icon/ico-bell-main.png);background-position:center;background-size:contain;}
 .ico-bell2 {width:1.1875rem;height:1.0625rem;background-position:-6.0625rem -14rem;}
 .ico-bell3 {width:1rem;height:1rem;background-position:-7.4375rem -14rem;}
 .ico-card-w {width:2.375rem;height:2.375rem;background-position:-10.125rem -17.1875rem;}
@@ -4449,7 +4453,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
 .ico-month-next{transform: rotate(180deg);}
 .ico-notification{display: block;margin:0 auto 1rem;width: 5.5rem;height: 3.5rem;background:url(../images/common/ico-notification.png) no-repeat center/auto 100%;}
-.ico-savelist{background: url(../images/common/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
+.ico-savelist{background: url(../images/icon/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
 .fold .ico-fold,
 .ico-fold.fold{transform: rotate(-180deg);}
 .my-assetsDtl .tit button.fold-connect.fold,
@@ -4458,9 +4462,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .fold-connect .ico-fold{/* transform: rotate(-90deg); */width: 0.375rem;height: 0.5625rem;background-position: -.75rem -.5rem !important;}
 .ico-setting{background:url(../images/common/ico-setting.png) no-repeat center/auto 100%;width: 1rem;height: 1rem;}
 .ico-setting2{background:url(../images/common/ico-setting2.png) no-repeat center/auto 100%;width: 1.3rem;height: 1.3rem;}
-.btn-more .ico-setting{width:.7rem;height:.65rem;margin-right: .25rem;}
+.btn-more .ico-info,
+.btn-more .ico-setting{width: 1.4rem;height: 1.2rem;margin-right: .25rem;}
 .ico-arrow-right{background:url(../images/common/ico-arrow-right.png) no-repeat center/contain;width:.6rem;height:.8rem;}
 .bg-box .ico-arrow-right{position: absolute;right: 1rem;transform: scale(.75);}
+.ico-info{background:url(../images/icon/ico-info.png) no-repeat center/contain;width:1.2rem;height:1.2rem;}
 
 /* 미사용 아이콘 클래스 주석처리 */
 /* .ico-car{background-image:url(../images/icon/ico-car.png);} */
@@ -4500,7 +4506,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     background-position-x: 52%;
 }
 .ico-desc-info{display:inline-block;width:1rem;height:1rem;border-radius: 50%;border:1px solid #53cee6;background:url(../images/common/ico-desc-info.png) no-repeat center/auto 80%;margin-left:.25rem;;}
-.ico-desc-info.que{/* background-image: url(../images/common/ico-desc-info2.png); */}
+.ico-desc-info.que{background-image: url(../images/common/ico-desc-info2.png);}
 
 /* icon list - code ico */
 .code-ico{
@@ -4759,7 +4765,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 .accordion + .btn-txt-only{
     padding:1rem 0 1.5rem;
-    flex-flow:row wrap;
+    flex-flow:
+    row wrap;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4767,11 +4774,18 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 100%;
 }
 .accordion + .btn-txt-only>div{
-    width: 49%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .accordion + .btn-txt-only>div button{
-    height: 1rem;
+    height: 1.2rem;
     font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.7rem;
 }
 
 /* img rotate */
@@ -5295,6 +5309,13 @@ section.membership-barcode,
 }
 .assets-title-wrp .form-check label{
     margin-right:.25rem;
+}
+
+.aseets-none [class*=ico-mbti-],
+.aseets-none [class*=ICO-MBTI-]{
+    position:unset;
+    width:12rem;
+    height:12rem;
 }
  
 @keyframes rotate_circle{
