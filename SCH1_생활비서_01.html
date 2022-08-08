@@ -183,7 +183,7 @@
 										<div class="row purpose-set-wrp">
 											<strong class="won">
 												<span class="before-won">1,300,000</span>
-												<input type="text" class="form-control input-purpose" />
+												<input type="text" class="form-control input-purpose" onclick="modal('.purpose-modal')" readonly inputmode="none" /> <!-- 20220808 onclick 추가 -->
 											</strong>
 											<div class="btn-area">
 												<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">예산 바꾸기</button> <!-- 20220714 UX Writing -->
@@ -612,6 +612,25 @@
 </div>
 <!--//toast -->
 
+<!-- 20220808 예산입력 팝업 추가 -->
+<div class="modal alert purpose-modal">
+	<header class="modal-header">
+		<h2 class="title">목표 예산 입력</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		<div class="modal-msg">
+			<input type="text" class="form-control input-purpose" placeholder="0" />
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--//20220808 예산입력 팝업 추가 -->
 
 <!-- modal -->
 <!--
