@@ -32,54 +32,14 @@
 			</nav>
 		</div>
 		<section>
-			<!-- 브랜드 선택 전 -->
-			<div class="card made-coin" style="display: none;">	
-				<div class="row">
-					<strong class="row-title">브랜드를 선택해주세요!
-					</strong>
-				</div>	
-				<!--
-				<div class="row justify-content-between align-items-center">
-					<p>브랜드를 선택해주세요!</p>
-					<span class="desc-txt">(1KON = 1원)</span>
-				</div>
-				-->		
-				
-				<div class="card-header">
-					<div class="col-6 save-all">
-						<span class="kon">총 <em>0</em></span>
-					</div>
-					<div class="col-6 save-weekly">
-						<span class="kon">이번주 적립 0</span>
-					</div>
-				</div>
-				<div class="card-body">
-					<div class="graph-wrap">
-						<div class="gauge-area">
-							<span class="gauge-bg">
-								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum" style="left: 80%;"><em>K</em></span>
-								<span class="gauge" style="width: 80%"></span>
-							</span>
-						</div>
-						<ul>
-							<li><span class="">3천</span></li>
-							<li><span class="">5천</span></li>
-							<li><span class="">1만</span></li>
-						</ul>
-					</div>
-				</div>
-			</div> <!--//card made-coin -->
-			<!--//브랜드 선택 전 -->
-
 			<!-- 브랜드 선택 후 -->
 			<div class="card made-coin">
-				<div class="card-header pt0">
+				<div class="card-header">
 					<div class="col-6 save-all">
-						<span class="kon">총 5,200</span>
+						<span class="kon">총 <em>100,200</em></span>
 					</div>
 					<div class="col-6 save-weekly">
-						<span class="kon">이번주 적립 0</span>
+						<span class="kon">이번주 적립 10,000</span>
 					</div>
 				</div>
 				<div class="card-body">
@@ -87,7 +47,8 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum" style="left: 30%;"><em>K</em></span>
+								<!-- 20220825 <i class="num">추가 -->
+								<span class="consum" style="left: 0%;"><em>K</em></span>
 								<span class="gauge" style="width: 30%;"></span>
 								<!--
 								<span class="consum-msg">조금만 더 모아 보세요!</span>
@@ -136,29 +97,44 @@
 			<div class="tab-cont focused pb5">
 				<div class="brand-save-wrp">
 					<div class="brand-info brand-select-complete">
-						<div class="row align-items-center pb1 justify-content-center">
-							<span class="btn btn-xs btn-light-secondary btn-round">D - 7</span>
-							<span class="desc-txt ml_5">이번주 브랜드 선택 2022.03.13 까지</span>
+						<!-- 20220812 추가 -->
+						<div class="tit text-right">
+							<button type="button" class="btn-txt">내 카드 숨기기 <i class="ico ico-fold"></i></button>
 						</div>
-						<p>
-							<strong>마이데이터에서 카드 쓰고,<br />통신비를 아끼세요!</strong> <!-- 20220713 UX Writing -->
-							<span>마이데이터에 등록한 카드로<br />브랜드를 구매하면 KON이 쌓여요!</span> <!-- 20220713 UX Writing -->
-						</p>
-
-						<div class="row brand-info-list btnSwiper swiper-container arrow-bg">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="col-3">
-										<i class="ico code-ico-A1AAIP0000"></i>
-										<span>신한 카드</span>
+						<!--//20220812 추가 -->	
+						<!-- 20220812 brand-info 영역 div.dtl 안으로 전체 삽입 -->					
+						<div class="dtl">
+							<!-- <div class="row align-items-center pb1 justify-content-center">
+								<span class="btn btn-xs btn-light-secondary btn-round">D - 7</span>
+								<span class="desc-txt ml_5">이번주 브랜드 선택 2022.03.13 까지</span>
+							</div> -->
+							<p>
+								<strong>마이데이터에서 카드 쓰고,<br />통신비를 아끼세요!</strong> <!-- 20220713 UX Writing -->
+								<span>마이데이터에 등록한 카드로<br />브랜드를 구매하면 KON이 쌓여요!</span> <!-- 20220713 UX Writing -->
+							</p>
+	
+							<div class="row brand-info-list btnSwiper swiper-container arrow-bg">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="col-3">
+											<i class="ico code-ico-A1AAIP0000"></i>
+											<span>신한 카드</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!--// 20220812 brand-info 영역 div.dtl 안으로 전체 삽입 -->					
 					</div> <!--//brand-info -->
 
 					<div class="brand-select select-complete">
 						<h2 class="title text-center ml0">이번주 선택 브랜드</h2>
+						<!-- 20220812 d-day 추가 -->
+						<div class="row align-items-center pb1 justify-content-center">
+							<span class="btn btn-xs btn-light-secondary btn-round">D - 7</span>
+							<span class="desc-txt ml_5">이번주 브랜드 선택 2022.03.13 까지</span>
+						</div>
+						<!--//20220812 d-day 추가 -->
 						<p class="text-center">제휴사의 사정에 따라 KON 적립 혜택이 종료될 수 있어요.</p> <!-- 20220713 UX Writing -->
 						<div class="row select-wrp">
 							<div class="col-6 select-list form-check focused" onclick="modal('.brand-alert')" >

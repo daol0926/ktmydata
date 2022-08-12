@@ -262,7 +262,7 @@ function accordionAssets(){
 	});
 }
 function accordionKon(){
-	$(document).on('click','.accordion .tit button', function() {
+	$(document).on('click','.coinback-guide-btn.accordion .tit button', function() {
 		function slideDown(target) {
 			slideUp();
 			$(target).addClass('fold').parent().next().slideDown('fast');
@@ -270,10 +270,16 @@ function accordionKon(){
 			window.scrollTo({top: 0, behavior: 'smooth'});
 		}
 		function slideUp() {
-			$('.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
+			$('.coinback-guide-btn.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
 			$('.coinback-guide-btn').removeClass('view');
 		}
 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
+	});
+	//20220812 추가 
+	$('.brand-info .tit button').click(function(){
+		$(this).parents().find('.brand-info').toggleClass('hide');
+		$(this).toggleClass('fold');
+		$('.brand-info .dtl').slideToggle('fast');
 	});
 }
 
@@ -473,15 +479,20 @@ function scrollUI() {
 
 //KON 적립 스크롤 따라 show hide
 function konScroll() {
-	$(window).scroll(function(){ 
-		// if ($(window).scrollTop() >= 10) { 
-		if (Math.floor($(window).scrollTop()) > $(document).height() - $(document).height()) { 
-			$('.made-coin').parent().addClass('fixed');
+	var offsetHeader = $('.kon-header').offset();
+
+	$(window).scroll(function() 
+	{
+		if ( $(document).scrollTop() > offsetHeader.top ) 
+		{
+			$('.kon-header').addClass('fixed');
 			$('.tab-menu').addClass('fixed');
-		} else { 
-			$('.made-coin').parent().removeClass('fixed');
-			$('.tab-menu').removeClass('fixed');
 		} 
+		else 
+		{
+			$('.kon-header').removeClass('fixed');
+			$('.tab-menu').removeClass('fixed');
+		}
 	});
 }
 
