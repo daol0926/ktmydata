@@ -564,7 +564,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .made-coin .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
-.made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.05rem;}
+.made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.06rem;}
 .made-coin .save-all em{color:#0fbcdd;}
 .made-coin .save-weekly{font-size: 0.85rem;border-left:1px solid #ccc;padding-left:.5rem;letter-spacing: -.04rem;width: 48%;}
 
@@ -4836,8 +4836,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 .accordion + .btn-txt-only{
     padding:1rem 0 1.5rem;
-    flex-flow:
-    row wrap;
+    flex-flow:row;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5399,6 +5398,9 @@ section.membership-barcode,
     .data-month-selec .ui-datepicker-calendar tbody td span, 
     .data-month-selec .ui-datepicker-calendar tbody td a{
         padding: 1.62rem 0.31rem;
+    }
+    .accordion + .btn-txt-only>div button{
+        margin:0 1rem;
     }
 }
 
