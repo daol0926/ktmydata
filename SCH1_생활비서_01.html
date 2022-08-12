@@ -47,9 +47,9 @@
 					//data-month-selec -->
 					<div class="date-month-selec-wrp select-list-wrp hide">
 						<ul>
-							<li class="month-prev">2022.04</li>
-							<li class="focused">2022.05</li>
-							<li class="month-next">2022.06</li>
+							<li class="month-prev">2022년 04월</li>
+							<li class="focused">2022년 05월</li>
+							<li class="month-next">2022년 06월</li>
 						</ul>
 					</div> <!--//date-month-selec-wrp -->
 					<div class="picker-btn-area">
@@ -183,7 +183,7 @@
 										<div class="row purpose-set-wrp">
 											<strong class="won">
 												<span class="before-won">1,300,000</span>
-												<input type="text" class="form-control input-purpose" />
+												<input type="text" class="form-control input-purpose" onclick="modal('.purpose-modal')" readonly inputmode="none" /> <!-- 20220808 onclick 추가 -->
 											</strong>
 											<div class="btn-area">
 												<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-purpose">예산 바꾸기</button> <!-- 20220714 UX Writing -->
@@ -297,13 +297,13 @@
 											<div class="coin-list">
 												<div class="row align-items-center">
 													<a class="list-box">
-														<img src="assets/images/sch/ico-musinsa.png" class="ico-img" />
+														<img src="assets/images/icon/D1AAAH0000.svg" class="ico-img" />
 													</a>
 													<a class="list-box">
-														<img src="assets/images/sch/ico-hyundai.png" class="ico-img" />
+														<img src="assets/images/icon/A1AAAK0000.svg" class="ico-img" />
 													</a>
 													<a class="list-box">
-														<img src="assets/images/sch/ico-cj-onstyle.png" class="ico-img" />
+														<img src="assets/images/icon/C1AABR0000.svg" class="ico-img" />
 													</a>
 												</div>
 												<!-- 20220721 btn-sm btn-full 클래스 추가 -->
@@ -612,6 +612,25 @@
 </div>
 <!--//toast -->
 
+<!-- 20220808 예산입력 팝업 추가 -->
+<div class="modal alert purpose-modal">
+	<header class="modal-header">
+		<h2 class="title">목표 예산 입력</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		<div class="modal-msg">
+			<input type="text" class="form-control input-purpose" placeholder="0" />
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--//20220808 예산입력 팝업 추가 -->
 
 <!-- modal -->
 <!--

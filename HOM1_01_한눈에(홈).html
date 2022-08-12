@@ -231,7 +231,8 @@
 						<div class="gauge-area">
 							<span class="gauge-bg">
 								<!-- [D] consum의 left 값과 gauge의 width 값 동일하게 적용 -->
-								<span class="consum consum-full" style="left: 100%;"><em>K</em>15,200</span>
+								<!-- 20220805 금액쪽 <i class="num">금액</i>로 변경 -->
+								<span class="consum consum-full" style="left: 100%;"><em>K</em><i class="num">15,200</i></span>
 								<span class="gauge" style="width: 100%;"></span>
 							</span>
 						</div>
@@ -535,7 +536,6 @@
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-pagination"></div>
 						<div class="swiper-button-next"></div>
-						
 					</div>
 				</div>
 			</div>
@@ -548,11 +548,6 @@
 					<!-- 20220727 통신비 추가 할인 > 통신비 할인 으로 변경 -->
 					<h2>통신비 할인 꿀TIP ★</h2>
 					<button type="button" class="btn-more">더보기 &gt;</button>
-					<!--
-					<h3 class="header-title">
-						<strong>어디서 코인백 쏟아지는 소리<br> 들리지 않나요?</strong>
-					</h3>
-					-->
 				</div>
 				<div class="card-body pt0">
 					<div class="inner-iframe">
@@ -711,7 +706,7 @@
 		</section>
 
 		<section class="my-status">
-			<header>
+			<header class="flex between"> <!-- 20220805 flex between 추가 -->
 				<h2><strong>연결한 자산 현황</strong></h2>
 				<button type="button" class="btn-more" onclick="location.href = 'MYA1_02_자산관리.html'">더보기 &gt;</button>
 			</header>
@@ -761,7 +756,7 @@
 			<div class="card my-assets">
 
 				<!-- 예산설정 없음 -->
-				<div class="card-header assets-none" style="display: none;">
+				<div class="card-header assets-none">
 					<div class="tit-area">
 						<!-- 20220712 header-title > em 코드 추가 -->
 						<h3 class="header-title"><span><em>한달 목표 예산을 짜볼까요?</em><br />지출을 꼼꼼하게 관리해 줄게요!</span></h3> <!-- 20220713 UX Writing -->
@@ -775,7 +770,7 @@
 				<!--//예산설정 없음 -->
 
 
-				<div class="card-header">
+				<div class="card-header" style="display: none;">
 					<div class="tit-area">
 						<h3 class="header-title">이번 달 남은 예산이에요.</h3> <!-- 20220713 UX Writing -->
 						<strong class="won">1,300,000</strong>
