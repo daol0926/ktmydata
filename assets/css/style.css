@@ -3533,6 +3533,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     margin:0 1.5rem 1rem;
     display: block;
 }
+.event-list-wrp .event-box.event-empty{
+    background-color: transparent;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
 .event-list-wrp>ul>li{
     margin-bottom:1rem;
 }
