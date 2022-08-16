@@ -4295,9 +4295,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     position: relative;
     box-sizing: border-box;
 }
-.pass-coinback-wrp strong.title{
+/* .pass-coinback-wrp strong.title{
     margin-left: 0.5rem;
-}
+} */
 .pass-coinback-wrp [class*=ico-mbti-]{
     /* background-color: #ccc; */
     border-radius: 1rem;
