@@ -294,7 +294,7 @@ function cateSticky(){
 		});
     $(document).on('click','.cate-wrap button', function() {
 		var target = $(this).attr('data-target'),
-			offsetTop = $(target).offset().top - (headerGab+cateh);
+			offsetTop = $(target).offset().top - (headerGab+cateh) + 3;
 		menuItems.addClass("current").not(this).removeClass("current");
 		$('html, body').stop().animate({
 			scrollTop: offsetTop
