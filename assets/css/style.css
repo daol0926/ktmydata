@@ -552,7 +552,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 /* .card.made-coin .card-header{padding-top: 0;} */
 .made-coin .card-header .header-title {line-height:1.5rem;}
 .made-coin.card .card-body {position: relative;padding-top:1.8rem;}
-.made-coin .desc {width:100%;margin:1.25rem 0 2rem;font-size:1rem;color:#888;font-weight:400;line-height: 1.3125rem;}
+.made-coin .desc {width:100%;margin:1.25rem 0 2rem;font-size:1rem;color:#888;font-weight:400;line-height: 1.3125rem;letter-spacing: -0.029rem;}
 .made-coin .desc mark {font-weight:700;color:#111;background-color:#fff04d;display: inline-flex;}
 .made-coin .desc-txt{color:#888;font-size: .8rem;}
 /* .coin-graph {position: absolute;top:1rem;right:0;}
