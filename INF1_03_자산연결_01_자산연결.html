@@ -76,54 +76,20 @@
 					<!-- 20220803 swiper 삭제 -->
 					<div class="inner">
 						<ul>
-							<li><button type="button" data-target="#telecom" class="current"><em>통신</em></button></li>
-							<li><button type="button" data-target="#card"><em>카드</em></button></li>
+							<li><button type="button" data-target="#card" class="current"><em>카드</em></button></li>
 							<li><button type="button" data-target="#bank"><em>은행</em></button></li>
 							<li><button type="button" data-target="#insurance"><em>보험</em></button></li>
 							<li><button type="button" data-target="#securities"><em>증권</em></button></li>
 							<li><button type="button" data-target="#paymoney"><em>페이머니</em></button></li>
 							<li><button type="button" data-target="#capital"><em>캐피탈</em></button></li>
 							<li><button type="button" data-target="#guarantee"><em>보증보험</em></button></li>
+							<li><button type="button" data-target="#telecom"><em>통신</em></button></li>
 						</ul>
 					</div>
 					<!--//20220721 swiper로 교체 -->
 					<!--//20220803 swiper 삭제 -->
 				</header>
 				<!--//20220715 btnSwiper 추가 -->
-				<!-- 통신사 -->
-				<div class="assets" id="telecom">
-					<h2><strong>통신</strong> <button type="button" class="select-all" onclick="selectAll('telecom')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
-					<ul class="select-list">
-						<li>
-							<!-- [D] 사용자가 KT인 경우 label에 lock 클래스 추가 / 전체 input type="radio"에 disabled 추가 -->
-							<label for="tel01" class="check-label lock">
-								<input type="checkbox" id="tel01" disabled checked>
-								<span class="box">
-									<span class="code-ico-F1AAAN0000"></span>
-									<span class="text">KT</span>
-								</span>
-							</label>
-						</li>
-						<li>
-							<label for="tel02" class="check-label">
-								<input type="checkbox" id="tel02">
-								<span class="box">
-									<span class="code-ico-F1AAAU0000"></span>
-									<span class="text">SK</span>
-								</span>
-							</label>
-						</li>
-						<li>
-							<label for="tel03" class="check-label">
-								<input type="checkbox" id="tel03">
-								<span class="box">
-									<span class="code-ico-F1AAGI0000"></span>
-									<span class="text">U+</span>
-								</span>
-							</label>
-						</li>
-					</ul>
-				</div>
 				<!-- 카드 -->
 				<div class="assets" id="card">
 					<h2><strong>카드</strong> <button type="button" class="select-all" onclick="selectAll('card')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
@@ -250,6 +216,35 @@
 				<div class="assets" id="insurance">
 					<h2><strong>보험</strong> <button type="button" class="select-all" onclick="selectAll('insurance')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
 					<ul class="select-list">
+						<li>
+							<!-- [D] 추천 recomm 클래스 추가 -->
+							<label for="ins01" class="check-label recomm">
+								<input type="checkbox" id="ins01">
+								<span class="box">
+									<span class="code-ico-B1AAET0000"></span>
+									<span class="text">DB손해보험</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<!-- [D] 추천 recomm 클래스 추가 -->
+							<label for="ins02" class="check-label">
+								<input type="checkbox" id="ins02">
+								<span class="box">
+									<span class="code-ico-A1AAKA0000"></span>
+									<span class="text">우체국보험</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label for="ins03" class="check-label">
+								<input type="checkbox" id="ins03">
+								<span class="box">
+									<span class="code-ico-B2AAAL0000"></span>
+									<span class="text">현대해상</span>
+								</span>
+							</label>
+						</li>
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="ins01" class="check-label recomm">
@@ -526,8 +521,8 @@
 							</label>
 						</li>
 						<li>
-							<label for="guarantee01" class="check-label recomm">
-								<input type="checkbox" id="guarantee01">
+							<label for="guarantee06" class="check-label recomm">
+								<input type="checkbox" id="guarantee06">
 								<span class="box">
 									<span class="code-ico-A3AAKT0000"></span>
 									<span class="text">신한보증보험</span>
@@ -567,6 +562,40 @@
 								<span class="box">
 									<span class="code-ico-D3AAJX0000"></span>
 									<span class="text">메르세데스벤츠코리아</span>
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!-- 통신사 -->
+				<div class="assets" id="telecom">
+					<h2><strong>통신</strong> <button type="button" class="select-all" onclick="selectAll('telecom')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<ul class="select-list">
+						<li>
+							<!-- [D] 사용자가 KT인 경우 label에 lock 클래스 추가 / 전체 input type="radio"에 disabled 추가 -->
+							<label for="tel01" class="check-label lock">
+								<input type="checkbox" id="tel01" disabled checked>
+								<span class="box">
+									<span class="code-ico-F1AAAN0000"></span>
+									<span class="text">KT</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label for="tel02" class="check-label">
+								<input type="checkbox" id="tel02">
+								<span class="box">
+									<span class="code-ico-F1AAAU0000"></span>
+									<span class="text">SK</span>
+								</span>
+							</label>
+						</li>
+						<li>
+							<label for="tel03" class="check-label">
+								<input type="checkbox" id="tel03">
+								<span class="box">
+									<span class="code-ico-F1AAGI0000"></span>
+									<span class="text">U+</span>
 								</span>
 							</label>
 						</li>

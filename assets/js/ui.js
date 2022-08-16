@@ -323,17 +323,16 @@ function cateSticky(){
 		cur = cur[cur.length-1];
 		var id = cur && cur.length ? "#"+cur[0].id : firstAssets;
 		if (scrollTop >= $(document).height() - $(window).height()){
-			
 			menuItems.removeClass("current");
 			$("[data-target='"+lastAssets+"']").addClass("current");
 		} else {
 			menuItems.removeClass("current");
 			$("[data-target='"+id+"']").addClass("current");
-			// if (lastId !== id) {
-			// 	lastId = id;
-			// 	menuItems.removeClass("current");
-			// 	$("[data-target='#"+id+"']").addClass("current");
-			//}
+			if (lastId !== id) {
+				lastId = id;
+				menuItems.removeClass("current");
+				$("[data-target='#"+id+"']").addClass("current");
+			}
 		}
 	});
 }
