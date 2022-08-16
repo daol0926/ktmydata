@@ -4567,7 +4567,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
 .ico-month-next{transform: rotate(180deg);}
 .ico-notification{display: block;margin:0 auto 1rem;width: 5.5rem;height: 3.5rem;background:url(../images/common/ico-notification.png) no-repeat center/auto 100%;}
-.ico-savelist{background: url(../images/icon/ico-savelist.png) no-repeat center/auto 100%;width: 1.1rem;height: 1.1rem;position: absolute;right: 1rem;}
+.ico-savelist{background: url(../images/icon/ico-savelist.png) no-repeat center/contain;width: 1.3rem;height: 1.7rem;position: absolute;right: 1rem;}
 .fold .ico-fold,
 .ico-fold.fold{transform: rotate(-180deg);}
 .my-assetsDtl .tit button.fold-connect.fold,
