@@ -3925,6 +3925,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border: 0;
     border-bottom: 1px solid #ccc;
     max-width: 100%;
+    border-radius: 0;
+    outline: none;
 }
 
 /* join-before */
