@@ -332,8 +332,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .service-wrap.wrap-title.pb0 .cont{flex: unset;}
 
 .connecting {display:flex;flex-wrap: wrap;justify-content: center; align-items: center;align-content: center;position:fixed;top:0;left:0;right:0;bottom:0;line-height:1.375rem;font-size:1.125rem;text-align: center;}
-.splash {display:block;width:100%;margin-bottom:5rem;}
-.splash img {width:4.625rem;}
+.splash {display:block;width:100%;margin-bottom: 1rem;}
+.splash img {height: 10rem;}
 .connecting.none-page{flex-flow: column;}
 .connecting.none-page p{font-size: .875rem;line-height: 1.4rem;}
 .connecting.none-page p em{color:#0fbcde;display: block;font-size: .875rem;margin-bottom:.7rem;}
