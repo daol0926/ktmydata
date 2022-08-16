@@ -380,7 +380,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .pattern .card-body .flex.column .home-info dt{display: flex;align-items: center;justify-content: space-between;}
 .pattern .card-body .flex.column .home-info dt .title{display: inline-flex;align-items: center;font-weight: 500;}
-.pattern .card-body .flex.column .home-info dd{justify-content: flex-start;font-size: 0.875rem;line-height: 1.3rem;margin-bottom: .25rem;}
+.pattern .card-body .flex.column .home-info dd{justify-content: flex-start;font-size: 0.875rem;line-height: 1.3rem;margin-bottom: .25rem;position: relative;}
 .pattern .card-body .flex.column .home-info dd:last-child{margin-bottom: 0;}
 .pattern .card-body .flex.column .home-info dd .desc-title{margin-right:.25rem;}
 .pattern .card-body .flex.column .home-info dd .desc-title::after{content: ' :';}
@@ -390,7 +390,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-body .flex.column .home-info + .home-info{padding-top: 1rem;}
 .pattern .card-body .flex.column .home-info:last-child{padding-bottom: 0;}
 .pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{/* margin-top: 4rem; */}
-.pattern .card-body .flex.column .home-info.coin .btn-w-fixed{height:2rem;display: inline-flex;align-items: center;justify-content: center;margin-top: -0.35rem;font-size: .9rem;}
+.pattern .card-body .flex.column .home-info.coin .btn-w-fixed{height:2rem;display: inline-flex;align-items: center;justify-content: center;font-size: .9rem;}
 
 .description-wrp{display:flex;align-items:center;justify-content:center;margin:.35rem auto 0;padding: 0.25rem 0.5rem;position:relative;font-size: 0.8rem;background-color: #f5f5f5;border-radius: 0.85rem;color:#666;letter-spacing: -0.045rem;}
 .description-wrp i{display:inline-flex;align-items: center;justify-content: center;border-radius: 50%;border: 1px solid #666;color:#666;width:.9rem;height:.9rem;margin-right:.25rem;}
@@ -447,6 +447,11 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .performance .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .performance .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .performance .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
+.performance .card .gauge-bar{display:flex;align-items: center;justify-content: space-between;margin-top: 0.1rem;}
+.performance .card .gauge-bar .li-bar{border-right: 1px solid #aaa;height:0.375rem;}
+.performance .card .graph-wrap li{padding-top: 0;}
+.performance .card .graph-wrap li:before{display:none;}
+
 .msg-area {display:inline-block;position: relative;height: 3.5625rem;margin-bottom:3.625rem;padding:0 6.25rem 0 0;}
 .msg-area [class*=ico-mbti-]{width: 8rem;height: 8rem;top: -3.5rem;right: -2.3rem;}
 /*
@@ -3984,6 +3989,38 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     background-size:contain;
     background-image: url(../images/icon/mbti/mbti-default.png);
 }
+.assets-none .ICO-MBTI-ENFJ,
+.assets-none .ico-mbti-enfj{background-image:url(../images/icon/mbti/mbti-enfj.png);}
+.assets-none .ICO_MBTI-ENFP,
+.assets-none .ico-mbti-enfp{background-image:url(../images/icon/mbti/mbti-enfp.png);}
+.assets-none .ICO-MBTI-ENTJ,
+.assets-none .ico-mbti-entj{background-image:url(../images/icon/mbti/mbti-entj.png);}
+.assets-none .ICO-MBTI-ENTP,
+.assets-none .ico-mbti-entp{background-image:url(../images/icon/mbti/mbti-entp.png);}
+.assets-none .ICO-MBTI-ESFJ,
+.assets-none .ico-mbti-esfj{background-image:url(../images/icon/mbti/mbti-esfj.png);}
+.assets-none .ICO-MBTI-ESFP,
+.assets-none .ico-mbti-esfp{background-image:url(../images/icon/mbti/mbti-esfp.png);}
+.assets-none .ICO-MBTI-ESTJ,
+.assets-none .ico-mbti-estj{background-image:url(../images/icon/mbti/mbti-estj.png);}
+.assets-none .ICO-MBTI-ESTP,
+.assets-none .ico-mbti-estp{background-image:url(../images/icon/mbti/mbti-estp.png);}
+.assets-none .ICO-MBTI-INFJ,
+.assets-none .ico-mbti-infj{background-image:url(../images/icon/mbti/mbti-infj.png);}
+.assets-none .ICO-MBTI-INFP,
+.assets-none .ico-mbti-infp{background-image:url(../images/icon/mbti/mbti-infp.png);}
+.assets-none .ICO-MBTI-INFJ,
+.assets-none .ico-mbti-intj{background-image:url(../images/icon/mbti/mbti-intj.png);}
+.assets-none .ICO-MBTI-INTP,
+.assets-none .ico-mbti-intp{background-image:url(../images/icon/mbti/mbti-intp.png);}
+.assets-none .ICO-MBTI-ISFJ,
+.assets-none .ico-mbti-isfj{background-image:url(../images/icon/mbti/mbti-isfj.png);}
+.assets-none .ICO-MBTI-ISFP,
+.assets-none .ico-mbti-isfp{background-image:url(../images/icon/mbti/mbti-isfp.png);}
+.assets-none .ICO-MBTI-ISTJ,
+.assets-none .ico-mbti-istj{background-image:url(../images/icon/mbti/mbti-istj.png);}
+.assets-none .ICO-MBTI-ISTP,
+.assets-none .ico-mbti-istp{background-image:url(../images/icon/mbti/mbti-istp.png);}
 
 
 /* save-complete */
@@ -4247,16 +4284,19 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .pass-coinback-wrp{
     /*border:2px solid #ccc;*/
     border-radius: 1rem;
-    padding: .5rem 1rem .375rem 1rem;
+    padding: .5rem .75rem .375rem .75rem;
     background: #53cee6 url(../images/common/pass-bg.png) no-repeat center right/contain;
     color: #fff;
     box-shadow: .1rem .1rem .1rem rgba(0,0,0,0.05);
     box-sizing: border-box;
 }
 .pass-coinback-wrp>div{
-    padding: .14rem .25rem;
+    padding: 0.14rem 0;
     position: relative;
     box-sizing: border-box;
+}
+.pass-coinback-wrp strong.title{
+    margin-left: 0.5rem;
 }
 .pass-coinback-wrp [class*=ico-mbti-]{
     /* background-color: #ccc; */
@@ -4264,10 +4304,10 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 4rem;
     height: 4rem;
     /* background-image: none; */ /* 추후 아이콘 추가 */
-    /* position: unset; */
-    top: 0;
+    position: unset;
+    /* top: 0; */
     background-color: #7be0f4;
-    right: -.3rem;
+    /* right: -.3rem; */
     background-size: auto 90%;
 }
 .pass-coinback-wrp ul{
@@ -4275,7 +4315,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     flex-flow: row wrap;
     align-items: center;
     /* width: calc(100% - 2rem); */
-    margin: .5rem 0 0 -.5rem;
+    margin: .5rem 0 0 0;
 }
 .pass-coinback-wrp ul>li{
     width: fit-content;
@@ -4288,6 +4328,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .pass-coinback-wrp ul>li:last-child{
     border-right: 0;
+    padding-right: 0;
 }
 .pass-coinback-wrp ul>li .title{
     margin-bottom: .25rem;
@@ -4299,6 +4340,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     background-size: auto 68%;
     background-color: #fff;
     border-radius: 50%;
+}
+.pass-coinback-wrp>.row>[class*=col-]{
+    width:auto;
 }
 .pass-coinback-wrp .code-ico-coin2 + span,
 .pass-coinback-wrp .code-ico-coin2 + span + span{
@@ -4791,8 +4835,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 .my-home .btn-xs.btn-purpose,
 .my-home .btn-xs.btn-w-fixed,
-.btn-xs.btn-w-fixed{width: 7.37rem;height:1.375rem;line-height:1.375rem;font-weight: 600;font-size: 0.75625rem;}
-.my-home .home-info .btn-xs.btn-w-fixed{position: absolute;right: 2.5rem;/* margin-top: 6.9rem; */}
+.btn-xs.btn-w-fixed{width: 6rem;height: 2rem;line-height: 2rem;font-weight: 600;font-size: 0.75625rem;}
+.my-home .home-info .btn-xs.btn-w-fixed{position: absolute;right: 0;bottom: .5rem;}
 
 .btn-red{background-color:#fd0e0e;}
 .btn-light {background-color:#e4e4e4;color:#888;}
