@@ -3281,6 +3281,12 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .brand-info .btn-txt.fold::before{
     content: '내 카드 펼치기 ';
 }
+.brand-info .btn-txt .ico-fold{
+    transform: rotate(-180deg);
+}
+.brand-info .btn-txt.fold .ico-fold{
+    transform: rotate(0);
+}
 .brand-info .tit + .dtl{
     margin-top: 1rem;
 }
