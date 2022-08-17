@@ -420,7 +420,7 @@ function modalFullClose(that){
 function dimmedClose(){
 	//document 클릭 시 모달 창 닫기
 	$(document).on('click', function(e) {
-		console.log("dd")
+		// console.log("dd")
 		var $eTarget = $(e.target);
 		if ( $eTarget.hasClass('dimmed') ) {
 			modalClose('.modal.open');
