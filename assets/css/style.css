@@ -3275,6 +3275,12 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border-bottom: 1px solid #888;
     margin:1rem 1rem 0 0;
 }
+.brand-info .btn-txt::before{
+    content: '내 카드 숨기기 ';
+}
+.brand-info .btn-txt.fold::before{
+    content: '내 카드 펼치기 ';
+}
 .brand-info .tit + .dtl{
     margin-top: 1rem;
 }
