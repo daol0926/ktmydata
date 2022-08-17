@@ -316,7 +316,7 @@ function cateSticky(){
 			$(".cate-wrap .inner").removeClass("fixed").removeAttr("style");
 		}
 		var cur = scrollItems.map(function(){
-			if ($(this).offset().top - (headerGab+cateh) <= scrollTop)
+			if ($(this).offset().top - (headerGab+cateh) - 20 <= scrollTop)
 				return this;
 		});
 
