@@ -460,7 +460,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .msg {display:flex;align-items: center;justify-content: center;position: relative;z-index:1;min-width:10rem;max-width: 14.5rem;height: 3.5625rem;padding:0 .75rem;margin: 0 auto;margin-bottom:4rem;line-height: 1.3;font-size:0.6875rem;color:#666;border-radius: 2rem;background-color:#f5f5f5;text-align: left;margin-right: -1rem;}
 .msg:after {content:"";display:block;position:absolute;bottom: .5rem;right: -.2rem;width: 0.9rem;height:0.6875rem;background: url(../images/icon/icon_spr.png) no-repeat -3.4375rem -2.8125rem / 12.5rem auto;transform: rotate(-29deg);}
 
-.consum {display: inline-flex;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;align-items: center;justify-content: center;}
+.consum {display: inline-flex;position: absolute;top:-2.05rem;left:0;height: 1.625rem;padding:0 .625rem;margin-left:-1rem;font-size:.75rem;color:#fff;white-space: nowrap;border-radius: 1rem;background-color: #0fbcde;box-shadow: 0px 2px 0.3125rem 0px rgba(0, 0, 0, 0.18);text-align: center;align-items: center;justify-content: center;min-width:1.4rem;}
 .bg-white.consum{background-color: #fff;border:1px solid #0fbcde;color:#666;}
 .bg-white.consum::after{background-image: url(../images/common/bg-consum.png);background-size: contain;background-position: center;top: unset;bottom: -.35rem;}
 .consum.txt-only{margin-left: -30%;}
@@ -470,7 +470,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .consum em{display:inline-flex;align-items:center;justify-content:center;background: url(../images/icon/ico-coin.png) no-repeat center/contain;width:1.1rem;height:1.1rem;text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);font-size: .65rem;padding-right: .1rem;font-size: 0;}
 .consum em.kon::after{content: 'K';}
 .consum em + .num{margin-left: .3rem;}
-.consum[style="left: 0%;"] {margin-left:-1rem;}
+.consum[style="left: 0%;"] {margin-left:0;}
 .consum[style="left: 0%;"]:after{left:50%;}
 .consum[style="left: 82%;"]:after {left:1.2rem;}
 .consum[style="left: 83%;"]:after {left:1.3rem;}
