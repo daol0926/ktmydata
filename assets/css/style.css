@@ -4857,7 +4857,6 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-full {width:100%;font-size: 0.925rem;}
 .btn-square{border-radius: 0;}
 
-.my-home .btn-xs.btn-purpose,
 .my-home .btn-xs.btn-w-fixed,
 .btn-xs.btn-w-fixed{width: 6.18rem;height: 2rem;line-height: 2rem;font-weight: 600;font-size: 0.82rem;/* letter-spacing: -0.048rem; */}
 .my-home .home-info .btn-xs.btn-w-fixed{position: absolute;right: 0;bottom: 0.2rem;}
