@@ -634,7 +634,7 @@ function dataCalPic() {
 			maxDate:0,
 		})
 		.on( "change", function() {
-		from.datepicker( "option", "maxDate", getDate(this) );//시작일의 maxDate 지정
+		from.datepicker( "option", "minDate", getDate(this) );//시작일의 minDate 지정
 		});
  
     function getDate(element) {
