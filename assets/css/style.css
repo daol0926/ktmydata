@@ -389,8 +389,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-body .flex.column .home-info dd .won:after{content: ' 원';}
 .pattern .card-body .flex.column .home-info + .home-info{padding-top: 1rem;}
 .pattern .card-body .flex.column .home-info:last-child{padding-bottom: 0;}
-.pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{/* margin-top: 4rem; */}
-.pattern .card-body .flex.column .home-info.coin .btn-w-fixed{height:2rem;display: inline-flex;align-items: center;justify-content: center;/*font-size: .9rem;*/}
+.pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{/* margin-top: 4rem; */padding-right:0.5625rem;}
+.pattern .card-body .flex.column .home-info.coin .btn-w-fixed{height:2rem;display: inline-flex;align-items: center;justify-content: center;/*font-size: .9rem;*/padding-right: .9rem;}
 
 .description-wrp{display:flex;align-items:center;justify-content:center;margin:.35rem auto 0;padding: 0.25rem 0.5rem;position:relative;font-size: 0.8rem;background-color: #f5f5f5;border-radius: 0.85rem;color:#666;letter-spacing: -0.045rem;}
 .description-wrp i{display:inline-flex;align-items: center;justify-content: center;border-radius: 50%;border: 1px solid #666;color:#666;width:.9rem;height:.9rem;margin-right:.25rem;}
@@ -1044,7 +1044,9 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 
 .modal.open{pointer-events: fill !important;}
 .modal.alert {width:100%;max-width:18.375rem;top:50%;left:50%;transform: translate(-50%,-100vh);padding:0 0 1.375rem;border-radius: 0.75rem;transition: unset;will-change: unset;}
+.modal.alert.save-complete.open,
 .modal.alert.open {transform: translate(-50%,-50%);}
+.modal.alert.save-complete{transform: translate(-50%,100vh);background-color: transparent;}
 .modal.alert .modal-header {padding:1.75rem 1.25rem;}
 .modal.alert .modal-header .title {margin:0;font-size:1.1875rem;text-align: center;}
 .modal.alert .modal-container {padding:1.75rem 1.25rem;}
@@ -4028,31 +4030,37 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 /* save-complete */
 .modal.save-complete .title{
+    animation: kon_complete_text ease;
     line-height: 1.25;
     position: relative;
     width: fit-content;
     padding:0 0.5rem;
     margin: 0 auto 1rem !important;
     text-align: center;
+    color:#fff;
+    font-weight: 500;
+    opacity: 0;
 }
 .modal.save-complete .title .kon{
-    color:#169fb9;
+    color: #53cee6;
     font-size: 1.25rem;
     font-weight: 600;
 }
 .modal.save-complete .title .kon::after{
-    color:#111;
+    color:#fff;
+    font-weight: 500;
 }
 .modal.save-complete .title::before{
     content: '';
     display: inline-block;
-    width: 100%;
-    height: .8rem;
+    width: 90%;
+    height: .55rem;
     position: absolute;
-    top: 0.7rem;
-    background-color: #def4f9;
+    top: 0.95rem;
+    background-color: #53cee6;
     z-index: -1;
-    left: 0;
+    left: 5%;
+    opacity: .5;
 }
 .modal.save-complete .coin-icon{
     max-width: 65%;
@@ -4570,7 +4578,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-month-next {background:url(../images/common/ico-btn-arrow2.png) no-repeat center/contain;width: .5rem;height:.5rem;}
 .ico-month-next{transform: rotate(180deg);}
 .ico-notification{display: block;margin:0 auto 1rem;width: 5.5rem;height: 3.5rem;background:url(../images/common/ico-notification.png) no-repeat center/auto 100%;}
-.ico-savelist{background: url(../images/icon/ico-savelist.png) no-repeat center/contain;width: 1.3rem;height: 1.7rem;position: absolute;right: 2rem;}
+.ico-savelist{background: url(../images/icon/ico-savelist.png) no-repeat center/contain;width: 22.5px;height: 26px;position: absolute;right: 2rem;}
 .fold .ico-fold,
 .ico-fold.fold{transform: rotate(-180deg);}
 .my-assetsDtl .tit button.fold-connect.fold,
@@ -4597,7 +4605,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 /* .ico-sh{background-image:url(../images/common/ico-sh.png);} */
 .ico-hd-card{background-image:url(../images/common/ico-hd-card.png);}
 .ico-coin{background-image:url(../images/icon/ico-coin.png);}
-.home-info .ico-coin{width:1.5rem;height:1.5rem;background-position: center;background-size: contain;margin: 0;margin-right: 3px;}
+.home-info .ico-coin{width: 1.2rem;height: 1.2rem;background-position: center;background-size: contain;margin: 0;margin-right: 3px;}
 .category_sch_06,
 .ico-google{background-image:url(../images/icon/ico-google.png);width: 27.5px;height: 28px;background-size: contain;background-position: center;}
 .ico-hyundai{background-image:url(../images/common/ico-hyundai.png);}
@@ -4839,8 +4847,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 
 .my-home .btn-xs.btn-purpose,
 .my-home .btn-xs.btn-w-fixed,
-.btn-xs.btn-w-fixed{width: 6.4rem;height: 2rem;line-height: 2rem;font-weight: 600;font-size: 0.82rem;letter-spacing: -0.048rem;}
-.my-home .home-info .btn-xs.btn-w-fixed{position: absolute;right: 0;bottom: .45rem;}
+.btn-xs.btn-w-fixed{width: 6.18rem;height: 2rem;line-height: 2rem;font-weight: 600;font-size: 0.82rem;/* letter-spacing: -0.048rem; */}
+.my-home .home-info .btn-xs.btn-w-fixed{position: absolute;right: 0;bottom: 0.2rem;}
 
 .btn-red{background-color:#fd0e0e;}
 .btn-light {background-color:#e4e4e4;color:#888;}
@@ -5434,6 +5442,24 @@ section.membership-barcode,
     position:unset;
     width:12rem;
     height:12rem;
+}
+
+@keyframes kon_complete_text{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
  
 @keyframes rotate_circle{
