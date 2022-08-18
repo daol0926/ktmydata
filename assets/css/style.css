@@ -4914,18 +4914,19 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     width: 100%;
 }
 .accordion + .btn-txt-only>div{
-    width: fit-content;
+    width: 49%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .accordion + .btn-txt-only>div button{
     height: 1.2rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 1.7rem;
+    /* margin: 0 1.2rem; */
+    /* width: 100%; */
 }
 
 /* img rotate */
@@ -5527,7 +5528,7 @@ section.membership-barcode,
         padding: 1.62rem 0.31rem;
     }
     .accordion + .btn-txt-only>div button{
-        margin:0 1rem;
+        /* margin: 0; */
     }
 }
 
