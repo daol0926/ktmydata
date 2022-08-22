@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 외부 계정 연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>공공 납부내역 선택</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white">
+		<section class="credit-boost-select">
+			<header>
+				<h2 class="title-min">제출할 공공 납부내역 항목을<br />선택해 주세요.</h2>
+			</header>
+			<div class="card credit-boost credit-tax-list">
+				<div class="card-body">
+					<div class="list bill-list">
+						<ul>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-tax"></i>
+										<strong>국세청 소득금액 증명서</strong>
+									</dt>
+									<dd>
+										<div class="form-check check-all">
+											<input type="checkbox" id="agreeTax"><label for="agreeTax"></label>
+										</div>
+									</dd>
+								</dl>
+								<dl class="inner-dl">
+									<dt>제출할 소득증명서</dt>
+									<dd>
+										<div class="form-radio">
+											<input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">근로소득자용</label>
+										</div>
+									</dd>
+									<dd>
+										<div class="form-radio">
+											<input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">근로소득자용</label>
+										</div>
+									</dd>
+									<dd>
+										<div class="form-radio">
+											<input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">근로소득자용</label>
+										</div>
+									</dd>
+									<dd>
+										<div class="form-radio">
+											<input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">근로소득자용</label>
+										</div>
+									</dd>
+									<dd>
+										<div class="form-radio">
+											<input type="radio" name="radio01" id="formRadio1"><label for="formRadio1">근로소득자용</label>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-healthy"></i>
+										<strong>건강보험 납부증명서</strong>
+									</dt>
+									<dd>
+										<div class="form-check check-all">
+											<input type="checkbox" id="agreeHealthy"><label for="agreeHealthy"></label>
+										</div>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-nps"></i>
+										<strong>국민연금 납부증명서</strong>
+									</dt>
+									<dd>
+										<div class="form-check check-all">
+											<input type="checkbox" id="agreeNps"><label for="agreeNps"></label>
+										</div>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="notification-wrp">
+				<p class="notification-wrp-list">
+					국세청 소득금액증명서 제출은 08:00 ~ 22:00에 가능합니다.
+				</p>
+			</div>
+		</section>
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="modal('.credit-agree-box');">약관 동의</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<!-- modal bottom-sheet -->
+<div class="modal bottom-sheet credit-agree-box">
+	<header class="modal-header">
+		<h2 class="title">이용약관</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		
+		<div class="agree-area info-agreement">
+			<div class="form-check check-all">
+				<input type="checkbox" id="agreeAll"><label for="agreeAll">전체동의</label>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] 개인(신용)정보 수집·이용 동의</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] 개인(신용)정보 제3자 제공 동의</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] 본인 행정정보 제3자 제공 요구</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="location.href = 'MYA1_02_자산관리_납부내역전송_공공.html' ">동의하기</button>
+		</div>
+
+	</section>
+</div>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>

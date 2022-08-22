@@ -22,6 +22,7 @@
 		<div class="btn-area" style="display: flex;flex-flow:row wrap;justify-content: center;height:7rem;">
 			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
 			<button type="button" class="btn btn-light-secondary btn-sm loading-now-btn" style="margin:0 .5rem;">로딩중</button>
+			<button type="button" class="btn btn-light-secondary btn-sm loading-short-btn" style="margin:0 .5rem;">로딩중-안닫히게</button> <!-- 20220822 추가 -->
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.charge-none')" style="margin:0 .5rem;">선불카드 미제공</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.inspection')" style="margin:0 .5rem;">마이데이터 정기점검</button>
 			<button type="button" class="btn btn-light-secondary btn-sm dimmed-disabled" onclick="modal('.none-click')" style="margin:0 .5rem;">Dimmed none click</button>
@@ -42,6 +43,14 @@
 	</section>
 </div>
 <!--// confirm -->
+
+<!-- 20220822 추가 -->
+<div class="loading-short">
+	<section class="modal-container">
+		<img src="./assets/images/common/splash/ani_400.gif" alt="">
+	</section>
+</div>
+<!--//20220822 추가 -->
 
 <!-- alert -->
 <div class="modal alert charge-none">
@@ -256,6 +265,7 @@
 	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	dimmedNoneClick();
 	loadingPage();
+	loadingPageShort();
 </script>
 
 </body>

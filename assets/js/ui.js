@@ -393,6 +393,11 @@ function loadingPage(){
 		$('.loading-now').toggleClass('open');
 	});
 }
+function loadingPageShort(){
+	$('.loading-short-btn').click(function(){
+		$('.loading-short').addClass('show');
+	});
+}
 //모달 팝업 닫기
 function modalClose(that){
 	$("body").removeClass("dimmed");

@@ -64,6 +64,37 @@
 </div>
 <!-- //wrapper -->
 
+<!-- 20220822 신용 부스터 팝업 추가 -->
+<!-- modal bottom-sheet -->
+<div class="modal bottom-sheet connect-credit-boost">
+	<header class="modal-header">
+		<h2 class="title">신용 점수를 올리기 위해<br />아래 약관에 동의해 주세요
+		</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		
+		<div class="agree-area info-agreement">
+			<!--
+			<div class="form-check check-all">
+				<input type="checkbox" id="agreeAll"><label for="agreeAll">전체동의</label>
+			</div>
+			-->
+			<div class="form-check">
+				<input type="checkbox" name="checkedAgree" id="agree01"><label for="agree01">[필수] 상세정보 전송요구서</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="location.href = 'MYA1_02_자산관리_납부내역전송.html' ">동의하기</button>
+		</div>
+
+	</section>
+</div>
+<!--//20220822 신용 부스터 팝업 추가 -->
+
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>

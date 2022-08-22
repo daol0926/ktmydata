@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 외부 계정 연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>납부내역 제출 완료</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white">
+		<section class="credit-boost-complete">
+			<header>
+				<h2 class="title-min">정보 제출이 완료되었어요.<br />결과를 확인해 보세요.</h2>
+				<em class="date">제출일자: 2022.08.17</em>
+			</header>
+			<div class="card credit-boost line-gray">
+				<div class="card-body">
+					<div class="list bill-list">
+						<ul>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-tax"></i>
+										<strong>국세청 소득금액 증명서</strong>
+									</dt>
+									<dd>
+										<span class="credit-submit-complete"></span>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-healthy"></i>
+										<strong>건강보험 납부증명서</strong>
+									</dt>
+									<dd>
+										<span class="credit-submit-complete"></span>
+									</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>
+										<i class="code-ico-gov-nps"></i>
+										<strong>국민연금 납부증명서</strong>
+									</dt>
+									<dd>
+										<span class="credit-submit-fail"></span>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="notification-wrp">
+				<p class="notification-wrp-list">
+					기관과의 연결 오류로 인해 제출이 원활하지 않을 수 있습니다. 실패 시 잠시 후 다시 시도해 주세요.
+				</p>
+			</div>
+		</section>
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext">확인</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>
