@@ -172,7 +172,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .connect-container .card-select,
 .connect-container .check-label .box{width: 5.8rem;height: 5.8rem;}
 .connect-container .check-label .box{background-color: #fff;display: flex;flex-flow: column;align-items: center;justify-content: center;border: 3px solid transparent;padding-top: .8rem;}
-.connect-container .check-label .box .text{height: 1.8rem;font-weight: 400;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width:100%;}
+.connect-container .check-label .box .text{height: 1.8rem;font-weight: 400;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width:84%;}
 .connect-container .check-label input:checked + .box{border:3px solid #0fbcdd;}
 .connect-container .check-label input:checked + .box:after{background-color: #0fbcdd;border-radius: 50%;background-image: url(../images/common/ico-btn-arrow3.png);background-position: center;background-size: auto 43%;transform: rotate(90deg);width: 1.25rem;height: 1.25rem;}
 .connect-container .select-list li{width: 33.3333%;display: flex;align-items: center;justify-content: center;/* max-width:6.2rem; */}
