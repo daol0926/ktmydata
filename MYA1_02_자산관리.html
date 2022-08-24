@@ -626,7 +626,7 @@
 					<div class="my-assetsDtl">
 						<ul>
 							<li>
-								<div class="tit">
+								<div class="tit" onclick="modal('.credit-up-confirm')">
 									<span class="assets-name">
 										<i class="ico-txt-red">KCB</i>
 										<span class="label">940</span>
@@ -776,6 +776,28 @@
 	</section>
 </div>
 <!--//20220728 신용 부스터 팝업 추가 -->
+
+<!-- 20220824 신용 점수 올리기 팝업 추가 -->
+<!-- confirm -->
+<div class="modal confirm credit-up-confirm">
+	<section class="modal-container">
+		<div class="modal-msg pt2">
+			<p>
+				신용 점수 올리기는<br />통신 자산 연결 후 가능합니다.<br /><br />
+				<strong>통신 자산을 연결하시겠습니까?</strong>
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light btn-sm" onclick="modalClose(this)">취소</button>
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose(this)">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// confirm -->
+<!--// 20220824 신용 점수 올리기 팝업 추가 -->
 
 <!-- toast -->
 <div class="toast-wrp">

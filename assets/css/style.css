@@ -5210,6 +5210,17 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 [class*=credit-boost-] .card + .notification-wrp{
     margin-top: 1.25rem;
 }
+[class*=credit-boost-].assets-confirm .card{
+    padding:0;
+}
+[class*=credit-boost-].assets-confirm .card .box dt{
+    position:relative;
+    display:flex;
+    align-items: center;
+}
+[class*=credit-boost-].assets-confirm .card .box dt [class*=code-ico-]{
+    position:unset;
+}
 
 [class*=credit-boost-] .card .list li dl.inner-dl{
     flex-flow: column;
@@ -5218,6 +5229,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border-top: 1px solid #e4e4e4;
     margin-top: 1.25rem;
     padding-left: 1.25rem;
+}
+[class*=credit-boost-] .card .list li dl.inner-dl .hide{
+    display: none;
 }
 [class*=credit-boost-] .card .list li dl.inner-dl dt{
     padding:1.5rem 0 1rem;
@@ -5303,13 +5317,26 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    height:calc(100vh - 10rem);
+    height:calc(100vh - 7rem);
+    text-align: center;
 }
 .credit-up .ico-cert-up{
     display: block;
-    margin:0 auto;
+    margin: auto;
     width: 95%;
     max-width: 17rem;
+}
+.credit-up-txt{
+    font-weight:600;
+    line-height:1.35;
+    font-size: 1rem;
+}
+.credit-up-txt em{
+    color:#53cee6;
+    font-size: 1.5rem;
+}
+.credit-up .credit-up-txt + .ico-cert-up{
+    margin-top: 2rem;
 }
 .credit-up .ico-cert-up + .cert-point-up{
     margin-top: 3.5rem;

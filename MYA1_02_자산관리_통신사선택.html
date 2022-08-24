@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 외부 계정 연결</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper" class="my-datas">
+	<!-- header -->
+	<header id="header" class="title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>통신사 선택</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container" class="bg-white">
+		<section class="credit-boost-cert assets-confirm">
+			<header>
+				<h2 class="title-min">이용하시는 통신사를<br />선택해 주세요.</h2>
+			</header>
+			<div class="card">
+				<div class="card-body">
+					<!-- 통신사 -->
+					<div class="assets" id="telecom">
+						<!-- 20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+						<div class="assets-title-wrp">
+							<h2><strong>통신</strong></h2>
+							<div class="form-check check-all">
+								<input type="checkbox" id="agreeAllTel"><label for="agreeAllTel">전체 선택</label>
+							</div>
+						</div>
+						<!--//20220805 업권 타이틀 영역 전체 공통 적용 사항 -->
+						<article class="box">
+							<ul>
+								<li>
+									<div class="flex">
+										<dl>
+											<dt><i class="code-ico-F1AAAU0000"></i>KT</dt>
+										</dl>
+										<div class="form-check label-hide">
+											<input type="checkbox" id="telecom02" name="checkedAgreeTel"><label for="telecom02"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<dl>
+											<dt><i class="code-ico-F1AAAN00TB"></i>SKT</dt>
+										</dl>
+										<div class="form-check label-hide">
+											<input type="checkbox" id="telecom01" name="checkedAgreeTel"><label for="telecom01"></label>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="flex">
+										<dl>
+											<dt><i class="code-ico-F1AAGI0000"></i>LG U+</dt>
+										</dl>
+										<div class="form-check label-hide">
+											<input type="checkbox" id="telecom03" name="checkedAgreeTel"><label for="telecom03"></label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext">선택하기</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>
