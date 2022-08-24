@@ -172,7 +172,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .connect-container .card-select,
 .connect-container .check-label .box{width: 5.8rem;height: 5.8rem;}
 .connect-container .check-label .box{background-color: #fff;display: flex;flex-flow: column;align-items: center;justify-content: center;border: 3px solid transparent;padding-top: .8rem;}
-.connect-container .check-label .box .text{height: 1.8rem;font-weight: 400;}
+.connect-container .check-label .box .text{height: 1.8rem;font-weight: 400;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;width:100%;}
 .connect-container .check-label input:checked + .box{border:3px solid #0fbcdd;}
 .connect-container .check-label input:checked + .box:after{background-color: #0fbcdd;border-radius: 50%;background-image: url(../images/common/ico-btn-arrow3.png);background-position: center;background-size: auto 43%;transform: rotate(90deg);width: 1.25rem;height: 1.25rem;}
 .connect-container .select-list li{width: 33.3333%;display: flex;align-items: center;justify-content: center;/* max-width:6.2rem; */}
@@ -674,6 +674,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-status .card-header .won:after {font-weight: 500;}
 .my-status .assets-list .assets-name:before {display:block;margin: 0 auto;margin-bottom:0.5625rem;}
 .my-status .my-assets .assets-list li + li {margin-left:1.125rem;}
+.my-status .card-body.assets-list .gun::before{content:'(';}
+.my-status .card-body.assets-list .gun::after{content:')';}
 
 .my-schedule.card .card-body {padding-bottom:0;}
 .my-schedule li {height: 4.75rem;font-size:0.875rem;}
@@ -5652,7 +5654,7 @@ section.membership-barcode,
 
 @media only screen and (max-width:480px){
 	.assets ul {justify-content: space-around;}
-    .connect-container .assets ul{justify-content: flex-start;}
+    .connect-container .assets ul{justify-content: flex-start;max-width:22rem;margin:0 auto;}
 }	
 
 @media only screen and (min-width:412px){
