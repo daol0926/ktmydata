@@ -768,3 +768,14 @@ function dimmedNoneClick(){
 	//	setTimeout(bodyDimmed, 2000);
 	//}
 }
+
+/* kon적립완료 msg */
+function konSaveTxt() {
+	$('.complete-txt').hide();
+	$('.save-ing').click(function(){
+		setTimeout(function() {
+			// alert('ddddd');
+			$('.complete-txt').show('1800');
+		}, 2000);
+	});
+  }
