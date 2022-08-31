@@ -5613,7 +5613,7 @@ section.membership-barcode,
     justify-content: center;
     text-align: center;
     line-height:1.25;
-    height:100vh;
+    height:100%;
 }
 
 @keyframes kon_complete_text{
