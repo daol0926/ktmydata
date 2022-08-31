@@ -965,8 +965,8 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .list-cate button.current {background-color:#5ccadf;border-color:#5ccadf;color:#fff;font-weight: 700;}
 
 .dtl-history .list-cate button,
-.list-cate.min button{padding:0 1rem;max-width:4.875rem;font-size: 0.7312rem;}
-.list-cate.min button{max-width: max-content;}
+.list-cate.min button{padding:0 1rem;max-width:4.875rem;font-size: 0.7312rem;min-width:4.4rem;}
+.list-cate.min button{max-width: max-content;min-width:4.2rem;}
 .dtl-history .list-cate ul li{margin-right:0.5rem;}
 .list-cate.min ul li{margin-right:0.2rem;}
 .list-cate.min ul li:last-child{margin-right: 0;}
@@ -4499,7 +4499,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     justify-content: center;
     margin:0;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 0 0.5rem 0 1rem;
     max-width: 9rem;
 }
 .add-dc-wrp .dc-title{
@@ -4516,6 +4516,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding-right:1rem;
 }
 .add-dc-wrp .dc-desc{
     line-height: 1.2;
