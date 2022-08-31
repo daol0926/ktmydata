@@ -4170,6 +4170,9 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .tip .wrp-full.card{
     padding:0.775rem;
 }
+.tip .wrp-full.card .btn-more{
+    margin-right:1.25rem;
+}
 
 .donut-chart + .btn-area{
     margin-top: 0;
