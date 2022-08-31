@@ -177,6 +177,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .connect-container .check-label input:checked + .box:after{background-color: #0fbcdd;border-radius: 50%;background-image: url(../images/common/ico-btn-arrow3.png);background-position: center;background-size: auto 43%;transform: rotate(90deg);width: 1.25rem;height: 1.25rem;}
 .connect-container .select-list li{width: 33.3333%;display: flex;align-items: center;justify-content: center;/* max-width:6.2rem; */}
 .connect-container .select-list li label.recomm{padding-top: 0;}
+.connect-container .form-check input[type="checkbox"]:checked + label:before{background-color: #0fbcdd;}
 .connect-wrap > header {padding: 1.5rem;background-color: #f2f3f7;border-radius: .5rem;margin: .75rem;}
 .connect-wrap .description {margin-bottom: .975rem;font-size:0.875rem;/* color:#fff; */font-weight:500;line-height:1.25rem;text-align:center;}
 .connect-wrap .description strong {color:#111;}
@@ -4894,7 +4895,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-light:disabled {background-color:#e4e4e4;color:#111;cursor: default;}
 .btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
 .btn-light-gray{color:#111;background-color: #f2f3f7;}
-.btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */}
+.btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */min-height:1rem;}
 .btn-dark{background-color: #444;color:#fff;}
 .btn-gray{background-color: #bcbcbc;color:#fff;}
 

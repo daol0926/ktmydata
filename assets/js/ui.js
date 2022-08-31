@@ -341,7 +341,6 @@ function cateSticky(){
 function selectAll(data){
 	let assets = $("#"+data+" input"),checkLength = $("#"+data+" input").length,checkedLength = $("#"+data+" input:checked").length;
 	checkLength == checkedLength?assets.prop("checked", false):assets.prop("checked", true);
-	$('.select-all').toggleClass('chk-all');
 }
 
 //체크동의

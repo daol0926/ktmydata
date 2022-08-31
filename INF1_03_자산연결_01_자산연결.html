@@ -92,12 +92,19 @@
 				<!--//20220715 btnSwiper 추가 -->
 				<!-- 카드 -->
 				<div class="assets" id="card">
-					<h2><strong>카드</strong> <button type="button" class="select-all" onclick="selectAll('card')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>카드</strong> 
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllCard"><label for="agreeAllCard">전체 선택</label>
+						</div>
+						<!--//20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="card01" class="check-label recomm">
-								<input type="checkbox" id="card01" checked>
+								<input type="checkbox" id="card01" checked name="checkedAgreeCard"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-D1AAEX0000"></span>
 									<span class="text">신한카드</span>
@@ -106,7 +113,7 @@
 						</li>
 						<li>
 							<label for="card02" class="check-label">
-								<input type="checkbox" id="card02" checked>
+								<input type="checkbox" id="card02" checked name="checkedAgreeCard">
 								<span class="box">
 									<span class="code-ico-D1AAAH0000"></span>
 									<span class="text">우리카드</span>
@@ -115,7 +122,7 @@
 						</li>
 						<li>
 							<label for="card03" class="check-label">
-								<input type="checkbox" id="card03" checked>
+								<input type="checkbox" id="card03" checked name="checkedAgreeCard">
 								<span class="box">
 									<span class="code-ico-D1AAAF0000"></span>
 									<span class="text">국민카드</span>
@@ -124,7 +131,7 @@
 						</li>
 						<li>
 							<label for="card04" class="check-label">
-								<input type="checkbox" id="bank04">
+								<input type="checkbox" id="bank04" name="checkedAgreeCard">
 								<span class="box">
 									<span class="code-ico-D1AABJ0000"></span>
 									<span class="text">하나카드</span>
@@ -133,7 +140,7 @@
 						</li>
 						<li>
 							<label for="bank05" class="check-label">
-								<input type="checkbox" id="bank05">
+								<input type="checkbox" id="bank05" name="checkedAgreeCard">
 								<span class="box">
 									<span class="code-ico-D1AAEQ0000"></span>
 									<span class="text">기업카드</span>
@@ -142,7 +149,7 @@
 						</li>
 						<li>
 							<label for="bank06" class="check-label">
-								<input type="checkbox" id="bank06">
+								<input type="checkbox" id="bank06" name="checkedAgreeCard">
 								<span class="box">
 									<span class="code-ico-D1AABG0000"></span>
 									<span class="text">농협카드</span>
@@ -153,12 +160,20 @@
 				</div>
 				<!-- 은행 -->
 				<div class="assets" id="bank">
-					<h2><strong>은행</strong> <button type="button" class="select-all" onclick="selectAll('bank')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>은행</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('bank')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllBank"><label for="agreeAllBank">전체 선택</label>
+						</div>
+						<!--// 20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="bank01" class="check-label recomm">
-								<input type="checkbox" id="bank01" checked>
+								<input type="checkbox" id="bank06" checked name="checkedAgreeBank"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-A1AAJB0000"></span>
 									<span class="text">K뱅크</span>
@@ -167,7 +182,7 @@
 						</li>
 						<li>
 							<label for="bank01" class="check-label recomm">
-								<input type="checkbox" id="bank01">
+								<input type="checkbox" id="bank01" name="checkedAgreeBank">
 								<span class="box">
 									<span class="code-ico-A3AAKT0000"></span>
 									<span class="text">신한은행</span>
@@ -176,7 +191,7 @@
 						</li>
 						<li>
 							<label for="bank02" class="check-label">
-								<input type="checkbox" id="bank02">
+								<input type="checkbox" id="bank02" name="checkedAgreeBank">
 								<span class="box">
 									<span class="code-ico-A1AAEM0000"></span>
 									<span class="text">우리은행</span>
@@ -185,7 +200,7 @@
 						</li>
 						<li>
 							<label for="bank03" class="check-label">
-								<input type="checkbox" id="bank03">
+								<input type="checkbox" id="bank03" name="checkedAgreeBank">
 								<span class="box">
 									<span class="code-ico-A1AAEO0000"></span>
 									<span class="text">국민은행</span>
@@ -194,7 +209,7 @@
 						</li>
 						<li>
 							<label for="bank04" class="check-label">
-								<input type="checkbox" id="bank04">
+								<input type="checkbox" id="bank04" name="checkedAgreeBank">
 								<span class="box">
 									<span class="code-ico-A1AAES0000"></span>
 									<span class="text">하나은행</span>
@@ -203,7 +218,7 @@
 						</li>
 						<li>
 							<label for="bank05" class="check-label recomm">
-								<input type="checkbox" id="bank05">
+								<input type="checkbox" id="bank05" name="checkedAgreeBank">
 								<span class="box">
 									<span class="code-ico-A1AAEQ0000"></span>
 									<span class="text">기업은행</span>
@@ -214,12 +229,20 @@
 				</div>
 				<!-- 보험 -->
 				<div class="assets" id="insurance">
-					<h2><strong>보험</strong> <button type="button" class="select-all" onclick="selectAll('insurance')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>보험</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('insurance')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllins"><label for="agreeAllins">전체 선택</label>
+						</div>
+						<!--//20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="ins01" class="check-label recomm">
-								<input type="checkbox" id="ins01">
+								<input type="checkbox" id="ins01" name="checkedAgreeIns"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-B1AAET0000"></span>
 									<span class="text">DB손해보험</span>
@@ -229,7 +252,7 @@
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="ins02" class="check-label">
-								<input type="checkbox" id="ins02">
+								<input type="checkbox" id="ins02" name="checkedAgreeIns">
 								<span class="box">
 									<span class="code-ico-A1AAKA0000"></span>
 									<span class="text">우체국보험</span>
@@ -238,7 +261,7 @@
 						</li>
 						<li>
 							<label for="ins03" class="check-label">
-								<input type="checkbox" id="ins03">
+								<input type="checkbox" id="ins03" name="checkedAgreeIns">
 								<span class="box">
 									<span class="code-ico-B2AAAL0000"></span>
 									<span class="text">현대해상</span>
@@ -248,7 +271,7 @@
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="ins01" class="check-label recomm">
-								<input type="checkbox" id="ins01">
+								<input type="checkbox" id="ins01" name="checkedAgreeIns">
 								<span class="box">
 									<span class="code-ico-B1AAET0000"></span>
 									<span class="text">DB손해보험</span>
@@ -258,7 +281,7 @@
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="ins02" class="check-label">
-								<input type="checkbox" id="ins02">
+								<input type="checkbox" id="ins02" name="checkedAgreeIns">
 								<span class="box">
 									<span class="code-ico-A1AAKA0000"></span>
 									<span class="text">우체국보험</span>
@@ -267,7 +290,7 @@
 						</li>
 						<li>
 							<label for="ins03" class="check-label">
-								<input type="checkbox" id="ins03">
+								<input type="checkbox" id="ins03" name="checkedAgreeIns">
 								<span class="box">
 									<span class="code-ico-B2AAAL0000"></span>
 									<span class="text">현대해상</span>
@@ -278,12 +301,20 @@
 				</div>
 				<!-- 증권 -->
 				<div class="assets" id="securities">
-					<h2><strong>증권</strong> <button type="button" class="select-all" onclick="selectAll('securities')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>증권</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('securities')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllAsset"><label for="agreeAllAsset">전체 선택</label>
+						</div>
+						<!--// 20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="securities01" class="check-label recomm">
-								<input type="checkbox" id="securities01">
+								<input type="checkbox" id="securities01" name="checkedAgreeAsset"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-C1AACS0000"></span>
 									<span class="text">K증권</span>
@@ -292,7 +323,7 @@
 						</li>
 						<li>
 							<label for="securities02" class="check-label">
-								<input type="checkbox" id="securities02">
+								<input type="checkbox" id="securities02" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-C1AADF0000"></span>
 									<span class="text">신한증권</span>
@@ -301,7 +332,7 @@
 						</li>
 						<li>
 							<label for="securities07" class="check-label">
-								<input type="checkbox" id="securities07">
+								<input type="checkbox" id="securities07" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-D1AAPF0000"></span>
 									<span class="text">토스증권</span>
@@ -310,7 +341,7 @@
 						</li>
 						<li>
 							<label for="securities03" class="check-label">
-								<input type="checkbox" id="securities03">
+								<input type="checkbox" id="securities03" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-C1AABR0000"></span>
 									<span class="text">우리증권</span>
@@ -319,7 +350,7 @@
 						</li>
 						<li>
 							<label for="securities06" class="check-label">
-								<input type="checkbox" id="securities06">
+								<input type="checkbox" id="securities06" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-C1AADA0000"></span>
 									<span class="text">국민증권</span>
@@ -328,7 +359,7 @@
 						</li>
 						<li>
 							<label for="securities04" class="check-label">
-								<input type="checkbox" id="securities04">
+								<input type="checkbox" id="securities04" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-C1AAKN0000"></span>
 									<span class="text">하나증권</span>
@@ -337,7 +368,7 @@
 						</li>
 						<li>
 							<label for="securities05" class="check-label recomm">
-								<input type="checkbox" id="securities05">
+								<input type="checkbox" id="securities05" name="checkedAgreeAsset">
 								<span class="box">
 									<span class="code-ico-C1AABU0000"></span>
 									<span class="text">기업증권</span>
@@ -348,12 +379,20 @@
 				</div>
 				<!-- 페이머니 -->
 				<div class="assets" id="paymoney">
-					<h2><strong>페이머니</strong> <button type="button" class="select-all" onclick="selectAll('paymoney')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>페이머니</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('paymoney')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllPay"><label for="agreeAllPay">전체 선택</label>
+						</div>
+						<!--// 20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="paymoney08" class="check-label recomm">
-								<input type="checkbox" id="paymoney08">
+								<input type="checkbox" id="paymoney08" name="checkedAgreePay"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-E1AAIA0000"></span>
 									<span class="text">카카오페이</span>
@@ -362,7 +401,7 @@
 						</li>
 						<li>
 							<label for="paymoney07" class="check-label">
-								<input type="checkbox" id="paymoney07">
+								<input type="checkbox" id="paymoney07" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AAIE0000"></span>
 									<span class="text">페이코</span>
@@ -371,7 +410,7 @@
 						</li>
 						<li>
 							<label for="paymoney06" class="check-label">
-								<input type="checkbox" id="paymoney06">
+								<input type="checkbox" id="paymoney06" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-D1AAPF0000"></span>
 									<span class="text">토스</span>
@@ -380,7 +419,7 @@
 						</li>
 						<li>
 							<label for="paymoney01" class="check-label recomm">
-								<input type="checkbox" id="paymoney01">
+								<input type="checkbox" id="paymoney01" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AAHY0000"></span>
 									<span class="text">네이버 파이낸셜</span>
@@ -389,7 +428,7 @@
 						</li>
 						<li>
 							<label for="paymoney02" class="check-label">
-								<input type="checkbox" id="paymoney02">
+								<input type="checkbox" id="paymoney02" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AABK0000"></span>
 									<span class="text">우리페이머니</span>
@@ -398,7 +437,7 @@
 						</li>
 						<li>
 							<label for="paymoney03" class="check-label">
-								<input type="checkbox" id="paymoney03">
+								<input type="checkbox" id="paymoney03" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AABZ0000"></span>
 									<span class="text">국민페이머니</span>
@@ -407,7 +446,7 @@
 						</li>
 						<li>
 							<label for="paymoney04" class="check-label">
-								<input type="checkbox" id="paymoney04">
+								<input type="checkbox" id="paymoney04" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AAQK0000"></span>
 									<span class="text">하나페이머니</span>
@@ -416,7 +455,7 @@
 						</li>
 						<li>
 							<label for="paymoney05" class="check-label recomm">
-								<input type="checkbox" id="paymoney05">
+								<input type="checkbox" id="paymoney05" name="checkedAgreePay">
 								<span class="box">
 									<span class="code-ico-E1AAJI0000"></span>
 									<span class="text">기업페이머니</span>
@@ -427,12 +466,20 @@
 				</div>
 				<!-- 캐피탈 -->
 				<div class="assets" id="capital">
-					<h2><strong>캐피탈</strong> <button type="button" class="select-all" onclick="selectAll('capital')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>캐피탈</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('capital')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllCap"><label for="agreeAllCap">전체 선택</label>
+						</div>
+						<!--//20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
-							<label for="capital01" class="check-label recomm">
-								<input type="checkbox" id="capital01">
+							<label for="capital01" class="check-label recomm"> 
+								<input type="checkbox" id="capital01" name="checkedAgreeCap"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-C1AACT0000"></span>
 									<span class="text">키움캐피탈</span>
@@ -442,7 +489,7 @@
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="capital01" class="check-label recomm">
-								<input type="checkbox" id="capital01">
+								<input type="checkbox" id="capital02" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAEK0000"></span>
 									<span class="text">볼보파이낸셜</span>
@@ -451,7 +498,7 @@
 						</li>
 						<li>
 							<label for="capital05" class="check-label recomm">
-								<input type="checkbox" id="capital05">
+								<input type="checkbox" id="capital05" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAMG0000"></span>
 									<span class="text">IBK캐피탈</span>
@@ -461,7 +508,7 @@
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="capital01" class="check-label recomm">
-								<input type="checkbox" id="capital01">
+								<input type="checkbox" id="capital03" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAHH0000"></span>
 									<span class="text">K캐피탈</span>
@@ -470,7 +517,7 @@
 						</li>
 						<li>
 							<label for="capital01" class="check-label recomm">
-								<input type="checkbox" id="capital01">
+								<input type="checkbox" id="capital04" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAEX0000"></span>
 									<span class="text">신한캐피탈</span>
@@ -479,7 +526,7 @@
 						</li>
 						<li>
 							<label for="capital02" class="check-label">
-								<input type="checkbox" id="capital02">
+								<input type="checkbox" id="capital06" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAMM0000"></span>
 									<span class="text">우리캐피탈</span>
@@ -488,7 +535,7 @@
 						</li>
 						<li>
 							<label for="capital03" class="check-label">
-								<input type="checkbox" id="capital03">
+								<input type="checkbox" id="capital07" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AADZ0000"></span>
 									<span class="text">국민캐피탈</span>
@@ -497,7 +544,7 @@
 						</li>
 						<li>
 							<label for="capital04" class="check-label">
-								<input type="checkbox" id="capital04">
+								<input type="checkbox" id="capital08" name="checkedAgreeCap">
 								<span class="box">
 									<span class="code-ico-D3AAGE0000"></span>
 									<span class="text">하나캐피탈</span>
@@ -508,12 +555,20 @@
 				</div>
 				<!-- 보증보험 -->
 				<div class="assets" id="guarantee">
-					<h2><strong>보증보험</strong> <button type="button" class="select-all" onclick="selectAll('guarantee')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>보증보험</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('guarantee')"><i class="ico ico-check2"></i> 전체 선택</button>			 -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllCert"><label for="agreeAllCert">전체 선택</label>
+						</div>
+						<!--//20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 추천 recomm 클래스 추가 -->
 							<label for="guarantee01" class="check-label recomm">
-								<input type="checkbox" id="guarantee01">
+								<input type="checkbox" id="guarantee01" name="checkedAgreeCert"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-B4AADL0000"></span>
 									<span class="text">K보증보험</span>
@@ -522,7 +577,7 @@
 						</li>
 						<li>
 							<label for="guarantee06" class="check-label recomm">
-								<input type="checkbox" id="guarantee06">
+								<input type="checkbox" id="guarantee06" name="checkedAgreeCert">
 								<span class="box">
 									<span class="code-ico-A3AAKT0000"></span>
 									<span class="text">신한보증보험</span>
@@ -531,7 +586,7 @@
 						</li>
 						<li>
 							<label for="guarantee02" class="check-label">
-								<input type="checkbox" id="B2AAGZ0000">
+								<input type="checkbox" id="B2AAGZ0000" name="checkedAgreeCert">
 								<span class="box">
 									<span class="code-ico-B1AAQI0000"></span>
 									<span class="text">우리보증보험</span>
@@ -540,7 +595,7 @@
 						</li>
 						<li>
 							<label for="guarantee03" class="check-label">
-								<input type="checkbox" id="guarantee03">
+								<input type="checkbox" id="guarantee03" name="checkedAgreeCert">
 								<span class="box">
 									<span class="code-ico-B2AANY0000"></span>
 									<span class="text">국민보증보험</span>
@@ -549,7 +604,7 @@
 						</li>
 						<li>
 							<label for="guarantee04" class="check-label">
-								<input type="checkbox" id="guarantee04">
+								<input type="checkbox" id="guarantee04" name="checkedAgreeCert">
 								<span class="box">
 									<span class="code-ico-D3AABC0000"></span>
 									<span class="text">하나보증보험</span>
@@ -558,7 +613,7 @@
 						</li>
 						<li>
 							<label for="guarantee05" class="check-label recomm">
-								<input type="checkbox" id="guarantee05">
+								<input type="checkbox" id="guarantee05" name="checkedAgreeCert">
 								<span class="box">
 									<span class="code-ico-D3AAJX0000"></span>
 									<span class="text">메르세데스벤츠코리아</span>
@@ -569,12 +624,20 @@
 				</div>
 				<!-- 통신사 -->
 				<div class="assets" id="telecom">
-					<h2><strong>통신</strong> <button type="button" class="select-all" onclick="selectAll('telecom')"><i class="ico ico-check2"></i> 전체 선택</button></h2>
+					<h2>
+						<strong>통신</strong> 
+						<!-- <button type="button" class="select-all" onclick="selectAll('telecom')"><i class="ico ico-check2"></i> 전체 선택</button> -->
+						<!-- 20220831 버튼 > 체크박스 변경 코드 -->
+						<div class="form-check check-all">
+							<input type="checkbox" id="agreeAllTel"><label for="agreeAllTel">전체 선택</label>
+						</div>
+						<!--// 20220831 버튼 > 체크박스 변경 코드 -->
+					</h2>
 					<ul class="select-list">
 						<li>
 							<!-- [D] 사용자가 KT인 경우 label에 lock 클래스 추가 / 전체 input type="radio"에 disabled 추가 -->
 							<label for="tel01" class="check-label lock">
-								<input type="checkbox" id="tel01" disabled checked>
+								<input type="checkbox" id="tel01" disabled checked name="checkedAgreeTel"> <!-- 20220831 체크박스 name 각 셀렉터 별로 추가 -->
 								<span class="box">
 									<span class="code-ico-F1AAAN0000"></span>
 									<span class="text">KT</span>
@@ -583,7 +646,7 @@
 						</li>
 						<li>
 							<label for="tel02" class="check-label">
-								<input type="checkbox" id="tel02">
+								<input type="checkbox" id="tel02" name="checkedAgreeTel">
 								<span class="box">
 									<span class="code-ico-F1AAAU0000"></span>
 									<span class="text">SK</span>
@@ -592,7 +655,7 @@
 						</li>
 						<li>
 							<label for="tel03" class="check-label">
-								<input type="checkbox" id="tel03">
+								<input type="checkbox" id="tel03" name="checkedAgreeTel">
 								<span class="box">
 									<span class="code-ico-F1AAGI0000"></span>
 									<span class="text">U+</span>
@@ -619,12 +682,14 @@
 <script>
 	//cateSwiper('.inner', 4);
 	cateSticky();
-</script>
-<script>
-	$(document).ready(function() {
-		$("#paymoney-tab")[0].scrollIntoView().addClass('current');
-	});
-	
+	agreeAll("#agreeAllCard",'checkedAgreeCard','btnNext','checked');
+	agreeAll("#agreeAllBank",'checkedAgreeBank','btnNext','checked');
+	agreeAll("#agreeAllins",'checkedAgreeIns','btnNext','checked');
+	agreeAll("#agreeAllAsset",'checkedAgreeAsset','btnNext','checked');
+	agreeAll("#agreeAllPay",'checkedAgreePay','btnNext','checked');
+	agreeAll("#agreeAllCap",'checkedAgreeCap','btnNext','checked');
+	agreeAll("#agreeAllCert",'checkedAgreeCert','btnNext','checked');
+	agreeAll("#agreeAllTel",'checkedAgreeTel','btnNext','checked');
 </script>
 </body>
 </html>
