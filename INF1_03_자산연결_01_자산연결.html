@@ -80,7 +80,7 @@
 							<li><button type="button" data-target="#bank"><em>은행</em></button></li>
 							<li><button type="button" data-target="#insurance"><em>보험</em></button></li>
 							<li><button type="button" data-target="#securities"><em>증권</em></button></li>
-							<li><button type="button" data-target="#paymoney"><em>페이머니</em></button></li>
+							<li id="paymoney-tab"><button type="button" data-target="#paymoney"><em>페이머니</em></button></li>
 							<li><button type="button" data-target="#capital"><em>캐피탈</em></button></li>
 							<li><button type="button" data-target="#guarantee"><em>보증보험</em></button></li>
 							<li><button type="button" data-target="#telecom"><em>통신</em></button></li>
@@ -619,6 +619,12 @@
 <script>
 	//cateSwiper('.inner', 4);
 	cateSticky();
+</script>
+<script>
+	$(document).ready(function() {
+		$("#paymoney-tab")[0].scrollIntoView().addClass('current');
+	});
+	
 </script>
 </body>
 </html>
