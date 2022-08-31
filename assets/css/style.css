@@ -3360,7 +3360,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     overflow: hidden;
 } */
 .brand-info .brand-info-list .swiper-slide{
-    display: contents;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
