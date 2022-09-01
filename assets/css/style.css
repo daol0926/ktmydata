@@ -2293,7 +2293,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .card.bill-info.before-none .bill-list > ul > li::before{
     content: unset;
 }
-.card.bill-info.before-none .bill-list > ul > li > dl > dt i::before{
+.card.bill-info.before-none .bill-list > ul > li > dl > dt i::before,
+.card.bill-info.before-none .bill-list > ul > li > dl > dt [class*=code-ico-]{
     left: -3.4rem;
     top: calc(50% - 1.2rem);
 }
