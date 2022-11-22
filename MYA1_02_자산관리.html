@@ -33,12 +33,21 @@
 			<nav class="lnb">
 				<ul>
 					<li><a href="HOM1_01_한눈에(홈).html">한눈에</a></li>
-					<li><a href="KON적립(코인백).html">KON 적립</a></li>
+					<li><a href="캐시적립(코인백).html">캐시 적립</a></li>
 					<li><a href="SCH1_생활비서_01.html">생활비서</a></li>
 					<li class="current"><a href="MYA1_02_자산관리.html">자산관리</a></li>
 				</ul>
 			</nav>
 		</header>
+		<!-- 20221122 자산 업데이트 버튼 추가 -->
+		<section class="">
+			<button class="btn-extra">
+				<i class="ico-nodata"></i>
+				내 자산 업데이트 하기
+				<i class="ico-refresh2"></i>
+			</button>
+		</section>
+		<!--//20221122 자산 업데이트 버튼 추가 -->
 		<section class="">
 			<header>
 				<h2><strong>홍길*님의 KT 통신비</strong><em class="ml_5">(1건)</em></h2>
@@ -60,9 +69,12 @@
 						</dl>
 					</div>
 
-					<div class="list bill-list etc"> <!-- 20220708 etc 클래스 추가 -->
-						<h4 class="list-title">회선별 청구 요금</h4>
-						<ul>
+					<div class="list bill-list etc accordion"> <!-- 20220708 etc 클래스 추가 --> <!-- 20221122 accordion class add-->
+						<div class="tit">  <!-- 20221122 tit 클래스 안으로 타이틀 + 버튼 추가 -->
+							<h4 class="list-title">회선별 청구 요금</h4>
+							<button type="button" class="fold-btn"><em class="ico ico-fold"></em></button>
+						</div>
+						<ul class="dtl"> <!-- dtl class add-->
 							<li class="asset-etc"> <!-- 20220726 기타 아이콘 클래스로 변경 -->
 								<dl>
 									<dt><strong>기타</strong><em>010-12**-*123</em></dt><dd><span class="won">64,000</span></dd>
@@ -193,9 +205,12 @@
 					<span class="date">22.03.01~22.03.31</span>
 				</div>
 				<div class="card-body">
-					<div class="list bill-list etc">
-						<h4 class="list-title">4월 청구 금액</h4>
-						<ul>
+					<div class="list bill-list etc accordion"> <!-- 20221122 accordion 클래스 추가 -->
+						<div class="tit">  <!-- 20221122 tit 클래스 안으로 타이틀 + 버튼 추가 -->
+							<h4 class="list-title">4월 청구 금액</h4>
+							<button type="button" class="fold-btn"><em class="ico ico-fold"></em></button>
+						</div>
+						<ul class="dtl"> <!-- 20221122 dtl class add-->
 							<li class="dataON">
 								<dl>
 									<dt><strong>모바일</strong><em>010-12**-*123</em></dt><dd><span class="won">64,000</span></dd>

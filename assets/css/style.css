@@ -2313,9 +2313,22 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .card.bill-info.before-none .bill-list .dtl>ul>li .info{
     padding:.7rem;
 }
+/* 20221122 미사용 속성으로 주석 처리 
 .card.bill-info .bill-list.etc > ul{
     max-height: 12.25rem;
     overflow-y: auto;
+}
+*/
+.card.bill-info .bill-list.etc.accordion .tit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-top:1px solid #e4e4e4;
+}
+.card.bill-info .bill-list.etc.accordion .tit .list-title{
+    padding-top: 0;
+    border-top: 0;
 }
 .card.bill-info .bill-list > ul > li{
     padding: 0;
@@ -3554,7 +3567,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     margin-top: -2rem;
 }
 .brand-select .select-list.form-check.procedure-disabled::after{
-    content: '내일 다시 신청하셔서 KON 적립 받아가세요!';
+    content: '내일 다시 신청하셔서 캐시 적립 받아가세요!';
     text-align: center;
     font-size: .85rem;
     word-break: keep-all;
@@ -3603,7 +3616,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border: 3px solid #53cee6;
 }
 
-/* KON 적립[코인백] */
+/* 캐시 적립[코인백] */
 .coin-d-day .btn-xs{margin-right: .5rem;height:1.3rem;line-height: 1.3rem;padding:0;padding-left:.8rem;padding-right:.8rem;}
 .coin-d-day .c-gray{font-size:0.8125rem;}
 
@@ -4744,8 +4757,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .select-all .ico-check2{background:url(../images/common/ico-select-chk.png) no-repeat center/auto 30% #dadada;width:1.375rem;height:1.375rem;border-radius: 50%;}
 .select-all.chk-all .ico-check2{background-color: #53cee6;}
 .ico-add {width: 2.5rem;height: 2.5rem;background-position:0 -1.25rem;background-color: #fff;border-radius: 50%;}
-.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;}
-.ico-refresh2 {width: 1rem;height: 1rem;background-image:url(../images/common/ico-refresh2.png);background-size: contain;}
+.ico-refresh {width: 1rem;height: .7rem;background-image:url(../images/common/ico-refresh.png);background-size: contain;background-repeat: no-repeat;}
+.ico-refresh2 {width: 1rem;height: 1rem;background-image:url(../images/common/ico-refresh2.png);background-size: contain;background-repeat: no-repeat;}
 .ico-fold {width:0.5625rem;height:0.375rem;background-position: -3.4375rem -.625rem !important;background-size: 12.5rem auto !important;}
 .ico-list {width: 1rem;height: 0.75rem;background:url(../images/common/ico-list.png) no-repeat center/auto 100%;}
 .ico-point {width:3.3125rem;height:3.3125rem;background-position:0 -17.1875rem;}
@@ -4775,6 +4788,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .ico-arrow-right{background:url(../images/common/ico-arrow-right.png) no-repeat center/contain;width:.6rem;height:.8rem;}
 .bg-box .ico-arrow-right{position: absolute;right: 1rem;transform: scale(.75);}
 .ico-info{background:url(../images/icon/ico-info.png) no-repeat center/contain;width:1.2rem;height:1.2rem;}
+.ico-nodata{background:url(../images/common/ico_nodata.png) no-repeat center/contain;width: 2.5rem;height: 2.5rem;}
 
 /* 미사용 아이콘 클래스 주석처리 */
 /* .ico-car{background-image:url(../images/icon/ico-car.png);} */
@@ -5021,7 +5035,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 [class*=credit-submit-]:before{content: '';}
 .credit-submit-complete:before{content: '제출완료';color:#00c86d;}
 .credit-submit-fail:before{content: '실패';color:#fe0e0e;}
-.kon:after {content:" KON";}
+.kon:after {content:" 캐시";}
 .kon.ico-kon:after {content:"";display:inline-block;background:url(../images/icon/ico-coin.png) no-repeat center/contain;width:1.1rem;height:1.1rem;margin:0 .1rem -.18rem .1rem;}
 .monthly:before {content:"월 ";}
 .p:after {content:" P";}
@@ -5072,6 +5086,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-refresh {padding:0.25rem 0.1875rem;}
 
 .btn-round{border-radius: 2rem;}
+
+.btn-save-info-pop{position: relative;border-radius: 0.85rem !important;}
+.btn-save-info-pop::after{content:'';display: block;background:url(../images/icon/ico-question.png) no-repeat center/contain;position: absolute;width:53px;height:37px;top:-34px;left:calc(50% - 20px);}
+.auto-save-area{display: flex;align-items: center;justify-content: space-between;min-height: 60px;}
+.auto-save-area .btn-save-info-pop{margin-bottom:-30px;}
 
 .btn-switch {overflow: hidden;position: relative;width: 3rem;height: 1.625rem;border-radius: 1rem;}
 .btn-switch input { opacity: 0;width: 0;height: 0;}
@@ -5313,6 +5332,32 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 }
 .my-assets .btnSwiper.assets-list li span>i{
     margin: .5rem auto;
+}
+.btn-extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 57.5px;
+    background-color: #c9eaf3;
+    border-radius: 0.5rem;
+    position: relative;
+    font-size: 1rem;
+    font-weight: normal;
+    padding-left: 1rem;
+}
+.btn-extra .ico-nodata{
+    position: absolute;
+    left: 2rem;
+}
+.btn-extra .ico-refresh2{
+    width: 30px;
+    height: 30px;
+    background-color: #defafe;
+    border-radius: 50%;
+    background-size: 60%;
+    background-position: center;
+    margin-left: 5px;
 }
 
 .my-event .tab-wrp{
@@ -5882,7 +5927,7 @@ section.membership-barcode,
     }
 }
 
-/* 20220913 KON적립 fixed 영역 수정 */
+/* 20220913 캐시적립 fixed 영역 수정 */
 .my-coinback .kon-header .card-header-wrp {height:4rem;}
 .my-coinback .kon-header .card-header-inner {position: relative;;top:0;width: 100%;transition: top .2s ease !important;}
 .my-coinback .kon-header .card-header-inner.fixed {position: fixed;top:5rem;left:0;right:0;width:auto;padding:1.5rem 0.775rem 1.5rem;background-color: #f2f3f7;}
@@ -6209,6 +6254,94 @@ section.membership-barcode,
 .card.bill-info .bill-list .dtl .name.flex .ico-desc-info {margin-left:.25rem;}
 .card.bill-info .bill-list .dtl .name.flex .tooltip-wrp.focused .desc-txt {left:4.625rem;word-break:keep-all;word-wrap:break-word;}
 
+.list-number li{list-style-type:decimal;text-align: justify;margin: 0 0 0 1rem;}
+
+.my-coinback section.qna-wrp{
+    padding: 0.75rem;
+}
+.qna-wrp .qna-title-area{
+    margin-bottom: .75rem;
+}
+.qna-list-area{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding:0 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.qna-list-area .qna-list-loop{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #d4d5d9;
+}
+.qna-list-area .qna-list-loop .tit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.qna-list-area .qna-list-loop .tit-txt{
+    position: relative;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    line-height: 1.5;
+}
+.qna-list-area .num{
+    color: #0fbcdd;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+.qna-list-area .num::after{
+    content: '. ';
+}
+.qna-list-area .qna-list-loop:last-child{
+    border-bottom: 0;
+}
+.qna-list-area .ico-fold{
+    background-image: url(../images/icon/ico-arrow-qna.png);
+    background-position: center !important;
+    background-size: contain !important;
+    width: 15px;
+    height: 8px;
+}
+.qna-list-area .answer-area{
+    padding: 1.5rem 1.5rem 0;
+}
+.qna-list-area .answer-area .answer-loop{
+    line-height: 1.5;
+    color: #555;
+    position: relative;
+    padding-bottom: 1rem;
+    word-break: keep-all;
+}
+.qna-list-area .answer-area .answer-loop::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #98e2f0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    left: -1.5rem;
+    top: .25rem;
+}
+.qna-list-area .answer-area .answer-loop img{
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+}
+.qna-list-area .answer-area .answer-loop .answer-ex{
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.825rem;
+}
+.qna-request-area{background-color: #fff;border-radius: 0.5rem;padding: 1.5rem;}
+.qna-request-area dl dt{line-height: 1.5;}
+.qna-request-area dl dd{display: flex;align-items: center;justify-content: space-between;color:#555;padding-top:1.5rem;font-size: 0.95rem;}
+.qna-request-area .request-btn-area{display: flex;align-items: center;justify-content: center;}
+.qna-wrp [class*=ico-qna-]{display:inline-block;background: url(../images/icon/ico-qna-helper.png) no-repeat center/contain;width:2rem;height:2rem;margin:0 .5rem;}
+.qna-wrp .ico-qna-save-use{background-image: url(../images/icon/ico-qna-save-use.png);}
+.qna-wrp .ico-qna-svc{background-image: url(../images/icon/ico-qna-svc.png);}
+.qna-wrp .ico-qna-pass{background-image: url(../images/icon/ico-qna-pass.png);}
 
 @media only screen and (min-width:390px){
     .my-home .made-coin.card .inner-iframe {height: 19.825rem;}
