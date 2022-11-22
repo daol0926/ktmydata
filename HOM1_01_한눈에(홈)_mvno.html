@@ -605,41 +605,41 @@
 		<div class="aside-bottom-right">
 			<button type="button" class="btn-pass-home">PASS홈</button>
 		</div>
-
-		<!-- 공지팝업 -->		
-		<div class="pass-bn-wrp layerPopup">
-			<!-- Swiper -->
-			<!-- 20220715 swiper > btnSwiper로 교체 -->
-			<div class="pass-bn-area btnSwiper swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
-			<!--//Swiper -->
-			<!--//20220715 swiper > btnSwiper로 교체 -->
-			<div class="btn-area">
-				<span id="check" class="btnTodayHide">
-					<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
-					<label for="chkday">오늘 하루동안 보지 않기</label>
-				</span>
-				<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
-			</div>
-			<!--
-			<div class="btn-area">
-				<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
-				<button type="button" class="btn-more btnClose">닫기</button>
-			</div>
-			-->
-		</div>
-		<!--//공지팝업 -->
 	</main>
 	<!-- //container -->
 </div>
 <!-- //wrapper -->
+
+<!-- 공지팝업 -->		
+<div class="pass-bn-wrp layerPopup" style="display: none;">
+	<!-- Swiper -->
+	<!-- 20220715 swiper > btnSwiper로 교체 -->
+	<div class="pass-bn-area btnSwiper swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">Slide 1</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+	<!--//Swiper -->
+	<!--//20220715 swiper > btnSwiper로 교체 -->
+	<div class="btn-area">
+		<span id="check" class="btnTodayHide">
+			<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
+			<label for="chkday">오늘 하루동안 보지 않기</label>
+		</span>
+		<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
+	</div>
+	<!--
+	<div class="btn-area">
+		<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
+		<button type="button" class="btn-more btnClose">닫기</button>
+	</div>
+	-->
+</div>
+<!--//공지팝업 -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
@@ -669,8 +669,8 @@
 	chart2('.budget .chart');
 
 	//공지팝업
-	passInnerBanner();
-	layerPopupWrp();
+	// passInnerBanner();
+	// layerPopupWrp();
 </script>
 </body>
 </html>

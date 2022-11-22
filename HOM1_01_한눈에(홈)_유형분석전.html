@@ -47,8 +47,10 @@
 					<!-- 소비 MBTI 유형분석 전 -->
 					<div class="default">
 						<strong>홍길*님,</strong>
-						<p>카드를 등록하면 나에 대한<br />재밌는 데이터를 알 수 있어요!</p> <!-- 20220713 UX Writing -->
-						<span class="ico-mbti-default"></span>
+						<p>카드 연결 하시고<br />내 미니미를 받으세요.</p> <!-- 20220713 UX Writing -->
+
+						<!-- [D] 자산 연결 전 / before 클래스 추가 -->
+						<span class="ico-mbti-default before" role="button" onclick="location.href = 'MYA2.1_02_자산관리_통신비_요금명세서.html'" ></span>
 					</div>
 					<!--// 소비 MBTI 유형분석 전 -->				
 				</div>
@@ -68,12 +70,12 @@
 								<!-- 20220720 btn-w-fixed 클래스 추가 -->
 								<!-- 20220727 버튼 텍스트 변경 : 명세서 조회하기 -->
 								<!-- 20220729 버튼 위치 dd쪽으로 변경 -->
-								<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-w-fixed">결제수단 찾기</button>
+								<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-w-fixed">연결하기</button>
 								<!--//20220720 btn-w-fixed 클래스 추가 -->
 							</dd>
 							<dd>
-								<div class="description-wrp wide"><!-- 20220822 wide 클래스 추가 -->
-									<i></i>결제수단 연결하시고 할인금액을 조회해 보세요!
+								<div class="description-wrp wide">
+									<i></i><span>결제수단 연결하시고 통신 혜택 받으세요!</span><!-- 20221030 수정 -->
 								</div>
 							</dd>
 						</dl>
@@ -82,16 +84,15 @@
 								<span class="title"><i class="code-ico-coin"></i>내 KON 잔액</span>
 							</dt>
 							<dd>
-								<p class="kon">0</p>							
-								<!-- 20220720 btn-w-fixed 클래스 추가 -->
-								<!-- 20220727 버튼 텍스트 변경 : KON 적립하기 -->
-								<!-- 20220729 버튼 위치 dd쪽으로 변경 -->
-								<button type="button" class="btn btn-light-secondary btn-xs btn-round btn-w-fixed">카드 연결하기</button>
-								<!--//20220720 btn-w-fixed 클래스 추가 -->	
+								<p class="kon">0</p>
+								<div class="btn-add btn-xs btn-w-fixed">
+									<button type="button" class="" onclick="location.href = 'KON적립(코인백).html'"></button>
+									<span class="text"><i class="ico ico-coin"></i>적립하기</span>
+								</div>
 							</dd>
 							<dd>
-								<div class="description-wrp wide"><!-- 20220822 wide 클래스 추가 -->
-									<i></i>브랜드 이용, 이벤트 참여로 KON 모으고 통신비를 아껴보세요!<!-- 20220727 UX Writing -->
+								<div class="description-wrp wide">
+									<i></i><span>KON 적립하시고 통신 혜택 받으세요!</span><!-- 20221030 수정 -->
 								</div>
 							</dd>
 						</dl>
@@ -129,9 +130,11 @@
 					</div>
 					<!--// 일정 있을 때 -->
 					<!-- 등록된 일정이 없을 때 -->
+					<!-- 20221030 수정 -->
 					<div class="bg-box nodata">
-						자산을 연결하시면<br />스케쥴을 관리해 드려요!
+						등록된 일정이 없어요
 					</div>
+					<!--// 20221030 수정 -->
 					<!--// 등록된 일정이 없을 때 -->
 				</div>
 			</div>
@@ -304,14 +307,11 @@
 							</div>
 							<div class="card-body">
 								<div class="graph-wrap half">
-									<h4 class="title">카드 실적별 통신비 할인</h4>
-									<div class="msg-area mb0">
-										<p class="msg">KT제휴 카드를 연결하시면 통신비<br />할인을 위한 카드 실적을 알려드려요!</p>
-										<!-- 20220720 mbti ico 추가 -->
-										<i class="ico-mbti-default"></i>
-										<!--//20220720 mbti ico 추가 -->
+									<div class="title-area">
+										<h4 class="title">내 카드 사용금액 <em>(1일~오늘까지)</em></h4>
+										<p>*카드 실적은 결제일에 따라 다를 수 있습니다.</p>
 									</div>
-									<h4 class="title"></h4>
+									
 									<div class="gauge-area mt2_5">
 										<span class="gauge-bg">
 											<span class="consum bg-white txt-only">내 카드 사용 실적별 할인 금액을 확인해보세요</span>
@@ -550,7 +550,7 @@
 					<div class="tit-area">
 						<h3 class="header-title text-center">
 							<!-- 20220712 span 코드 추가 -->
-							<span><em>자산을 연결</em>하시면, 꼼꼼한 지출 관리를 돕는<br /><em>한달 목표예산을 설정</em>하실 수 있어요!</span>
+							<span><em>카드를 연결</em>하시면, 꼼꼼한 지출 관리를 돕는<br /><em>한달 목표예산을 설정</em>하실 수 있어요!</span>
 							<!--//20220712 span 코드 추가 -->
 						</h3>
 						<!-- 20220713 UX Writing -->
@@ -589,41 +589,41 @@
 		<div class="aside-bottom-right">
 			<button type="button" class="btn-pass-home">PASS홈</button>
 		</div>
-
-		<!-- 공지팝업 -->		
-		<div class="pass-bn-wrp layerPopup">
-			<!-- Swiper -->
-			<!-- 20220715 swiper > btnSwiper로 교체 -->
-			<div class="pass-bn-area btnSwiper swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-			</div>
-			<!--//Swiper -->
-			<!--//20220715 swiper > btnSwiper로 교체 -->
-			<div class="btn-area">
-				<span id="check" class="btnTodayHide">
-					<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
-					<label for="chkday">오늘 하루동안 보지 않기</label>
-				</span>
-				<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
-			</div>
-			<!--
-			<div class="btn-area">
-				<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
-				<button type="button" class="btn-more btnClose">닫기</button>
-			</div>
-			-->
-		</div>
-		<!--//공지팝업 -->
 	</main>
 	<!-- //container -->
 </div>
 <!-- //wrapper -->
+
+<!-- 공지팝업 -->		
+<div class="pass-bn-wrp layerPopup" style="display: none;">
+	<!-- Swiper -->
+	<!-- 20220715 swiper > btnSwiper로 교체 -->
+	<div class="pass-bn-area btnSwiper swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">Slide 1</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+	<!--//Swiper -->
+	<!--//20220715 swiper > btnSwiper로 교체 -->
+	<div class="btn-area">
+		<span id="check" class="btnTodayHide">
+			<input type="checkbox" value="checkbox" name="chkbox" id="chkday"/>
+			<label for="chkday">오늘 하루동안 보지 않기</label>
+		</span>
+		<span id="close" class="btnClose"> <a href="#0">닫기</a></span>
+	</div>
+	<!--
+	<div class="btn-area">
+		<button type="button" class="btn-more btnTodayHide">오늘 다시 보지 않기</button>
+		<button type="button" class="btn-more btnClose">닫기</button>
+	</div>
+	-->
+</div>
+<!--//공지팝업 -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
@@ -653,8 +653,8 @@
 	chart2('.budget .chart');
 
 	//공지팝업
-	passInnerBanner();
-	layerPopupWrp();
+	// passInnerBanner();
+	// layerPopupWrp();
 </script>
 </body>
 </html>

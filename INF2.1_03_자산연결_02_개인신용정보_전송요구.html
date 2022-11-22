@@ -91,7 +91,7 @@
 <!-- modal bottom-sheet -->
 <div class="modal bottom-sheet agree-list">
 	<header class="modal-header">
-		<h2 class="title">정보수집 동의</h2>
+		<h2 class="title" onclick="modal('.alert')">정보수집 동의</h2>
 		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
 	</header>
 	<section class="modal-container">
@@ -210,6 +210,24 @@
 </div>
 <!--// bottom-sheet full size -->
 <!--// modal bottom-sheet -->
+
+<!-- alert -->
+<div class="modal alert alert-test">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<p>
+				KT 마이데이터 서비스는 <br>만 19세 이상만 이용 가능한 <br>서비스입니다.
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modalClose('.modal.alert')">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// alert -->
 
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>

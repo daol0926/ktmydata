@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+
+	<script type="text/javascript">
+		function init(){
+			var doc = document.getElementById('saveBrand'); //자식 iframe 내부 ID값
+			if(doc.offsetHeight == 0){
+				//height == 0
+			} else {
+				pageheight = doc.offsetHeight;
+				parent.document.getElementById("saveBrandList").height = pageheight+"px"; //부모 iframe ID값
+			}
+		}
+		window.onload = function(){
+			init();
+		}
+	</script>
+</head>
+<body>
+	<section id="saveBrand" class="mission-list iframe-list">
+		<div class="save-brand-list col2">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="mission">
+							<span class="img"><img src="assets/images/icon/brand_coupang.png" alt=""></span>
+							<p>
+								<span class="title">쿠팡</span>
+								<strong class="txt">주문하고 KON 적립!</strong>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="mission">
+							<span class="img"><img src="assets/images/icon/brand_yogiyo.png" alt=""></span>
+							<p>
+								<span class="title">요기요</span>
+								<strong class="txt">배달시키고 KON 적립!</strong>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="mission">
+							<span class="img"><img src="assets/images/icon/brand_vogo.png" alt=""></span>
+							<p>
+								<span class="title">보고플레이</span>
+								<strong class="txt">쇼핑하고 KON 적립!</strong>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="mission">
+							<span class="img"><img src="assets/images/icon/brand_tripcom.png" alt=""></span>
+							<p>
+								<span class="title">트립닷컴</span>
+								<strong class="txt">여행하고 KON 적립!</strong>
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--//add-dc-wrp -->
+	</section>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>

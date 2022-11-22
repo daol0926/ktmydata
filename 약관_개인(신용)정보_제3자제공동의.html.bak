@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 정보수집동의</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+
+<!-- bottom-sheet full size -->
+<div class="modal bottom-sheet full" style="display:block;transform: translate(0);">
+	<header class="modal-header">
+		<h2 class="title">정보수집 동의</h2>
+		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		<header class="modal-container-header min-header">
+			<div class="summary-txt empty">
+				<!--
+					정보수집에 동의하시면 인증이 진행됩니다. <span class="pagination"><strong>3</strong><em>5</em></span>
+				-->
+			</div>
+			<h3 class="title">[필수] 개인(신용)정보 제3자 제공 동의</h3>
+		</header>
+		
+		<div class="terms-ui">
+			
+			<div class="inner">
+				<div class="inner-txt">
+					KT는 「신용정보의 이용 및 보호에 관한 법률」, 「개인정보 보호법」 등 관련 법령에 따라 다음과 같이 귀하의 개인(신용)정보를 제3자에게 제공합니다.
+				</div>
+
+				<h3 class="inner-title">제공받는 자</h3>
+				<div class="inner-txt">네이버 주식회사</div>
+				
+				<h3 class="inner-title">제공받는 자의 이용목적</h3>
+				<div class="inner-txt">본인인증을 위한 개인 식별</div>
+				
+				<h3 class="inner-title">제공 항목</h3>
+				<div class="inner-txt">CI</div>
+
+				<h3 class="inner-title">제공받는 자의 보유기간</h3>
+				<div class="inner-txt">식별 후 별도 보관 없이 삭제</div>
+
+				<h3 class="inner-title">거부 권리 및 불이익</h3>
+				<div class="inner-txt">귀하는 동의를 거부할 권리가 있으나, 본인인증은
+					전송요구권 행사와 직접적으로 관련된 필수적
+					사항이므로 거부 시 KT가 제공하는 마이데이터 서비스
+					이용이 불가할 수 있습니다.
+				</div>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!--<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>-->
+			<button type="button" class="btn btn-light-secondary">동의</button> 
+		</div>
+
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+<!--// modal bottom-sheet -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//scrollChk('.modal');
+</script>
+</body>
+</html>

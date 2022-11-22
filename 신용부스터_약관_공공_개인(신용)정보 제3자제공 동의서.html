@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 정보수집동의</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	
+</head>
+<body>
+
+<!-- bottom-sheet full size -->
+<div class="modal bottom-sheet full" style="display:block;transform: translate(0);">
+	<header class="modal-header">
+		<h2 class="title">개인(신용)정보 제3자 제공 동의서</h2>
+		<button type="button" class="btn-close" onclick="modalFullClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		<div class="terms-ui">
+			<h3 class="title">코리아크레딧뷰로㈜ 귀중</h3>
+			<div class="inner">
+				<div class="inner-txt">귀사가 공공 마이데이터를 활용한 서비스 이용과 관련하여 본인의 개인(신용)정보를 제3자에게 제공하고자 하는 경우 『신용정보의 이용 및 보호에 관한 법률』, 『개인정보 보호법』 등 관련 법령에 따라 본인의 동의가 필요합니다. </div>
+				<div class="inner-txt">
+					<table>
+						<colgroup>
+							<col style="width:25%;" />
+							<col style="width:auto;" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">제공받는 자</th>
+								<td> <strong>행정안전부(공공 마이데이터 유통체계) 및 한국신용정보원</strong><br /><br />
+                                     [공공 마이데이터 보유기관: 국세청, 국민연금공단, 국민건강보험공단]
+
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">제공 목적</th>
+								<td>공공부문 마이데이터 유통체계를 통하여 개인(신용)정보 조회<br />데이터영수증 발급</td>
+							</tr>
+							<tr>
+								<th scope="row">제공 항목</th>
+								<td>고유식별번호 : 주민등록번호 <br />개인(신용)정보 : CI</td>
+							</tr>
+							<tr>
+								<th scope="row">보유 및 이용기간</th>
+								<td>제공일로부터 5년<br />(단, 관련법령에 따라 보존 의무가 있는 경우는 해당 보존기간까지 보관)</td>
+							</tr>
+							<tr>
+								<th scope="row">거부할 권리 및 불이익</th>
+								<td>귀하는 동의를 거부할 수 있습니다. <br /><br />다만, 위의 개인정보 제3자 제공 동의는 공공부문 마이데이터 수집 및 개인(신용)정보 조회를 위한 필수적인 사항이므로, 위 사항에 동의하셔야만 공공 마이데이터를 활용한 서비스 이용이 가능합니다.</td>
+							</tr>
+						</table>
+					</table>
+				</div>
+				<div class="inner-txt">
+					위와 같이 본인의 고유식별정보를 제3자에게 제공하는 것에 동의합니다.<br />
+					위와 같이 본인의 개인(신용)정보를 제3자에게 제공하는 것에 동의합니다. 
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div class="btn-area fixed-bottom">
+			<button type="button" class="btn btn-light-secondary" onclick="scrollDown(this)">아래로 내려보기</button>
+			<button type="button" class="btn btn-light-secondary" disabled>다음</button>
+		</div>
+		-->	
+
+	</section>
+</div>
+<!--// bottom-sheet full size -->
+<!--// modal bottom-sheet -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//scrollChk('.modal');
+</script>
+</body>
+</html>

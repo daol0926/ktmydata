@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+
+	<script type="text/javascript">
+		function init(){
+			var doc = document.getElementById('saveKon'); //자식 iframe 내부 ID값
+			if(doc.offsetHeight == 0){
+				//height == 0
+			} else {
+				pageheight = doc.offsetHeight;
+				parent.document.getElementById("saveKonList").height = pageheight+"px"; //부모 iframe ID값
+			}
+		}
+		window.onload = function(){
+			init();
+		}
+	</script>
+</head>
+<body>
+	<section id="saveKon" class="frame-wrp">
+		<div class="add-dc-wrp">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_coupang.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">쿠팡</span>
+							<span class="dc-desc">주문하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>4%</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_tripcom.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">트립닷컴</span>
+							<span class="dc-desc">여행하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>4%</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_vogo.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">VOGO</span>
+							<span class="dc-desc">쇼핑하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>5%</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_aliexpress.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">알리익스프레스</span>
+							<span class="dc-desc">쇼핑하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>5%</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--//add-dc-wrp -->
+	</section>
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+</body>
+</html>

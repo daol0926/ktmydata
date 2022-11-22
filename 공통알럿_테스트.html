@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 인증 방법 선택</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+	<!-- header -->
+	<header id="header" class="title-left">
+		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
+		<h1>인증 방법 선택</h1>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<main id="container">
+		<header class="container-header">
+			<div class="summary-txt">자산연결을 위한 인증 방법을 선택해주세요. <span class="pagination"><strong>2</strong><em>5</em></span></div>
+		</header>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+<div class="modal bottom-sheet agree-list">
+	<header class="modal-header">
+		<h2 class="title">공통 알럿 테스트</h2>
+		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container">
+		
+		<div class="agree-area info-agreement">
+			<div class="form-check check-all">
+				<label for="agreeAll">공통 알럿 테스트</label>
+			</div>
+			<div class="form-check">
+				<label for="agree01">호출 : modal('.alert.common')</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+			<div class="form-check">
+				<label for="agree01">닫기 : alertClose('.alert.common')</label>
+				<button type="button" class="btn-dtl"><em class="ico ico-arr">Detail</em></button>
+			</div>
+		</div>
+
+		<div class="btn-area fixed-bottom">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext"  onclick="commonAlert('.alert.common')">공통 알럿 호출</button>
+		</div>
+
+	</section>
+</div>
+
+<!-- common Alert -->
+<div class="modal alert common">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<p>
+				KT 마이데이터 서비스는 <br>만 19세 이상만 이용 가능한 <br>서비스입니다.
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="alertClose('.alert.common')">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// common Alert -->
+
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/ui.js"></script>
+<script>
+	//이용동의 팝업 테스트
+	modal('.agree-list');
+	
+	//전체선택 (ID, checkbox name, 활성화버튼있을때 ID, 기본 상태)
+	agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title>KT 마이데이터 시작하기</title>
+	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
+	<script type="text/javascript">
+		function init(){
+			var doc = document.getElementById('frameWrp');
+			if(doc.offsetHeight == 0){
+				//height == 0
+			} else {
+				pageheight = doc.offsetHeight;
+				parent.document.getElementById("useKon").height = pageheight+"px";
+			}
+		}
+		window.onload = function(){
+			init();
+		}
+	</script>
+</head>
+<body>
+	<div id="frameWrp" class="kon-list-wrp">
+		<ul>
+			<li>
+				<a>
+					<div class="event-box line-type">
+						<span class="ico ico-genie"></span>
+						<div class="txt">
+							<strong>GENIE TV 쿠폰 1만원권</strong>
+							<button type="button" class="btn btn-light-secondary btn-xs btn-round">KON으로 구매하기</button>
+						</div>
+					</div>
+				</a>
+			</li>
+			<!-- <li>
+				<a>
+					<div class="event-box">
+						<span class="ico ico-coupon"></span>
+						<div class="txt">
+							<strong>olleh TV 쿠폰 1만원권</strong>
+							<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
+						</div>
+					</div>
+				</a>
+			</li> -->
+		</ul>
+	</div>
+	<!--//event-list-wrp -->
+
+	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/js/ui.js"></script>
+	
+</body>
+</html>

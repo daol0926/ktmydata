@@ -35,7 +35,7 @@
 			</div>
 			<!--//data-month-selec -->
 			<h2 class="page-title">
-				<em>4월 납부 금액</em>
+				<em>4월 청구 금액</em>
 				<strong><span class="price won">104,800</span></strong>
 			</h2>
 
@@ -123,6 +123,24 @@
 													<span class="info">
 														<span class="name">당월요금계</span>
 														<strong class="won">105,400</strong>
+													</span>
+												</li>
+												<li>
+													<span class="info">
+														<span class="name flex">
+															과납요금
+															
+															<!-- tooltip -->
+															<div class="tooltip-wrp">
+																<i class="ico-desc-info"></i>
+																<p class="desc-txt">
+																	※ 과납은 KON적립 외 기타 KT 제휴 서비스를 통해 발생할 수 있으며, 과납 요금은 통합 표시돼요.<br>
+																	※ 과납 요금 잔액은 이월돼요.
+																</p>
+															</div>
+															<!--//tooltip -->
+														</span>
+														<strong class="won">-10,000</strong>
 													</span>
 												</li>
 											</ul>
@@ -744,6 +762,9 @@
 	accordion();
 	//tab
 	tabMenu();
+
+	//툴팁
+	descInfo()
 </script>
 </body>
 </html>

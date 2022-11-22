@@ -10,47 +10,61 @@
 </head>
 <body>
 <!-- wrapper -->
-<div id="wrapper">
+<div id="wrapper" class="mydata-svc-info">
 	<!-- header -->
 	<header id="header" class="title-left">
-		<button type="button" class="btn-back"><em class="ico ico-back">이전</em></button>
-		<h1>자산연결</h1>
+		<h1 class="title">KT 마이데이터 서비스 안내</h1>
+		<button type="button" class="btn-close"><em class="ico ico-close">Close</em></button>
 	</header>
 	<!-- //header -->
-</div>
-<!-- //wrapper -->
-
-<!-- modal bottom-sheet -->
-<div class="modal bottom-sheet full mydata-svc-info">
-	<header class="modal-header">
-		<h2 class="title">KT 마이데이터 서비스 안내</h2>
-		<button type="button" class="btn-close" onclick="modalClose(this)"><em class="ico ico-close">Close</em></button>
-	</header>
-	<section class="modal-container agree-c-blue">
+	
+	<!-- container -->
+	<main id="container">
 		<h2 class="title">통신비 할인 꿀TIP 01.</h2>
 		<div class="title-desc">
-			마이데이터에 카드 연결하고 제휴 브랜드 이용하면<br /><span class="highlights">통신비 할인을 위한 KON을 적립해 드려요!</span>
+			마이데이터에서 제휴 브랜드 미션에 참여하면<br /><span class="highlights">통신비 할인을 위한 KON을 적립해 드려요!</span>
 			<img src="assets/images/pass/ico-save-list.png" class="info-ico-save-list" />
 		</div>
 
 		<h2 class="title">통신비 할인 꿀TIP 02.</h2>
 		<div class="title-desc">
-			<span class="highlights">결제, 구독 등 이벤트 참여 시 KON을 적립</span>해 드려요!
-			<img src="assets/images/pass/ico-gift.png" class="info-ico-gift" />
-		</div>
-
-		<h2 class="title">통신비 할인 꿀TIP 03.</h2>
-		<div class="title-desc">
-			통신비 미환급금 조회하고 <span class="highlights">숨은 내 돈을 찾아보세요!</span>
+			통신비 미환급금 조회하고 <span class="highlights">숨은 내 돈을 찾아보세요! </span>
 			<img src="assets/images/pass/ico-cash.png" class="info-ico-cash" />
 		</div>
 
 		<div class="btn-area fixed-bottom">
-			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="modal('.alert-large')">숨은 통신비 찾으러 가기</button>
+		</div>
+	</main>
+	<!-- //container -->
+</div>
+<!-- //wrapper -->
+
+
+<!-- modal bottom-sheet -->
+<!-- <div class="modal bottom-sheet full mydata-svc-info">
+	<header class="modal-header">
+		<h2 class="title">KT 마이데이터 서비스 안내</h2>
+		<button type="button" class="btn-close"><em class="ico ico-close">Close</em></button>
+	</header>
+	<section class="modal-container agree-c-blue">
+		<h2 class="title">통신비 할인 꿀TIP 01.</h2>
+		<div class="title-desc">
+			마이데이터에서 제휴 브랜드 미션에 참여하면<br /><span class="highlights">통신비 할인을 위한 KON을 적립해 드려요!</span>
+			<img src="assets/images/pass/ico-save-list.png" class="info-ico-save-list" />
+		</div>
+
+		<h2 class="title">통신비 할인 꿀TIP 02.</h2>
+		<div class="title-desc">
+			통신비 미환급금 조회하고 <span class="highlights">숨은 내 돈을 찾아보세요! </span>
+			<img src="assets/images/pass/ico-cash.png" class="info-ico-cash" />
+		</div>
+
+		<div class="btn-area fixed-bottom">
 			<button type="button" class="btn btn-light-secondary" id="btnNext" onclick="modal('.alert-large')">숨은 통신비 찾으러 가기</button>
 		</div>
 	</section>
-</div>
+</div> -->
 
 <!-- 20220714 코드 추가 -->
 <!-- alert -->
@@ -77,8 +91,8 @@
 <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="assets/js/ui.js"></script>
 <script>
-	modal('.mydata-svc-info');
-	alertDimmed();
+	// modal('.mydata-svc-info');
+	// alertDimmed();
 </script>
 
 </body>

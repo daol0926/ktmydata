@@ -8,86 +8,76 @@
 	<title>KT 마이데이터 시작하기</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
 	<style>
-		html,body{overflow: hidden;}
 		.frame-wrp{padding:0 0.6rem;}
 	</style>
+
 </head>
 <body>
-	<section class="frame-wrp"> <!-- 20220726 frame-wrp 추가 -->
+	<section id="frameWrp" class="frame-wrp">
 		<div class="list-cate min">
 			<div class="inner">
+				<!-- 20221030 수정 -->
 				<ul>
-					<li><button type="button" class="current"><em>결제</em></button></li>
-					<li><button type="button"><em>금융</em></button></li>
-					<li><button type="button"><em>구독ㆍ참여</em></button></li>
-					<li><button type="button"><em>쇼핑</em></button></li>
+					<!-- <li><button type="button" class="current"><em>결제</em></button></li>
+					<li><button type="button"><em>금융</em></button></li> -->
+					<li><button type="button" class="current" onclick="location.href='test.html'"><em>쇼핑</em></button></li>
+					<li><button type="button" onclick="location.href='kon_subscribe.html'"><em>구독ㆍ참여</em></button></li>
 				</ul>
+				<!--// 20221030 수정 -->
 			</div>
 		</div>
+
+		<!-- 쇼핑 -->
+		<!-- 20221030 수정 / li에 type2 클래스 추가 -->
 		<div class="add-dc-wrp">
 			<ul>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-cu.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">씨유</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+				<li class="type2">
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_coupang.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-save">4%</span>
+							<span class="dc-desc">최대 3,000KON 적립</span>
+						</div>
+					</a>
 				</li>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-emart-everyday.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">이마트 에브리데이</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+				<li class="type2">
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_tripcom.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-save">4%</span>
+							<span class="dc-desc">최대 3,000KON 적립</span>
+						</div>
+					</a>
 				</li>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-711.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">세븐일레븐</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+				<li class="type2">
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_vogo.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-save">4%</span>
+							<span class="dc-desc">최대 3,000KON 적립</span>
+						</div>
+					</a>
 				</li>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-cu.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">씨유</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
-				</li>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-emart-everyday.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">이마트 에브리데이</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
-				</li>
-				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-711.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">세븐일레븐</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+				<li class="type2">
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_aliexpress.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-save">1,000원</span>
+							<span class="dc-desc">2만원이상 구매시</span>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>
+		<!--// 쇼핑 -->
 		<!--//add-dc-wrp -->
 	</section>
 

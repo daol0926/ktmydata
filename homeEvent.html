@@ -7,43 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>KT 마이데이터 시작하기</title>
 	<link type="text/css" rel="stylesheet" href="assets/css/common.css" />
-	<style>
-		html,body{overflow: hidden;}
-	</style>
+
+	<script type="text/javascript">
+		function init(){
+			var doc = document.getElementById('frameWrp'); //자식 iframe 내부 ID값
+			if(doc.offsetHeight == 0){
+				//height == 0
+			} else {
+				pageheight = doc.offsetHeight;
+				parent.document.getElementById("eventList").height = pageheight+"px"; //부모 iframe ID값
+			}
+		}
+		window.onload = function(){
+			init();
+		}
+	</script>
 </head>
 <body>
-	<section class="pa0 pl1 pr1"> <!-- 20220726 pl1 pr1 클래스 추가 -->
+	<section id="frameWrp" class="frame-wrp pa0">
 		<div class="add-dc-wrp">
 			<ul>
 				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-cu.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유씨유</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_coupang.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">쿠팡</span>
+							<span class="dc-desc">주문하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>4% 적립</span>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-emart-everyday.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">이마트 에브리데이</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_tripcom.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">트립닷컴</span>
+							<span class="dc-desc">여행하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>4% 적립</span>
+						</div>
+					</a>
 				</li>
 				<li>
-					<div class="col-5 dc-ico">
-						<img src="assets/images/icon/ico-711.png" class="code-ico-cu" />
-					</div>
-					<div class="col-7">
-						<span class="dc-title">세븐일레븐</span>
-						<span class="dc-desc">인스타그램 팔로우 하기</span>
-						<span class="dc-save"><i class="code-ico-coin"></i>1,500</span>
-					</div>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_baemin.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">배민B마트</span>
+							<span class="dc-desc">쇼핑하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>12,000원</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_aliexpress.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">알리익스프레스</span>
+							<span class="dc-desc">쇼핑하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>2,000 적립</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="col-5 dc-ico">
+							<img src="assets/images/icon/brand_aliexpress.png" alt="" />
+						</div>
+						<div class="col-7">
+							<span class="dc-title">알리익스프레스</span>
+							<span class="dc-desc">쇼핑하고 KON 적립</span>
+							<span class="dc-save"><i class="code-ico-coin"></i>2,000 적립</span>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>

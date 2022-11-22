@@ -28,6 +28,7 @@
 			<button type="button" class="btn btn-light-secondary btn-sm dimmed-disabled" onclick="modal('.none-click')" style="margin:0 .5rem;">Dimmed none click</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.alert-test')" style="margin:0 .5rem;">Alert</button>
 			<button type="button" class="btn btn-light-secondary btn-sm" onclick="modal('.modal2')" style="margin:0 .5rem;">Bottom Sheet</button>
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="commonAlert('.alert.common')" style="margin:0 .5rem;">Alert dimmed none</button>
 		</div>
 	</main>
 	<!-- //container -->
@@ -69,6 +70,24 @@
 	</footer>
 </div>
 <!--//alert -->
+
+<!-- common Alert -->
+<div class="modal alert common">
+	<section class="modal-container">
+		<div class="modal-msg">
+			<p>
+				공통 알럿입니다 <br> dimmed none
+			</p>
+		</div>
+	</section>
+	<footer class="modal-footer">
+		<div class="btn-area">
+			<!-- [D] 버튼 활성화 시 disabled 삭제 -->
+			<button type="button" class="btn btn-light-secondary btn-sm" onclick="alertClose('.alert.common')">확인</button>
+		</div>
+	</footer>
+</div>
+<!--// common Alert -->
 
 <!-- confirm -->
 <div class="modal confirm inspection">
