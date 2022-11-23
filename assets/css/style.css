@@ -898,8 +898,10 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .my-assets .assets-list + button {margin-top:.5rem;}
 .my-status .assets-list li .assets-name:before {margin:0;}
 
-.my-assetsDtl .accordion > li + li {border-top:1px solid #e4e4e4;}
-.my-assetsDtl .accordion li:last-child .dtl::after{content:'';display:block;width:100%;height:1px;background-color: #e4e4e4;position: absolute;bottom: -1.25rem;left: 0;}
+.my-assetsDtl .accordion > li + li,
+.my-assetsDtl .accordion-assets > li + li {border-top:1px solid #e4e4e4;}
+.my-assetsDtl .accordion li:last-child .dtl::after,
+.my-assetsDtl .accordion-assets li:last-child .dtl::after{content:'';display:block;width:100%;height:1px;background-color: #e4e4e4;position: absolute;bottom: -1.25rem;left: 0;}
 .my-assetsDtl .tit {display:flex;justify-content: space-between;align-items: center;position: relative; height:4.875rem; padding-right:1.5rem;font-size:0.875rem;}
 .my-assetsDtl .tit em {color:#888;}
 .my-assetsDtl .tit .assets-name {display:flex;align-items: center;}
@@ -5114,7 +5116,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-txt-only>div::after{content: '';display: block;width: 1px;height:.8rem;position:absolute;right:0;top:.25rem;background-color: #888;}
 .btn-txt-only>div:last-child::after{display: none;}
 
-.accordion + .btn-txt-only{
+.accordion + .btn-txt-only,
+.accordion-assets + .btn-txt-only{
     padding:1rem 0 1.5rem;
     flex-flow:row;
     display: flex;
@@ -5123,13 +5126,15 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     text-align: center;
     width: 100%;
 }
-.accordion + .btn-txt-only>div{
+.accordion + .btn-txt-only>div,
+.accordion-assets + .btn-txt-only>div{
     width: 49%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.accordion + .btn-txt-only>div button{
+.accordion + .btn-txt-only>div button
+.accordion-assets + .btn-txt-only>div button{
     height: 1.2rem;
     font-size: 0.85rem;
     display: flex;
@@ -5346,10 +5351,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     font-weight: normal;
     padding-left: 1rem;
 }
-.btn-extra .ico-nodata{
+.btn-extra [class*=ico-]:first-child{
     position: absolute;
-    left: 2rem;
+    left: 1rem;
 }
+.btn-extra .ico-asset-char{width:2.5rem;height:2.5rem;background:url(../images/icon/ico-asset-char.png) no-repeat center/contain;}
 .btn-extra .ico-refresh2{
     width: 30px;
     height: 30px;
@@ -6200,6 +6206,7 @@ section.membership-barcode,
 [class^='my-'] section header {padding-top: 0.5rem;}
 [class^='my-'] section.tip {margin-top:0.4375rem;}
 [class^='my-'] section .event-banner.swiper-container {margin-bottom:-0.125rem;}
+[class^='my-'] section header.card-header.justify-content-between{padding-right:1.25rem;}
 
 .my-sch .my-status.budget .card {box-shadow: 0 0 0.3125rem #ddd;}
 
@@ -6258,6 +6265,7 @@ section.membership-barcode,
 
 .my-coinback section.qna-wrp{
     padding: 0.75rem;
+    padding-bottom: 5rem;
 }
 .qna-wrp .qna-title-area{
     margin-bottom: .75rem;

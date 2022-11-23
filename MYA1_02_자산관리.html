@@ -42,7 +42,7 @@
 		<!-- 20221122 자산 업데이트 버튼 추가 -->
 		<section class="">
 			<button class="btn-extra">
-				<i class="ico-nodata"></i>
+				<i class="ico-asset-char"></i>
 				내 자산 업데이트 하기
 				<i class="ico-refresh2"></i>
 			</button>
@@ -353,8 +353,8 @@
 				</div>
 				<div class="card-body pb0">
 					<div class="my-assetsDtl">
-						<ul class="accordion">
-							<li>
+						<ul class="accordion-assets">
+							<li class="li-test">
 								<div class="tit">
 									<span class="assets-name"><i class="credit-card"></i><span class="label">카드</span><em>(3건)</em></span>
 									<div class="row">
@@ -847,6 +847,7 @@
 	thumbSwiper('.benefit-info','auto',0,10);
 	//자산 accordion
 	accordionAssets();
+	accordionAssetsTop();
 	//이벤트 Swiper
 	buttonSwiper('.event-banner-top');
 	//총 자산카테고리 
