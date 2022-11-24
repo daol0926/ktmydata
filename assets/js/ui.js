@@ -289,27 +289,27 @@ function accordionAssetsTop(){
 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
 	});
 }
-function accordionKon(){
-	$(document).on('click','.coinback-guide-btn.accordion .tit button', function() {
-		function slideDown(target) {
-			slideUp();
-			$(target).addClass('fold').parent().next().slideDown('fast');
-			$('.coinback-guide-btn').addClass('view');
-			window.scrollTo({top: 0, behavior: 'smooth'});
-		}
-		function slideUp() {
-			$('.coinback-guide-btn.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
-			$('.coinback-guide-btn').removeClass('view');
-		}
-		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
-	});
-	//20220812 추가 
-	$('.brand-info .tit button').click(function(){
-		$(this).parents().find('.brand-info').toggleClass('hide');
-		$(this).toggleClass('fold');
-		$('.brand-info .dtl').slideToggle('fast');
-	});
-}
+// function accordionKon(){
+// 	$(document).on('click','.coinback-guide-btn.accordion .tit button', function() {
+// 		function slideDown(target) {
+// 			slideUp();
+// 			$(target).addClass('fold').parent().next().slideDown('fast');
+// 			$('.coinback-guide-btn').addClass('view');
+// 			window.scrollTo({top: 0, behavior: 'smooth'});
+// 		}
+// 		function slideUp() {
+// 			$('.coinback-guide-btn.accordion .tit button').removeClass('fold').parent().next().slideUp('fast');
+// 			$('.coinback-guide-btn').removeClass('view');
+// 		}
+// 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
+// 	});
+// 	//20220812 추가 
+// 	$('.brand-info .tit button').click(function(){
+// 		$(this).parents().find('.brand-info').toggleClass('hide');
+// 		$(this).toggleClass('fold');
+// 		$('.brand-info .dtl').slideToggle('fast');
+// 	});
+// }
 
 //자산 설정 카테고리 sticky
 function cateSticky(){
