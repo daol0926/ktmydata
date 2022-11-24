@@ -5351,6 +5351,10 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     font-weight: normal;
     padding-left: 1rem;
 }
+.btn-extra.text-left{
+    justify-content: flex-start;
+    padding-left: 4.25rem;
+}
 .btn-extra [class*=ico-]:first-child{
     position: absolute;
     left: 1rem;
