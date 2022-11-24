@@ -278,14 +278,13 @@ function accordionAssetsTop(){
 		function slideDown(target) {
 			slideUp();
 			$(target).addClass('fold').parent().next().slideDown('fast');
-			$('.my-assets-list').addClass('view');
 			var positionTop = target.getBoundingClientRect().top + window.scrollY;
 			var headerH = 100; //TODO 리스트 펼쳐짐 -> 이후 다른 리스트 펼쳐짐 일 때 높이값 계산 방식 다시 생각필요
 			window.scrollTo({top: positionTop - headerH, behavior: 'smooth'});
 		}
 		function slideUp() {
 			$('.accordion-assets .tit .fold-btn').removeClass('fold').parent().next().slideUp('fast');
-			$('.my-assets-list').removeClass('view');
+			//window.scrollTo({top: positionTop - headerH, behavior: 'smooth'});
 		}
 		$(this).hasClass('fold') ? slideUp('fast') : slideDown(this);
 	});

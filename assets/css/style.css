@@ -6351,6 +6351,9 @@ section.membership-barcode,
 .qna-wrp .ico-qna-svc{background-image: url(../images/icon/ico-qna-svc.png);}
 .qna-wrp .ico-qna-pass{background-image: url(../images/icon/ico-qna-pass.png);}
 
+.credit-status .tip-area .tip-msg{right:unset;margin-left:-180px;}
+.credit-status .tip-area span:after{right:35%;}
+
 @media only screen and (min-width:390px){
     .my-home .made-coin.card .inner-iframe {height: 19.825rem;}
     .coinback-wrp .inner-iframe {height:23.25rem;}
