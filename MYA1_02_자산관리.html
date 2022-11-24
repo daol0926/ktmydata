@@ -634,12 +634,14 @@
 			<header>
 				<div class="flex align-items-center">
 					<h2><strong>홍길*님의 신용점수</strong></h2>
-					<span class="tip-area">
-						<i class="ico-desc-info que" onclick="toggleLayer('.tip-msg')"></i>
-						<span class="tip-msg none">
-							신용점수 조회는 최대 15초가 소요될 수 있어요
-						</span>
-					</span>
+					<!-- 20221124추가 -->
+					<!-- tooltip -->
+					<div class="tooltip-wrp">
+						<i class="ico-desc-info que"></i>
+						<p class="desc-txt">신용점수 조회는 최대 15초정도 소요될 수 있어요.</p> 
+					</div>
+					<!--//tooltip -->
+					<!--//20221124추가 -->
 				</div>
 				<button type="button" class="ico ico-refresh2"></button>
 			</header>
