@@ -486,7 +486,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .coinback-wrp .consum{top:-2.75rem;width:40px;height:40px;border-radius: 50%;border:2px solid #0fbcdd;background:url(../images/icon/ico-kon-bubble.png) no-repeat center/auto 100% #fff;}
 .coinback-wrp .consum em{background: none;}
 .coinback-wrp .consum::after{
-    left:0.5rem;
+    left:0.5rem !important;
     bottom:-0.5rem;
     width: 0;
     height: 0;
@@ -595,6 +595,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .graph-wrap li {/* display:flex; *//* justify-content: flex-end; *//* position: relative; */padding-top: .4rem;/* text-align: right; */}
 .made-coin .graph-wrap li:nth-child(1){margin-left: 11%;}
 .made-coin .graph-wrap li:nth-child(2){position:absolute;margin-left: 20%;}
+.made-coin .graph-wrap li:nth-child(3){margin-left: -2rem;}
 .made-coin .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .made-coin .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
