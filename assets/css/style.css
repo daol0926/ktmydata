@@ -599,7 +599,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .made-coin .gauge-area {position: relative;height:0.4375rem;background-color:#a7eefc;border-radius:.3rem;}
 .made-coin .gauge-bg {position:absolute;top:0;left:0;width:100%;height:100%;}
 .made-coin .gauge-area .gauge {position:absolute;top:0;left:0;max-width:100%;height:100%;background-color:#53cee6;border-radius:.3rem;}
-.made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.06rem;}
+.made-coin .save-all{font-size: 1.35rem;font-weight: 600;letter-spacing: -.06rem;padding-bottom:0.8rem;}
 .made-coin .save-all em{color:#0fbcdd;}
 .made-coin .save-weekly{font-size: 0.85rem;border-left:1px solid #ccc;padding-left:.5rem;letter-spacing: -.04rem;width: 48%;}
 
@@ -6051,17 +6051,18 @@ section.membership-barcode,
 .loading-now.open, .loading-short.show {width:100%;}
 .loading-now img, .loading-short img {max-height:10rem;}
 
-.pass-coinback-wrp {overflow: hidden;position: relative;height:5.155rem;padding:.5rem 0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit}
-.pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.625rem;background-color: #53cee6;}
+.pass-coinback-wrp {overflow: hidden;position: relative;height:5.2rem;padding:1rem 0 0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit}
+.pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.593rem;background-color: #53cee6;}
 .pass-coinback-wrp:after {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 1;height:100%;background-color: #eaf9fc;}
-.pass-coinback-wrp .mydata-banner {display: flex;justify-content: space-evenly;align-items: center;}
+.pass-coinback-wrp .mydata-banner {display: flex;justify-content: space-evenly;align-items: flex-end;}
+.pass-coinback-wrp .mydata-banner .my-info{margin-top:-.2rem;padding-bottom:.2rem;}
 .pass-coinback-wrp .avatar {width:2.25rem;height:2.25rem;margin-right: .5rem;}
 .pass-coinback-wrp .btn-alarm {display: flex;align-items: center;justify-content: center;position: relative; width:2.25rem;height:2.25rem;}
 .pass-coinback-wrp .btn-alarm .num {display: flex;align-items: center;justify-content: center;position:absolute;top:0;right:0; width:1rem;height:1rem; font-size:0.8125rem;color:#fff; font-weight: 500;background-color: #ff4e00;border-radius: 50%;}
 .pass-coinback-wrp .coin {margin-top:0.25rem;color:#383838;font-size:0.875rem;font-weight: 700;}
 .pass-coinback-wrp .coin strong {font-size:1.125rem;}
 .pass-coinback-wrp .col-8 {position: relative;z-index: 2;height:100%;}
-.pass-coinback-wrp .brand-area img {height:4rem;max-height:100%;}
+.pass-coinback-wrp .brand-area img {height:3rem;max-height:100%;}
 .pass-coinback-wrp .brand-area .info {height:1rem;text-align: right;}
 .pass-coinback-wrp .brand-area ul {display: flex;}
 .pass-coinback-wrp .brand-area li {position: relative; height:2.375rem;padding:0 0.5625rem;}
@@ -6377,7 +6378,7 @@ section.membership-barcode,
 .credit-status .tip-area .tip-msg{right:unset;margin-left:-180px;}
 .credit-status .tip-area span:after{right:35%;}
 
-.card-header .btn-save-area{position:absolute;right:2rem;margin-top:0;}
+.card-header .btn-save-area{position:absolute;right:2rem;margin-top:-.8rem;}
 
 @media only screen and (min-width:390px){
     .my-home .made-coin.card .inner-iframe {height: 19.825rem;}
