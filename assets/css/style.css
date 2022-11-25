@@ -398,6 +398,7 @@ article.certify-box .certify {border-top:0;line-height:1;text-align: left;}
 .pattern .card-body .flex.column .home-info + .home-info{padding-top: 1rem;}
 .pattern .card-body .flex.column .home-info:last-child{padding-bottom: 0;}
 .pattern .card-body .flex.column .home-info.coin  dd p{color:#0fbcdd;font-weight: 700;}
+.pattern .card-body .flex.column .home-info.coin  dd p>em{font-size:1.5rem;}
 .pattern .card-body .flex.column .home-info.coin.connect-prev .btn-xs{/* margin-top: 4rem; */padding-right:0.5625rem;}
 .pattern .card-body .flex.column .home-info.coin .btn-w-fixed{height:2rem;display: inline-flex;align-items: center;justify-content: center;/*font-size: .9rem;*/padding-right: .9rem;}
 
@@ -3649,6 +3650,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .coinback-guide-container>li{margin-top:1.25rem;border-bottom: 1px solid #e4e4e4;padding-bottom: 1rem;}
 .coinback-guide-container>li:last-child{border-bottom: 0;}
 .coinback-guide-container img{display: block;margin:.5rem auto;margin-bottom:1rem;max-width: 16.375rem;image-rendering: -webkit-optimize-contrast;}
+.coinback-guide-container img.min-img{max-width:50%;}
 .coinback-guide-container .title{margin-bottom: .8rem;}
 .coinback-guide-container .title .num{color:#0fbcdd;font-weight: 600;font-size: 1.1875rem;}
 .coinback-guide-container .title .num::after{content: '.';}
@@ -5095,7 +5097,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-light:disabled {background-color:#e4e4e4;color:#111;cursor: default;}
 .btn-light-secondary {color: #fff;background-color: #53cee6;border-radius: 0.25rem;}
 .btn-light-gray{color:#111;background-color: #f2f3f7;}
-.btn-more {font-size:.75rem;color:#888;/* text-decoration: underline; */min-height:1rem;}
+.btn-more {display:inline-flex;align-items:center;font-size:.75rem;color:#888;/* text-decoration: underline; */min-height:1rem;}
 .btn-dark{background-color: #444;color:#fff;}
 .btn-gray{background-color: #bcbcbc;color:#fff;}
 
@@ -5109,7 +5111,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .btn-round{border-radius: 2rem;}
 
 .btn-save-info-pop{position: relative;border-radius: 0.85rem !important;}
-.btn-save-info-pop::after{content:'';display: block;background:url(../images/icon/ico-question.gif) no-repeat center/contain;position: absolute;width:53px;height:37px;top:-34px;left:calc(50% - 20px);}
+.btn-save-info-pop::after{content:'';display: none;background:url(../images/icon/ico-question.gif) no-repeat center/contain;position: absolute;width:53px;height:37px;top:-34px;left:calc(50% - 20px);}
 .auto-save-area{display: flex;align-items: center;justify-content: space-between;min-height: 60px;}
 .auto-save-area .btn-save-info-pop{margin-bottom:-30px;}
 
@@ -5387,6 +5389,11 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     background-size: 60%;
     background-position: center;
     margin-left: 5px;
+}
+
+h1 + .ico-refresh2{
+    position: absolute;
+    right:2.2rem;
 }
 
 .my-event .tab-wrp{
@@ -6051,8 +6058,8 @@ section.membership-barcode,
 .loading-now.open, .loading-short.show {width:100%;}
 .loading-now img, .loading-short img {max-height:10rem;}
 
-.pass-coinback-wrp {overflow: hidden;position: relative;height:5.2rem;padding:1rem 0 0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit}
-.pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.593rem;background-color: #53cee6;}
+.pass-coinback-wrp {overflow: hidden;position: relative;height:5.2rem;padding:0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit}
+.pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.6rem;background-color: #53cee6;}
 .pass-coinback-wrp:after {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 1;height:100%;background-color: #eaf9fc;}
 .pass-coinback-wrp .mydata-banner {display: flex;justify-content: space-evenly;align-items: flex-end;}
 .pass-coinback-wrp .mydata-banner .my-info{margin-top:-.2rem;padding-bottom:.2rem;}
@@ -6062,7 +6069,7 @@ section.membership-barcode,
 .pass-coinback-wrp .coin {margin-top:0.25rem;color:#383838;font-size:0.875rem;font-weight: 700;}
 .pass-coinback-wrp .coin strong {font-size:1.125rem;}
 .pass-coinback-wrp .col-8 {position: relative;z-index: 2;height:100%;}
-.pass-coinback-wrp .brand-area img {height:3rem;max-height:100%;}
+.pass-coinback-wrp .brand-area img {height:4.75rem;max-height:100%;}
 .pass-coinback-wrp .brand-area .info {height:1rem;text-align: right;}
 .pass-coinback-wrp .brand-area ul {display: flex;}
 .pass-coinback-wrp .brand-area li {position: relative; height:2.375rem;padding:0 0.5625rem;}
