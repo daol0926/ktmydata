@@ -6015,7 +6015,7 @@ section.membership-barcode,
 /* .my-home .pattern .card-body .flex.column .home-info dd:last-child {padding-left:0;} */
 .my-home .pattern .card-body .flex.column dl dt .code-ico-coin {margin-right:0.4375rem;}
 .my-home .mbti-area {position: absolute;top: 0;right:-.625rem;}
-.my-home .pattern .card-header .default .mbti-area [class*=ico-mbti-] {position: static;}
+.my-home .pattern .card-header .default .mbti-area [class*=ico-mbti-] {position: static;margin-right:-1.1rem;}
 .my-home .pattern .card-header .default .mbti-area [role=button] {cursor: pointer;}
 .pattern .card-body .flex.column dl dt [class*=code-ico-] {width:1.25rem;margin-right: 0.4375rem;}
 .pattern .card-body .flex.column dl dt .code-ico-mobile {height:1.4375rem;}
@@ -6044,7 +6044,7 @@ section.membership-barcode,
 .tip-area span:after {content:"";position:absolute;top:-.435rem;right:1.875rem;z-index:10;width:0.5625rem;height:0.5625rem;background: url(../images/home/ico_edge.png) no-repeat 50% / contain;}
 .tip .wrp-full.card {padding: 0.75rem 0 0;margin: 0;}
 .my-home section h2 {margin-left:1.25rem;}
-.my-home .made-coin.card {padding-top:.625rem;background-color: transparent;}
+.my-home .made-coin.card {padding-top:1.4rem;background-color: transparent;}
 .my-home .made-coin.card .card-header {padding:0 1.25rem 0.625rem;background-color: transparent;}
 .my-home .made-coin.card .card-header h2 {margin-left:0;}
 .my-home .made-coin.card .card-body {padding:1.625rem 1.25rem !important;border-radius: 0.25rem;background-color: #fff;}
@@ -6245,6 +6245,8 @@ section.membership-barcode,
 .alarm-wrp .dtl-desc-list .dtl-title-desc {padding:0;border:0;}
 .date-select.picker-full > .btn-area.mt0 {z-index:4;}
 .history > ul > li:before {z-index: 1;}
+
+.bill-default .tit{display: flex;align-items: center;justify-content: space-between;}
 
 /* .loading-short.show {background-color: rgba(0,0,0,.5);} */
 
