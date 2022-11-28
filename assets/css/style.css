@@ -3667,7 +3667,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .coinback-guide-container .inner-desc a{text-decoration: none;}
 .coinback-guide-container .btn-sm{min-width: fit-content;padding-left:1rem;padding-right:1rem;height: 2rem;font-size:0.75rem;line-height: 2rem;margin: 0 auto;border-radius: 0.5625rem;}
 .coinback-guide-container .highlights{text-align: center;height: .9rem;line-height: .3;width: fit-content;padding: 0 .3rem;margin: 1rem auto 0;}
-.coinback-guide-container .txt-caution {font-size:.75rem;color:#555;line-height:1.2;}
+.txt-caution {font-size:.75rem;color:#555;line-height:1.2;}
 
 .coinback-guide-container.svc .title{display:flex;flex-flow: column;align-items: center;justify-content: center;line-height: 1.2;}
 .coinback-guide-container.svc .title strong{font-size: 1.25rem;margin-bottom: .25rem;}
