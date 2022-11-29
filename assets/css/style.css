@@ -6092,7 +6092,7 @@ section.membership-barcode,
     transform: rotate(135deg);
     top: .158rem;
     }
-.pass-coinback-wrp .title-area span{position: absolute;}
+.pass-coinback-wrp .title-area span{position: absolute;font-weight: 500;}
 
 
 .save-iframe-wrp .coinback-guide-btn {margin: 1.5rem 0 4rem;}
