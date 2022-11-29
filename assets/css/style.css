@@ -4257,7 +4257,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .tooltip-wrp.focused.top .desc-txt{top: unset;bottom: 100%;margin-left: unset;right: -1rem;text-align: justify;}
 .tooltip-wrp.focused.top .ico-desc-info::after{transform: rotate(180deg);top: unset;margin-top: -2px;left: unset;right: .1rem;}
 .tooltip-wrp .desc-txt.desc-left{margin-left: -5.5rem;}
-.tooltip-wrp .ico-txt-noti{position: relative;display: block;padding-left: 1rem;top:-.3rem;}
+.tooltip-wrp .ico-txt-noti{position: relative;display: block;padding-left: 1rem;top:-.3rem;text-align: justify;}
 .tooltip-wrp .ico-txt-noti::before{content:'⋇ ';position:absolute;left:0;font-size: 1.1rem;}
 .my-assets-list .tooltip-wrp .ico-desc-info{position: relative;z-index: 6;}
 .my-assets-list .tooltip-wrp.focused .ico-desc-info::after{display: none;}
@@ -6085,7 +6085,7 @@ section.membership-barcode,
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 1.65rem 1.65rem 1.65rem;
+    border-width: 0 1.7rem 1.7rem 1.7rem;
     border-color: transparent transparent #53cee6 transparent;
     position: absolute;
     left: -1.65rem;
@@ -6408,7 +6408,10 @@ section.membership-barcode,
 .credit-status .tip-area .tip-msg{right:unset;margin-left:-180px;}
 .credit-status .tip-area span:after{right:35%;}
 
-.card-header .btn-save-area{position:absolute;right:2rem;margin-top:-.8rem;}
+.card-header .btn-save-area{position:absolute;right:0;margin-top:-.8rem;}
+.fixed .card-header .btn-save-area{right: 2rem;}
+.btn-save-info-pop{display: inline-flex;align-items: center;}
+.btn-save-info-pop::before{content: '';display: inline-block;width:4px;height:4px;border-radius: 50%;background-color: yellow;margin-right:4px;}
 
 .btn-purpose + [class*=ico-mbti-]{
     right:-1.1rem;
