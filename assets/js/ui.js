@@ -301,6 +301,42 @@ function accordionAssetsTop(){
 // 	});
 // }
 
+//accordionBill
+function accordionBill(){
+	$( document ).ready(function() {
+    
+		const accordionParentClass = '.accordion-bill';
+		const accordionQuestionClass = '.accordion-bill .tit';
+		const accordionContentClass = '.accordion-content';
+	  
+		$(accordionParentClass).each(function() {
+		  $( this ).addClass('close');
+		//$( this ).find(accordionContentClass).hide();
+		});
+		
+		$(accordionQuestionClass).click(function(){
+			const faqClass = $(this).closest(accordionParentClass).attr('class');
+			console.log(faqClass);
+		  
+		  if(faqClass.indexOf('close') != -1){
+			//up down 주석처리
+			// $(accordionParentClass).find(accordionContentClass).slideUp('slow'); //CLOSE ALL
+			// $(accordionParentClass).addClass('close').removeClass('open'); //set all faq as closed
+			
+			$(this).closest(accordionParentClass).removeClass('close');
+			$(this).closest(accordionParentClass).addClass('open');
+			$( this ).closest(accordionParentClass).find(accordionContentClass).slideDown('slow');
+			
+		  } else {
+			$(this).closest(accordionParentClass).addClass('close');
+			$(this).closest(accordionParentClass).removeClass('open');
+			// $( this ).closest(accordionParentClass).find(accordionContentClass).slideUp('slow');
+		  }
+		  
+		});
+	  });
+}
+
 //자산 설정 카테고리 sticky
 function cateSticky(){
 	var lastId, 

@@ -6417,6 +6417,20 @@ section.membership-barcode,
     right:-1.1rem;
 }
 
+.accordion-bill .tit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion-bill .accordion-content,
+.accordion-bill.close .accordion-content{
+    height: 13rem;
+    overflow: hidden;
+}
+.accordion-bill.open .accordion-content{
+    height: max-content;
+}
+
 @media only screen and (min-width:390px){
     .my-home .made-coin.card .inner-iframe {height: 19.825rem;}
     /* .coinback-wrp .inner-iframe {height:23.25rem;} */

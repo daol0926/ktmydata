@@ -73,12 +73,15 @@
 						</dl>
 					</div>
 
-					<div class="list bill-list etc accordion"> <!-- 20220708 etc 클래스 추가 --> <!-- 20221122 accordion class add-->
+					<!-- 20220708 etc 클래스 추가 --> 
+					<!-- 20221122 accordion class add-->
+					<!-- 20221129 accordion > accordion-bill class replace-->
+					<div class="list bill-list etc accordion-bill">
 						<div class="tit">  <!-- 20221122 tit 클래스 안으로 타이틀 + 버튼 추가 -->
 							<h4 class="list-title">회선별 청구 요금</h4>
 							<button type="button" class="fold-btn"><em class="ico ico-fold"></em></button>
 						</div>
-						<ul class="dtl"> <!-- dtl class add-->
+						<ul class="dtl accordion-content"> <!-- dtl class add-->
 							<li class="asset-etc"> <!-- 20220726 기타 아이콘 클래스로 변경 -->
 								<dl>
 									<dt><strong>기타</strong><em>010-12**-*123</em></dt><dd><span class="won">64,000</span></dd>
@@ -102,11 +105,6 @@
 							<li class="internet">
 								<dl>
 									<dt><strong>인터넷 슬림</strong><em>z!12345678***</em></dt><dd><span class="won">21,760</span></dd>
-								</dl>
-							</li>
-							<li class="tv">
-								<dl>
-									<dt><strong>TV 라이트</strong><em>z!12345678***</em></dt><dd><span class="won">31,542</span></dd>
 								</dl>
 							</li>
 						</ul>
@@ -209,7 +207,7 @@
 					<span class="date">22.03.01~22.03.31</span>
 				</div>
 				<div class="card-body">
-					<div class="list bill-list etc accordion"> <!-- 20221122 accordion 클래스 추가 -->
+					<div class="list bill-list etc accordion-bill"> <!-- 20221122 accordion 클래스 추가 -->
 						<div class="tit">  <!-- 20221122 tit 클래스 안으로 타이틀 + 버튼 추가 -->
 							<h4 class="list-title">4월 청구 금액</h4>
 							<button type="button" class="fold-btn"><em class="ico ico-fold"></em></button>
@@ -871,6 +869,8 @@
 	//agreeAll("#agreeAll",'checkedAgree','btnNext','checked'); 
 	//desc info(tooltip)
 	descInfo();
+	//회선별 청구요금 accordion
+	accordionBill();
 </script>
 </body>
 </html>
