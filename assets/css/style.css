@@ -3584,7 +3584,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     margin-top: -2rem;
 }
 .brand-select .select-list.form-check.procedure-disabled::after{
-    content: '내일 다시 신청하셔서 캐시 적립 받아가세요!';
+    content: '내일 다시 신청하셔서 캐시적립 받아가세요!';
     text-align: center;
     font-size: .85rem;
     word-break: keep-all;
@@ -3633,7 +3633,7 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
     border: 3px solid #53cee6;
 }
 
-/* 캐시 적립[코인백] */
+/* 캐시적립[코인백] */
 .coin-d-day .btn-xs{margin-right: .5rem;height:1.3rem;line-height: 1.3rem;padding:0;padding-left:.8rem;padding-right:.8rem;}
 .coin-d-day .c-gray{font-size:0.8125rem;}
 
@@ -4257,7 +4257,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .tooltip-wrp.focused.top .desc-txt{top: unset;bottom: 100%;margin-left: unset;right: -1rem;text-align: justify;}
 .tooltip-wrp.focused.top .ico-desc-info::after{transform: rotate(180deg);top: unset;margin-top: -2px;left: unset;right: .1rem;}
 .tooltip-wrp .desc-txt.desc-left{margin-left: -5.5rem;}
-
+.tooltip-wrp .ico-txt-noti{position: relative;display: block;padding-left: 1rem;top:-.3rem;}
+.tooltip-wrp .ico-txt-noti::before{content:'⋇ ';position:absolute;left:0;font-size: 1.1rem;}
 .my-assets-list .tooltip-wrp .ico-desc-info{position: relative;z-index: 6;}
 .my-assets-list .tooltip-wrp.focused .ico-desc-info::after{display: none;}
 .my-assets-list .tooltip-wrp .desc-txt{right: -5rem;margin-left: 0;z-index: 7;}
@@ -6058,9 +6059,13 @@ section.membership-barcode,
 .loading-now.open, .loading-short.show {width:100%;}
 .loading-now img, .loading-short img {max-height:10rem;}
 
-.pass-coinback-wrp {overflow: hidden;position: relative;height:5.2rem;padding:0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit}
-.pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.6rem;background-color: #53cee6;}
-.pass-coinback-wrp:after {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 1;height:100%;background-color: #eaf9fc;}
+.pass-coinback-wrp {
+    overflow: hidden;position: relative;height:5.2rem;padding:0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(234,249,252,1) 100%);
+}
+/* .pass-coinback-wrp:before {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 2;height:1.6rem;background-color: #53cee6;}
+.pass-coinback-wrp:after {content:"";display:block;position: absolute;top:0;left:60%;right:0;z-index: 1;height:100%;background-color: #eaf9fc;} */
 .pass-coinback-wrp .mydata-banner {display: flex;justify-content: space-evenly;align-items: flex-end;}
 .pass-coinback-wrp .mydata-banner .my-info{margin-top:-.2rem;padding-bottom:.2rem;}
 .pass-coinback-wrp .avatar {width:2.25rem;height:2.25rem;margin-right: .5rem;}
@@ -6074,6 +6079,21 @@ section.membership-barcode,
 .pass-coinback-wrp .brand-area ul {display: flex;}
 .pass-coinback-wrp .brand-area li {position: relative; height:2.375rem;padding:0 0.5625rem;}
 .pass-coinback-wrp .brand-area li + li:before {content:"";display:block;position:absolute;top:50%;left:0;transform: translateY(-50%); width:1px;height:2rem;background-color:#e2f1fc;}
+.pass-coinback-wrp .title-area{display:flex;align-items:center;justify-content: center;background-color:#53cee6;position:absolute;border-radius: 0 10px 0 0;width: 50%;height:1.6rem;color:#fff;top:0;right:0;font-size: .75rem;box-sizing: border-box;padding-right: 1.6rem;}
+.pass-coinback-wrp .title-area::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1.65rem 1.65rem 1.65rem;
+    border-color: transparent transparent #53cee6 transparent;
+    position: absolute;
+    left: -1.65rem;
+    transform: rotate(135deg);
+    top: .158rem;
+    }
+.pass-coinback-wrp .title-area span{position: absolute;}
+
 
 .save-iframe-wrp .coinback-guide-btn {margin: 1.5rem 0 4rem;}
 .save-iframe-wrp .coinback-guide-btn.view {left:0;right:0;margin:0;}
@@ -6411,3 +6431,13 @@ section.membership-barcode,
     .my-home .made-coin.card .inner-iframe {height: 19.785rem;}
     /* .coinback-wrp .inner-iframe {height:23.325rem;} */
 }	
+
+/* Safari 9.0+ (iOS Only) */
+
+@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
+and (not (-moz-appearance:none))
+{
+    .pass-coinback-wrp{
+        height: 96px;
+    }
+}

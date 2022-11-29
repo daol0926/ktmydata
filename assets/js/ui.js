@@ -545,7 +545,7 @@ function scrollUI() {
 	});
 }
 
-//캐시 적립 스크롤 따라 show hide
+//캐시적립 스크롤 따라 show hide
 function konScroll() {
 	var offsetHeader = $('.kon-header').offset();
 	var containerHeader = $(".container-header").height();
