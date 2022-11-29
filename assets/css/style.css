@@ -6437,10 +6437,10 @@ section.membership-barcode,
 
 /* Safari 9.0+ (iOS Only) */
 
-@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
+/* @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
 and (not (-moz-appearance:none))
 {
     .pass-coinback-wrp{
         height: 96px;
     }
-}
+} */
