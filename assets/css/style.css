@@ -4257,8 +4257,8 @@ main.sch-comn .ico{background-repeat: no-repeat;background-position: center;back
 .tooltip-wrp.focused.top .desc-txt{top: unset;bottom: 100%;margin-left: unset;right: -1rem;text-align: justify;}
 .tooltip-wrp.focused.top .ico-desc-info::after{transform: rotate(180deg);top: unset;margin-top: -2px;left: unset;right: .1rem;}
 .tooltip-wrp .desc-txt.desc-left{margin-left: -5.5rem;}
-.tooltip-wrp .ico-txt-noti{position: relative;display: block;padding-left: 1rem;top:-.3rem;text-align: justify;}
-.tooltip-wrp .ico-txt-noti::before{content:'⋇ ';position:absolute;left:0;font-size: 1.1rem;}
+.tooltip-wrp .ico-txt-noti{position: relative;display: flex;padding-left: 1rem;text-align: justify;}
+.tooltip-wrp .ico-txt-noti::before{content:'⋇ ';position:absolute;left:0;top:-.3rem;font-size: 1.1rem;}
 .my-assets-list .tooltip-wrp .ico-desc-info{position: relative;z-index: 6;}
 .my-assets-list .tooltip-wrp.focused .ico-desc-info::after{display: none;}
 .my-assets-list .tooltip-wrp .desc-txt{right: -5rem;margin-left: 0;z-index: 7;}
