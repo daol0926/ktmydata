@@ -6060,7 +6060,7 @@ section.membership-barcode,
 .loading-now img, .loading-short img {max-height:10rem;}
 
 .pass-coinback-wrp {
-    overflow: hidden;position: relative;height:5.2rem;padding:0;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit;
+    overflow: hidden;position: relative;height:max-content/*100vh*/;padding:0 0 0.326rem;border-radius: 1rem;background:transparent url(../images/pass/bg_mydataBanner.jpg) no-repeat center / auto 100%;box-shadow: inherit;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(234,249,252,1) 100%);
 }
